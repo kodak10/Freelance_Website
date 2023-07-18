@@ -12,3 +12,8 @@ Clonage du projet :
     -   Php artisan migrate
 
 Dossier Bases pour les bases de données
+
+Chacun puex créer autant de branche qu'il veux
+Interdiction de faire un push sur la branche main
+
+
