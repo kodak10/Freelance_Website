@@ -28,3 +28,11 @@ Route::get('/services', function () {
 Route::get('/services/details', function () {
     return view('services-details');
 });
+
+Route::get('/administration/login', function () {
+    return view('Administration.login');
+});
+
+Route::get('/administration', function () {
+    return view('Administration.home');
+});
