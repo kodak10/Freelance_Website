@@ -40,12 +40,9 @@
             <div class="d-flex align-items-center justify-content-sm-end">
               <div class="share-save-widget d-flex align-items-center">
                 <span class="icon flaticon-share dark-color fz12 mr10"></span>
-                <div class="h6 mb-0">Share</div>
+                <div class="h6 mb-0">Partager</div>
               </div>
-              <div class="share-save-widget d-flex align-items-center ml15">
-                <span class="icon flaticon-like dark-color fz12 mr10"></span>
-                <div class="h6 mb-0">Save</div>
-              </div>
+
             </div>
           </div>
         </div>
@@ -54,9 +51,9 @@
     <!-- Breadcumb Sections -->
     <section class="breadcumb-section pt-0">
       <div class="cta-service-single cta-banner mx-auto maxw1700 pt120 pt60-sm pb120 pb60-sm bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg px30-lg">
-        <img class="left-top-img wow zoomIn" src="images/vector-img/left-top.png" alt="">
-        <img class="right-bottom-img wow zoomIn" src="images/vector-img/right-bottom.png" alt="">
-        <img class="service-v1-vector bounce-y d-none d-xl-block" src="images/vector-img/vector-service-v1.png" alt="">
+        <img class="left-top-img wow zoomIn" src="{{asset('assets/images/vector-img/left-top.png')}}" alt="">
+        <img class="right-bottom-img wow zoomIn" src="{{asset('assets/images/vector-img/right-bottom.png')}}" alt="">
+        <img class="service-v1-vector bounce-y d-none d-xl-block" src="{{asset('assets/images/vector-img/vector-service-v1.png')}}" alt="">
         <div class="container">
           <div class="row wow fadeInUp">
             <div class="col-xl-7">
@@ -65,7 +62,7 @@
                 <div class="list-meta mt30">
                   <a class="list-inline-item mb5-sm" href="#">
                     <span class="position-relative mr10">
-                      <img class="rounded-circle" src="images/team/fl-d-1.png" alt="Freelancer Photo">
+                      <img class="rounded-circle" src="{{asset('assets/images/team/fl-d-1.png')}}" alt="Freelancer Photo">
                       <span class="online-badge"></span>
                     </span>
                     <span class="fz14">Eleanor Pena</span>
@@ -118,13 +115,13 @@
               </div>
               <div class="service-single-sldier vam_nav_style slider-1-grid owl-carousel owl-theme mb60">
                 <div class="item">
-                  <div class="thumb p50 p30-sm"><img src="images/listings/service-details-1.jpg" alt="" class="w-100"></div>
+                  <div class="thumb p50 p30-sm"><img src="assets/images/listings/service-details-1.jpg" alt="" class="w-100"></div>
                 </div>
                 <div class="item">
-                  <div class="thumb p50 p30-sm"><img src="images/listings/service-details-1.jpg" alt="" class="w-100"></div>
+                  <div class="thumb p50 p30-sm"><img src="assets/images/listings/service-details-1.jpg" alt="" class="w-100"></div>
                 </div>
                 <div class="item">
-                  <div class="thumb p50 p30-sm"><img src="images/listings/service-details-1.jpg" alt="" class="w-100"></div>
+                  <div class="thumb p50 p30-sm"><img src="assets/images/listings/service-details-1.jpg" alt="" class="w-100"></div>
                 </div>
               </div>
               <div class="service-about">
@@ -352,7 +349,7 @@
                       </div>
                       <div class="col-md-12">
                         <div class="mbp_first position-relative d-flex align-items-center justify-content-start mb30-sm">
-                          <img src="images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
+                          <img src="assets/images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
                           <div class="ml20">
                             <h6 class="mt-0 mb-0">Bessie Cooper</h6>
                             <div><span class="fz14">12 March 2022</span></div>
@@ -366,7 +363,7 @@
                       </div>
                       <div class="col-md-12">
                         <div class="mbp_first position-relative d-flex align-items-center justify-content-start mt30 mb30-sm">
-                          <img src="images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
+                          <img src="assets/images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
                           <div class="ml20">
                             <h6 class="mt-0 mb-0">Darrell Steward</h6>
                             <div><span class="fz14">12 March 2022</span></div>
@@ -380,7 +377,7 @@
                       </div>
                       <div class="col-md-12">
                         <div class="position-relative bdrb1 pb50">
-                          <a href="page-service-single.html" class="ud-btn btn-light-thm">See More<i class="fal fa-arrow-right-long"></i></a>
+                          <a href="#" class="ud-btn btn-light-thm">See More<i class="fal fa-arrow-right-long"></i></a>
                         </div>
                       </div>
                     </div>
@@ -435,106 +432,13 @@
           <div class="col-lg-4">
             <div class="column">
               <div class="blog-sidebar ms-lg-auto">
-                <div class="price-widget">
-                  <div class="navtab-style1">
-                    <nav>
-                      <div class="nav nav-tabs mb20" id="nav-tab2p" role="tablist">
-                        <button class="nav-link fw500" id="nav-item1p-tab" data-bs-toggle="tab" data-bs-target="#nav-item1p" type="button" role="tab" aria-controls="nav-item1p" aria-selected="true">Basic</button>
-                        <button class="nav-link active fw500" id="nav-item2p-tab" data-bs-toggle="tab" data-bs-target="#nav-item2p" type="button" role="tab" aria-controls="nav-item2p" aria-selected="false">Standart</button>
-                        <button class="nav-link fw500" id="nav-item3-tab" data-bs-toggle="tab" data-bs-target="#nav-item3p" type="button" role="tab" aria-controls="nav-item3p" aria-selected="false">Premium</button>
-                      </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade" id="nav-item1p" role="tabpanel" aria-labelledby="nav-item1p-tab">
-                        <div class="price-content">
-                          <div class="price">$50</div>
-                          <div class="h5 mb-2">High-converting Landing Pages</div>
-                          <p class="text fz14">I will redesign your current landing page or create one for you (upto 4 sections)</p>
-                          <hr class="opacity-100 mb20">
-                          <ul class="p-0 mb15 d-sm-flex align-items-center">
-                            <li class="fz14 fw500 dark-color"><i class="flaticon-sandclock fz20 text-thm2 me-2 vam"></i>3 Days Delivery</li>
-                            <li class="fz14 fw500 dark-color ml20 ml0-xs"><i class="flaticon-recycle fz20 text-thm2 me-2 vam"></i>2 Revisions</li>
-                          </ul>
-                          <div class="list-style1">
-                            <ul class="">
-                              <li class="mb15"><i class="far fa-check text-thm3 bgc-thm3-light"></i>2 Page / Screen</li>
-                              <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Source file</li>
-                            </ul>
-                          </div>
-                          <div class="d-grid">
-                            <a href="#" class="ud-btn btn-thm">Continue $50<i class="fal fa-arrow-right-long"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade show active" id="nav-item2p" role="tabpanel" aria-labelledby="nav-item2p-tab">
-                        <div class="price-content">
-                          <div class="price">$29</div>
-                          <div class="h5 mb-2">High-converting Landing Pages</div>
-                          <p class="text fz14">I will redesign your current landing page or create one for you (upto 4 sections)</p>
-                          <hr class="opacity-100 mb20">
-                          <ul class="p-0 mb15 d-sm-flex align-items-center">
-                            <li class="fz14 fw500 dark-color"><i class="flaticon-sandclock fz20 text-thm2 me-2 vam"></i>3 Days Delivery</li>
-                            <li class="fz14 fw500 dark-color ml20 ml0-xs"><i class="flaticon-recycle fz20 text-thm2 me-2 vam"></i>2 Revisions</li>
-                          </ul>
-                          <div class="list-style1">
-                            <ul class="">
-                              <li class="mb15"><i class="far fa-check text-thm3 bgc-thm3-light"></i>2 Page / Screen</li>
-                              <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Source file</li>
-                            </ul>
-                          </div>
-                          <div class="d-grid">
-                            <a href="#" class="ud-btn btn-thm">Continue $29<i class="fal fa-arrow-right-long"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade" id="nav-item3p" role="tabpanel" aria-labelledby="nav-item3p-tab">
-                        <div class="price-content">
-                          <div class="price">$250</div>
-                          <div class="h5 mb-2">High-converting Landing Pages</div>
-                          <p class="text fz14">I will redesign your current landing page or create one for you (upto 4 sections)</p>
-                          <hr class="opacity-100 mb20">
-                          <ul class="p-0 mb15 d-sm-flex align-items-center">
-                            <li class="fz14 fw500 dark-color"><i class="flaticon-sandclock fz20 text-thm2 me-2 vam"></i>3 Days Delivery</li>
-                            <li class="fz14 fw500 dark-color ml20 ml0-xs"><i class="flaticon-recycle fz20 text-thm2 me-2 vam"></i>2 Revisions</li>
-                          </ul>
-                          <div class="list-style1">
-                            <ul class="">
-                              <li class="mb15"><i class="far fa-check text-thm3 bgc-thm3-light"></i>2 Page / Screen</li>
-                              <li><i class="far fa-check text-thm3 bgc-thm3-light"></i>Source file</li>
-                            </ul>
-                          </div>
-                          <div class="d-grid">
-                            <a href="#" class="ud-btn btn-thm">Continue $250<i class="fal fa-arrow-right-long"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="freelancer-style1 service-single mb-0">
-                  <div class="wrapper d-flex align-items-center">
-                    <div class="thumb position-relative mb25">
-                      <img class="rounded-circle mx-auto" src="images/team/fl-1.png" alt="">
-                      <span class="online"></span>
+                    <div class="d-grid mt30">
+                        <a href="#" class="ud-btn btn-thm-border">Contactez<i class="fal fa-arrow-right-long"></i></a>
                     </div>
-                    <div class="ml20">
-                      <h5 class="title mb-1">Kristin Watson</h5>
-                      <p class="mb-0">Dog Trainer</p>
-                      <div class="review"><p><i class="fas fa-star fz10 review-color pr10"></i><span class="dark-color">4.9</span> (595 reviews)</p></div>
-                    </div>
-                  </div>
-                  <hr class="opacity-100">
-                  <div class="details">
-                    <div class="fl-meta d-flex align-items-center justify-content-between">
-                      <a class="meta fw500 text-start">Location<br><span class="fz14 fw400">London</span></a>
-                      <a class="meta fw500 text-start">Rate<br><span class="fz14 fw400">$90 / hr</span></a>
-                      <a class="meta fw500 text-start">Job Success<br><span class="fz14 fw400">%98</span></a>
-                    </div>
-                  </div>
-                  <div class="d-grid mt30">
-                    <a href="page-freelancer-single.html" class="ud-btn btn-thm-border">Contact Me<i class="fal fa-arrow-right-long"></i></a>
-                  </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -557,12 +461,12 @@
           <div class="col-sm-6 col-lg-3">
             <div class="listing-style1">
               <div class="list-thumb">
-                <img class="w-100" src="images/listings/g-1.jpg" alt="">
+                <img class="w-100" src="assets/images/listings/g-1.jpg" alt="">
                 <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
               </div>
               <div class="list-content">
                 <p class="list-text body-color fz14 mb-1">Web & App Design</p>
-                <h5 class="list-title"><a href="page-services-single.html">I will design modern websites in figma or adobe xd</a></h5>
+                <h5 class="list-title"><a href="#">I will design modern websites in figma or adobe xd</a></h5>
                 <div class="review-meta d-flex align-items-center">
                   <i class="fas fa-star fz10 review-color me-2"></i>
                   <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
@@ -571,7 +475,7 @@
                 <div class="list-meta d-flex justify-content-between align-items-center mt15">
                   <a href="#">
                     <span class="position-relative mr10">
-                      <img class="rounded-circle" src="images/team/fl-s-1.png" alt="Freelancer Photo">
+                      <img class="rounded-circle" src="assets/images/team/fl-s-1.png" alt="Freelancer Photo">
                       <span class="online-badge"></span>
                     </span>
                     <span class="fz14">Wanda Runo</span>
@@ -588,26 +492,26 @@
               <div class="list-thumb">
                 <div class="listing-thumbIn-slider position-relative navi_pagi_bottom_center slider-1-grid owl-carousel owl-theme">
                   <div class="item">
-                    <img class="w-100" src="images/listings/g-2.jpg" alt="">
+                    <img class="w-100" src="assets/images/listings/g-2.jpg" alt="">
                     <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                   </div>
                   <div class="item">
-                    <img class="w-100" src="images/listings/g-3.jpg" alt="">
+                    <img class="w-100" src="assets/images/listings/g-3.jpg" alt="">
                     <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                   </div>
                   <div class="item">
-                    <img class="w-100" src="images/listings/g-4.jpg" alt="">
+                    <img class="w-100" src="assets/images/listings/g-4.jpg" alt="">
                     <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                   </div>
                   <div class="item">
-                    <img class="w-100" src="images/listings/g-5.jpg" alt="">
+                    <img class="w-100" src="assets/images/listings/g-5.jpg" alt="">
                     <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                   </div>
                 </div>
               </div>
               <div class="list-content">
                 <p class="list-text body-color fz14 mb-1">Art & Illustration</p>
-                <h5 class="list-title"><a href="page-services-single.html">I will create modern flat design illustration</a></h5>
+                <h5 class="list-title"><a href="#">I will create modern flat design illustration</a></h5>
                 <div class="review-meta d-flex align-items-center">
                   <i class="fas fa-star fz10 review-color me-2"></i>
                   <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
@@ -616,7 +520,7 @@
                 <div class="list-meta d-flex justify-content-between align-items-center mt15">
                   <a href="#">
                     <span class="position-relative mr10">
-                      <img class="rounded-circle" src="images/team/fl-s-2.png" alt="Freelancer Photo">
+                      <img class="rounded-circle" src="assets/images/team/fl-s-2.png" alt="Freelancer Photo">
                       <span class="online-badge"></span>
                     </span>
                     <span class="fz14">Ali Tufan</span>
@@ -631,12 +535,12 @@
           <div class="col-sm-6 col-lg-3">
             <div class="listing-style1">
               <div class="list-thumb">
-                <img class="w-100" src="images/listings/g-3.jpg" alt="">
+                <img class="w-100" src="assets/images/listings/g-3.jpg" alt="">
                 <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
               </div>
               <div class="list-content">
                 <p class="list-text body-color fz14 mb-1">Design & Creative</p>
-                <h5 class="list-title line-clamp2"><a href="page-services-single.html">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
+                <h5 class="list-title line-clamp2"><a href="#">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
                 <div class="review-meta d-flex align-items-center">
                   <i class="fas fa-star fz10 review-color me-2"></i>
                   <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
@@ -645,7 +549,7 @@
                 <div class="list-meta d-flex justify-content-between align-items-center mt15">
                   <a href="#">
                     <span class="position-relative mr10">
-                      <img class="rounded-circle" src="images/team/fl-s-3.png" alt="Freelancer Photo">
+                      <img class="rounded-circle" src="assets/images/team/fl-s-3.png" alt="Freelancer Photo">
                       <span class="online-badge"></span>
                     </span>
                     <span class="fz14">Wanda Runo</span>
@@ -660,12 +564,12 @@
           <div class="col-sm-6 col-lg-3">
             <div class="listing-style1">
               <div class="list-thumb">
-                <img class="w-100" src="images/listings/g-4.jpg" alt="">
+                <img class="w-100" src="assets/images/listings/g-4.jpg" alt="">
                 <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
               </div>
               <div class="list-content">
                 <p class="list-text body-color fz14 mb-1">Web & App Design</p>
-                <h5 class="list-title"><a href="page-services-single.html">I will do mobile app development for ios and android</a></h5>
+                <h5 class="list-title"><a href="#">I will do mobile app development for ios and android</a></h5>
                 <div class="review-meta d-flex align-items-center">
                   <i class="fas fa-star fz10 review-color me-2"></i>
                   <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
@@ -674,7 +578,7 @@
                 <div class="list-meta d-flex justify-content-between align-items-center mt15">
                   <a href="#">
                     <span class="position-relative mr10">
-                      <img class="rounded-circle" src="images/team/fl-s-4.png" alt="Freelancer Photo">
+                      <img class="rounded-circle" src="assets/images/team/fl-s-4.png" alt="Freelancer Photo">
                       <span class="online-badge"></span>
                     </span>
                     <span class="fz14">Wanda Runo</span>
