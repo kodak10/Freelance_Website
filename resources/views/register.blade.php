@@ -13,6 +13,40 @@
 
 </style>
 
+<style>
+
+    header.nav-homepage-style {
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 7px 0;
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        color: #000000 !important;
+    }
+    header.nav-homepage-style a{
+        color: #000000 !important;
+    }
+    header.nav-homepage-style.stricky.stricky-fixed{
+        background-color: #ffffff;
+        border-bottom: 1px solid #E9E9E9;
+        -webkit-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
+        -moz-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
+        -o-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
+        box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
+        z-index: 9;
+    }
+    .btn-white, .btn-white2 {
+        background-color: #ffffff;
+        border: 2px solid #000000;
+    }
+    header.nav-homepage-style .sidemenu-btn, header.nav-homepage-style .login-info {
+        color: #000000 !important;
+        font-weight: 600;
+    }
+
+</style>
+
     <!-- SignUp  -->
     <section class="our-register">
       <div class="container">
