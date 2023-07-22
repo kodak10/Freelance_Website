@@ -27,7 +27,7 @@
             <div class="row">
               <div class="col-xl-10 col-xxl-7">
                 <div class="position-relative">
-                  <h3 class="banner-title">Trouver les meilleurs entreprises ou particuliers pour votre activité</h3>
+                  <h3 class="banner-title"><span style="color:#5BBB7B !important;">Trouver les meilleurs entreprises ou particuliers</span> pour votre activité</h3>
                   <!-- <p class="banner-text text-white ff-heading mb25">Millions of people use freeio.com to turn their ideas into reality.</p> -->
                   <div class="advance-search-tab bgc-white bgct-sm p10 p0-md bdrs4 banner-btn position-relative zi9">
                     <div class="row">
@@ -323,21 +323,6 @@
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">Web & App Design</p>
                       <h5 class="list-title"><a href="/services/details">I will design modern websites in figma or adobe xd</a></h5>
-                      <div class="review-meta d-flex align-items-center">
-                        <i class="fas fa-star fz10 review-color me-2"></i>
-                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
-                      </div>
-                      <hr class="my-2">
-                      <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                        <a class="d-flex" href="#">
-                          <span class="position-relative mr10">
-                            <img class="rounded-circle wa" src="{{asset('assets/images/team/fl-s-1.png')}}" alt="Freelancer Photo">
-                            <span class="online-badges"></span>
-                          </span>
-                          <span class="fz14">Wanda Runo</span>
-                        </a>
-
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -350,21 +335,6 @@
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">Art & Illustration</p>
                       <h5 class="list-title"><a href="/services/details">I will create modern flat design illustration</a></h5>
-                      <div class="review-meta d-flex align-items-center">
-                        <i class="fas fa-star fz10 review-color me-2"></i>
-                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
-                      </div>
-                      <hr class="my-2">
-                      <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                        <a class="d-flex" href="#">
-                          <span class="position-relative mr10">
-                            <img class="rounded-circle wa" src="{{asset('assets/images/team/fl-s-2.png')}}" alt="Freelancer Photo">
-                            <span class="online-badges"></span>
-                          </span>
-                          <span class="fz14">Ali Tufan</span>
-                        </a>
-
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -377,21 +347,6 @@
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">Design & Creative</p>
                       <h5 class="list-title line-clamp2"><a href="/services/details">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
-                      <div class="review-meta d-flex align-items-center">
-                        <i class="fas fa-star fz10 review-color me-2"></i>
-                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
-                      </div>
-                      <hr class="my-2">
-                      <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                        <a class="d-flex" href="#">
-                          <span class="position-relative mr10">
-                            <img class="rounded-circle" src="{{asset('assets/images/team/fl-s-3.png')}}" alt="Freelancer Photo">
-                            <span class="online-badges"></span>
-                          </span>
-                          <span class="fz14">Wanda Runo</span>
-                        </a>
-
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -404,21 +359,6 @@
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">Web & App Design</p>
                       <h5 class="list-title line-clamp2"><a href="/services/details">I will do mobile app development for ios and android</a></h5>
-                      <div class="review-meta d-flex align-items-center">
-                        <i class="fas fa-star fz10 review-color me-2"></i>
-                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
-                      </div>
-                      <hr class="my-2">
-                      <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                        <a class="d-flex" href="#">
-                          <span class="position-relative mr10">
-                            <img class="rounded-circle" src="{{asset('assets/images/team/fl-s-4.png')}}" alt="Freelancer Photo">
-                            <span class="online-badges"></span>
-                          </span>
-                          <span class="fz14">Wanda Runo</span>
-                        </a>
-
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -431,21 +371,6 @@
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">Web & App Design</p>
                       <h5 class="list-title"><a href="/services/details">I will design modern websites in figma or adobe xd</a></h5>
-                      <div class="review-meta d-flex align-items-center">
-                        <i class="fas fa-star fz10 review-color me-2"></i>
-                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
-                      </div>
-                      <hr class="my-2">
-                      <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                        <a class="d-flex" href="#">
-                          <span class="position-relative mr10">
-                            <img class="rounded-circle" src="{{asset('assets/images/team/fl-s-1.png')}}" alt="Freelancer Photo">
-                            <span class="online-badges"></span>
-                          </span>
-                          <span class="fz14">Wanda Runo</span>
-                        </a>
-
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -458,21 +383,6 @@
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">Web & App Design</p>
                       <h5 class="list-title"><a href="/services/details">I will design modern websites in figma or adobe xd</a></h5>
-                      <div class="review-meta d-flex align-items-center">
-                        <i class="fas fa-star fz10 review-color me-2"></i>
-                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
-                      </div>
-                      <hr class="my-2">
-                      <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                        <a class="d-flex" href="#">
-                          <span class="position-relative mr10">
-                            <img class="rounded-circle" src="{{asset('assets/images/team/fl-s-2.png')}}" alt="Freelancer Photo">
-                            <span class="online-badges"></span>
-                          </span>
-                          <span class="fz14">Wanda Runo</span>
-                        </a>
-
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -485,21 +395,6 @@
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">Design & Creative</p>
                       <h5 class="list-title line-clamp2"><a href="/services/details">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
-                      <div class="review-meta d-flex align-items-center">
-                        <i class="fas fa-star fz10 review-color me-2"></i>
-                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
-                      </div>
-                      <hr class="my-2">
-                      <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                        <a class="d-flex" href="#">
-                          <span class="position-relative mr10">
-                            <img class="rounded-circle" src="{{asset('assets/images/team/fl-s-3.png')}}" alt="Freelancer Photo">
-                            <span class="online-badges"></span>
-                          </span>
-                          <span class="fz14">Wanda Runo</span>
-                        </a>
-
-                      </div>
                     </div>
                   </div>
                 </div>

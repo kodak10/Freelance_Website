@@ -1,6 +1,40 @@
 @extends('layouts.app')
 @section('content')
 
+<style>
+
+    header.nav-homepage-style {
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 7px 0;
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        color: #000000 !important;
+    }
+    header.nav-homepage-style a{
+        color: #000000 !important;
+    }
+    header.nav-homepage-style.stricky.stricky-fixed{
+        background-color: #ffffff;
+        border-bottom: 1px solid #E9E9E9;
+        -webkit-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
+        -moz-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
+        -o-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
+        box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
+        z-index: 9;
+    }
+    .btn-white, .btn-white2 {
+        background-color: #ffffff;
+        border: 2px solid #000000;
+    }
+    header.nav-homepage-style .sidemenu-btn, header.nav-homepage-style .login-info {
+        color: #000000 !important;
+        font-weight: 600;
+    }
+
+</style>
+
     <!-- Blog Section -->
     <section class="breadcumb-section">
       <div class="container">
@@ -8,7 +42,7 @@
           <div class="col-lg-12">
             <div class="breadcumb-style1">
               <div class="breadcumb-list">
-                <a href="#">Home</a>
+                <a href="#">Accueil</a>
                 <a href="#">Blog</a>
               </div>
             </div>
@@ -21,8 +55,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="main-title mb50">
-              <h2 class="title">Freeio Blog</h2>
-              <p class="text mb-0">Give your visitor a smooth online experience with a solid UX design</p>
+              <h2 class="title">Projet en cours ... Blog</h2>
             </div>
           </div>
         </div>
@@ -940,7 +973,6 @@
                 <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
               </li>
             </ul>
-            <p class="mt10 mb-0 pagination_page_count text-center">1 – 20 of 300+ property available</p>
           </div>
         </div>
       </div>
