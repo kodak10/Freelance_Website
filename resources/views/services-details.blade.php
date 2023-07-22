@@ -42,7 +42,6 @@
                 <span class="icon flaticon-share dark-color fz12 mr10"></span>
                 <div class="h6 mb-0">Partager</div>
               </div>
-
             </div>
           </div>
         </div>
