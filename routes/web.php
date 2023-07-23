@@ -40,3 +40,19 @@ Route::get('/administration', function () {
 Route::get('/administration/detail', function () {
     return view('Administration.detail');
 });
+
+Route::get('/client', function () {
+    return view('Client.home');
+});
+
+Route::get('/client/detail', function () {
+    return view('Client.detail');
+});
+
+Route::get('/entreprise', function () {
+    return view('Entreprise.home');
+});
+
+Route::get('/entreprise/detail', function () {
+    return view('Entreprise.detail');
+});
