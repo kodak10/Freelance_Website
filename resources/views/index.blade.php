@@ -1,6 +1,12 @@
 @extends('layouts.app')
 @section('content')
 
+<style>
+    .mobilie_header_nav{
+        background-color: #000000 !important;
+    }
+</style>
+
     <!-- Home Banner -->
     <section class="home-one p-0 space-maintain-1">
 
