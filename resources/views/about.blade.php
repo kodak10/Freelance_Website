@@ -44,7 +44,6 @@
             <div class="col-xl-5">
               <div class="position-relative">
                 <h2 class="text-white">A propos</h2>
-                <p class="text-white mb30">Offrez à votre visiteur une expérience en ligne fluide avec un design UX solide</p>
               </div>
             </div>
           </div>
@@ -63,7 +62,7 @@
           </div>
           <div class="col-md-6 col-xl-5 offset-xl-1">
             <div class="position-relative wow fadeInLeft" data-wow-delay="300ms">
-              <h2 class="mb25">rejoignez la meilleure place de marché au monde <br class="d-none d-xl-block">pour les travailleurs</h2>
+              <h2 class="mb25">Rejoignez la meilleure place de marché au monde <br class="d-none d-xl-block">pour les travailleurs</h2>
               <p class="text mb25">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres, par opposition à l'utilisation de "Contenu ici, contenu ici", ce qui donne l'impression qu'il est lisible en anglais..</p>
               <div class="list-style2">
                 <ul class="mb20">
@@ -221,74 +220,83 @@
 
     <!-- Our Testimonials -->
     <section class="our-testimonial">
-      <div class="container wow fadeInUp" data-wow-delay="300ms">
-        <div class="row">
-          <div class="col-lg-6 m-auto">
-            <div class="main-title text-center">
-              <h2 class="title">Ce que nos étudiants ont à dire</h2>
-              <p class="paragraph mt10">Découvrez votre programme parfait dans nos cours.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
+              <div class="main-title text-center">
+                <h2>Témoignages</h2>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, magni.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-10 mx-auto">
-            <div class="home2_testimonial_tabs position-relative">
-              <div class="tab-content" id="pills-tabContent2">
-                <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <div class="testimonial-style2 at-about2 text-center">
-                    <div class="testi-content text-center">
+          <div class="row">
+            <div class="col-lg-8 m-auto wow fadeInUp" data-wow-delay="500ms">
+              <div class="testimonial-style2">
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade" id="pills-1st" role="tabpanel" aria-labelledby="pills-1st-tab">
+                    <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Notre famille voyageait en train à grande vitesse entre les villes du Japon avec nos bagages - l'emplacement de cet hôtel a rendu cela si facile. Le prix Agoda était fantastique. "</h4>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show active" id="pills-2nd" role="tabpanel" aria-labelledby="pills-2nd-tab">
+                    <div class="testi-content text-md-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-3rd" role="tabpanel" aria-labelledby="pills-3rd-tab">
+                    <div class="testi-content text-md-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-4th" role="tabpanel" aria-labelledby="pills-4th-tab">
+                    <div class="testi-content text-md-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-5th" role="tabpanel" aria-labelledby="pills-5th-tab">
+                    <div class="testi-content text-md-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  <div class="testimonial-style2 at-about2 text-center">
-                    <div class="testi-content text-center">
-                      <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Notre famille voyageait en train à grande vitesse entre les villes du Japon avec nos bagages - l'emplacement de cet hôtel a rendu cela si facile. Le prix Agoda était fantastique. "</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                  <div class="testimonial-style2 at-about2 text-center">
-                    <div class="testi-content text-center">
-                      <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Notre famille voyageait en train à grande vitesse entre les villes du Japon avec nos bagages - l'emplacement de cet hôtel a rendu cela si facile. Le prix Agoda était fantastique. "</h4>
-                    </div>
-                  </div>
+                <div class="tab-list position-relative">
+                  <ul class="nav nav-pills justify-content-md-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link ps-0" id="pills-1st-tab" data-bs-toggle="pill" data-bs-target="#pills-1st" type="button" role="tab" aria-controls="pills-1st" aria-selected="true"><img src="{{asset('assets/images/testimonials/testi-1.png')}}" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-2nd-tab" data-bs-toggle="pill" data-bs-target="#pills-2nd" type="button" role="tab" aria-controls="pills-2nd" aria-selected="false"><img src="{{asset('assets/images/testimonials/testi-2.png')}}" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-3rd-tab" data-bs-toggle="pill" data-bs-target="#pills-3rd" type="button" role="tab" aria-controls="pills-3rd" aria-selected="false"><img src="{{asset('assets/images/testimonials/testi-3.png')}}" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-4th-tab" data-bs-toggle="pill" data-bs-target="#pills-4th" type="button" role="tab" aria-controls="pills-4th" aria-selected="false"><img src="{{asset('assets/images/testimonials/testi-4.png')}}" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link pe-0" id="pills-5th-tab" data-bs-toggle="pill" data-bs-target="#pills-5th" type="button" role="tab" aria-controls="pills-5th" aria-selected="false"><img src="{{asset('assets/images/testimonials/testi-5.png')}}" alt=""></button>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <ul class="nav justify-content-center" id="pills-tab2" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-                    <div class="thumb d-flex align-items-center">
-                      <img class="rounded-circle" src="{{asset('assets/images/testimonials/1.jpg')}}" alt="1.jpg">
-                      <h6 class="title ml30 ml15-xl mb-0">Albert Cole<br><small>Designer</small></h6>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
-                    <div class="thumb d-flex align-items-center">
-                      <img class="rounded-circle" src="{{asset('assets/images/testimonials/2.jpg')}}" alt="2.jpg">
-                      <h6 class="title ml30 ml15-xl mb-0">Alison Dawn<br><small>WP Developer</small></h6>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
-                    <div class="thumb d-flex align-items-center">
-                      <img class="rounded-circle" src="{{asset('assets/images/testimonials/3.jpg')}}" alt="3.jpg">
-                      <h6 class="title ml30 ml15-xl mb-0">Daniel Parker<br><small>Front-end Developer</small></h6>
-                    </div>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- CTA Banner -->
