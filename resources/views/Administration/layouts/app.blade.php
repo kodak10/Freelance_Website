@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html  lang="fr">
 
 <head>
 
@@ -11,7 +11,6 @@
 
     <!-- css file -->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/jquery-ui.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/ace-responsive-menu.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/menu.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/fontawesome.css')}}">
@@ -19,15 +18,17 @@
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap-select.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/slider.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/jquery-ui.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/ud-custom-spacing.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/dashbord_navitaion.css')}}">
 
-    <!-- Responsive stylesheet -->
+    <!-- Responsive -->
     <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
 
     <!-- Title -->
-    <title>Projet en Cours ...</title>
+    <title>Projet en Cours ... Service Client</title>
 
     <!-- Favicon -->
     <link href="{{asset('assets/images/favicon.png')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
@@ -39,29 +40,19 @@
 
 <body>
 
-    <div class="wrapper ovh">
+    <div class="wrapper">
 
         <div class="preloader"></div>
 
-        <!-- Header -->
-        @include('layouts.navbar')
+        @include('Administration.layouts.navbar')
 
-        <div class="body_content">
+        @yield('content')
 
-            <!-- Contenu -->
-            @yield('content')
-
-            <!-- Footer -->
-            @include('layouts.footer')
-
-            <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a> <!-- Top -->
-
-        </div>
+        <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
 
     </div>
 
-
-    <!-- Vendor End -->
+    <!-- Wrapper End -->
     <script src="{{asset('assets/js/jquery-3.6.4.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery-migrate-3.0.0.min.js')}}"></script>
     <script src="{{asset('assets/js/popper.min.js')}}"></script>
@@ -69,13 +60,14 @@
     <script src="{{asset('assets/js/bootstrap-select.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery.mmenu.all.js')}}"></script>
     <script src="{{asset('assets/js/ace-responsive-menu.js')}}"></script>
+    <script src="{{asset('assets/js/chart.min.js')}}"></script>
+    <script src="{{asset('assets/js/chart-custome.js')}}"></script>
     <script src="{{asset('assets/js/jquery-scrolltofixed-min.js')}}"></script>
-    <script src="{{asset('assets/js/wow.min.js')}}"></script>
-    <script src="{{asset('assets/js/owl.js')}}"></script>
-    <script src="{{asset('assets/js/parallax.js')}}"></script>
+    <script src="{{asset('assets/js/dashboard-script.js')}}"></script>
 
-    <!-- Script -->
+    <!-- Custom script for all pages -->
     <script src="{{asset('assets/js/script.js')}}"></script>
+
 </body>
 
 </html>
