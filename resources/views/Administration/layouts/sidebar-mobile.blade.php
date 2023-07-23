@@ -11,7 +11,7 @@
             <li><a href="#"><i class="flaticon-review-1 mr10"></i>Les Services</a></li>
             <li><p class="fz15 fw400 ff-heading mt30 pl30">Comptes</p></li>
             <li><a href="#"><i class="flaticon-receipt mr10"></i>Accès utilisateurs</a></li>
-            <li><a href="#"><i class="flaticon-logout mr10"></i>Se Déconnecter</a></li>
+            <li><a href="/"><i class="flaticon-logout mr10"></i>Se Déconnecter</a></li>
         </ul>
     </div>
 </div>

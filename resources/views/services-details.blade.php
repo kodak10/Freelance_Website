@@ -315,7 +315,7 @@
                         </div>
                       </div>
                       <div class="col-md-12">
-                        <a href="#" class="ud-btn btn-thm">Envoyer<i class="fal fa-arrow-right-long"></i></a>
+                        <a href="#" class="ud-btn btn-thm">Demander un devis<i class="fal fa-arrow-right-long"></i></a>
                       </div>
                     </div>
                   </form>

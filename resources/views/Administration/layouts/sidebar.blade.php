@@ -5,7 +5,7 @@
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Gestion des inscriptions</p>
         <div class="sidebar_list_item">
-            <a href="#" class="items-center"><i class="flaticon-document mr15"></i>Demandes d'inscription</a>
+            <a href="/administration" class="items-center"><i class="flaticon-document mr15"></i>Demandes d'inscription</a>
         </div>
         <div class="sidebar_list_item">
             <a href="#" class="items-center"><i class="flaticon-like mr15"></i>Demandes de Services </a>
@@ -23,7 +23,7 @@
             <a href="#" class="items-center"><i class="flaticon-user mr15"></i>Accès utilisateurs</a>
         </div>
         <div class="sidebar_list_item ">
-            <a href="#" class="items-center"><i class="flaticon-logout mr15"></i>Se Déconnecter</a>
+            <a href="/" class="items-center"><i class="flaticon-logout mr15"></i>Se Déconnecter</a>
         </div>
     </div>
 </div>

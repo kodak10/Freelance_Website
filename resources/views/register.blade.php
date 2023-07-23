@@ -82,17 +82,13 @@
                     <form action="">
 
                         <div class="mb20">
-                            <label class="form-label fw600 dark-color">Email</label>
-                            <input type="email" class="form-control" placeholder="projetencours@gmail.com">
+                            <label class="form-label fw600 dark-color">Nom</label>
+                            <input type="text" class="form-control" placeholder="Kouassi">
                         </div>
-                        <div class="mb15">
-                            <label class="form-label fw600 dark-color">Mot de passe</label>
-                            <input type="text" class="form-control" placeholder="*******">
-                        </div>
-
-                        <div class="d-grid mb20">
-                            <button class="ud-btn btn-thm default-box-shadow2" type="button">S'Inscrire <i class="fal fa-arrow-right-long"></i></button>
-                        </div>
+                        <div class="mb20">
+                            <label class="form-label fw600 dark-color">Prenoms</label>
+                            <input type="text" class="form-control" placeholder="Jean-Dubois">
+                        </div> 
                     </form>
                 </div>
 
@@ -100,8 +96,10 @@
                 <div class="tab-pane fade" id="pills-entreprise" role="tabpanel" aria-labelledby="pills-entreprise-tab">
                     <form action="">
 
-                        <div class="mb20">
-                            <label class="form-label fw600 dark-color">Email</label>
+                            <div class="mb20">
+                               <label class="form-label fw600 dark-color">Nom d'entreprise</label>
+                               <input type="text" class="form-control" placeholder="Holding industries">
+                            </div>
                             <select class="form-select form-select-md mb-3 form-control" aria-label=".form-select-lg example">
                                 <option selected>Selectionner le type d'entreprise</option>
                                 <option value="nationale">Nationale</option>
@@ -114,12 +112,13 @@
                         </div>
                         <div class="mb15">
                             <label class="form-label fw600 dark-color">Mot de passe</label>
-                            <input type="text" class="form-control" placeholder="*******">
+                            <input type="password" class="form-control" placeholder="*******">
                         </div>
-
                         <div class="d-grid mb20">
-                            <button class="ud-btn btn-thm default-box-shadow2" type="button">S'Inscrire <i class="fal fa-arrow-right-long"></i></button>
-                          </div>
+                            <a href="/administration" >
+                              <button class="ud-btn btn-thm default-box-shadow2" type="button" style=" text-align :center; width :100%">S'Inscrire <i class="fal fa-arrow-right-long"></i></button>
+                            </a>
+                        </div>   
                     </form>
                 </div>
 

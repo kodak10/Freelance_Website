@@ -44,8 +44,8 @@
           <div class="row">
             <div class="col-xl-5">
               <div class="position-relative wow fadeInUp" data-wow-delay="300ms">
-                <h2 class="text-white">Contact us</h2>
-                <p class="text mb0 text-white">We'd love to talk about how we can help you.</p>
+                <h2 class="text-white">Contactez-nous</h2>
+                <p class="text mb0 text-white">Nous serions ravis de discuter de la manière dont nous pouvons vous aider.</p>
               </div>
             </div>
           </div>
@@ -59,41 +59,41 @@
           <div class="col-lg-6">
             <div class="position-relative mt40">
               <div class="main-title">
-                <h4 class="form-title mb25">Keep In Touch With Us.</h4>
-                <p class="text">Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis.</p>
+                <h4 class="form-title mb25">Restez en contact avec nous.</h4>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquid!.</p>
               </div>
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
                 <div class="icon flex-shrink-0"><span class="flaticon-tracking"></span></div>
                 <div class="details">
-                  <h5 class="title">Address</h5>
-                  <p class="mb-0 text">328 Queensberry Street, North <br> Melbourne VIC 3051, Australia.</p>
+                  <h5 class="title">Addresse</h5>
+                  <p class="mb-0 text">72PP+XW5, Abidjan.</p>
                 </div>
               </div>
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
                 <div class="icon flex-shrink-0"><span class="flaticon-call"></span></div>
                 <div class="details">
-                  <h5 class="title">Phone</h5>
-                  <p class="mb-0 text">+(0) 392 94 03 01</p>
+                  <h5 class="title">Telephone</h5>
+                  <p class="mb-0 text">+(0) 000 000 0000</p>
                 </div>
               </div>
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
                 <div class="icon flex-shrink-0"><span class="flaticon-mail"></span></div>
                 <div class="details">
                   <h5 class="title">Email</h5>
-                  <p class="mb-0 text">hello@freeio.com</p>
+                  <p class="mb-0 text">Proposedesservices@gmail.com</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="contact-page-form default-box-shadow1 bdrs8 bdr1 p50 mb30-md bgc-white">
-              <h4 class="form-title mb25">Tell us about yourself</h4>
-              <p class="text mb30">Whether you have questions or you would just like to say hello, contact us.</p>
+              <h4 class="form-title mb25">Parlez nous de vous</h4>
+              <p class="text mb30">Que vous ayez des questions ou que vous souhaitiez simplement dire bonjour, contactez-nous.</p>
               <form action="#" class="form-style1">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb20">
-                      <label class="heading-color ff-heading fw500 mb10" for="">Name</label>
+                      <label class="heading-color ff-heading fw500 mb10" for="">Nom</label>
                       <input type="text" class="form-control" placeholder="Ali">
                     </div>
                   </div>
@@ -111,7 +111,7 @@
                   </div>
                   <div class="col-md-12">
                     <div class="">
-                      <a class="ud-btn btn-thm" href="#">En<i class="fal fa-arrow-right-long"></i></a>
+                      <a class="ud-btn btn-thm" href="#">Envoyer<i class="fal fa-arrow-right-long"></i></a>
                     </div>
                   </div>
                 </div>
@@ -125,7 +125,7 @@
     <!-- Google Map -->
     <section class="p-0 wow fadeInUp" data-wow-delay="300ms">
       <div class="mx-auto maxw1700 bdrs16 position-relative mx20-lg">
-        <iframe class="contact-page-map" loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.841647296339!2d-3.965226925366187!3d5.28739159469083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ef4f28d7281f%3A0xa2324ced14932932!2sAGORA%20KOUMASSI!5e0!3m2!1sfr!2sci!4v1690083652291!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
@@ -135,7 +135,7 @@
         <div class="row">
           <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
             <div class="main-title text-center">
-              <h2 class="title">Frequently Asked Questions</h2>
+              <h2 class="title">Questions fréquemment posées</h2>
               <p class="paragraph mt10">Lorem ipsum dolor sit amet, consectetur.</p>
             </div>
           </div>
@@ -147,42 +147,42 @@
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item active">
                     <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What methods of payments are supported?</button>
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Quels modes de paiement sont pris en charge?</button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus minus nemo ex omnis cumque, tempora recusandae ratione, dignissimos, commodi fuga quisquam et ad ut rem.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I cancel at anytime?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Puis-je annuler à tout moment?</button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How do I get a receipt for my purchase?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Comment obtenir un reçu pour mon achat?</button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Which license do I need?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">De quelle licence ai-je besoin?</button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">How do I get access to a theme I purchased?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Comment accéder à un thème que j'ai acheté?</button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
                     </div>
                   </div>
                 </div>

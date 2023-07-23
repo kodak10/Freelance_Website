@@ -431,7 +431,7 @@
               <div class="iconbox-style1 border-less p-0">
                 <div class="icon before-none"><span class="flaticon-web-design"></span></div>
                 <div class="details">
-                  <h4 class="title mt10 mb-3">Lorem ipsum dolor sit amet consectetur</h4>
+                  <h4 class="title mt10 mb-3">Choisissez des freelancers</h4>
                   <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
               </div>
@@ -440,7 +440,7 @@
               <div class="iconbox-style1 border-less p-0">
                 <div class="icon before-none"><span class="flaticon-secure"></span></div>
                 <div class="details">
-                  <h4 class="title mt10 mb-3">Lorem ipsum dolor sit amet consectetur</h4>
+                  <h4 class="title mt10 mb-3">payer en toute sécurité</h4>
                   <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
               </div>
@@ -449,7 +449,7 @@
               <div class="iconbox-style1 border-less p-0">
                 <div class="icon before-none"><span class="flaticon-customer-service"></span></div>
                 <div class="details">
-                  <h4 class="title mt10 mb-3">Lorem ipsum dolor sit amet consectetur</h4>
+                  <h4 class="title mt10 mb-3">Service clientèle</h4>
                   <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
               </div>
@@ -466,7 +466,7 @@
             <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
               <div class="main-title text-center">
                 <h2>Témoignages</h2>
-                <p class="paragraph">Interdum et malesuada fames ac ante ipsum</p>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, magni.</p>
               </div>
             </div>
           </div>

@@ -36,3 +36,7 @@ Route::get('/administration/login', function () {
 Route::get('/administration', function () {
     return view('Administration.home');
 });
+
+Route::get('/administration/detail', function () {
+    return view('Administration.detail');
+});

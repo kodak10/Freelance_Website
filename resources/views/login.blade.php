@@ -54,6 +54,7 @@
                 </div>
 
                 <form action="">
+
                     <div class="mb20">
                         <label class="form-label fw600 dark-color">Email</label>
                         <input type="email" class="form-control" placeholder="projetencours@gmail.com">
