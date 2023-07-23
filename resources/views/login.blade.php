@@ -55,7 +55,7 @@
                     <p class="text">Vous n'avez pas de compte ? <a href="/register" class="text-thm fw-bold">S'inscrire</a></p>
                 </div>
 
-                <form action="/administration">
+                <form action="">
 
                     <div class="mb20">
                         <label class="form-label fw600 dark-color">Email</label>
