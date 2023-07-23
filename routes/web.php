@@ -1,7 +1,12 @@
 <?php
 
+use App\Http\Controllers\accesUtilisateurController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\secteurController;
+use App\Http\Controllers\serviceController;
+use App\Http\Controllers\departementController;
+use App\Http\Controllers\demandesInscriptionController;
 
 
 
@@ -37,6 +42,17 @@ Route::get('/administration/login', function () {
 Route::get('/administration', function () {
     return view('Administration.home');
 });
+// route des departements
+Route::resource('departements', departementController::class);
+// route des secteurs
+Route::resource('secteurs', secteurController::class);
+// route des services
+Route::resource('services', serviceController::class);
+// route des demandes d inscription
+Route::resource('demandes_inscription', demandesInscriptionController::class);
+// route des acces users
+Route::resource('acces_utilisateurs', accesUtilisateurController::class);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

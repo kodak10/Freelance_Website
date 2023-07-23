@@ -29,13 +29,16 @@ class HomeController extends Controller
     {
         // dd(Auth::user());
         if (Auth::user()->isAdmin == 1) {
-            return view('Administration.home');
+            $enterprisesToApprove = Client::where('approve', '=', false)->get();
+            $User = User::all();
+            $Counter = 1;
+            return view('Administration.home', compact('enterprisesToApprove', 'Counter', 'User'));
         } else {
             $id_client = Auth::user()->id_client;
             $userConnected = Client::find($id_client);
             // dd($userConnected);
             if ($userConnected->id_type_client == 2) {
-                if ($userConnected->approve == false) {
+                if ($userConnected->approve == 0) {
                     auth()->logout();
                     return redirect('/login')->with('not_approved', 'not_approved');
                 }
@@ -47,10 +50,11 @@ class HomeController extends Controller
     }
     public function logout()
     {
-        auth()->logout();
         if (Auth::user()->isAdmin == 1) {
+            auth()->logout();
             return redirect('/login');
         } else {
+            auth()->logout();
             // redirect to homepage
             return redirect('/');
         }
