@@ -1,4 +1,4 @@
-@extends('Administration.layouts.app')
+@extends('entreprise.layouts.app')
 @section('content')
 
 
@@ -6,18 +6,18 @@
 
     <div class="dashboard dashboard_wrapper pr30 pr0-xl">
 
-        @include('Administration.layouts.sidebar')
+        @include('entreprise.layouts.sidebar')
 
         <div class="dashboard__main pl0-md">
             <div class="dashboard__content hover-bgc-color">
                 <div class="row pb40">
                     <div class="col-lg-12">
-                        @include('Administration.layouts.sidebar-mobile')
+                        @include('entreprise.layouts.sidebar-mobile')
 
                     </div>
                     <div class="col-lg-12">
                         <div class="dashboard_title_area">
-                            <h2>Dashboard</h2>
+                            <h2>Entreprise</h2>
                             <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style1">In Progress</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -114,7 +114,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style2">Completed</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -125,7 +125,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style2">Completed</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -136,7 +136,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style3">Cancel</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -147,7 +147,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style3">Cancel</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -158,7 +158,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style2">Completed</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -169,7 +169,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style2">Completed</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -180,7 +180,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style1">In Progress</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -191,7 +191,7 @@
                                             <td class="vam">$1.200</td>
                                             <td class="vam"><span class="pending-style style3">Cancel</span></td>
                                             <td class="vam">
-                                                <a href="/administration/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
+                                                <a href="/entreprise/detail" class="table-action fz15 fw500 text-thm2" data-bs-toggle="tooltip" data-bs-placement="top" title="Plus de détail"><span class="flaticon-website me-2 vam"></span> Plus de détail</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -222,7 +222,7 @@
                 </div>
             </div>
 
-            @include('Administration.layouts.footer')
+            @include('entreprise.layouts.footer')
             
         </div>
     </div>

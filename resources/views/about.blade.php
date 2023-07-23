@@ -43,8 +43,7 @@
           <div class="row">
             <div class="col-xl-5">
               <div class="position-relative">
-                <h2 class="text-white">About</h2>
-                <p class="text-white mb30">Give your visitor a smooth online experience with a solid UX design</p>
+                <h2 class="text-white">A propos</h2>
               </div>
             </div>
           </div>
@@ -63,16 +62,16 @@
           </div>
           <div class="col-md-6 col-xl-5 offset-xl-1">
             <div class="position-relative wow fadeInLeft" data-wow-delay="300ms">
-              <h2 class="mb25">Join World's Best Marketplace <br class="d-none d-xl-block"> for Workers</h2>
-              <p class="text mb25">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              <h2 class="mb25">Rejoignez la meilleure place de marché au monde <br class="d-none d-xl-block">pour les travailleurs</h2>
+              <p class="text mb25">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres, par opposition à l'utilisation de "Contenu ici, contenu ici", ce qui donne l'impression qu'il est lisible en anglais..</p>
               <div class="list-style2">
                 <ul class="mb20">
-                  <li><i class="far fa-check"></i>Connect to freelancers with proven business experience</li>
-                  <li><i class="far fa-check"></i>Get matched with the perfect talent by a customer success manager</li>
-                  <li><i class="far fa-check"></i>Unmatched quality of remote, hybrid, and flexible jobs</li>
+                  <li><i class="far fa-check"></i>Connectez-vous à des pigistes ayant une expérience commerciale éprouvée</li>
+                  <li><i class="far fa-check"></i>Faites-vous associer au talent parfait par un responsable de la réussite client</li>
+                  <li><i class="far fa-check"></i>Qualité inégalée des emplois à distance, hybrides et flexibles</li>
                 </ul>
               </div>
-              <a href="#" class="ud-btn btn-thm-border">Find Talent<i class="fal fa-arrow-right-long"></i></a>
+              <a href="#" class="ud-btn btn-thm-border">Trouver des talents<i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
@@ -101,7 +100,7 @@
                   <li><div class="timer">732</div></li>
                   <li><span>M</span></li>
                 </ul>
-                <p class="text mb-0">Positive Review</p>
+                <p class="text mb-0">Avis positif</p>
               </div>
             </div>
           </div>
@@ -112,7 +111,7 @@
                   <li><div class="timer">90</div></li>
                   <li><span>M</span></li>
                 </ul>
-                <p class="text mb-0">Order recieved</p>
+                <p class="text mb-0">Ordre reçu</p>
               </div>
             </div>
           </div>
@@ -123,7 +122,7 @@
                   <li><div class="timer">236</div></li>
                   <li><span>M</span></li>
                 </ul>
-                <p class="text mb-0">Projects Completed</p>
+                <p class="text mb-0">Projets terminés</p>
               </div>
             </div>
           </div>
@@ -139,29 +138,29 @@
             <div class="col-md-6 col-xl-5 pl30-md pl15-xs wow fadeInRight" data-wow-delay="500ms">
               <div class="mb30">
                 <div class="main-title">
-                  <h2 class="title">A whole world of freelance <br class="d-none d-lg-block"> talent at your fingertips</h2>
+                  <h2 class="title">De nombreux freelancers de <br class="d-none d-lg-block"> talent à portée de doigts</h2>
                 </div>
               </div>
               <div class="why-chose-list">
                 <div class="list-one d-flex align-items-start mb30">
                   <span class="list-icon flex-shrink-0 flaticon-badge"></span>
                   <div class="list-content flex-grow-1 ml20">
-                    <h4 class="mb-1">Proof of quality</h4>
-                    <p class="text mb-0 fz15">Check any pro’s work samples, client reviews, and identity <br class="d-none d-lg-block"> verification.</p>
+                    <h4 class="mb-1">Preuve de qualité</h4>
+                    <p class="text mb-0 fz15">Vérifiez les échantillons de travail de n'importe quel pro, les avis des clients et la vérification <br class="d-none d-lg-block"> d'identité .</p>
                   </div>
                 </div>
                 <div class="list-one d-flex align-items-start mb30">
                   <span class="list-icon flex-shrink-0 flaticon-money"></span>
                   <div class="list-content flex-grow-1 ml20">
-                    <h4 class="mb-1">No cost until you hire</h4>
-                    <p class="text mb-0 fz15">Interview potential fits for your job, negotiate rates, and only pay <br class="d-none d-lg-block"> for work you approve.</p>
+                    <h4 class="mb-1">Aucun frais jusqu'à ce que vous embauchiez</h4>
+                    <p class="text mb-0 fz15">Interviewez les candidats potentiels pour votre travail, négociez les tarifs et ne payez que <br class="d-none d-lg-block"> pour le travail que vous approuvez.</p>
                   </div>
                 </div>
                 <div class="list-one d-flex align-items-start mb30">
                   <span class="list-icon flex-shrink-0 flaticon-security"></span>
                   <div class="list-content flex-grow-1 ml20">
-                    <h4 class="mb-1">Safe and secure</h4>
-                    <p class="text mb-0 fz15">Focus on your work knowing we help protect your data and privacy. We’re here with 24/7 support if you need it.</p>
+                    <h4 class="mb-1">Sûr et sécurisé</h4>
+                    <p class="text mb-0 fz15">Concentrez-vous sur votre travail en sachant que nous aidons à protéger vos données et votre vie privée. Nous sommes là avec une assistance 24h/24 et 7j/7 si vous en avez besoin.</p>
                   </div>
                 </div>
               </div>
@@ -182,9 +181,9 @@
         <div class="row align-items-center">
           <div class="col-md-6 col-xl-4 offset-xl-1 wow fadeInRight" data-wow-delay="100ms">
             <div class="cta-style6 mb30-sm">
-              <h2 class="cta-title mb25">Find the talent needed to <br class="d-none d-lg-block">get your business growing.</h2>
+              <h2 class="cta-title mb25">Trouvez les talents nécessaires pour <br class="d-none d-lg-block">faire croître votre entreprise.</h2>
               <p class="text-thm2 fz15 mb25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br class="d-none d-md-block"> do eiusmod tempor incididunt.</p>
-              <a href="#" class="ud-btn btn-thm">Get Started <i class="fal fa-arrow-right-long"></i></a>
+              <a href="#" class="ud-btn btn-thm">Commencer <i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
           <div class="col-md-6 col-xl-6 offset-xl-1 wow fadeInLeft" data-wow-delay="300ms">
@@ -195,22 +194,22 @@
                     <li><div class="timer title mb15">4</div></li>
                     <li><span>.9/5</span></li>
                   </ul>
-                  <p class="fz15 dark-color">Clients rate <br>professionals on Freeio</p>
+                  <p class="fz15 dark-color">Les clients évaluent  <br>les professionnels sur Freeio</p>
                 </div>
                 <div class="funfact-style1 bdrs16 text-center ms-md-auto">
                   <ul class="ps-0 mb-0 d-flex justify-content-center">
                     <li><div class="timer title mb15">96</div></li>
                     <li><span>%</span></li>
                   </ul>
-                  <p class="fz15 dark-color">95% of customers are satisfied through to see their <br>freelancers</p>
+                  <p class="fz15 dark-color">95% des clients sont satisfaits de voir leurs <br>freelances</p>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="funfact-style1 bdrs16 text-center">
                   <ul class="ps-0 mb-0 d-flex justify-content-center">
-                    <li><div class="title mb15">Award</div></li>
+                    <li><div class="title mb15">Prix</div></li>
                   </ul>
-                  <p class="fz15 dark-color">G2’s 2021 Best <br>Software Awards</p>
+                  <p class="fz15 dark-color">G2’s 2023 Meilleures <br>Récompenses logicielles</p>
                 </div>
               </div>
             </div>
@@ -221,74 +220,83 @@
 
     <!-- Our Testimonials -->
     <section class="our-testimonial">
-      <div class="container wow fadeInUp" data-wow-delay="300ms">
-        <div class="row">
-          <div class="col-lg-6 m-auto">
-            <div class="main-title text-center">
-              <h2 class="title">What our students have to say</h2>
-              <p class="paragraph mt10">Discover your perfect program in our courses.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
+              <div class="main-title text-center">
+                <h2>Témoignages</h2>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, magni.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-10 mx-auto">
-            <div class="home2_testimonial_tabs position-relative">
-              <div class="tab-content" id="pills-tabContent2">
-                <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <div class="testimonial-style2 at-about2 text-center">
-                    <div class="testi-content text-center">
+          <div class="row">
+            <div class="col-lg-8 m-auto wow fadeInUp" data-wow-delay="500ms">
+              <div class="testimonial-style2">
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade" id="pills-1st" role="tabpanel" aria-labelledby="pills-1st-tab">
+                    <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
                       <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show active" id="pills-2nd" role="tabpanel" aria-labelledby="pills-2nd-tab">
+                    <div class="testi-content text-md-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-3rd" role="tabpanel" aria-labelledby="pills-3rd-tab">
+                    <div class="testi-content text-md-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-4th" role="tabpanel" aria-labelledby="pills-4th-tab">
+                    <div class="testi-content text-md-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-5th" role="tabpanel" aria-labelledby="pills-5th-tab">
+                    <div class="testi-content text-md-center">
+                      <span class="icon fas fa-quote-left"></span>
+                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
+                      <h6 class="name">Ali Tufan</h6>
+                      <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  <div class="testimonial-style2 at-about2 text-center">
-                    <div class="testi-content text-center">
-                      <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                  <div class="testimonial-style2 at-about2 text-center">
-                    <div class="testi-content text-center">
-                      <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                    </div>
-                  </div>
+                <div class="tab-list position-relative">
+                  <ul class="nav nav-pills justify-content-md-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link ps-0" id="pills-1st-tab" data-bs-toggle="pill" data-bs-target="#pills-1st" type="button" role="tab" aria-controls="pills-1st" aria-selected="true"><img src="{{asset('assets/images/testimonials/testi-1.png')}}" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-2nd-tab" data-bs-toggle="pill" data-bs-target="#pills-2nd" type="button" role="tab" aria-controls="pills-2nd" aria-selected="false"><img src="{{asset('assets/images/testimonials/testi-2.png')}}" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-3rd-tab" data-bs-toggle="pill" data-bs-target="#pills-3rd" type="button" role="tab" aria-controls="pills-3rd" aria-selected="false"><img src="{{asset('assets/images/testimonials/testi-3.png')}}" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-4th-tab" data-bs-toggle="pill" data-bs-target="#pills-4th" type="button" role="tab" aria-controls="pills-4th" aria-selected="false"><img src="{{asset('assets/images/testimonials/testi-4.png')}}" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link pe-0" id="pills-5th-tab" data-bs-toggle="pill" data-bs-target="#pills-5th" type="button" role="tab" aria-controls="pills-5th" aria-selected="false"><img src="{{asset('assets/images/testimonials/testi-5.png')}}" alt=""></button>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <ul class="nav justify-content-center" id="pills-tab2" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-                    <div class="thumb d-flex align-items-center">
-                      <img class="rounded-circle" src="{{asset('assets/images/testimonials/1.jpg')}}" alt="1.jpg">
-                      <h6 class="title ml30 ml15-xl mb-0">Albert Cole<br><small>Designer</small></h6>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
-                    <div class="thumb d-flex align-items-center">
-                      <img class="rounded-circle" src="{{asset('assets/images/testimonials/2.jpg')}}" alt="2.jpg">
-                      <h6 class="title ml30 ml15-xl mb-0">Alison Dawn<br><small>WP Developer</small></h6>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
-                    <div class="thumb d-flex align-items-center">
-                      <img class="rounded-circle" src="{{asset('assets/images/testimonials/3.jpg')}}" alt="3.jpg">
-                      <h6 class="title ml30 ml15-xl mb-0">Daniel Parker<br><small>Front-end Developer</small></h6>
-                    </div>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- CTA Banner -->
@@ -298,8 +306,8 @@
         <div class="row">
           <div class="col-md-11 wow fadeInUp" data-wow-delay="200ms">
             <div class="main-title">
-              <h2 class="title text-capitalize">Need something done?</h2>
-              <p class="text">Most viewed and all-time top-selling services</p>
+              <h2 class="title text-capitalize">Besoin de faire quelque chose?</h2>
+              <p class="text">Services les plus consultés et les plus vendus de tous les temps</p>
             </div>
           </div>
         </div>
@@ -307,82 +315,81 @@
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-cv"></span>
-              <h4 class="iconbox-title mt20">Post a job</h4>
-              <p class="text mb-0">It’s free and easy to post a job.<br class="d-none d-md-block"> Simply fill in a title, description.</p>
+              <h4 class="iconbox-title mt20">Publier une offre d'emploi</h4>
+              <p class="text mb-0">C'est gratuit et facile de publier une offre d'emploi.<br class="d-none d-md-block"> Remplissez simplement un titre, une description.</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-web-design"></span>
-              <h4 class="iconbox-title mt20">Choose freelancers</h4>
-              <p class="text mb-0">It’s free and easy to post a job.<br class="d-none d-md-block"> Simply fill in a title, description.</p>
+              <h4 class="iconbox-title mt20">Choisissez des freelancers</h4>
+              <p class="text mb-0">C'est gratuit et facile de publier une offre d'emploi.<br class="d-none d-md-block"> Remplissez simplement un titre, une description.</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-secure"></span>
-              <h4 class="iconbox-title mt20">Pay safely</h4>
-              <p class="text mb-0">It’s free and easy to post a job.<br class="d-none d-md-block"> Simply fill in a title, description.</p>
+              <h4 class="iconbox-title mt20">payer en toute sécurité</h4>
+              <p class="text mb-0">C'est gratuit et facile de publier une offre d'emploi.<br class="d-none d-md-block"> Remplissez simplement un titre, une description.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Faq Area -->
-    <section class="our-faq pb90">
+    <section class="pb70">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
             <div class="main-title text-center">
-              <h2 class="title">Frequently Asked Questions</h2>
+              <h2 class="title">Questions fréquemment posées</h2>
               <p class="paragraph mt10">Lorem ipsum dolor sit amet, consectetur.</p>
             </div>
           </div>
         </div>
         <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-xl-8 mx-auto">
+          <div class="col-lg-8 mx-auto">
             <div class="ui-content">
-              <div class="accordion-style1 faq-page mb-4 mb-lg-5">
+              <div class="accordion-style1 faq-page">
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item active">
                     <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What methods of payments are supported?</button>
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Quels modes de paiement sont pris en charge?</button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus minus nemo ex omnis cumque, tempora recusandae ratione, dignissimos, commodi fuga quisquam et ad ut rem.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I cancel at anytime?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Puis-je annuler à tout moment?</button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How do I get a receipt for my purchase?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Comment obtenir un reçu pour mon achat?</button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Which license do I need?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">De quelle licence ai-je besoin?</button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">How do I get access to a theme I purchased?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Comment accéder à un thème que j'ai acheté?</button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                      <div class="accordion-body">Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit. Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec. Sagittis, id volutpat erat vel.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
                     </div>
                   </div>
                 </div>
