@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+
+
 <style>
 
     header.nav-homepage-style {

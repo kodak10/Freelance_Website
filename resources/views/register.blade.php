@@ -3,6 +3,12 @@
 @section('content')
 
 <style>
+    .mobilie_header_nav{
+        background-color: #000000 !important;
+    }
+</style>
+
+<style>
     .nav-pills .active{
         background: #5BBB7B !important;
         color: #ffffff !important;
@@ -95,7 +101,7 @@
             </div>
             <div class="d-grid mb20">
                 <button class="ud-btn btn-thm default-box-shadow2" type="submit" style=" text-align :center; width :100%">S'inscrire <i class="fal fa-arrow-right-long"></i></button>
-            </div>   
+            </div>
         </form>
     </div>
 
@@ -121,7 +127,7 @@
             </div>
             <div class="d-grid mb20">
                 <button class="ud-btn btn-thm default-box-shadow2" type="submit" style=" text-align :center; width :100%">S'inscrire <i class="fal fa-arrow-right-long"></i></button>
-            </div>   
+            </div>
         </form>
        </div>
      </div>
