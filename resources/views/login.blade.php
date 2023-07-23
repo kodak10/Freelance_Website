@@ -53,7 +53,8 @@
                     <p class="text">Vous n'avez pas de compte ? <a href="/register" class="text-thm fw-bold">S'inscrire</a></p>
                 </div>
 
-                <form action="">
+                <form action="/administration">
+
                     <div class="mb20">
                         <label class="form-label fw600 dark-color">Email</label>
                         <input type="email" class="form-control" placeholder="projetencours@gmail.com">
@@ -70,7 +71,7 @@
                         <a class="fz14 ff-heading" href="#">Mot de passe oublié ?</a>
                     </div>
                     <div class="d-grid mb20">
-                        <button class="ud-btn btn-thm" type="button">Se Connecter <i class="fal fa-arrow-right-long"></i></button>
+                    <button class="ud-btn btn-thm" type="submit">Se Connecter <i class="fal fa-arrow-right-long"></i></button>
                     </div>
                 </form>
 
