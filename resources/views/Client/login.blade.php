@@ -2,11 +2,6 @@
 @extends('layouts.app')
 @section('content')
 
-<style>
-    .mobilie_header_nav{
-        background-color: #000000 !important;
-    }
-</style>
     <!-- SignUp  -->
     <section class="our-register">
         <div class="container">

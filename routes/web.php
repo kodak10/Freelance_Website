@@ -42,6 +42,7 @@ Route::get('/administration/login', function () {
 Route::get('/administration', function () {
     return view('Administration.home');
 });
+
 // route des departements
 Route::resource('departements', departementController::class);
 // route des secteurs
@@ -57,3 +58,25 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/logout', [App\Http\Controllers\HomeController::class, 'logout'])->name('logout');
+
+
+Route::get('/administration/detail', function () {
+    return view('Administration.detail');
+});
+
+Route::get('/client', function () {
+    return view('Client.home');
+});
+
+Route::get('/client/detail', function () {
+    return view('Client.detail');
+});
+
+Route::get('/entreprise', function () {
+    return view('Entreprise.home');
+});
+
+Route::get('/entreprise/detail', function () {
+    return view('Entreprise.detail');
+});
+

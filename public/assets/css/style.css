@@ -6284,7 +6284,7 @@ textarea {
 .ud-btn i {
   margin-left: 10px;
   font-size: 16px;
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
 }
 .ud-btn:hover, .ud-btn:focus, .ud-btn:active {
   outline: none;
@@ -10589,9 +10589,18 @@ input:focus-visible {
   line-height: 52px;
   padding-left: 27px;
 }
+.h4-panther
+{
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 4rem;
+  margin-left: .8rem;
+}
 
 .table-style2 {
   position: relative;
+  border-collapse: collapse; 
+  width: 100%;
 }
 .table-style2 .table .t-head th {
   color: var(--headings-color);
@@ -10602,6 +10611,8 @@ input:focus-visible {
   padding-bottom: 30px;
   padding-top: 30px;
   vertical-align: baseline;
+  border: 1px solid #ccc;
+  text-align: center;
 }
 .table-style2 .table .t-head small {
   font-family: var(--title-font-family);
@@ -10616,6 +10627,7 @@ input:focus-visible {
   font-size: 15px;
   letter-spacing: 0em;
   padding: 30px;
+  border: 1px solid #ccc;
 }
 .table-style2 .t-body tr {
   border-top: 1px solid #E9E9E9;
@@ -10626,6 +10638,7 @@ input:focus-visible {
   font-weight: 400;
   padding-bottom: 30px;
   padding-top: 30px;
+  border: 1px solid #ccc;
 }
 .table-style2 .t-body .check_circle {
   border-radius: 50%;

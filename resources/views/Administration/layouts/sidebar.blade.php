@@ -5,7 +5,11 @@
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Gestion des inscriptions</p>
         <div class="sidebar_list_item">
+
             <a href="/demandes_inscription" class="items-center"><i class="flaticon-document mr15"></i>Demandes d'inscription</a>
+
+            <a href="/administration" class="items-center"><i class="flaticon-document mr15"></i>Demandes d'inscription</a>
+
         </div>
         <div class="sidebar_list_item">
             <a href="#" class="items-center"><i class="flaticon-like mr15"></i>Demandes de Services </a>
@@ -31,7 +35,11 @@
             <a href="/acces_utilisateurs" class="items-center {{ request()->routeIs('acces_utilisateurs.index', 'acces_utilisateurs.create', 'acces_utilisateurs.edit', 'acces_utilisateurs.show') ? '-is-active' : '' }}"><i class="flaticon-user mr15"></i>Accès utilisateurs</a>
         </div>
         <div class="sidebar_list_item ">
+
             <a href="/logout" class="items-center"><i class="flaticon-logout mr15"></i>Se Déconnecter</a>
+
+            <a href="/" class="items-center"><i class="flaticon-logout mr15"></i>Se Déconnecter</a>
+
         </div>
     </div>
 </div>

@@ -64,7 +64,7 @@
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">
-                                            <a class="dropdown-item" href="/logout"><i class="flaticon-logout mr10"></i>Se Deconnecter</a>
+                                            <a class="dropdown-item" href="#"><i class="flaticon-logout mr10"></i>Se Deconnecter</a>
                                         </div>
                                     </div>
                                 </div>
