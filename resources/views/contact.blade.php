@@ -66,7 +66,7 @@
             <div class="position-relative mt40">
               <div class="main-title">
                 <h4 class="form-title mb25">Restez en contact avec nous.</h4>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquid!.</p>
+                <p class="text">Si vous avez besoin de quoi que ce soit d'autre, n'hésitez pas à nous contacter. Notre équipe est toujours à votre disposition pour vous aider de la meilleure façon possible..</p>
               </div>
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
                 <div class="icon flex-shrink-0"><span class="flaticon-tracking"></span></div>
@@ -142,7 +142,7 @@
           <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
             <div class="main-title text-center">
               <h2 class="title">Questions fréquemment posées</h2>
-              <p class="paragraph mt10">Lorem ipsum dolor sit amet, consectetur.</p>
+              <p class="paragraph mt10">En quête de savoir ? Nos questions vous guideront vers les réponses.</p>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Quels modes de paiement sont pris en charge?</button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus minus nemo ex omnis cumque, tempora recusandae ratione, dignissimos, commodi fuga quisquam et ad ut rem.</div>
+                      <div class="accordion-body">Votre satisfaction, notre priorité. Payez en toute facilité avec nos multiples options : cartes, PayPal, virements... Profitez de notre plateforme pour un service clientèle de premier ordre et des paiements sécurisés à chaque étape de votre projet avec nos freelances experts </div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -164,7 +164,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Puis-je annuler à tout moment?</button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
+                      <div class="accordion-body">Sur Freeio, quand une commande est annulée les fonds sont crédités sur le solde Freeio du client. Freeio ne traite pas automatiquement les remboursements au prestataire de paiement après l'annulation d'une commande.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -172,7 +172,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Comment obtenir un reçu pour mon achat?</button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
+                      <div class="accordion-body">La copie de la facture est disponible sur la page de commande et en cliquant sur l'onglet "détails". À partir de là vous tombez sur le lien "afficher la facture" qui permet d'ouvrir la facture correspondant à cet achat. Si vous n'arrivez pas à trouver votre facture, vous pouvez contacter notre service client.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -180,7 +180,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">De quelle licence ai-je besoin?</button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
+                      <div class="accordion-body">En achetant une « Licence d'utilisation commerciale » sur Freeio, le prestataire vous octroie une licence perpétuelle, exclusive, non transférable, mondiale pour utiliser la livraison achetée à des fins commerciales permises. Sauf indication contraire sur la page / description du service du prestataire, tous les droits de propriété intellectuelle de la livraison achetée vous sont par la présente attribués.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -188,7 +188,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Comment accéder à un thème que j'ai acheté?</button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
+                      <div class="accordion-body">Un simple clic pour accéder à votre thème premium ! Connectez-vous à votre compte sur notre plateforme de freelance, trouvez votre thème acheté et téléchargez-le en un instant pour donner vie à votre site web de rêve </div>
                     </div>
                   </div>
                 </div>

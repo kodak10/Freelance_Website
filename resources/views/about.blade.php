@@ -224,14 +224,14 @@
       </div>
     </section>
 
-    <!-- Our Testimonials -->
-    <section class="our-testimonial">
+     <!-- Our Testimonials -->
+     <section class="our-testimonial">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
               <div class="main-title text-center">
                 <h2>Témoignages</h2>
-                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, magni.</p>
+                <p class="paragraph"> Découvrez ce qu'une multitude ont écrit jusqu'ici, et partagez votre propre expérience..</p>
               </div>
             </div>
           </div>
@@ -242,40 +242,40 @@
                   <div class="tab-pane fade" id="pills-1st" role="tabpanel" aria-labelledby="pills-1st-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Travailler avec Kodak a été une expérience incroyable ! Sa créativité, son professionnalisme et sa réactivité ont été inestimables pour mon projet. Je suis extrêmement satisfait des résultats obtenus et je le recommande vivement. Un grand merci . "</h4>
+                      <h6 class="name">Donald merise</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                   <div class="tab-pane fade show active" id="pills-2nd" role="tabpanel" aria-labelledby="pills-2nd-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Angislad est un vrai professionnel ! Il a su capturer l'essence de mon projet et l'a transformé en quelque chose d'extraordinaire. Son expertise et son dévouement ont été essentiels pour atteindre mes objectifs. Je suis ravi du résultat et je le recommande sans hésitation. Merci pour un travail exceptionnel . "</h4>
+                      <h6 class="name">Valish Trick</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-3rd" role="tabpanel" aria-labelledby="pills-3rd-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Je tiens à exprimer ma profonde gratitude envers Skyson pour son travail remarquable. Il a su faire preuve d'une grande compétence et d'une réelle passion pour mon projet. Les délais ont été respectés et le résultat final a dépassé toutes mes attentes. Je recommande vivement Harden à quiconque cherche un professionnel talentueux et fiable. Un grand merci pour cette collaboration fructueuse . "</h4>
+                      <h6 class="name"> Drew clack</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-4th" role="tabpanel" aria-labelledby="pills-4th-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Wow ! Walker a été absolument fantastique ! Sa créativité, son expertise et son professionnalisme ont été la clé du succès de mon projet. Il a su comprendre mes besoins dès le départ et a livré un travail d'une qualité exceptionnelle. Je suis enchanté du résultat et je ne peux que le recommander chaudement. Merci Walker pour cette expérience incroyable . "</h4>
+                      <h6 class="name">Brandom fish</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-5th" role="tabpanel" aria-labelledby="pills-5th-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Je suis comblé par le travail de Maurane ! Son talent et son engagement ont rendu mon projet non seulement possible, mais également exceptionnel. Sa communication fluide et sa disponibilité ont été très appréciées tout au long du processus. Je suis enchanté des résultats obtenus et je recommande vivement Maurane à quiconque cherche un expert compétent et dévoué. Un grand merci pour cette collaboration fructueuse. "</h4>
+                      <h6 class="name">Alex Fresh</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
@@ -329,14 +329,14 @@
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-web-design"></span>
               <h4 class="iconbox-title mt20">Choisissez des freelancers</h4>
-              <p class="text mb-0">C'est gratuit et facile de publier une offre d'emploi.<br class="d-none d-md-block"> Remplissez simplement un titre, une description.</p>
+              <p class="text mb-0">Avant de chercher des freelancers, assurez-vous de comprendre clairement vos besoins et objectifs pour le projet. Cela vous aidera à trouver des freelancers<br class="d-none d-md-block"> dont les compétences correspondent à vos attentes...</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-secure"></span>
               <h4 class="iconbox-title mt20">payer en toute sécurité</h4>
-              <p class="text mb-0">C'est gratuit et facile de publier une offre d'emploi.<br class="d-none d-md-block"> Remplissez simplement un titre, une description.</p>
+              <p class="text mb-0">Toutes les transactions sont effectuées sur la plateforme freeio. Qu'un client utilise une carte de crédit, PayPal ou un autre moyen de paiement, nous nous occupons de tout et assurons<br class="d-none d-md-block">  la sécurité de vos informations personnelles....</p>
             </div>
           </div>
         </div>
@@ -349,7 +349,7 @@
           <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
             <div class="main-title text-center">
               <h2 class="title">Questions fréquemment posées</h2>
-              <p class="paragraph mt10">Lorem ipsum dolor sit amet, consectetur.</p>
+              <p class="paragraph mt10">En quête de savoir ? Nos questions vous guideront vers les réponses.</p>
             </div>
           </div>
         </div>
@@ -363,7 +363,7 @@
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Quels modes de paiement sont pris en charge?</button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus minus nemo ex omnis cumque, tempora recusandae ratione, dignissimos, commodi fuga quisquam et ad ut rem.</div>
+                      <div class="accordion-body">Votre satisfaction, notre priorité. Payez en toute facilité avec nos multiples options : cartes, PayPal, virements... Profitez de notre plateforme pour un service clientèle de premier ordre et des paiements sécurisés à chaque étape de votre projet avec nos freelances experts </div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -371,7 +371,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Puis-je annuler à tout moment?</button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
+                      <div class="accordion-body">Sur Freeio, quand une commande est annulée les fonds sont crédités sur le solde Freeio du client. Freeio ne traite pas automatiquement les remboursements au prestataire de paiement après l'annulation d'une commande.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -379,7 +379,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Comment obtenir un reçu pour mon achat?</button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
+                      <div class="accordion-body">La copie de la facture est disponible sur la page de commande et en cliquant sur l'onglet "détails". À partir de là vous tombez sur le lien "afficher la facture" qui permet d'ouvrir la facture correspondant à cet achat. Si vous n'arrivez pas à trouver votre facture, vous pouvez contacter notre service client.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -387,7 +387,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">De quelle licence ai-je besoin?</button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
+                      <div class="accordion-body">En achetant une « Licence d'utilisation commerciale » sur Freeio, le prestataire vous octroie une licence perpétuelle, exclusive, non transférable, mondiale pour utiliser la livraison achetée à des fins commerciales permises. Sauf indication contraire sur la page / description du service du prestataire, tous les droits de propriété intellectuelle de la livraison achetée vous sont par la présente attribués.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -395,7 +395,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Comment accéder à un thème que j'ai acheté?</button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, nobis quas voluptate placeat aperiam obcaecati modi minima iure quae magni consequatur, assumenda sequi rem expedita..</div>
+                      <div class="accordion-body">Un simple clic pour accéder à votre thème premium ! Connectez-vous à votre compte sur notre plateforme de freelance, trouvez votre thème acheté et téléchargez-le en un instant pour donner vie à votre site web de rêve </div>
                     </div>
                   </div>
                 </div>
