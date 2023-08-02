@@ -19,7 +19,7 @@ class ServiceFactory extends Factory
         return [
             'libelle' => fake()->name(),
             'description' => fake()->paragraph(),
-            'idSecteur' => fake()->numberBetween(1, 50),
+            'idSecteur' => fake()->numberBetween(1, 10),
         ];
     }
 }

@@ -14,15 +14,16 @@ return new class extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             // $table->string('libelle');
-            $table->string('photo');
+            $table->string('photo')->nullable();
             $table->string('nom');
-            $table->string('prenoms');
-            $table->string('site_web');
-            $table->text('type_societe')->nullable();
+            $table->string('prenoms')->nullable();
+            $table->string('site_web')->nullable();
             $table->string('telephone');
-            $table->text('description');
-            $table->json('diplome');
-            $table->date('date_naissance');
+            $table->string('type_entreprise')->nullable();
+            $table->text('description')->nullable();
+            //$table->json('diplome')->nullable();
+            $table->boolean('approve')->nullable()->default(false)->nullable();
+            $table->date('date_naissance')->nullable();
             $table->unsignedBigInteger('id_type_client');
             $table->timestamps();
             $table->foreign('id_type_client')->references('id')->on('type_clients')->cascadeOnDelete()->cascadeOnUpdate();

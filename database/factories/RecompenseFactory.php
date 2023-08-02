@@ -18,7 +18,7 @@ class RecompenseFactory extends Factory
     {
         return [
             'valeur' => fake()->randomNumber(),
-            'id_client' => fake()->numberBetween(1, 50),
+            'id_client' => fake()->numberBetween(1, 10),
         ];
     }
 }

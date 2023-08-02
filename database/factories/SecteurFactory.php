@@ -18,7 +18,7 @@ class SecteurFactory extends Factory
     {
         return [
             'libelle' => fake()->lastName(),
-            'idDepartement' => fake()->numberBetween(1, 50),
+            'idDepartement' => fake()->numberBetween(1, 10),
 
         ];
     }

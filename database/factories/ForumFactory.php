@@ -18,8 +18,8 @@ class ForumFactory extends Factory
     {
         return [
             'message' => fake()->paragraph(),
-            'id_parent' => fake()->numberBetween(1, 50),
-            'id_categorie' => fake()->numberBetween(1, 50),
+            'id_parent' => fake()->numberBetween(1, 10),
+            'id_categorie' => fake()->numberBetween(1, 10),
         ];
     }
 }
