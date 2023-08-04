@@ -72,7 +72,7 @@
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
                 <div class="icon flex-shrink-0"><span class="flaticon-call"></span></div>
                 <div class="details">
-                  <h5 class="title">Telephone</h5>
+                  <h5 class="title">Tel</h5>
                   <p class="mb-0 text">+(0) 000 000 0000</p>
                 </div>
               </div>

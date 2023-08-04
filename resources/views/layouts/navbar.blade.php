@@ -545,7 +545,7 @@
       <div class="header bb-white-light">
         <div class="menu_and_widgets">
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
-            <a class="mobile_logo" href="#"><img src="{{asset('assets/images/header-logo.svg')}}" alt=""></a>
+            <a class="mobile_logo" href="/"><img src="{{asset('assets/images/header-logo.svg')}}" alt=""></a>
             <div class="right-side text-end">
               <a class="text-white" href="/register">Nous Réjoindre</a>
               <a class="menubar ml30" href="#menu"><img src="{{asset('assets/images/white-nav-icon.svg')}}" alt=""></a>
