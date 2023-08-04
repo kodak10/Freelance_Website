@@ -138,7 +138,7 @@
             <div class="col-md-6 col-xl-5 pl30-md pl15-xs wow fadeInRight" data-wow-delay="500ms">
               <div class="mb30">
                 <div class="main-title">
-                  <h2 class="title">De nombreux freelancers de <br class="d-none d-lg-block"> talent à portée de doigts</h2>
+                  <h2 class="title">De nombreuses personnes de <br class="d-none d-lg-block"> talent à portée de doigts</h2>
                 </div>
               </div>
               <div class="why-chose-list">
@@ -182,7 +182,7 @@
           <div class="col-md-6 col-xl-4 offset-xl-1 wow fadeInRight" data-wow-delay="100ms">
             <div class="cta-style6 mb30-sm">
               <h2 class="cta-title mb25">Trouvez les talents nécessaires pour <br class="d-none d-lg-block">faire croître votre entreprise.</h2>
-              <p class="text-thm2 fz15 mb25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br class="d-none d-md-block"> do eiusmod tempor incididunt.</p>
+              <p class="text-thm2 fz15 mb25">Des services de qualité qui sont <br class="d-none d-md-block"> en adequation avec votre vision.</p>
               <a href="#" class="ud-btn btn-thm">Commencer <i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
