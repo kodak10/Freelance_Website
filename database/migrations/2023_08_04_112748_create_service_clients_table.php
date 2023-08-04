@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clients', function (Blueprint $table) {
+        Schema::create('service_clients', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id')->unique()->unsigned()->index();
-            $table->string('name');
-            $table->string('prenoms');
+            $table->string('nom');
             $table->string('telephone');
-            $table->string('date_naissance');
-            $table->string('photo')->nullable();
-
+            $table->string('email');
+            $table->string('localisation');
+            $table->string('photo');
             $table->timestamps();
+
             $table->foreign('user_id')->references('id')->on('users');
+
         });
     }
 
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('service_clients');
     }
 };

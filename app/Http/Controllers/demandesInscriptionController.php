@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Entreprise;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -13,7 +14,7 @@ class demandesInscriptionController extends Controller
      */
     public function index()
     {
-        $enterprisesToApprove = Client::where('approve', '=', false)->get();
+        $enterprisesToApprove = Entreprise::where('approve', '=', false)->get();
         $User = User::all();
         $Counter = 1;
         return view('Administration.demandes.inscription.index', compact('enterprisesToApprove', 'Counter', 'User'));

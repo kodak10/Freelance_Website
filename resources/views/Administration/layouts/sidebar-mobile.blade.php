@@ -11,7 +11,14 @@
             <li><a href="#"><i class="flaticon-review-1 mr10"></i>Les Services</a></li>
             <li><p class="fz15 fw400 ff-heading mt30 pl30">Comptes</p></li>
             <li><a href="#"><i class="flaticon-receipt mr10"></i>Accès utilisateurs</a></li>
-            <li><a href="/"><i class="flaticon-logout mr10"></i>Se Déconnecter</a></li>
+            <li>
+                <a href="javascript:void(0)"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
+                    <i class="flaticon-logout mr15"></i>Se Déconnecter</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="">
+                        @csrf
+                    </form>
+            </li>
         </ul>
     </div>
 </div>

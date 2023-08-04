@@ -85,20 +85,41 @@
 
               <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="pills-client" role="tabpanel" aria-labelledby="pills-client-tab">
-        <form action="/client">
+        <form method="post" action="{{route('inscriptionClient')}}">
+            @csrf
 
             <div class="mb20">
-                <label class="form-label fw600 dark-color">Nom</label>
-                <input type="text" class="form-control" placeholder="Kouassi">
-            </div>
-            <div class="mb20">
+                <label class="form-label fw600 dark-color">Nom </label>
+                <input type="texte" class="form-control" name="nom">
+            </div> <div class="mb20">
                 <label class="form-label fw600 dark-color">Prénoms</label>
-                <input type="text" class="form-control" placeholder="Jean-Dubois">
+                <input type="text" class="form-control" name="prenoms">
+            </div> <div class="mb20">
+                <label class="form-label fw600 dark-color">Téléphone</label>
+                <input type="text" class="form-control" placeholder="" name="telephone">
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" class="form-control" placeholder="projetencours@gmail.com">
+                <input type="email" class="form-control" placeholder="projetencours@gmail.com" name="email">
             </div>
+            <div class="mb20">
+                <label class="form-label fw600 dark-color">Date de naissance</label>
+                <input type="date" class="form-control" placeholder="" name="dat_nais">
+            </div>
+
+            <div class="mb20">
+                <label class="form-label fw600 dark-color">Photo</label>
+                <input type="file" class="form-control" name="photo">
+            </div>
+            <div class="mb15">
+                <label class="form-label fw600 dark-color">Mot de passe</label>
+                <input type="password" class="form-control" placeholder="*******" name="password" value="password">
+            </div>
+            <div class="mb15">
+                <label class="form-label fw600 dark-color">Confirmation de mot de passe</label>
+                <input type="password" class="form-control" placeholder="*******" name="confirm-password" value="password">
+            </div>
+
             <div class="d-grid mb20">
                 <button class="ud-btn btn-thm default-box-shadow2" type="submit" style=" text-align :center; width :100%">S'inscrire <i class="fal fa-arrow-right-long"></i></button>
             </div>
@@ -106,25 +127,48 @@
     </div>
 
     <div class="tab-pane fade" id="pills-entreprise" role="tabpanel" aria-labelledby="pills-entreprise-tab">
-        <form action="/entreprise">
-
-            <div class="mb20">
-               <label class="form-label fw600 dark-color">Nom d'entreprise</label>
-               <input type="text" class="form-control" placeholder="Holding industries">
-            </div>
-            <select class="form-select form-select-md mb-3 form-control" aria-label=".form-select-lg example">
-                <option selected>Sélectionner le type d'entreprise</option>
+        <form method="post" action="{{route('inscriptionEntreprise')}}">
+            @csrf
+            <select name="type_entreprise" class="form-select form-select-md mb-3 form-control" aria-label=".form-select-lg example" >
+                <option >Sélectionner le type d'entreprise</option>
                 <option value="nationale">Nationale</option>
                 <option value="multinationale">Multinationale</option>
             </select>
             <div class="mb20">
+                <label class="form-label fw600 dark-color">Nom de l'entreprise</label>
+                <input type="texte" class="form-control" name="name">
+            </div> <div class="mb20">
+                <label class="form-label fw600 dark-color">Nationalité</label>
+                <input type="text" class="form-control" name="nationalite">
+            </div> <div class="mb20">
+                <label class="form-label fw600 dark-color">Téléphone</label>
+                <input type="text" class="form-control" placeholder="" name="telephone">
+            </div>
+            <div class="mb20">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" class="form-control" placeholder="projetencours@gmail.com">
+                <input type="email" class="form-control" placeholder="projetencours@gmail.com" name="email">
+            </div>
+            <div class="mb20">
+                <label class="form-label fw600 dark-color">Regime</label>
+                <input type="text" class="form-control" placeholder="" name="regime">
+            </div>
+            <div class="mb20">
+                <label class="form-label fw600 dark-color">Localisation</label>
+                <input type="text" class="form-control" placeholder="" name="localisation">
+            </div>
+            <div class="mb20">
+                <label class="form-label fw600 dark-color">Photo</label>
+                <input type="file" class="form-control" name="photo">
             </div>
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Mot de passe</label>
-                <input type="password" class="form-control" placeholder="*******">
+                <input type="password" class="form-control" placeholder="*******" name="password" value="password">
             </div>
+            <div class="mb15">
+                <label class="form-label fw600 dark-color">Confirmation de mot de passe</label>
+                <input type="password" class="form-control" placeholder="*******" name="confirm-password" value="password">
+            </div>
+
             <div class="d-grid mb20">
                 <button class="ud-btn btn-thm default-box-shadow2" type="submit" style=" text-align :center; width :100%">S'inscrire <i class="fal fa-arrow-right-long"></i></button>
             </div>
