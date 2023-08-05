@@ -2,6 +2,12 @@
 @section('content')
 
 <style>
+    .mobilie_header_nav{
+        background-color: #000000 !important;
+    }
+</style>
+
+<style>
 
     header.nav-homepage-style {
         background-color: transparent;

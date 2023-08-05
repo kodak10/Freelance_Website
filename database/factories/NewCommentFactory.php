@@ -20,7 +20,7 @@ class NewCommentFactory extends Factory
             'nom' => fake()->name(),
             'prenoms' => fake()->lastName(),
             'commentaire' => fake()->text(),
-            'id_news' => fake()->numberBetween(1, 50),
+            'id_news' => fake()->numberBetween(1, 10),
         ];
     }
 }

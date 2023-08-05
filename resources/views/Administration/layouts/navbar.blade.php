@@ -6,7 +6,7 @@
                 <div class="col-6 col-lg-auto">
                     <div class="text-center text-lg-start d-flex align-items-center">
                         <div class="dashboard_header_logo position-relative me-2 me-xl-5">
-                            <a href="/administration" class="logo"><img src="{{asset('assets/images/header-logo-dark.svg')}}" alt=""></a>
+                            <a href="/administration" class="logo"><img src="" alt=""></a>
                         </div>
                         <div class="fz20 ml90">
                             <a href="#" class="dashboard_sidebar_toggle_icon vam"><img src="{{asset('assets/images/dashboard-navicon.svg')}}" alt=""></a>
@@ -64,7 +64,7 @@
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">
-                                            <a class="dropdown-item" href="#"><i class="flaticon-logout mr10"></i>Se Deconnecter</a>
+                                            <a class="dropdown-item" href="/logout"><i class="flaticon-logout mr10"></i>Se Deconnecter</a>
                                         </div>
                                     </div>
                                 </div>

@@ -31,27 +31,31 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // \App\Models\User::factory(10)->create();
-        User::factory(50)->create();
-        CategoryFaq::factory(50)->create();
-        CategoryNew::factory(50)->create();
-        CategoryForum::factory(50)->create();
-        TypeClient::factory(50)->create();
-        Client::factory(50)->create();
-        Departement::factory(50)->create();
-        Diplome::factory(50)->create();
-        Secteur::factory(50)->create();
-        Faq::factory(50)->create();
-        Forum::factory(50)->create();
-        News::factory(50)->create();
-        NewComment::factory(50)->create();
-        Service::factory(50)->create();
-        Pays::factory(50)->create();
-        Notation::factory(50)->create();
-        Recompense::factory(50)->create();
+        User::factory(10)->create();
+        CategoryFaq::factory(10)->create();
+        CategoryNew::factory(10)->create();
+        CategoryForum::factory(10)->create();
+        TypeClient::factory()->create(['libelle' => 'PARTICULIER']);
+        TypeClient::factory()->create(['libelle' => 'ENTREPRISE']);
+        Client::factory(10)->create();
+        // TypeClient::factory(10)->create();
+        // Client::factory(10)->create();
+        Departement::factory(10)->create();
+        Diplome::factory(10)->create();
+        Secteur::factory(10)->create();
+        Faq::factory(10)->create();
+        Forum::factory(10)->create();
+        News::factory(10)->create();
+        NewComment::factory(10)->create();
+        Service::factory(10)->create();
+        Pays::factory(10)->create();
+        Notation::factory(10)->create();
+        Recompense::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
     }
 }

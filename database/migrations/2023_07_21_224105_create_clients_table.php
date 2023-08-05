@@ -13,19 +13,15 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            // $table->string('libelle');
-            $table->string('photo');
-            $table->string('nom');
+            $table->bigInteger('user_id')->unique()->unsigned()->index();
+            $table->string('name');
             $table->string('prenoms');
-            $table->string('site_web');
-            $table->text('type_societe')->nullable();
             $table->string('telephone');
-            $table->text('description');
-            $table->json('diplome');
-            $table->date('date_naissance');
-            $table->unsignedBigInteger('id_type_client');
+            $table->string('date_naissance');
+            $table->string('photo')->nullable();
+
             $table->timestamps();
-            $table->foreign('id_type_client')->references('id')->on('type_clients')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
