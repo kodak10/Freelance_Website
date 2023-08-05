@@ -550,7 +550,7 @@
     <section class="our-about bgc-thm2">
         <div class="container">
           <div class="row align-items-center">
-            <h2 class="title">Pourquoi nous faire confiance ?</h2>
+            <h2 class="title" style =" color : #FFFFFF;">Pourquoi nous faire confiance ?</h2>
 
             <div class="col-xl-6">
               <div class="position-relative mb30-lg">
@@ -578,7 +578,7 @@
             </div>
             <div class="col-xl-5 offset-xl-1">
               <div class="position-relative wow fadeInLeft" data-wow-delay="300ms">
-                <h2 class="text-white mb35">Rejoignez la meilleure place de marché au monde <br class="d-none d-lg-block"> pour les travailleurs</h2>
+                <h2 class="text-white mb35">Rejoignez la meilleure place de marché au monde <br class="d-none d-lg-block"> pour donner vie à vos projet ou ceux des autres</h2>
                 <p class="text text-white mb35">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres, par opposition à l'utilisation de "Contenu ici, contenu ici", ce qui donne l'impression qu'il est lisible en anglais ...</p>
                 <div class="list-style2 light-style">
                   <ul class="mb30">
