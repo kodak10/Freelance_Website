@@ -13,4 +13,14 @@ class Service extends Model
         'idSecteur',
         'description',
     ];
+
+    public function entreprise()
+    {
+        return $this->hasMany(Entreprise::class);
+    }
+
+    public function secteurs()
+    {
+        return $this->hasOne(Secteur::class);
+    }
 }

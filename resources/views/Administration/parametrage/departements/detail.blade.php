@@ -26,7 +26,7 @@
                             <h3 class="title text-center">Informations d'un departement</h3>
                             <hr class="bg-dark">
 
-                            <a href="/departements" class="ud-btn btn-dark mb25 me-4">Liste des departements</a>
+                            <a href="/administration/departements" class="ud-btn btn-dark mb25 me-4">Liste des departements</a>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <form>

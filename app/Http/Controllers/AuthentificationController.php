@@ -139,8 +139,8 @@ class AuthentificationController extends Controller
             return redirect()->route('login')->with(["success" => false, "message" => "Vous devez valider votre email"], 403);
         }
 
-         // Si l'utilisateur est un client
-         if (Auth::user()->hasRole('client')) {
+        // Si l'utilisateur est un client
+        if (Auth::user()->hasRole('client')) {
             return redirect('/user');
         }
 
@@ -157,17 +157,13 @@ class AuthentificationController extends Controller
                 return redirect()->route('login')->with(["success" => false, "message" => "Votre compte est en attente de verification"], 403);
             }
 
+
         }
-
-
         // Si l'utilisateur est le service client
-        if (Auth::user()->hasRole('service_client')) {
+        if (Auth::user()->hasRole('serviceClient')) {
             return redirect('/administration');
         }
 
     }
-
-
-
 
 }

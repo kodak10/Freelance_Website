@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('secteurs', function (Blueprint $table) {
             $table->id();
             $table->string('libelle');
-            $table->unsignedBigInteger('idDepartement');
+            $table->unsignedBigInteger('departement_id');
             $table->timestamps();
 
             // cle etrangere
-            $table->foreign('idDepartement')->references('id')->on('departements')->cascadeOnDelete()->cascadeOnUpdate();
-       
+            $table->foreign('departement_id')->references('id')->on('departements')->cascadeOnDelete()->cascadeOnUpdate();
+
         });
     }
 

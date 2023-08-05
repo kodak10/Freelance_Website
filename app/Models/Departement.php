@@ -11,4 +11,10 @@ class Departement extends Model
     protected $fillable = [
         'libelle'
     ];
+
+    public function secteurs()
+    {
+        return $this->hasMany(Secteur::class);
+    }
+
 }

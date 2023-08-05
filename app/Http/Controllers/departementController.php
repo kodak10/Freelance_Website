@@ -40,9 +40,9 @@ class departementController extends Controller
             // 'updated_at'=>now()
         );
         if (departement::insert($data)) {
-            return redirect('departements')->with('added', 'added');
+            return redirect('/administration/departements/create')->with('added', 'added');
         } else {
-            return redirect('departements')->with('nothing', 'nothing');
+            return redirect('/administration/departements')->with('nothing', 'nothing');
         };
     }
 
@@ -80,9 +80,9 @@ class departementController extends Controller
             'updated_at' => now()
         );
         if ($departement->update($data)) {
-            return redirect('departements')->with('updated', 'updated');
+            return redirect('/administration/departements')->with('updated', 'updated');
         } else {
-            return redirect('departements')->with('nothing', 'nothing');
+            return redirect('/administration/departements')->with('nothing', 'nothing');
         };
     }
 
@@ -93,9 +93,9 @@ class departementController extends Controller
     {
         $info = Departement::where('id', $id)->firstOrFail();
         if ($info->delete()) {
-            return redirect('departements')->with('deleted', 'deleted');
+            return redirect('/administration/departements')->with('deleted', 'deleted');
         } else {
-            return redirect('departements')->with('nothing', 'nothing');
+            return redirect('/administration/departements')->with('nothing', 'nothing');
         };
     }
 }
