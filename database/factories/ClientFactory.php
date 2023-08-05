@@ -21,12 +21,12 @@ class ClientFactory extends Factory
             'nom' => fake()->firstName(),
             'prenoms' => fake()->lastName(),
             'site_web' => fake()->url(),
-            'type_societe' => fake()->lastName(),
+            'type_entreprise' => fake()->lastName(),
             'telephone' => fake()->phoneNumber(),
             'description' => fake()->paragraph(),
-            'diplome' => json_encode([fake()->numberBetween(1,50), fake()->numberBetween(1, 50), fake()->numberBetween(1, 50)]),
+            // 'diplome' => json_encode([fake()->numberBetween(1,50), fake()->numberBetween(1, 50), fake()->numberBetween(1, 50)]),
             'date_naissance' => fake()->date(),
-            'id_type_client' => fake()->numberBetween(1, 50),
+            'id_type_client' => fake()->numberBetween(1, 2),
 
         ];
     }

@@ -429,7 +429,7 @@
                   <div class="icon before-none"><span class="flaticon-cv"></span></div>
                   <div class="details">
                     <h4 class="title mt10 mb-3">Inscrivez-vous</h4>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="text">Vous inscrire ! <br> les meilleurs services freelance en ligne. Sous-traitez votre projet et faites-le réaliser rapidement. Démarrez maintenant.</p>
                   </div>
               </div>
             </div>
@@ -438,7 +438,7 @@
                 <div class="icon before-none"><span class="flaticon-web-design"></span></div>
                 <div class="details">
                   <h4 class="title mt10 mb-3">Choisissez des freelancers</h4>
-                  <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="text">Avant de chercher des freelancers, assurez-vous de comprendre clairement vos besoins et objectifs pour le projet. Cela vous aidera à trouver des freelancers dont les compétences correspondent à vos attentes...</p>
                 </div>
               </div>
             </div>
@@ -447,7 +447,7 @@
                 <div class="icon before-none"><span class="flaticon-secure"></span></div>
                 <div class="details">
                   <h4 class="title mt10 mb-3">payer en toute sécurité</h4>
-                  <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="text">Toutes les transactions sont effectuées sur la plateforme freeio. Qu'un client utilise une carte de crédit, PayPal ou un autre moyen de paiement, nous nous occupons de tout et assurons la sécurité de vos informations personnelles...</p>
                 </div>
               </div>
             </div>
@@ -456,7 +456,7 @@
                 <div class="icon before-none"><span class="flaticon-customer-service"></span></div>
                 <div class="details">
                   <h4 class="title mt10 mb-3">Service clientèle</h4>
-                  <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="text">Votre satisfaction est notre obsession ! Découvrez le service clientèle qui va au-delà de vos attentes. Nous sommes là pour vous, à chaque étape de votre parcours avec nous. Laissez-nous prendre soin de vos besoins avec une attention personnalisée et une réactivité sans égale...</p>
                 </div>
               </div>
             </div>
@@ -472,7 +472,7 @@
             <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
               <div class="main-title text-center">
                 <h2>Témoignages</h2>
-                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, magni.</p>
+                <p class="paragraph"> Découvrez ce qu'une multitude ont écrit jusqu'ici, et partagez votre propre expérience..</p>
               </div>
             </div>
           </div>
@@ -483,40 +483,40 @@
                   <div class="tab-pane fade" id="pills-1st" role="tabpanel" aria-labelledby="pills-1st-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Travailler avec Kodak a été une expérience incroyable ! Sa créativité, son professionnalisme et sa réactivité ont été inestimables pour mon projet. Je suis extrêmement satisfait des résultats obtenus et je le recommande vivement. Un grand merci . "</h4>
+                      <h6 class="name">Donald merise</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                   <div class="tab-pane fade show active" id="pills-2nd" role="tabpanel" aria-labelledby="pills-2nd-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Angislad est un vrai professionnel ! Il a su capturer l'essence de mon projet et l'a transformé en quelque chose d'extraordinaire. Son expertise et son dévouement ont été essentiels pour atteindre mes objectifs. Je suis ravi du résultat et je le recommande sans hésitation. Merci pour un travail exceptionnel . "</h4>
+                      <h6 class="name">Valish Trick</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-3rd" role="tabpanel" aria-labelledby="pills-3rd-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Je tiens à exprimer ma profonde gratitude envers Skyson pour son travail remarquable. Il a su faire preuve d'une grande compétence et d'une réelle passion pour mon projet. Les délais ont été respectés et le résultat final a dépassé toutes mes attentes. Je recommande vivement Harden à quiconque cherche un professionnel talentueux et fiable. Un grand merci pour cette collaboration fructueuse . "</h4>
+                      <h6 class="name"> Drew clack</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-4th" role="tabpanel" aria-labelledby="pills-4th-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Wow ! Walker a été absolument fantastique ! Sa créativité, son expertise et son professionnalisme ont été la clé du succès de mon projet. Il a su comprendre mes besoins dès le départ et a livré un travail d'une qualité exceptionnelle. Je suis enchanté du résultat et je ne peux que le recommander chaudement. Merci Walker pour cette expérience incroyable . "</h4>
+                      <h6 class="name">Brandom fish</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-5th" role="tabpanel" aria-labelledby="pills-5th-tab">
                     <div class="testi-content text-md-center">
                       <span class="icon fas fa-quote-left"></span>
-                      <h4 class="testi-text">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic. "</h4>
-                      <h6 class="name">Ali Tufan</h6>
+                      <h4 class="testi-text">"Je suis comblé par le travail de Maurane ! Son talent et son engagement ont rendu mon projet non seulement possible, mais également exceptionnel. Sa communication fluide et sa disponibilité ont été très appréciées tout au long du processus. Je suis enchanté des résultats obtenus et je recommande vivement Maurane à quiconque cherche un expert compétent et dévoué. Un grand merci pour cette collaboration fructueuse. "</h4>
+                      <h6 class="name">Alex Fresh</h6>
                       <p class="design">Product Manager, Apple Inc</p>
                     </div>
                   </div>
@@ -550,7 +550,7 @@
     <section class="our-about bgc-thm2">
         <div class="container">
           <div class="row align-items-center">
-            <h2 class="title">Pourquoi nous faire confiance ?</h2>
+            <h2 class="title" style =" color : #FFFFFF;">Pourquoi nous faire confiance ?</h2>
 
             <div class="col-xl-6">
               <div class="position-relative mb30-lg">
@@ -558,14 +558,14 @@
                   <span class="icon flaticon-review"></span>
                   <div class="details">
                     <h6>4.9/5</h6>
-                    <p class="text fz13 mb-0">Clients rate professionals</p>
+                    <p class="text fz13 mb-0">Les clients évaluent les professionnels</p>
                   </div>
                 </div>
                 <div class="iconbox-small2 d-none d-md-block wow fadeInLeft">
                   <span class="icon flaticon-review"></span>
                   <div class="details">
                     <h6>+12M</h6>
-                    <p class="text fz13 mb-0">Project Completed</p>
+                    <p class="text fz13 mb-0">Projets terminés</p>
                   </div>
                 </div>
                 <div class="about-img wow fadeInRight" data-wow-delay="300ms">
@@ -578,16 +578,16 @@
             </div>
             <div class="col-xl-5 offset-xl-1">
               <div class="position-relative wow fadeInLeft" data-wow-delay="300ms">
-                <h2 class="text-white mb35">Join World's Best Marketplace <br class="d-none d-lg-block"> for Workers</h2>
-                <p class="text text-white mb35">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <h2 class="text-white mb35">Rejoignez la meilleure place de marché au monde <br class="d-none d-lg-block"> pour donner vie à vos projet ou ceux des autres</h2>
+                <p class="text text-white mb35">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres, par opposition à l'utilisation de "Contenu ici, contenu ici", ce qui donne l'impression qu'il est lisible en anglais ...</p>
                 <div class="list-style2 light-style">
                   <ul class="mb30">
-                    <li><i class="far fa-check"></i>Connect to freelancers with proven business experience</li>
-                    <li><i class="far fa-check"></i>Get matched with the perfect talent by a customer success manager</li>
-                    <li><i class="far fa-check"></i>Unmatched quality of remote, hybrid, and flexible jobs</li>
+                    <li><i class="far fa-check"></i>Connectez-vous à des pigistes ayant une expérience commerciale éprouvée</li>
+                    <li><i class="far fa-check"></i>Faites-vous associer au talent parfait par un responsable de la réussite client</li>
+                    <li><i class="far fa-check"></i>Qualité inégalée des emplois à distance, hybrides et flexibles</li>
                   </ul>
                 </div>
-                <a href="#" class="ud-btn btn-thm">Find<i class="fal fa-arrow-right-long"></i></a>
+                <a href="#" class="ud-btn btn-thm">Trouver des talents<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>

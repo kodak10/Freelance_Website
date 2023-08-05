@@ -18,7 +18,7 @@ class NotationFactory extends Factory
     {
         return [
             'note' => fake()->numberBetween(1, 5),
-            'id_client' => fake()->numberBetween(1, 50),
+            'id_client' => fake()->numberBetween(1, 10),
         ];
     }
 }

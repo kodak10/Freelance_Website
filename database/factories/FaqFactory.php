@@ -20,8 +20,8 @@ class FaqFactory extends Factory
             'contenu' => fake()->text(),
             'image' => fake()->imageUrl(),
             'video' => fake()->imageUrl(),
-            'id_secteur' => fake()->numberBetween(1, 50),
-            'id_categorie' => fake()->numberBetween(1, 50),
+            'id_secteur' => fake()->numberBetween(1, 10),
+            'id_categorie' => fake()->numberBetween(1, 10),
         ];
     }
 }

@@ -20,8 +20,8 @@ class NewsFactory extends Factory
             'image' => fake()->imageUrl(),
             'titre' => fake()->streetName(),
             'sous_titre' => fake()->name(),
-            'id_user' => fake()->numberBetween(1, 50),
-            'id_categorie' => fake()->numberBetween(1, 50),
+            'id_user' => fake()->numberBetween(1, 10),
+            'id_categorie' => fake()->numberBetween(1, 10),
         ];
     }
 }

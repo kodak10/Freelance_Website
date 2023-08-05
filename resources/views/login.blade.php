@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-
-
 <style>
 
     header.nav-homepage-style {
@@ -55,15 +53,26 @@
                     <p class="text">Vous n'avez pas de compte ? <a href="/register" class="text-thm fw-bold">S'inscrire</a></p>
                 </div>
 
-                <form action="">
-
+                <form method="post" action="{{route('postLogin')}}">
+                    <div class="row">
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                    </div>
+                    @csrf
                     <div class="mb20">
                         <label class="form-label fw600 dark-color">Email</label>
-                        <input type="email" class="form-control" placeholder="projetencours@gmail.com">
+                        <input type="email" class="form-control" placeholder="projetencours@gmail.com" name="email">
                     </div>
                     <div class="mb15">
                         <label class="form-label fw600 dark-color">Mot de passe</label>
-                        <input type="text" class="form-control" placeholder="*******">
+                        <input type="text" class="form-control" placeholder="" name="password" value="password" >
                     </div>
                     <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb20">
                         <label class="custom_checkbox fz14 ff-heading">Se souvenir de moi
@@ -73,7 +82,7 @@
                         <a class="fz14 ff-heading" href="#">Mot de passe oublié ?</a>
                     </div>
                     <div class="d-grid mb20">
-                    <button class="ud-btn btn-thm" type="submit">Se Connecter <i class="fal fa-arrow-right-long"></i></button>
+                        <button class="ud-btn btn-thm" type="submit">Se Connecter <i class="fal fa-arrow-right-long"></i></button>
                     </div>
                 </form>
 
