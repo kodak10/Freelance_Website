@@ -14,7 +14,7 @@ class WebsiteController extends Controller
      */
 
 
-    public function index()
+    public function index(Request $request)
     {
         $categories = Departement::paginate(4);
         $tendances = Service::paginate(8);
@@ -64,6 +64,28 @@ class WebsiteController extends Controller
         return view('blog', compact('categories'));
     }
 
+
+    public function search(Request $request)
+    {
+        $categories = Departement::paginate(6);
+
+        $category = $request->input('category');
+        $searchQuery = $request->input('search');
+
+        $query = Service::query();
+
+        if ($category) {
+            $query->where('category', $category);
+        }
+
+        if ($searchQuery) {
+            $query->where('libelle', 'like', '%' . $searchQuery . '%');
+        }
+
+        $services = $query->get();
+
+        return view('services_search', compact('services', 'category', 'searchQuery', 'categories'));
+    }
 
 
 

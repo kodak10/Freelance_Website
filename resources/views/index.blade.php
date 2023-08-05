@@ -39,10 +39,11 @@
                     <div class="row">
                       <div class="col-md-5 col-lg-6 col-xl-6">
                         <div class="advance-search-field mb10-sm bdrr1 bdrn-sm">
-                          <form class="form-search position-relative">
+                          <form class="form-search position-relative" method="post" action="{{route('services.search')}}">
+                            @csrf
                             <div class="box-search">
                               <span class="icon far fa-magnifying-glass"></span>
-                              <input class="form-control" type="text" name="search" placeholder="Quel est le service que vous rechercher ?">
+                              <input class="form-control" type="text" name="search" id="search" placeholder="Quel est le service que vous rechercher ?">
                               <div class="search-suggestions">
                                 <h6 class="fz14 ml30 mt25 mb-3">Recherches Populaire</h6>
                                 <div class="box-suggestions">
@@ -86,14 +87,11 @@
                       </div>
                       <div class="col-md-4 col-lg-4 col-xl-4 d-none d-md-block">
                         <div class="bselect-style1">
-                          <select class="selectpicker" data-width="100%">
-                            <option>Choisissez La Catégorie</option>
-                            <option data-tokens="Graphics&Design">Graphics & Design</option>
-                            <option data-tokens="DigitlMarketing">Digital Marketing</option>
-                            <option data-tokens="Writing&Translation">Writing & Translation</option>
-                            <option data-tokens="Video&Animation">Video & Animation</option>
-                            <option data-tokens="Music&Audio">Music & Audio</option>
-                            <option data-tokens="Programming&Tech">Programming & Tech</option>
+                          <select class="selectpicker" data-width="100%" name="category" id="category" >
+                            <option>Toutes les Catégories</option>
+                                @foreach ($categories as $categorie )
+                                    <option data-tokens="Graphics&Design" value="{{ $categorie->libelle }}">{{$categorie->libelle}}</option>
+                                @endforeach
                           </select>
                         </div>
                       </div>
