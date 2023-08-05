@@ -21,10 +21,8 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'isAdmin' => fake()->boolean(),
-            'id_client' => fake()->numberBetween(1, 10),
             'email_verified_at' => now(),
-            'password' => Hash::make('1234'), // password
+            'password' => Hash::make('password'), // password
             'remember_token' => Str::random(10),
         ];
     }

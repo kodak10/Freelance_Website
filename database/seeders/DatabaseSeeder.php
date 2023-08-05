@@ -35,27 +35,22 @@ class DatabaseSeeder extends Seeder
         CategoryFaq::factory(10)->create();
         CategoryNew::factory(10)->create();
         CategoryForum::factory(10)->create();
-        TypeClient::factory()->create(['libelle' => 'PARTICULIER']);
-        TypeClient::factory()->create(['libelle' => 'ENTREPRISE']);
-        Client::factory(10)->create();
+        //TypeClient::factory()->create(['libelle' => 'PARTICULIER']);
+        //TypeClient::factory()->create(['libelle' => 'ENTREPRISE']);
+        //Client::factory(10)->create();
         // TypeClient::factory(10)->create();
         // Client::factory(10)->create();
-        Departement::factory(10)->create();
+        //Departement::factory(10)->create();
         Diplome::factory(10)->create();
-        Secteur::factory(10)->create();
+        Secteur::factory(15)->create();
         Faq::factory(10)->create();
         Forum::factory(10)->create();
-        News::factory(10)->create();
-        NewComment::factory(10)->create();
-        Service::factory(10)->create();
+        //News::factory(10)->create();
+        //NewComment::factory(10)->create();
+        Service::factory(30)->create();
         Pays::factory(10)->create();
-        Notation::factory(10)->create();
-        Recompense::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        //Notation::factory(10)->create();
+        //Recompense::factory(10)->create();
 
     }
 }

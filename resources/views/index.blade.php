@@ -39,10 +39,11 @@
                     <div class="row">
                       <div class="col-md-5 col-lg-6 col-xl-6">
                         <div class="advance-search-field mb10-sm bdrr1 bdrn-sm">
-                          <form class="form-search position-relative">
+                          <form class="form-search position-relative" method="post" action="{{route('services.search')}}">
+                            @csrf
                             <div class="box-search">
                               <span class="icon far fa-magnifying-glass"></span>
-                              <input class="form-control" type="text" name="search" placeholder="Quel est le service que vous rechercher ?">
+                              <input class="form-control" type="text" name="search" id="search" placeholder="Quel est le service que vous rechercher ?">
                               <div class="search-suggestions">
                                 <h6 class="fz14 ml30 mt25 mb-3">Recherches Populaire</h6>
                                 <div class="box-suggestions">
@@ -86,14 +87,11 @@
                       </div>
                       <div class="col-md-4 col-lg-4 col-xl-4 d-none d-md-block">
                         <div class="bselect-style1">
-                          <select class="selectpicker" data-width="100%">
-                            <option>Choisissez La Catégorie</option>
-                            <option data-tokens="Graphics&Design">Graphics & Design</option>
-                            <option data-tokens="DigitlMarketing">Digital Marketing</option>
-                            <option data-tokens="Writing&Translation">Writing & Translation</option>
-                            <option data-tokens="Video&Animation">Video & Animation</option>
-                            <option data-tokens="Music&Audio">Music & Audio</option>
-                            <option data-tokens="Programming&Tech">Programming & Tech</option>
+                          <select class="selectpicker" data-width="100%" name="category" id="category" >
+                            <option>Toutes les Catégories</option>
+                                @foreach ($categories as $categorie )
+                                    <option data-tokens="Graphics&Design" value="{{ $categorie->libelle }}">{{$categorie->libelle}}</option>
+                                @endforeach
                           </select>
                         </div>
                       </div>
@@ -129,175 +127,19 @@
             </div>
           </div>
           <div class="row d-none d-lg-flex wow fadeInUp">
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-              <div class="iconbox-style1">
-                <div class="icon"><span class="flaticon-developer"></span></div>
-                <div class="details mt20">
-                  <p class="text mb5">1.853 skills</p>
-                  <h4 class="title">Development & IT</h4>
-                  <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-              <div class="iconbox-style1">
-                <div class="icon"><span class="flaticon-web-design-1"></span></div>
-                <div class="details mt20">
-                  <p class="text mb5">1.853 skills</p>
-                  <h4 class="title">Design & Creative</h4>
-                  <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-              <div class="iconbox-style1">
-                <div class="icon"><span class="flaticon-digital-marketing"></span></div>
-                <div class="details mt20">
-                  <p class="text mb5">1.853 skills</p>
-                  <h4 class="title">Digital Marketing</h4>
-                  <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-              <div class="iconbox-style1">
-                <div class="icon"><span class="flaticon-translator"></span></div>
-                <div class="details mt20">
-                  <p class="text mb5">1.853 skills</p>
-                  <h4 class="title">Writing & Translation</h4>
-                  <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-              <div class="iconbox-style1">
-                <div class="icon"><span class="flaticon-microphone"></span></div>
-                <div class="details mt20">
-                  <p class="text mb5">1.853 skills</p>
-                  <h4 class="title">Music & Audio</h4>
-                  <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-              <div class="iconbox-style1">
-                <div class="icon"><span class="flaticon-video-file"></span></div>
-                <div class="details mt20">
-                  <p class="text mb5">1.853 skills</p>
-                  <h4 class="title">Video & Animation</h4>
-                  <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-              <div class="iconbox-style1">
-                <div class="icon"><span class="flaticon-ruler"></span></div>
-                <div class="details mt20">
-                  <p class="text mb5">1.853 skills</p>
-                  <h4 class="title">Engineering & Architecture</h4>
-                  <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-              <div class="iconbox-style1">
-                <div class="icon"><span class="flaticon-goal"></span></div>
-                <div class="details mt20">
-                  <p class="text mb5">1.853 skills</p>
-                  <h4 class="title">Finance & Accounting</h4>
-                  <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row d-block d-lg-none">
-            <div class="col-lg-12">
-              <div class="slider-outer-dib navi_pagi_top_right slider-5-grid owl-carousel owl-theme wow fadeInUp">
-                <div class="item">
-                  <div class="iconbox-style1">
+            @foreach ($categories as $categorie )
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="iconbox-style1">
                     <div class="icon"><span class="flaticon-developer"></span></div>
                     <div class="details mt20">
-                      <p class="text mb5">1.853 skills</p>
-                      <h4 class="title">Development & IT</h4>
-                      <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                        <p class="text mb5">1.853 skills</p>
+                        <h4 class="title">{{$categorie->libelle}}</h4>
+                        <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
                     </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="iconbox-style1">
-                    <div class="icon"><span class="flaticon-web-design-1"></span></div>
-                    <div class="details mt20">
-                      <p class="text mb5">1.853 skills</p>
-                      <h4 class="title">Design & Creative</h4>
-                      <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="iconbox-style1">
-                    <div class="icon"><span class="flaticon-digital-marketing"></span></div>
-                    <div class="details mt20">
-                      <p class="text mb5">1.853 skills</p>
-                      <h4 class="title">Digital Marketing</h4>
-                      <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="iconbox-style1">
-                    <div class="icon"><span class="flaticon-translator"></span></div>
-                    <div class="details mt20">
-                      <p class="text mb5">1.853 skills</p>
-                      <h4 class="title">Writing & Translation</h4>
-                      <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="iconbox-style1">
-                    <div class="icon"><span class="flaticon-microphone"></span></div>
-                    <div class="details mt20">
-                      <p class="text mb5">1.853 skills</p>
-                      <h4 class="title">Music & Audio</h4>
-                      <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="iconbox-style1">
-                    <div class="icon"><span class="flaticon-video-file"></span></div>
-                    <div class="details mt20">
-                      <p class="text mb5">1.853 skills</p>
-                      <h4 class="title">Video & Animation</h4>
-                      <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="iconbox-style1">
-                    <div class="icon"><span class="flaticon-ruler"></span></div>
-                    <div class="details mt20">
-                      <p class="text mb5">1.853 skills</p>
-                      <h4 class="title">Engineering & Architecture</h4>
-                      <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="iconbox-style1">
-                    <div class="icon"><span class="flaticon-goal"></span></div>
-                    <div class="details mt20">
-                      <p class="text mb5">1.853 skills</p>
-                      <h4 class="title">Finance & Accounting</h4>
-                      <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
-                    </div>
-                  </div>
                 </div>
               </div>
-            </div>
+            @endforeach
           </div>
-
         </div>
     </section>
 
@@ -320,6 +162,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="slider-outer-dib vam_nav_style dots_none slider-4-grid2 owl-carousel owl-theme wow fadeInUp" data-wow-delay="300ms">
+
+                @foreach ( $tendances as $tendance )
+
                 <div class="item">
                   <div class="listing-style1">
                     <div class="list-thumb">
@@ -327,83 +172,13 @@
                       <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                     </div>
                     <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1">Web & App Design</p>
+                      <p class="list-text body-color fz14 mb-1">{{$tendance->libelle}}</p>
                       <h5 class="list-title"><a href="/services/details">I will design modern websites in figma or adobe xd</a></h5>
                     </div>
                   </div>
                 </div>
-                <div class="item">
-                  <div class="listing-style1">
-                    <div class="list-thumb">
-                      <img class="w-100" src="{{asset('assets/images/listings/g-2.jpg')}}" alt="">
-                      <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                    </div>
-                    <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1">Art & Illustration</p>
-                      <h5 class="list-title"><a href="/services/details">I will create modern flat design illustration</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="listing-style1">
-                    <div class="list-thumb">
-                      <img class="w-100" src="{{asset('assets/images/listings/g-3.jpg')}}" alt="">
-                      <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                    </div>
-                    <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1">Design & Creative</p>
-                      <h5 class="list-title line-clamp2"><a href="/services/details">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="listing-style1">
-                    <div class="list-thumb">
-                      <img class="w-100" src="{{asset('assets/images/listings/g-4.jpg')}}" alt="">
-                      <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                    </div>
-                    <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1">Web & App Design</p>
-                      <h5 class="list-title line-clamp2"><a href="/services/details">I will do mobile app development for ios and android</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="listing-style1">
-                    <div class="list-thumb">
-                      <img class="w-100" src="{{asset('assets/images/listings/g-5.jpg')}}" alt="">
-                      <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                    </div>
-                    <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1">Web & App Design</p>
-                      <h5 class="list-title"><a href="/services/details">I will design modern websites in figma or adobe xd</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="listing-style1">
-                    <div class="list-thumb">
-                      <img class="w-100" src="{{asset('assets/images/listings/g-6.jpg')}}" alt="">
-                      <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                    </div>
-                    <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1">Web & App Design</p>
-                      <h5 class="list-title"><a href="/services/details">I will design modern websites in figma or adobe xd</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="listing-style1">
-                    <div class="list-thumb">
-                      <img class="w-100" src="{{asset('assets/images/listings/g-7.jpg')}}" alt="">
-                      <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                    </div>
-                    <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1">Design & Creative</p>
-                      <h5 class="list-title line-clamp2"><a href="/services/details">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
-                    </div>
-                  </div>
-                </div>
+                @endforeach
+
               </div>
             </div>
           </div>
@@ -446,7 +221,7 @@
               <div class="iconbox-style1 border-less p-0">
                 <div class="icon before-none"><span class="flaticon-secure"></span></div>
                 <div class="details">
-                  <h4 class="title mt10 mb-3">payer en toute sécurité</h4>
+                  <h4 class="title mt10 mb-3">Payer en toute sécurité</h4>
                   <p class="text">Toutes les transactions sont effectuées sur la plateforme freeio. Qu'un client utilise une carte de crédit, PayPal ou un autre moyen de paiement, nous nous occupons de tout et assurons la sécurité de vos informations personnelles...</p>
                 </div>
               </div>

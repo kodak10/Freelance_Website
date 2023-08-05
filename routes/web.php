@@ -9,46 +9,33 @@ use App\Http\Controllers\secteurController;
 use App\Http\Controllers\serviceController;
 use App\Http\Controllers\departementController;
 use App\Http\Controllers\demandesInscriptionController;
+use App\Http\Controllers\WebsiteController;
 
 // Route site Web
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/blog', function () {
-    return view('blog');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/', [WebsiteController::class, 'index']);
+Route::post('/services/search', [WebsiteController::class, 'search'])->name('services.search');
+
+Route::get('/about', [WebsiteController::class, 'about']);
+Route::get('/blog', [WebsiteController::class, 'blog']);
+Route::get('/contact', [WebsiteController::class, 'contact']);
+Route::get('/services', [WebsiteController::class, 'services']);
+Route::get('/services/{details}', [WebsiteController::class, 'services_detail']);
+Route::get('/login', [WebsiteController::class, 'login'])->name('login');
+Route::get('/register', [WebsiteController::class, 'register']);
 
 
+
+
+// Route Auth
 Route::post('/login', [AuthentificationController::class, 'login'])->name('postLogin');
-//Route::get('/login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
-Route::get('/login', [AuthentificationController::class, 'loginForm'])->name('login');
+//Route::get('/login', [AuthentificationController::class, 'loginForm'])->name('login');
 Route::post('/register/client', [AuthentificationController::class, 'registerClient'])->name('inscriptionClient');
 Route::post('/register/entreprise', [AuthentificationController::class, 'registerEntreprise'])->name('inscriptionEntreprise');
-
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout' ])->name('logout');
-
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/services', function () {
-    return view('services');
-});
-Route::get('/services/details', function () {
-    return view('services-details');
-});
-Route::get('/administration/login', function () {
-    return view('Administration.login');
-});
 
 
 // Vos routes d'administration ici
-Route::prefix('administration')->middleware(['auth', 'verified' ,'role:service-client'])->group(function () {
+Route::prefix('administration')->middleware(['auth', 'verified' ,'role:serviceClient'])->group(function () {
 
     Route::get('/', [App\Http\Controllers\demandesInscriptionController::class, 'index']);
     Route::get('/detail', function () {
@@ -87,6 +74,3 @@ Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->gr
     });
 
 });
-
-
-//Auth::routes();
