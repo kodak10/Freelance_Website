@@ -15,6 +15,9 @@
     header.nav-homepage-style a{
         color: #000000 !important;
     }
+    .mobilie_header_nav{
+        background-color: #5BBB7B !important;
+    }
     header.nav-homepage-style.stricky.stricky-fixed{
         background-color: #ffffff;
         border-bottom: 1px solid #E9E9E9;
@@ -52,19 +55,25 @@
                     <h4>Nous sommes heureux de vous revoir!</h4>
                     <p class="text">Vous n'avez pas de compte ? <a href="/register" class="text-thm fw-bold">S'inscrire</a></p>
                 </div>
+                <div class="row">
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @if(session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                </div>
 
                 <form method="post" action="{{route('postLogin')}}">
-                    <div class="row">
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                    </div>
+
                     @csrf
                     <div class="mb20">
                         <label class="form-label fw600 dark-color">Email</label>

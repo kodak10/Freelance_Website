@@ -44,43 +44,7 @@
                             <div class="box-search">
                               <span class="icon far fa-magnifying-glass"></span>
                               <input class="form-control" type="text" name="search" id="search" placeholder="Quel est le service que vous rechercher ?">
-                              <div class="search-suggestions">
-                                <h6 class="fz14 ml30 mt25 mb-3">Recherches Populaire</h6>
-                                <div class="box-suggestions">
-                                  <ul class="px-0 m-0 pb-4">
-                                    <li>
-                                      <div class="info-product">
-                                        <div class="item_title">mobile app development</div>
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="info-product">
-                                        <div class="item_title">mobile app builder</div>
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="info-product">
-                                        <div class="item_title">mobile legends</div>
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="info-product">
-                                        <div class="item_title">mobile app ui ux design</div>
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="info-product">
-                                        <div class="item_title">mobile game app development</div>
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="info-product">
-                                        <div class="item_title">mobile app design</div>
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
+
                             </div>
                           </form>
                         </div>
@@ -126,7 +90,7 @@
               </div>
             </div>
           </div>
-          <div class="row d-none d-lg-flex wow fadeInUp">
+          <div class="row d-block d-lg-flex wow fadeInUp">
             @foreach ($categories as $categorie )
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="iconbox-style1">
@@ -155,7 +119,7 @@
             </div>
             <div class="col-lg-3">
               <div class="text-start text-lg-end mb-4 mb-lg-2">
-                <a class="ud-btn2" href="/services">Tout les services<i class="fal fa-arrow-right-long"></i></a>
+                <a class="ud-btn2" href="/services">Tous les services<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
@@ -169,11 +133,11 @@
                   <div class="listing-style1">
                     <div class="list-thumb">
                       <img class="w-100" src="{{asset('assets/images/listings/g-1.jpg')}}" alt="">
-                      <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                      <a href="" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                     </div>
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">{{$tendance->libelle}}</p>
-                      <h5 class="list-title"><a href="/services/details">I will design modern websites in figma or adobe xd</a></h5>
+                      <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $tendance->libelle]) }}">I will design modern websites in figma or adobe xd</a></h5>
                     </div>
                   </div>
                 </div>

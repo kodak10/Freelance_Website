@@ -13,16 +13,13 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Carbon;
 
 
 
 
 class AuthentificationController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-    */
-
 
     // Action register
     public function registerClient(Request $request)
@@ -41,14 +38,13 @@ class AuthentificationController extends Controller
 
         ]);
 
-
         // nouvel user pour les infos de connexion
         $user = User::create([
             'name' => $request->nom,
             'email' => strtolower($request->email),
             'password' => Hash::make($request->password),
             'role' => $request->role,
-            'email_verified_at' => date('Y-m-d H:i:s'),
+            'email_verified_at' => Carbon::now(),
         ])->assignRole("client");
 
         // nouvelle entreprise
@@ -60,7 +56,9 @@ class AuthentificationController extends Controller
             'user_id' => $user->id,
         ]);
 
-        return redirect()->route('login')->with('success','Votre inscription à été prise en compte');
+        //return redirect::back()->with('success', 'Enregistrement réussi !');
+
+        return redirect()->back()->with('success','Votre inscription à été prise en compte');
     }
 
     public function registerEntreprise(Request $request)
@@ -79,19 +77,18 @@ class AuthentificationController extends Controller
 
         ]);
 
-
         // nouvel user pour les infos de connexion
         $user = User::create([
             'name' => $request->name,
             'email' => strtolower($request->email),
             'password' => Hash::make($request->password),
             'role' => $request->role,
-            'email_verified_at' => date('Y-m-d H:i:s'),
+            'email_verified_at' => Carbon::now(),
         ])->assignRole("compagny");
 
         // nouvelle entreprise
         $entreprise = Entreprise::create([
-            'num_inscription' => mt_rand(10, 9999),
+            'num_inscription' => mt_rand(10000, 99999),
             'type_entreprise' => $request->type_entreprise,
             'name' => $request->name,
             'nationalite' => $request->nationalite,
