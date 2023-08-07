@@ -19,13 +19,10 @@ Route::get('/about', [WebsiteController::class, 'about']);
 Route::get('/blog', [WebsiteController::class, 'blog']);
 Route::get('/contact', [WebsiteController::class, 'contact']);
 Route::get('/services', [WebsiteController::class, 'services']);
-//Route::get('/services/{details}', [WebsiteController::class, 'services_detail']);
 Route::get('/services/{slug}', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
 
 Route::get('/login', [WebsiteController::class, 'login'])->name('login');
 Route::get('/register', [WebsiteController::class, 'register']);
-
-
 
 
 // Route Auth
@@ -37,7 +34,8 @@ Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logou
 
 
 // Vos routes d'administration ici
-Route::prefix('administration')->middleware(['auth', 'verified' ,'role:serviceClient'])->group(function () {
+// Route::prefix('administration')->middleware(['auth', 'verified' ,'role:serviceClient'])->group(function () {  // Sans validation email
+Route::prefix('administration')->middleware(['auth', 'role:serviceClient'])->group(function () {
 
     Route::get('/', [App\Http\Controllers\demandesInscriptionController::class, 'index']);
     Route::get('/detail', function () {
@@ -56,7 +54,8 @@ Route::prefix('administration')->middleware(['auth', 'verified' ,'role:serviceCl
 });
 
 // Vos routes d'user ici
-Route::prefix('user')->middleware(['auth', 'verified','role:client'])->group(function () {
+// Route::prefix('user')->middleware(['auth', 'verified','role:client'])->group(function () {   // Sans validation email
+Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
     Route::get('/', function () {
         return view('Client.home');
     });
@@ -67,7 +66,8 @@ Route::prefix('user')->middleware(['auth', 'verified','role:client'])->group(fun
 });
 
 // Vos routes d'user ici
-Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->group(function () {
+// Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->group(function () {    // Sans validation email
+Route::prefix('compagny')->middleware(['auth','role:compagny'])->group(function () {
     Route::get('/', function () {
         return view('Entreprise.home');
     });
