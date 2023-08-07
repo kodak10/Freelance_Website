@@ -25,13 +25,14 @@ class WebsiteController extends Controller
     {
         $categories = Departement::paginate(6);
         $services = Service::paginate(8);
-        return view('services', ['services' => $services] , compact('categories'));
+        return view('services' , compact('categories', 'services'));
     }
 
-    public function services_detail()
+    public function serviceShow($slug)
     {
+        $serviceDetail = Service::where('libelle', $slug)->firstOrFail();
         $categories = Departement::paginate(6);
-        return view('services-details', compact('categories'));
+        return view('services_details', compact('categories', 'serviceDetail'));
     }
 
     public function about()

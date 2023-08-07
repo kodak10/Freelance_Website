@@ -22,7 +22,7 @@
                 <div class="col-lg-12">
                     <div class="half_map_area_content mt30">
                         <div class="text-center text-sm-start">
-                            <h4 class="fw700 mb20">Les Services</h4>
+                            <h4 class="fw700 mb20">Les Catégories de services</h4>
                         </div>
                         <div class="row align-items-center mb20">
                             <div class="col-sm-6 col-xxl-8">

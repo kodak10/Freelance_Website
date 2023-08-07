@@ -1,7 +1,13 @@
-<!-- resources/views/services/search.blade.php -->
-
 @extends('layouts.app')
 
+<style>
+    header.nav-homepage-style {
+        position: relative !important;
+    }
+    .mobilie_header_nav{
+        background-color: #5BBB7B !important;
+    }
+</style>
 @section('content')
     <div class="container">
         <form action="{{ route('services.search') }}" method="post">
@@ -13,7 +19,7 @@
                         <select name="category" id="category" class="form-control">
                             <option value="">Toutes les catégories</option>
                             @foreach ($categories as $cat)
-                                <option value="{{ $cat }}" @if($category == $cat) selected @endif>{{ $cat }}</option>
+                                <option value="{{ $cat->libelle }}" @if($category == $cat) selected @endif>{{ $cat->libelle }}</option>
                             @endforeach
                         </select>
                     </div>

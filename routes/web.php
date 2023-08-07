@@ -19,7 +19,9 @@ Route::get('/about', [WebsiteController::class, 'about']);
 Route::get('/blog', [WebsiteController::class, 'blog']);
 Route::get('/contact', [WebsiteController::class, 'contact']);
 Route::get('/services', [WebsiteController::class, 'services']);
-Route::get('/services/{details}', [WebsiteController::class, 'services_detail']);
+//Route::get('/services/{details}', [WebsiteController::class, 'services_detail']);
+Route::get('/services/{slug}', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
+
 Route::get('/login', [WebsiteController::class, 'login'])->name('login');
 Route::get('/register', [WebsiteController::class, 'register']);
 
