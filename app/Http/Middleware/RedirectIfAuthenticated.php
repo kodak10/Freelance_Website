@@ -20,8 +20,32 @@ class RedirectIfAuthenticated
         $guards = empty($guards) ? [null] : $guards;
 
         foreach ($guards as $guard) {
+            /* if (Auth::guard($guard)->check()) {
+                //return redirect(RouteServiceProvider::HOME);
+
+                if (Auth::user()->hasRole('client')) {
+                    return redirect()->route('about');
+                }
+
+                // Si l'utilisateur est le service client
+                if (Auth::user()->hasRole('service-client')) {
+                    return redirect()->route('demandes_inscription.index');
+                }
+
+            } */
+
             if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+                $user = Auth::guard($guard)->user();
+
+                if ($user instanceof User) {
+                    if ($user->hasRole('client')) {
+                        // Redirection pour les clients
+                        return redirect('/client');
+                    } elseif ($user->hasRole('compagny')) {
+                        // Redirection pour les entreprise
+                        return redirect('/compagny');
+                    }
+                }
             }
         }
 

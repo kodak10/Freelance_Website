@@ -25,7 +25,7 @@
                             <hr class="bg-dark">
                             <h3 class="title text-center">Modifier un departement</h3>
                             <hr class="bg-dark">
-                            <a href="/departements" class="ud-btn btn-dark mb25 me-4">Liste des departements</a>
+                            <a href="/administration/departements" class="ud-btn btn-dark mb25 me-4">Liste des departements</a>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <form action="{{ route('departements.update', $departements->id) }}" method="post">
@@ -42,7 +42,7 @@
                                                 <div class="form-group mt-1 ">
                                                     <button
                                                         type="submit"class="btn btn-success text-white p-2 ">Valider</button>
-                                                    <a href="/departements"class="btn btn-danger text-white p-2 ">Retour</a>
+                                                    <a href="/administration/departements"class="btn btn-danger text-white p-2 ">Retour</a>
 
                                                 </div>
                                             </div>

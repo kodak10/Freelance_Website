@@ -17,8 +17,8 @@ class SecteurFactory extends Factory
     public function definition(): array
     {
         return [
-            'libelle' => fake()->lastName(),
-            'idDepartement' => fake()->numberBetween(1, 10),
+            'libelle' => fake()->jobTitle(),
+            'departement_id' => fake()->numberBetween(1, 10),
 
         ];
     }

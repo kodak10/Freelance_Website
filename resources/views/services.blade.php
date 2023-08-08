@@ -3,41 +3,15 @@
 
 <style>
     .mobilie_header_nav{
-        background-color: #000000 !important;
+        background-color: #5BBB7B !important;
     }
-</style>
-
-<style>
-
     header.nav-homepage-style {
-        background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-        padding: 7px 0;
         position: relative;
-        width: 100%;
-        z-index: 3;
-        color: #000000 !important;
     }
     header.nav-homepage-style a{
         color: #000000 !important;
     }
-    header.nav-homepage-style.stricky.stricky-fixed{
-        background-color: #ffffff;
-        border-bottom: 1px solid #E9E9E9;
-        -webkit-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
-        -moz-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
-        -o-box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
-        box-shadow: 0px 5px 20px rgba(91, 187, 123, 0.15);
-        z-index: 9;
-    }
-    .btn-white, .btn-white2 {
-        background-color: #ffffff;
-        border: 2px solid #000000;
-    }
-    header.nav-homepage-style .sidemenu-btn, header.nav-homepage-style .login-info {
-        color: #000000 !important;
-        font-weight: 600;
-    }
+
 
 </style>
 
@@ -98,133 +72,41 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3">
-                                <div class="listing-style1">
-                                    <div class="list-thumb">
-                                        <img class="w-100" src="{{asset('assets/images/listings/g-1.jpg')}}" alt="">
-                                        <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                                    </div>
-                                    <div class="list-content">
-                                        <p class="list-text body-color fz14 mb-1">Web & App Design</p>
-                                        <h5 class="list-title"><a href="/services/details">I will design modern websites in figma or adobe xd</a></h5>
-                                        <hr class="my-2">
-                                        <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                                            <a href="#">
-                                                <span class="position-relative mr10">
-                                                <img class="rounded-circle" src="assets/images/team/fl-s-1.png" alt="Freelancer Photo">
-                                                <span class="online-badge"></span>
-                                                </span>
-                                                <span class="fz14">Kodak Tech</span>
-                                            </a>
+                            @foreach ($services as $service )
+                                <div class="col-lg-3">
+                                    <div class="listing-style1">
+                                        <div class="list-thumb">
+                                            <img class="w-100" src="{{asset('assets/images/listings/g-1.jpg')}}" alt="Image">
+                                            <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="listing-style1">
-                                    <div class="list-thumb">
-                                        <div class="listing-thumbIn-slider position-relative navi_pagi_bottom_center slider-1-grid owl-carousel owl-theme">
-                                            <div class="item">
-                                                <img class="w-100" src="{{asset('assets/images/listings/g-2.jpg')}}" alt="">
-                                                <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                                            </div>
-                                            <div class="item">
-                                                <img class="w-100" src="{{asset('assets/images/listings/g-3.jpg')}}" alt="">
-                                                <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                                            </div>
-                                            <div class="item">
-                                                <img class="w-100" src="{{asset('assets/images/listings/g-4.jpg')}}" alt="">
-                                                <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                                            </div>
-                                            <div class="item">
-                                                <img class="w-100" src="{{asset('assets/images/listings/g-5.jpg')}}" alt="">
-                                                <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                                        <div class="list-content">
+                                            <p class="list-text body-color fz14 mb-1">{{$service->libelle}}</p>
+                                            <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->description}}</a></h5>
+                                            <hr class="my-2">
+                                            <div class="list-meta d-flex justify-content-between align-items-center mt15">
+                                                <a href="#">
+                                                    <span class="position-relative mr10">
+                                                    <img class="rounded-circle" src="" alt="Photo">
+                                                    <span class="online-badge"></span>
+                                                    </span>
+
+                                                    {{-- <span class="fz14">{{$service->entreprise->name}}</span> --}}
+                                                    <span class="fz14">Kodak Tech</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="list-content">
-                                        <p class="list-text body-color fz14 mb-1">Art & Illustration</p>
-                                        <h5 class="list-title"><a href="/services/details">I will create modern flat design illustration</a></h5>
-                                        <hr class="my-2">
-                                        <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                                            <a href="#">
-                                                <span class="position-relative mr10">
-                                                <img class="rounded-circle" src="assets/images/team/fl-s-2.png" alt="Freelancer Photo">
-                                                <span class="online-badge"></span>
-                                                </span>
-                                                <span class="fz14">Kodak Tech</span>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
+
+                            @endforeach
+
+                            <div class="d-flex justify-content-center mb-5 ">
+                                {{ $services->links() }}
                             </div>
-                            <div class="col-lg-3">
-                                <div class="listing-style1">
-                                    <div class="list-thumb">
-                                        <img class="w-100" src="{{asset('assets/images/listings/g-3.jpg')}}" alt="">
-                                        <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                                    </div>
-                                    <div class="list-content">
-                                        <p class="list-text body-color fz14 mb-1">Design & Creative</p>
-                                        <h5 class="list-title line-clamp2"><a href="/services/details">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
-                                        <hr class="my-2">
-                                        <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                                            <a href="#">
-                                                <span class="position-relative mr10">
-                                                <img class="rounded-circle" src="assets/images/team/fl-s-3.png" alt="Freelancer Photo">
-                                                <span class="online-badge"></span>
-                                                </span>
-                                                <span class="fz14">Kodak Tech</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="listing-style1">
-                                    <div class="list-thumb">
-                                        <img class="w-100" src="{{asset('assets/images/listings/g-4.jpg')}}" alt="">
-                                        <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
-                                    </div>
-                                    <div class="list-content">
-                                        <p class="list-text body-color fz14 mb-1">Web & App Design</p>
-                                        <h5 class="list-title"><a href="/services/details">I will do mobile app development for ios and android</a></h5>
-                                        <hr class="my-2">
-                                        <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                                            <a href="#">
-                                                <span class="position-relative mr10">
-                                                <img class="rounded-circle" src="assets/images/team/fl-s-4.png" alt="Freelancer Photo">
-                                                <span class="online-badge"></span>
-                                                </span>
-                                                <span class="fz14">Kodak Tech</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
-                        <div class="row">
-                            <div class="mbp_pagination mt30 text-center">
-                                <ul class="page_navigation">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item active" aria-current="page">
-                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                    <li class="page-item d-inline-block d-sm-none"><a class="page-link" href="#">...</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                    <li class="page-item d-none d-sm-inline-block"><a class="page-link" href="#">...</a></li>
-                                    <li class="page-item d-none d-sm-inline-block"><a class="page-link" href="#">20</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 

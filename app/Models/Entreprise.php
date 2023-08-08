@@ -6,22 +6,29 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Client extends Model
+class Entreprise extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'type_entreprise',
         'name',
-        'prenoms',
-        'date_naissance',
+        'nationalite',
         'telephone',
         'photo',
-        'user_id',
+        'email',
+        'regime',
+        'localisation',
+        'approve',
+        'num_inscription',
+        'user_id'
     ];
 
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-
-
+    public function service()
+    {
+        return $this->hasMany(Service::class);
+    }
 }

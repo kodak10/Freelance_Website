@@ -12,4 +12,14 @@ class Secteur extends Model
         'libelle',
         'idDepartement',
     ];
+
+    public function categories()
+    {
+        return $this->hasOne(Departement::class);
+    }
+
+    public function services()
+    {
+        return $this->hasMany(Service::class);
+    }
 }

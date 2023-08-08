@@ -15,16 +15,10 @@ return new class extends Migration
            $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->boolean('isAdmin')->default(false);
-            // $table->unsignedBigInteger('id_client');
-            $table->integer('id_client')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-
-            // $table->foreign('id_client')->references('id')->on('clients')->cascadeOnDelete()->cascadeOnUpdate();
-
         });
     }
 

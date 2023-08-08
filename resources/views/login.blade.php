@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-
-
 <style>
 
     header.nav-homepage-style {
@@ -16,6 +14,9 @@
     }
     header.nav-homepage-style a{
         color: #000000 !important;
+    }
+    .mobilie_header_nav{
+        background-color: #5BBB7B !important;
     }
     header.nav-homepage-style.stricky.stricky-fixed{
         background-color: #ffffff;
@@ -54,16 +55,25 @@
                     <h4>Nous sommes heureux de vous revoir!</h4>
                     <p class="text">Vous n'avez pas de compte ? <a href="/register" class="text-thm fw-bold">S'inscrire</a></p>
                 </div>
+                <div class="row">
+                    @if(session('success') === false)
+                        <div class="alert alert-danger">
+                            {{ session('message') }}
+                        </div>
+                    @endif
 
-                <form action="/administration">
+                </div>
 
+                <form method="post" action="{{route('postLogin')}}">
+
+                    @csrf
                     <div class="mb20">
                         <label class="form-label fw600 dark-color">Email</label>
-                        <input type="email" class="form-control" placeholder="projetencours@gmail.com">
+                        <input type="email" class="form-control" placeholder="projetencours@gmail.com" name="email">
                     </div>
                     <div class="mb15">
                         <label class="form-label fw600 dark-color">Mot de passe</label>
-                        <input type="text" class="form-control" placeholder="*******">
+                        <input type="text" class="form-control" placeholder="" name="password" value="password" >
                     </div>
                     <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb20">
                         <label class="custom_checkbox fz14 ff-heading">Se souvenir de moi
@@ -73,7 +83,7 @@
                         <a class="fz14 ff-heading" href="#">Mot de passe oublié ?</a>
                     </div>
                     <div class="d-grid mb20">
-                    <button class="ud-btn btn-thm" type="submit">Se Connecter <i class="fal fa-arrow-right-long"></i></button>
+                        <button class="ud-btn btn-thm" type="submit">Se Connecter <i class="fal fa-arrow-right-long"></i></button>
                     </div>
                 </form>
 

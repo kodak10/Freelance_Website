@@ -52,7 +52,7 @@
               <div class="breadcumb-list">
                 <a href="#">Accueil</a>
                 <a href="#">Services</a>
-                <a href="#">Design & Creative</a>
+                <a href="#">{{$serviceDetail->libelle}}</a>
               </div>
             </div>
           </div>
@@ -145,102 +145,8 @@
               <div class="service-about">
                 <h4>Detail du service</h4>
                 <p>
-                   Je suis guidé par un processus méthodique qui vise à assurer un résultat final exceptionnel et une expérience utilisateur optimale.
-                   Compréhension approfondie des besoins : Je commence par une phase de découverte approfondie où j'écoute attentivement vos objectifs, vos idées et vos attentes.
-                   Recherche et inspiration : Je réalise une recherche approfondie pour comprendre les tendances actuelles du webdesign, les meilleures pratiques et les inspirations pertinentes pour votre projet.
-                   Création de wireframes : À partir des informations recueillies, je crée des wireframes pour définir l'architecture de l'information et la disposition générale de votre site web.
-                   Conception visuelle : Une fois les wireframes validés, je passe à la conception visuelle en utilisant des outils tels que Figma ou Adobe XD.
-                   Itérations et collaboration : Je partage les maquettes avec vous pour obtenir vos commentaires et vos révisions.
-                   Approbation finale : Une fois que nous sommes tous satisfaits des maquettes finales, je vous les livre dans des formats adaptés, prêts à être utilisés par vous-même ou votre équipe de développement..
+                    {{$serviceDetail->description}}
                 </p>
-                <hr class="opacity-100 mb60">
-                <h4>Packages</h4>
-                <div class="table-style2 table-responsive bdr1 mt30 mb60">
-                  <table class="table table-borderless mb-0">
-                    <thead class="t-head">
-                      <tr>
-                        <th class="col" scope="col"><span class="h4-panther">Packages</span></th>
-                        <th class="col" scope="col">
-                          <span class="h4-panther">US$75<br></span>Basic<br>PAGE D'ATTERISSAGE<br>Une page - UI design - responsive<br>
-                        </th>
-                        <th class="col" scope="col">
-                          <span class="h4-panther">US$120<br></span>Standard<br>site web classique<br>One page - UI design - responsive - Mockup presentation<br>
-                        </th>
-                        <th class="col" scope="col">
-                          <span class="h4-panther">US$300<br></span>Premium<br>site web personnalisé<br>One page - UI design - responsive - Figma files - Mockup presentation<br>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody class="t-body">
-                      <tr class="bgc-thm3">
-                        <th scope="row">responsive design</th>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Prototype</th>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                      </tr>
-                      <tr class="bgc-thm3">
-                        <th scope="row">Source files</th>
-                        <td>Aucun</td>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Content upload</th>
-                        <td>Aucun</td>
-                        <td>Aucun</td>
-                        <td><a class="check_circle bgc-thm" href="#"><span class="fas fa-check"></span></a></td>
-                      </tr>
-                      <tr class="bgc-thm3">
-                        <th scope="row">Numbers of pages or screens</th>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>5</td>
-                      </tr>
-                      <tr class="bgc-thm3">
-                        <th scope="row">Revisions</th>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>illimité</td>
-                      </tr>
-                      <tr class="bgc-thm3">
-                        <th scope="row">Delivery Time</th>
-                        <td>2 jours</td>
-                        <td>5 jours</td>
-                        <td>7 jours</td>
-                      </tr>
-                      <tr class="bgc-thm3">
-                        <th scope="row">Total</th>
-                        <td><span class="h4-panther">US$75</span><br>
-                        <div class="d-grid mt30">
-                        <a href="#" class="ud-btn btn-thm">Select<i class="fal fa-arrow-right-long"></i></a>
-                        </div>
-                      </td>
-                      <td><span class="h4-panther">US$120</span><br>
-                        <div class="d-grid mt30">
-                        <a href="#" class="ud-btn btn-thm">Select<i class="fal fa-arrow-right-long"></i></a>
-                        </div>
-                      </td>
-                      <td><span class="h4-panther">US$300</span><br>
-                        <div class="d-grid mt30">
-                        <a href="#" class="ud-btn btn-thm">Select<i class="fal fa-arrow-right-long"></i></a>
-                        </div>
-                      </td>
-                      </tr>
-                      {{-- <tr>
-                        <th scope="row"></th>
-                        <td><a href="#" class="ud-btn btn-thm">Select<i class="fal fa-arrow-right-long"></i></a></td>
-                        <td><a href="#" class="ud-btn btn-thm">Select<i class="fal fa-arrow-right-long"></i></a></td>
-                      </tr> --}}
-                    </tbody>
-                  </table>
-                </div>
-
 
                 <hr class="opacity-100 mb15">
                 <div class="product_single_content mb50">
@@ -248,7 +154,7 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="total_review mb30 mt45">
-                          <h4>4 Commentaires</h4>
+                          <h4>1 Commentaire</h4>
                         </div>
                         <div class="d-md-flex align-items-center mb30">
                           <div class="total-review-box d-flex align-items-center text-center mb30-sm">
@@ -311,23 +217,10 @@
                           <a href="#"><i class="fas fa-thumbs-down"></i>Je n'aime pas</a>
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="mbp_first position-relative d-flex align-items-center justify-content-start mt30 mb30-sm">
-                          <img src="assets/images/blog/comments-2.png" class="mr-3" alt="comments-2.png">
-                          <div class="ml20">
-                            <h6 class="mt-0 mb-0">Darrell Steward</h6>
-                            <div><span class="fz14">12 March 2022</span></div>
-                          </div>
-                        </div>
-                        <p class="text mt20 mb20">Je tiens à exprimer toute ma satisfaction pour le service exceptionnel que j'ai reçu aujourd'hui de la part du designer Kodak. Le professionnalisme, l'efficacité et la gentillesse de Kodak ont été remarquables. Chaque détail de mon projet de design a été pris en compte, et le résultat est tout simplement parfait. Je recommande vivement les services de Kodak à tous ceux qui recherchent une expérience client de haut niveau dans le domaine du design. Merci encore à Kodak pour ce travail remarquable !</p>
-                        <div class="review_cansel_btns d-flex pb30">
-                            <a href="#"><i class="fas fa-thumbs-up"></i>J'aime</a>
-                            <a href="#"><i class="fas fa-thumbs-down"></i>Je n'aime pas</a>
-                        </div>
-                      </div>
+
                       <div class="col-md-12">
                         <div class="position-relative bdrb1 pb50">
-                          <a href="#" class="ud-btn btn-light-thm">Voir Plus<i class="fal fa-arrow-right-long"></i></a>
+                          <a href="#" class="ud-btn btn-light-thm mt-3">Voir Plus<i class="fal fa-arrow-right-long"></i></a>
                         </div>
                       </div>
                     </div>
@@ -335,7 +228,7 @@
                 </div>
                 <div class="bsp_reveiw_wrt">
                   <h6 class="fz17">Ajourter une note</h6>
-                  <p class="text">Votre adresse email ne sera pas publiée. Les champs requis sont indiqués *</p>
+                  <p class="text">Votre adresse email ne sera pas publiée. Tous les champs sont obligatoires</p>
                   <h6>Votre évaluation</h6>
                   <div class="d-flex">
                     <i class="fas fa-star review-color"></i>
@@ -349,23 +242,23 @@
                       <div class="col-md-12">
                         <div class="mb-4">
                           <label class="fw500 fz16 ff-heading dark-color mb-2">Commentaire</label>
-                          <textarea class="pt15" rows="6" placeholder="Je tiens à exprimer toute ma satisfaction pour le service exceptionnel que j'ai reçu aujourd'hui de la part du designer Kodak. Le professionnalisme, l'efficacité et la gentillesse de Kodak ont été remarquables. Chaque détail de mon projet de design a été pris en compte, et le résultat est tout simplement parfait. Je recommande vivement les services de Kodak à tous ceux qui recherchent une expérience client de haut niveau dans le domaine du design. Merci encore à Kodak pour ce travail remarquable !"></textarea>
+                          <textarea class="pt15" rows="4" placeholder="Votre commentaire"></textarea>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="mb20">
                           <label class="fw500 ff-heading dark-color mb-2">Nom & prénoms</label>
-                          <input type="text" class="form-control" placeholder="Ali Tufan">
+                          <input type="text" class="form-control" placeholder="Votre nom complet">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="mb20">
                           <label class="fw500 ff-heading dark-color mb-2">Email</label>
-                          <input type="email" class="form-control" placeholder="creativelayers088">
+                          <input type="email" class="form-control" placeholder="Votre Email">
                         </div>
                       </div>
                       <div class="col-md-12">
-                        <a href="#" class="ud-btn btn-thm">Demander un devis<i class="fal fa-arrow-right-long"></i></a>
+                        <a href="#" class="ud-btn btn-thm">Commenter<i class="fal fa-arrow-right-long"></i></a>
                       </div>
                     </div>
                   </form>
@@ -379,7 +272,7 @@
 
                 <div class="freelancer-style1 service-single mb-0">
                     <div class="d-grid mt30">
-                        <a href="#" class="ud-btn btn-thm-border">Contactez<i class="fal fa-arrow-right-long"></i></a>
+                        <a href="#" class="ud-btn btn-thm-border">Contactez l'entreprise<i class="fal fa-arrow-right-long"></i></a>
                     </div>
                 </div>
 

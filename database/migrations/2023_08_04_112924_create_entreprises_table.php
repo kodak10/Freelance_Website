@@ -11,17 +11,23 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clients', function (Blueprint $table) {
+        Schema::create('entreprises', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id')->unique()->unsigned()->index();
+            $table->string('type_entreprise');
+            $table->string('num_inscription')->nullable();
+            $table->string('approve')->default(0)->nullable();
             $table->string('name');
-            $table->string('prenoms');
+            $table->string('nationalite');
             $table->string('telephone');
-            $table->string('date_naissance');
+            $table->string('email');
+            $table->string('regime');
+            $table->string('localisation');
             $table->string('photo')->nullable();
-
             $table->timestamps();
+
             $table->foreign('user_id')->references('id')->on('users');
+
         });
     }
 
@@ -30,6 +36,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('entreprises');
     }
 };

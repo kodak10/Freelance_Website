@@ -41,7 +41,7 @@
                                                 <div class="form-group mt-1 ">
                                                     <button
                                                         type="submit"class="btn btn-success text-white p-2 ">Valider</button>
-                                                    <a href="/departements"class="btn btn-danger text-white p-2 ">Retour</a>
+                                                    <a href="/administration/departements"class="btn btn-danger text-white p-2 ">Retour</a>
 
                                                 </div>
                                             </div>
