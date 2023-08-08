@@ -33,7 +33,7 @@
             <div class="row">
               <div class="col-xl-10 col-xxl-7">
                 <div class="position-relative">
-                  <h3 class="banner-title"><span style="color:#5BBB7B !important;">Trouver les meilleurs entreprises ou particuliers</span> pour votre activité</h3>
+                  <h3 class="banner-title">Trouvez des <span style="color:#5BBB7B !important;">entreprises qualifiées</span> pour vos services.</h3>
                   <!-- <p class="banner-text text-white ff-heading mb25">Millions of people use freeio.com to turn their ideas into reality.</p> -->
                   <div class="advance-search-tab bgc-white bgct-sm p10 p0-md bdrs4 banner-btn position-relative zi9">
                     <div class="row">
@@ -80,25 +80,25 @@
           <div class="row align-items-center wow fadeInUp" data-wow-delay="300ms">
             <div class="col-lg-9">
               <div class="main-title2">
-                <h2 class="title">Rechercher les services par catégorie</h2>
+                <h2 class="title">Recherchez des services par catégorie</h2>
                 <!-- <p class="paragraph">Get some Inspirations from 1800+ skills</p> -->
               </div>
             </div>
             <div class="col-lg-3">
               <div class="text-start text-lg-end mb-4 mb-lg-2">
-                <a class="ud-btn2" href="#">Toutes les catégories<i class="fal fa-arrow-right-long"></i></a>
+                <a class="ud-btn2" href="/departements">Toutes les catégories<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
           <div class="row d-block d-lg-flex wow fadeInUp">
-            @foreach ($categories as $categorie )
+            @foreach ($categories_min as $categorie )
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="iconbox-style1">
                     <div class="icon"><span class="flaticon-developer"></span></div>
                     <div class="details mt20">
                         <p class="text mb5">1.853 skills</p>
                         <h4 class="title">{{$categorie->libelle}}</h4>
-                        <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                            <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
                     </div>
                 </div>
               </div>

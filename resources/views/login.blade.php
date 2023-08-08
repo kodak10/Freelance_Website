@@ -56,20 +56,12 @@
                     <p class="text">Vous n'avez pas de compte ? <a href="/register" class="text-thm fw-bold">S'inscrire</a></p>
                 </div>
                 <div class="row">
-                    @if ($errors->any())
+                    @if(session('success') === false)
                         <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
+                            {{ session('message') }}
                         </div>
                     @endif
-                    @if(session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
-                    @endif
+
                 </div>
 
                 <form method="post" action="{{route('postLogin')}}">
