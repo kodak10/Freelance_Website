@@ -20,9 +20,10 @@ Route::get('/blog', [WebsiteController::class, 'blog']);
 Route::get('/contact', [WebsiteController::class, 'contact']);
 Route::get('/services', [WebsiteController::class, 'services']);
 Route::get('/services/{slug}', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
+Route::get('/departements', [WebsiteController::class, 'departements']);
 
 Route::get('/login', [WebsiteController::class, 'login'])->name('login');
-Route::get('/register', [WebsiteController::class, 'register']);
+Route::get('/register', [WebsiteController::class, 'register'])->name('register');
 
 
 // Route Auth

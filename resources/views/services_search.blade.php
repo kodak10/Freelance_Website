@@ -6,13 +6,28 @@
     }
     .mobilie_header_nav{
         background-color: #5BBB7B !important;
+        margin-bottom: 50px
     }
+
+</style>
+<style>
+    .mobilie_header_nav{
+        background-color: #5BBB7B !important;
+    }
+    header.nav-homepage-style {
+        position: relative;
+    }
+    header.nav-homepage-style a{
+        color: #000000 !important;
+    }
+
+
 </style>
 @section('content')
     <div class="container">
         <form action="{{ route('services.search') }}" method="post">
             @csrf
-            <div class="row">
+            <div class="row mt-5 mb-5">
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="category">Catégorie</label>
@@ -38,9 +53,10 @@
             </div>
         </form>
 
-        <h4 class="mb-5 mt-5">Résultats de la recherche</h4>
+        <h4 class="">Résultats de la recherche</h4>
 
-        @foreach ($services as $service)
+        <div class="row mt-5">
+            @foreach ($services as $service)
             <div class="col-lg-3">
                 <div class="listing-style1">
                     <div class="list-thumb">
@@ -66,5 +82,7 @@
                 </div>
             </div>
         @endforeach
+        </div>
+
     </div>
 @endsection

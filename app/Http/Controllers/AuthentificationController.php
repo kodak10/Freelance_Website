@@ -47,7 +47,7 @@ class AuthentificationController extends Controller
             'email_verified_at' => Carbon::now(),
         ])->assignRole("client");
 
-        // nouvelle entreprise
+        // nouveau client
         $client = Client::create([
             'name' => $request->nom,
             'prenoms' => $request->prenoms,
@@ -56,9 +56,8 @@ class AuthentificationController extends Controller
             'user_id' => $user->id,
         ]);
 
-        //return redirect::back()->with('success', 'Enregistrement réussi !');
+        return redirect()->route('register')->with('success','Votre inscription à été prise en compte');
 
-        return redirect()->back()->with('success','Votre inscription à été prise en compte');
     }
 
     public function registerEntreprise(Request $request)
@@ -99,7 +98,7 @@ class AuthentificationController extends Controller
             'user_id' => $user->id,
         ]);
 
-        return redirect()->route('login')->with('success','Votre inscription à été prise en compte');
+        return redirect()->route('register')->with('success','Votre inscription à été prise en compte');
 
     }
 
@@ -124,7 +123,7 @@ class AuthentificationController extends Controller
 
         // Verification Email Mot de passe
         if (!auth()->attempt($data)) {
-            return redirect()->back()->with([
+            return redirect()->route('login')->with([
                 "success" => false,
                 "message" => "Email ou mot de passe incorrecte"
             ]);
@@ -133,7 +132,9 @@ class AuthentificationController extends Controller
         // Verification si l'email à été valider
         if (!auth()->user()->email_verified_at) {
             auth()->user()->tokens()->delete();
-            return redirect()->route('login')->with(["success" => false, "message" => "Vous devez valider votre email"], 403);
+            //return redirect()->route('login')->with('success','Votre inscription à été prise en compte');
+
+            return redirect()->route('login')->with(["success" => false, "message" => "Vous devez valider votre email avant de vous connecter"], 403);
         }
 
         // Si l'utilisateur est un client
@@ -151,7 +152,7 @@ class AuthentificationController extends Controller
 
             else if (Auth::user()->compagny->approve == 0) {
                 auth()->user()->tokens()->delete();
-                return redirect()->route('login')->with(["success" => false, "message" => "Votre compte est en attente de verification"], 403);
+                return redirect()->route('login')->with(["success" => false, "message" => "Votre compte est en attente de vérification"], 403);
             }
 
 
