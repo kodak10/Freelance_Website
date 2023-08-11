@@ -150,7 +150,7 @@ class AuthentificationController extends Controller
                 return redirect('/compagny');
             }
 
-            else if (Auth::user()->compagny->approve == 0) {
+            else if (Auth::user()->compagny->approve !== 0) {
                 auth()->user()->tokens()->delete();
                 return redirect()->route('login')->with(["success" => false, "message" => "Votre compte est en attente de vérification"], 403);
             }

@@ -42,14 +42,13 @@ class accesUtilisateurController extends Controller
             'name' => $request->name,
             'password' => Hash::make($request->password),
             'email' => $request->email,
-            'isAdmin' => 1,
             'created_at' => now()
             // 'updated_at'=>now()
         );
         if (User::insert($data)) {
-            return redirect('acces_utilisateurs')->with('added', 'added');
+            return redirect('/administration/acces_utilisateurs')->with('added', 'added');
         } else {
-            return redirect('acces_utilisateurs')->with('nothing', 'nothing');
+            return redirect('/administration/acces_utilisateurs')->with('nothing', 'nothing');
         };
     }
 
@@ -105,9 +104,9 @@ class accesUtilisateurController extends Controller
         }
 
         if ($User->update($data)) {
-            return redirect('acces_utilisateurs')->with('updated', 'updated');
+            return redirect('/administration/acces_utilisateurs')->with('updated', 'updated');
         } else {
-            return redirect('acces_utilisateurs')->with('nothing', 'nothing');
+            return redirect('/administration/acces_utilisateurs')->with('nothing', 'nothing');
         };
     }
 
@@ -118,9 +117,9 @@ class accesUtilisateurController extends Controller
     {
         $info = User::where('id', $id)->firstOrFail();
         if ($info->delete()) {
-            return redirect('acces_utilisateurs')->with('deleted', 'deleted');
+            return redirect('/administration/acces_utilisateurs')->with('deleted', 'deleted');
         } else {
-            return redirect('acces_utilisateurs')->with('nothing', 'nothing');
+            return redirect('/administration/acces_utilisateurs')->with('nothing', 'nothing');
         };
     }
 }

@@ -94,11 +94,7 @@
                                                     </td>
                                                     <td>{{ mb_strtoupper($val->nom) }}</td>
                                                     <td>
-                                                        @foreach ($User as $user)
-                                                            @if ($user->id_client == $val->id)
-                                                                {{ $user->email }}
-                                                            @endif
-                                                        @endforeach
+                                                        {{ $val->email }}
                                                     </td>
                                                     <td width="20%">
                                                         <center>

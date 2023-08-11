@@ -40,15 +40,15 @@ class secteurController extends Controller
         $request->validate($check);
         $data = array(
             'libelle' => $request->libelle,
-            'idDepartement' => $request->idDepartement,
+            'departement_id' => $request->idDepartement,
             'created_at' => now()
             // 'updated_at'=>now()
         );
         if (Secteur::insert($data)) {
 
-            return redirect('secteurs')->with('added', 'added');
+            return redirect('/administration/secteurs')->with('added', 'added');
         } else {
-            return redirect('secteurs')->with('nothing', 'nothing');
+            return redirect('/administration/secteurs')->with('nothing', 'nothing');
         };
     }
 
@@ -86,14 +86,14 @@ class secteurController extends Controller
         $request->validate($check);
         $data = array(
             'libelle' => $request->libelle,
-            'idDepartement' => $request->idDepartement,
+            'departement_id' => $request->idDepartement,
             //  'created_at' => now()
             'updated_at' => now()
         );
         if ($secteur->update($data)) {
-            return redirect('secteurs')->with('updated', 'updated');
+            return redirect('/administration/secteurs')->with('updated', 'updated');
         } else {
-            return redirect('secteurs')->with('nothing', 'nothing');
+            return redirect('/administration/secteurs')->with('nothing', 'nothing');
         };
     }
 
@@ -104,9 +104,9 @@ class secteurController extends Controller
     {
         $info = Secteur::where('id', $id)->firstOrFail();
         if ($info->delete()) {
-            return redirect('secteurs')->with('deleted', 'deleted');
+            return redirect('/administration/secteurs')->with('deleted', 'deleted');
         } else {
-            return redirect('secteurs')->with('nothing', 'nothing');
+            return redirect('/administration/secteurs')->with('nothing', 'nothing');
         };
     }
 }

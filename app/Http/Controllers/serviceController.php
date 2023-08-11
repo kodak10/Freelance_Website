@@ -42,15 +42,15 @@ class serviceController extends Controller
         $data = array(
             'libelle' => $request->libelle,
             'description' => $request->description,
-            'idSecteur' => $request->idSecteur,
+            'secteur_id' => $request->idSecteur,
             'created_at' => now()
             // 'updated_at'=>now()
         );
         // agents de la police nationale* chargé de la protection des ambassades et consulats français à l'étrange
         if (Service::insert($data)) {
-            return redirect('services')->with('added', 'added');
+            return redirect('/administration/services')->with('added', 'added');
         } else {
-            return redirect('services')->with('nothing', 'nothing');
+            return redirect('/administration/services')->with('nothing', 'nothing');
         };
     }
 
@@ -89,15 +89,15 @@ class serviceController extends Controller
         $request->validate($check);
         $data = array(
             'libelle' => $request->libelle,
-            'idSecteur' => $request->idSecteur,
+            'secteur_id' => $request->idSecteur,
             'description' => $request->description,
             //  'created_at' => now()
             'updated_at' => now()
         );
         if ($service->update($data)) {
-            return redirect('services')->with('updated', 'updated');
+            return redirect('/administration/services')->with('updated', 'updated');
         } else {
-            return redirect('services')->with('nothing', 'nothing');
+            return redirect('/administration/services')->with('nothing', 'nothing');
         };
     }
 
@@ -108,9 +108,9 @@ class serviceController extends Controller
     {
         $info = Service::where('id', $id)->firstOrFail();
         if ($info->delete()) {
-            return redirect('services')->with('deleted', 'deleted');
+            return redirect('/administration/services')->with('deleted', 'deleted');
         } else {
-            return redirect('services')->with('nothing', 'nothing');
+            return redirect('/administration/services')->with('nothing', 'nothing');
         };
     }
 }
