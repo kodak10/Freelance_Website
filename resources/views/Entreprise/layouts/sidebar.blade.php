@@ -18,9 +18,11 @@
             <a href="#" class="items-center"><i class="flaticon-briefcase mr15"></i>Les Services</a>
         </div> --}}
 
-        <p class="fz15 fw400 ff-heading pl30 mt30">Conersation</p>
+        <p class="fz15 fw400 ff-heading pl30 mt30">Services</p>
         <div class="sidebar_list_item ">
-            <a href="#" class="items-center"><i class="fa-solid fa-user mr15"></i>Messages</a>
+            <a href="#" class="items-center"><i class="fa-solid fa-user mr15"></i>Liste de Service</a>
+
+            <a href="#" class="items-center"><i class="fa-solid fa-user mr15"></i>Demandes de Service</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         <div class="sidebar_list_item ">

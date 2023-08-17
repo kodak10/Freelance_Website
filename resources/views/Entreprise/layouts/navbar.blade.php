@@ -9,7 +9,7 @@
                             <a href="/administration" class="logo"><img src="" alt=""></a>
                         </div>
                         <div class="fz20 ml90">
-                            <a href="#" class="dashboard_sidebar_toggle_icon vam"><img src="{{asset('assets/images/dashboard-navicon.svg')}}" alt=""></a>
+                            <a href="#" class="dashboard_sidebar_toggle_icon vam"><img src="{{asset('assets/images/dashboard-navicon.svg')}}" alt="ElBaraGroup"></a>
                         </div>
                         <a class="login-info d-block d-xl-none ml40 vam" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><span class="flaticon-loupe"></span></a>
                         <div class="ml40 d-none d-xl-block">
@@ -64,7 +64,12 @@
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">
-                                            <a class="dropdown-item" href="#"><i class="flaticon-logout mr10"></i>Se Deconnecter</a>
+                                            <a class="dropdown-item" href="javascript:void(0)"><i class="flaticon-logout mr10"
+                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
+                                                    <i class="flaticon-logout mr15"></i>Se Déconnecter</a>
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="">
+                                                        @csrf
+                                                    </form>
                                         </div>
                                     </div>
                                 </div>

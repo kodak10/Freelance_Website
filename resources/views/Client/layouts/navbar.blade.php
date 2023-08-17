@@ -64,8 +64,12 @@
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">
-                                            <a class="dropdown-item" href="#"><i class="flaticon-logout mr10"></i>Se Deconnecter</a>
-                                        </div>
+                                            <a class="dropdown-item" href="#"><i class="flaticon-logout mr10" href="javascript:void(0)"
+                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
+                                                    <i class="flaticon-logout mr15"></i>Se Déconnecter</a>
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="">
+                                                        @csrf
+                                                    </form>                                        </div>
                                     </div>
                                 </div>
                             </li>

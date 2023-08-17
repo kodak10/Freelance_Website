@@ -84,7 +84,7 @@
         <div class="header bdrb1">
             <div class="menu_and_widgets">
                 <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
-                    <a class="mobile_logo" href="#"><img src="{{asset('assets/images/header-logo3.svg')}}" alt=""></a>
+                    <a class="mobile_logo" href="#"><img src="" alt="lOGO"></a>
                 </div>
             </div>
         </div>

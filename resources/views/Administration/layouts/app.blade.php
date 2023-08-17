@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 
     <!-- Title -->
-    <title>{{ env('APP_NAME') }}</title>
+    <title>ElBaraGroup</title>
 
     <!-- Favicon -->
     <link href="{{ asset('assets/images/favicon.png') }}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />

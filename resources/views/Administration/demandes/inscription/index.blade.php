@@ -78,7 +78,7 @@
 
                                         <thead class="thead-light">
                                             <tr class="text-center">
-                                                <th class="fz15 fw500" scope="col">Numero <br>Inscription</th>
+                                                <th class="fz15 fw500" scope="col">Numero Inscription</th>
                                                 <th class="fz15 fw500" scope="col">Date</th>
                                                 <th class="fz15 fw500" scope="col">Nom</th>
                                                 <th class="fz15 fw500" scope="col">Email</th>
@@ -88,11 +88,11 @@
                                         <tbody>
                                             @forelse($enterprisesToApprove as $val)
                                                 <tr class="text-center"id="tr{{ $val->id }}">
-                                                    <td>#{{ $Counter++ }}</td>
+                                                    <td>{{ $val->num_inscription }}</td>
                                                     <td>
                                                         {{ $val->created_at->format('d/m/Y') }}
                                                     </td>
-                                                    <td>{{ mb_strtoupper($val->nom) }}</td>
+                                                    <td>{{ mb_strtoupper($val->name) }}</td>
                                                     <td>
                                                         {{ $val->email }}
                                                     </td>
@@ -113,8 +113,13 @@
                                                                             class="fa fa-close text-white"></i></a>
                                                                     </form>
                                                                 </div>
-                                                                <div class="col-md-4">
+                                                                <div class="col-md-2">
+                                                                    <a
+                                                                        class="btn btn-success"title="Annuler cette demande"><i
+                                                                            class="fa fa-eye text-white"></i></a>
+                                                                    </form>
                                                                 </div>
+
                                                             </div>
                                                         </center>
                                                     </td>
@@ -154,7 +159,7 @@
                 }).then((result) => {
                     if (result.isConfirmed) {
                         $.ajax({
-                            url: "{{ url('demandes_inscription') }}" + '/' + id,
+                            url: "{{ url('/administration/demandes_inscription') }}" + '/' + id,
                             type: "POST",
                             data: {
                                 '_method': 'PATCH',
@@ -202,7 +207,7 @@
                 }).then((result) => {
                     if (result.isConfirmed) {
                         $.ajax({
-                            url: "{{ url('demandes_inscription') }}" + '/' + id,
+                            url: "{{ url('/administration/demandes_inscription') }}" + '/' + id,
                             type: "POST",
                             data: {
                                 '_method': 'DELETE',

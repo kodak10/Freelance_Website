@@ -56,8 +56,6 @@
               <li><a href="#">Faq</a></li>
               <li><a href="#">Help & Support</a></li>
               <li><a href="#">Trust & Safety</a></li>
-              <li><a href="#">Selling on Freeio</a></li>
-              <li><a href="#">Buying on Freeio</a></li>
             </ul>
           </div>
         </div>
@@ -81,7 +79,7 @@
       <div class="row align-items-center">
         <div class="col-md-6">
           <div class="text-center text-lg-start">
-            <p class="copyright-text mb-2 mb-md-0 text-white-light ff-heading">© Projet en cours 2023. Tous les droits sont réservés.</p>
+            <p class="copyright-text mb-2 mb-md-0 text-white-light ff-heading">© ElBaraGroup 2023. Tous les droits sont réservés.</p>
           </div>
         </div>
         <div class="col-md-6">

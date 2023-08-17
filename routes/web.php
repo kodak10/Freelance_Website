@@ -24,11 +24,11 @@ Route::get('/departements', [WebsiteController::class, 'departements']);
 
 Route::get('/login', [WebsiteController::class, 'login'])->name('login');
 Route::get('/register', [WebsiteController::class, 'register'])->name('register');
+Route::get('/verif', [WebsiteController::class, 'verif'])->name('verif');
 
 
 // Route Auth
 Route::post('/login', [AuthentificationController::class, 'login'])->name('postLogin');
-//Route::get('/login', [AuthentificationController::class, 'loginForm'])->name('login');
 Route::post('/register/client', [AuthentificationController::class, 'registerClient'])->name('inscriptionClient');
 Route::post('/register/entreprise', [AuthentificationController::class, 'registerEntreprise'])->name('inscriptionEntreprise');
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout' ])->name('logout');

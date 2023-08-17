@@ -50,8 +50,8 @@
           <div class="col-sm-8 col-lg-10">
             <div class="breadcumb-style1 mb10-xs">
               <div class="breadcumb-list">
-                <a href="#">Accueil</a>
-                <a href="#">Services</a>
+                <a href="/">Accueil</a>
+                <a href="/services">Services</a>
                 <a href="#">{{$serviceDetail->libelle}}</a>
               </div>
             </div>
@@ -272,7 +272,9 @@
 
                 <div class="freelancer-style1 service-single mb-0">
                     <div class="d-grid mt30">
-                        <a href="#" class="ud-btn btn-thm-border">Contactez l'entreprise<i class="fal fa-arrow-right-long"></i></a>
+                        <button type="button" class="btn btn-primary p-3" data-toggle="modal" data-target="#exampleModal">
+                            Contactez l'entreprise <i class="fal fa-arrow-right-long"></i>
+                        </button>
                     </div>
                 </div>
 

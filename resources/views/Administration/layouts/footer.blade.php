@@ -3,7 +3,7 @@
         <div class="row align-items-center justify-content-center justify-content-md-between">
             <div class="col-auto">
                 <div class="copyright-widget">
-                <p class="mb-md-0">© Projet en cours 2023. Tous les droits sont réservés.</p>
+                <p class="mb-md-0">© ElBaraGroup 2023. Tous les droits sont réservés.</p>
                 </div>
             </div>
             <div class="col-auto">

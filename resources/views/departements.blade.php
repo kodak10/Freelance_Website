@@ -44,9 +44,13 @@
                                     <div class="iconbox-style1">
                                     <div class="icon"><span class="flaticon-developer"></span></div>
                                     <div class="details mt20">
-                                        <p class="text mb5">1.853 skills</p>
+                                        <p class="text mb5">Nombre Services</p>
                                         <h4 class="title">{{$categorie->libelle}}</h4>
-                                        <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                        @foreach ($categorie->secteurs as $service )
+                                            <p class="mb-0">{{$service->libelle}}</p>
+                                        @endforeach
+                                        <p class="mb-0">& autres</p>
+
                                     </div>
                                 </div>
                               </div>

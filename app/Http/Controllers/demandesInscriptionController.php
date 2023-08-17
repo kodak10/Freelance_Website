@@ -20,47 +20,12 @@ class demandesInscriptionController extends Controller
         return view('Administration.demandes.inscription.index', compact('enterprisesToApprove', 'Counter', 'User'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    // public function create()
-    // {
-    //     //
-    // }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    // public function store(Request $request)
-    // {
-    //     //
-    // }
-
-    /**
-     * Display the specified resource.
-     */
-    // public function show(string $id)
-    // {
-    //     //
-    // }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    // public function edit(string $id)
-    // {
-    //     //
-    // }
-
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
-        $client = Client::where('id', $id)->firstOrFail();
+        $client = Entreprise::where('id', $id)->firstOrFail();
         $data = array(
             'approve' => 1,
-            // 'created_at'=>now(),
             'updated_at' => now()
         );
         if ($client->update($data)) {
@@ -77,9 +42,9 @@ class demandesInscriptionController extends Controller
      */
     public function destroy(string $id)
     {
-        $info = Client::where('id', $id)->firstOrFail();
+        $info = Entreprise::where('id', $id)->firstOrFail();
         if ($info->delete()) {
-            $info2 = User::where('id_client', $id)->firstOrFail();
+            $info2 = User::where('id', $id)->firstOrFail();
             $info2->delete();
             return json_encode(array('statusCode' => 200));
 

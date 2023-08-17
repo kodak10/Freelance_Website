@@ -17,7 +17,7 @@ class WebsiteController extends Controller
     public function index(Request $request)
     {
         $categories = Departement::get();
-        
+
         $categories_min = Departement::paginate(4);
         $tendances = Service::paginate(8);
         return view('index', compact('categories', 'tendances', 'categories_min'));
@@ -97,6 +97,11 @@ class WebsiteController extends Controller
     }
 
 
+    public function verif()
+    {
+        $categories = Departement::get();
+        return view('verify', compact('categories'));
+    }
 
 
 

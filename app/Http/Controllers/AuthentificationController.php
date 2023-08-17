@@ -43,8 +43,7 @@ class AuthentificationController extends Controller
             'name' => $request->nom,
             'email' => strtolower($request->email),
             'password' => Hash::make($request->password),
-            'role' => $request->role,
-            'email_verified_at' => Carbon::now(),
+            'email_verified_at' => now(),
         ])->assignRole("client");
 
         // nouveau client
@@ -56,7 +55,7 @@ class AuthentificationController extends Controller
             'user_id' => $user->id,
         ]);
 
-        return redirect()->route('register')->with('success','Votre inscription à été prise en compte');
+        return redirect()->route('verif')->with('success','Votre inscription à été prise en compte');
 
     }
 
@@ -81,8 +80,7 @@ class AuthentificationController extends Controller
             'name' => $request->name,
             'email' => strtolower($request->email),
             'password' => Hash::make($request->password),
-            'role' => $request->role,
-            'email_verified_at' => Carbon::now(),
+            'email_verified_at' => now(),
         ])->assignRole("compagny");
 
         // nouvelle entreprise
@@ -98,7 +96,7 @@ class AuthentificationController extends Controller
             'user_id' => $user->id,
         ]);
 
-        return redirect()->route('register')->with('success','Votre inscription à été prise en compte');
+        return redirect()->route('verif')->with('success','Votre inscription à été prise en compte');
 
     }
 
