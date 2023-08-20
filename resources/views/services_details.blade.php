@@ -293,15 +293,15 @@
                                     <form>
                                         <div class="form-group">
                                           <label for="">Description</label>
-                                          <input type="texte" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                          <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter des details sur le service">
                                         </div>
                                         <div class="form-group">
-                                          <label for="exampleInputPassword1">Delai d'exécution</label>
-                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                          <label for="">Delai d'exécution</label>
+                                          <input type="text" class="form-control" id="" placeholder="Entrer la durée ">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Importer le cahier de charge</label>
-                                            <input type="file" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            <input type="file" class="form-control" id="" >
                                         </div>
 
                                         <button type="submit" class="btn btn-primary">Contactez</button>
