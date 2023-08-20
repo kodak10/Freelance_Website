@@ -3,7 +3,7 @@
 
 <style>
     .mobilie_header_nav{
-        background-color: #000000 !important;
+        background-color: #5BBB7B !important;
     }
 </style>
 
@@ -227,7 +227,7 @@
                   </div>
                 </div>
                 <div class="bsp_reveiw_wrt">
-                  <h6 class="fz17">Ajourter une note</h6>
+                  <h6 class="fz17">Ajouter une note</h6>
                   <p class="text">Votre adresse email ne sera pas publiée. Tous les champs sont obligatoires</p>
                   <h6>Votre évaluation</h6>
                   <div class="d-flex">
@@ -272,9 +272,47 @@
 
                 <div class="freelancer-style1 service-single mb-0">
                     <div class="d-grid mt30">
-                        <button type="button" class="btn btn-primary p-3" data-toggle="modal" data-target="#exampleModal">
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             Contactez l'entreprise <i class="fal fa-arrow-right-long"></i>
                         </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="">Formulaire</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                          <label for="">Description</label>
+                                          <input type="texte" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Delai d'exécution</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Importer le cahier de charge</label>
+                                            <input type="file" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Contactez</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -367,6 +405,8 @@
 
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
     //  Fixed sidebar Custom Script For That
