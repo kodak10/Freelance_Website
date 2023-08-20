@@ -9,6 +9,7 @@ use App\Http\Controllers\secteurController;
 use App\Http\Controllers\serviceController;
 use App\Http\Controllers\departementController;
 use App\Http\Controllers\demandesInscriptionController;
+use App\Http\Controllers\EntrepriseDemandeServiceController;
 use App\Http\Controllers\WebsiteController;
 
 // Route site Web
@@ -60,20 +61,13 @@ Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
     Route::get('/', function () {
         return view('Client.home');
     });
-
-    Route::get('/detail', function () {
-        return view('Client.detail');
-    });
 });
 
 // Vos routes d'user ici
 // Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->group(function () {    // Sans validation email
 Route::prefix('compagny')->middleware(['auth','role:compagny'])->group(function () {
-    Route::get('/', function () {
-        return view('Entreprise.home');
-    });
-    Route::get('/detail', function () {
-        return view('Entreprise.detail');
-    });
+    Route::get('/', [EntrepriseDemandeServiceController::class, 'index']);
+    Route::get('/demandes', [EntrepriseDemandeServiceController::class, 'demande']);
+
 
 });
