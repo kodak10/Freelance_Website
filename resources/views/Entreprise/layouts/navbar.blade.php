@@ -1,3 +1,9 @@
+<style>
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+</style>
 <header class="header-nav nav-innerpage-style menu-home4 dashboard_header main-menu">
     <!-- Ace Responsive Menu -->
     <nav class="posr">
@@ -6,7 +12,7 @@
                 <div class="col-6 col-lg-auto">
                     <div class="text-center text-lg-start d-flex align-items-center">
                         <div class="dashboard_header_logo position-relative me-2 me-xl-5">
-                            <a href="/administration" class="logo"><img src="" alt=""></a>
+                            <a href="/administration" class="logo"><img src="{{asset('assets/images/header-logo.png')}}" alt=""></a>
                         </div>
                         <div class="fz20 ml90">
                             <a href="#" class="dashboard_sidebar_toggle_icon vam"><img src="{{asset('assets/images/dashboard-navicon.svg')}}" alt="ElBaraGroup"></a>
@@ -89,7 +95,7 @@
         <div class="header bdrb1">
             <div class="menu_and_widgets">
                 <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
-                    <a class="mobile_logo" href="#"><img src="{{asset('assets/images/header-logo3.svg')}}" alt=""></a>
+                    <a class="mobile_logo" href="#"><img src="{{asset('assets/images/header-logo.png')}}" class="logo" alt=""></a>
                 </div>
             </div>
         </div>

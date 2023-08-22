@@ -4,6 +4,10 @@
         font-size: 25px;
         color: #ffff;
     }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
 </style>
 <header class="header-nav nav-homepage-style stricky main-menu">
     <nav class="posr">
@@ -12,8 +16,8 @@
                 <div class="col-auto px-0">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="logos br-white-light pr30 pr5-xl">
-                            <a class="header-logo logo1" href="/"><img src="" alt="Logo"></a>
-                            <a class="header-logo logo2" href="/"><img src="" alt="Logo"></a>
+                            <a class="header-logo logo1" href="/"><img src="{{asset('assets/images/header-logo.png')}}" class="logo" alt="Logo"></a>
+                            <a class="header-logo logo2" href="/"><img src="{{asset('assets/images/header-logo.png')}}" class="logo" alt="Logo"></a>
                         </div>
                         <div class="home1_style">
 
@@ -77,7 +81,7 @@
         <div class="menu_and_widgets">
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
 
-            <a class="mobile_logo" href="/"><img src="" alt="Logo"></a>
+            <a class="mobile_logo" href="/"><img src="{{asset('assets/images/header-logo.png')}}" class="logo" alt="Logo"></a>
 
 
             <div class="right-side text-end">
