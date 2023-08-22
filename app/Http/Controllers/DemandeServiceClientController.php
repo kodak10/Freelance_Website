@@ -42,6 +42,10 @@ class DemandeServiceClientController extends Controller
             'delais_execution' => ['string', 'max:10'],
             'document' => ['max:255'],
         ]);
+        if (Auth::user() == 0)
+        {
+            return redirect()->back()->with('error',"Veuillez vous connecter avant de pouvoir contacté une entreprise");
+        }
 
         // demande de service
         $demandeService = DemandeService::create([

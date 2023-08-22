@@ -18,7 +18,7 @@
                     <div class="col-lg-12">
                         <div class="dashboard_title_area">
                             <h2>Demande de service client</h2>
-                            <p class="text">Les demandes de service reçu</p>
+                            <p class="text">Les demandes de service reçu sont affichés ici avec les détails</p>
                         </div>
                     </div>
                 </div>
