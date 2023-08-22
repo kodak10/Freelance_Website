@@ -48,6 +48,9 @@
                         @csrf
                         <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>.
                     </form> --}}
+                    <div class="row mt-3">
+                        <a href="/login"class="btn btn-danger text-white p-2 ">Se Connecter</a>
+                    </div>
                 </div>
             </div>
         </div>

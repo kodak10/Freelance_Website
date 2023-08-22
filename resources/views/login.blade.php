@@ -69,11 +69,11 @@
                     @csrf
                     <div class="mb20">
                         <label class="form-label fw600 dark-color">Email</label>
-                        <input type="email" class="form-control" placeholder="projetencours@gmail.com" name="email">
+                        <input type="email" class="form-control" placeholder="elbaragroup@gmail.com" name="email">
                     </div>
                     <div class="mb15">
                         <label class="form-label fw600 dark-color">Mot de passe</label>
-                        <input type="text" class="form-control" placeholder="" name="password" value="password" >
+                        <input type="password" class="form-control" placeholder="*******" name="password">
                     </div>
                     <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb20">
                         <label class="custom_checkbox fz14 ff-heading">Se souvenir de moi

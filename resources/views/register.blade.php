@@ -104,17 +104,17 @@
 
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Nom </label>
-                <input type="texte" class="form-control" name="nom">
+                <input type="texte" class="form-control" name="nom" placeholder="Entrer votre nom">
             </div> <div class="mb20">
                 <label class="form-label fw600 dark-color">Prénoms</label>
-                <input type="text" class="form-control" name="prenoms">
+                <input type="text" class="form-control" name="prenoms" placeholder="Entrer votre prénoms ">
             </div> <div class="mb20">
                 <label class="form-label fw600 dark-color">Téléphone</label>
-                <input type="text" class="form-control" placeholder="" name="telephone">
+                <input type="text" class="form-control" placeholder="Entrer votre numéro de téléphone" name="telephone" >
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" class="form-control" placeholder="projetencours@gmail.com" name="email">
+                <input type="email" class="form-control" placeholder="elbaragroup@gmail.com" name="email">
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Date de naissance</label>
@@ -123,11 +123,11 @@
 
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Mot de passe</label>
-                <input type="password" class="form-control" placeholder="*******" name="password" value="password">
+                <input type="password" class="form-control" placeholder="*******" name="password" >
             </div>
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Confirmation de mot de passe</label>
-                <input type="password" class="form-control" placeholder="*******" name="confirm-password" value="password">
+                <input type="password" class="form-control" placeholder="*******" name="confirm-password" >
             </div>
 
             <div class="d-grid mb20">
@@ -146,33 +146,33 @@
             </select>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Nom de l'entreprise</label>
-                <input type="texte" class="form-control" name="name">
+                <input type="texte" class="form-control" name="name" placeholder="Entrer le nom de l'entreprise">
             </div> <div class="mb20">
                 <label class="form-label fw600 dark-color">Nationalité</label>
-                <input type="text" class="form-control" name="nationalite">
+                <input type="text" class="form-control" name="nationalite" placeholder="Entrer votre nationalité">
             </div> <div class="mb20">
                 <label class="form-label fw600 dark-color">Téléphone</label>
-                <input type="text" class="form-control" placeholder="" name="telephone">
+                <input type="text" class="form-control" name="telephone" placeholder="Entrer votre numéro de téléphone">
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" class="form-control" placeholder="projetencours@gmail.com" name="email">
+                <input type="email" class="form-control" placeholder="elbaragroup@gmail.com" name="email">
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Regime Social</label>
-                <input type="text" class="form-control" placeholder="" name="regime">
+                <input type="text" class="form-control" name="regime" placeholder="Entrer votre régime social">
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Localisation</label>
-                <input type="text" class="form-control" placeholder="" name="localisation">
+                <input type="text" class="form-control" name="localisation" placeholder="Entrer votre adresse">
             </div>
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Mot de passe</label>
-                <input type="password" class="form-control" placeholder="*******" name="password" value="password">
+                <input type="password" class="form-control" placeholder="*******" name="password">
             </div>
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Confirmation de mot de passe</label>
-                <input type="password" class="form-control" placeholder="*******" name="confirm-password" value="password">
+                <input type="password" class="form-control" placeholder="*******" name="confirm-password">
             </div>
 
             <div class="d-grid mb20">
