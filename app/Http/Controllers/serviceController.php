@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Departement;
 use App\Models\Secteur;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -14,9 +15,9 @@ class serviceController extends Controller
     public function index()
     {
         $services = Service::all();
-        $secteurs = Secteur::orderBy('libelle', 'asc')->get();
+        $departements = Departement::orderBy('libelle', 'asc')->get();
         $Counter = 1;
-        return view('Administration.parametrage.services.index', compact('services', 'Counter', 'secteurs'));
+        return view('Administration.parametrage.services.index', compact('services', 'Counter', 'departements'));
     }
 
     /**
@@ -24,8 +25,8 @@ class serviceController extends Controller
      */
     public function create()
     {
-        $secteurs = Secteur::orderBy('libelle', 'asc')->get();
-        return view('Administration.parametrage.services.ajouter', compact('secteurs'));
+        $departements = Departement::orderBy('libelle', 'asc')->get();
+        return view('Administration.parametrage.services.ajouter', compact('departements'));
     }
 
     /**
@@ -35,14 +36,14 @@ class serviceController extends Controller
     {
         $check = array(
             'libelle' => 'required',
-            'idSecteur' => 'required',
+            'idDepartement' => 'required',
             'description' => 'required',
         );
         $request->validate($check);
         $data = array(
             'libelle' => $request->libelle,
             'description' => $request->description,
-            'secteur_id' => $request->idSecteur,
+            'departement_id' => $request->idDepartement,
             'created_at' => now()
             // 'updated_at'=>now()
         );
@@ -60,8 +61,8 @@ class serviceController extends Controller
     public function show(string $id)
     {
         $services = Service::where('id', $id)->firstOrFail();
-        $secteurs = Secteur::orderBy('libelle', 'asc')->get();
-        return view('Administration.parametrage.services.detail', compact('services', 'secteurs'));
+        $departements = Departement::orderBy('libelle', 'asc')->get();
+        return view('Administration.parametrage.services.detail', compact('services', 'departements'));
     }
 
     /**
@@ -70,8 +71,8 @@ class serviceController extends Controller
     public function edit(string $id)
     {
         $services = Service::where('id', $id)->firstOrFail();
-        $secteurs = Secteur::orderBy('libelle', 'asc')->get();
-        return view('Administration.parametrage.services.modifier', compact('services', 'secteurs'));
+        $departements = Departement::orderBy('libelle', 'asc')->get();
+        return view('Administration.parametrage.services.modifier', compact('services', 'departements'));
     }
 
     /**
@@ -83,13 +84,13 @@ class serviceController extends Controller
 
         $check = array(
             'libelle' => 'required',
-            'idSecteur' => 'required',
+            'idDepartement' => 'required',
             'description' => 'required',
         );
         $request->validate($check);
         $data = array(
             'libelle' => $request->libelle,
-            'secteur_id' => $request->idSecteur,
+            'departement_id' => $request->idDepartement,
             'description' => $request->description,
             //  'created_at' => now()
             'updated_at' => now()

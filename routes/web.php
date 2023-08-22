@@ -3,6 +3,7 @@
 use Spatie\Permission\Models\Role;
 use App\Http\Controllers\accesUtilisateurController;
 use App\Http\Controllers\AuthentificationController;
+use App\Http\Controllers\DemandeServiceClientController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\secteurController;
@@ -22,6 +23,8 @@ Route::get('/contact', [WebsiteController::class, 'contact']);
 Route::get('/services', [WebsiteController::class, 'services']);
 Route::get('/services/{slug}', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
 Route::get('/departements', [WebsiteController::class, 'departements']);
+Route::resource('demandeService', DemandeServiceClientController::class);
+
 
 Route::get('/login', [WebsiteController::class, 'login'])->name('login');
 Route::get('/register', [WebsiteController::class, 'register'])->name('register');
@@ -67,7 +70,9 @@ Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
 // Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->group(function () {    // Sans validation email
 Route::prefix('compagny')->middleware(['auth','role:compagny'])->group(function () {
     Route::get('/', [EntrepriseDemandeServiceController::class, 'index']);
-    Route::get('/demandes', [EntrepriseDemandeServiceController::class, 'demande']);
+    //Route::get('/demandes', [EntrepriseDemandeServiceController::class, 'demande']);
+    Route::get('/demandes', [DemandeServiceClientController::class, 'index']);
+
 
 
 });

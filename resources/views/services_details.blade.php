@@ -77,7 +77,7 @@
           <div class="row wow fadeInUp">
             <div class="col-xl-7">
               <div class="position-relative">
-                <h2>Je vais concevoir des sites Web modernes en figma ou adobe xd</h2>
+                <h2>{{$serviceDetail->description}}</h2>
                 <div class="list-meta mt30">
                   <a class="list-inline-item mb5-sm" href="#">
                     <span class="position-relative mr10">
@@ -274,6 +274,22 @@
                     <div class="d-grid mt30">
 
 
+                        <div class="row">
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            @if(session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+                        </div>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             Contactez l'entreprise <i class="fal fa-arrow-right-long"></i>
@@ -290,21 +306,26 @@
                                 </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
+                                    <form method="post" action="{{route('demandeService.store')}}">
+                                        @csrf
+                                        <input type="hidden" name="client_id" value="1">
+                                        <input type="hidden" name="entreprise_id" value="1">
+                                        <input type="hidden" name="service_id" value="{{$serviceDetail->id}}">
+
+                                        <div class="form-group mb-3">
                                           <label for="">Description</label>
-                                          <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter des details sur le service">
+                                          <input type="text" class="form-control" name="description" placeholder="Enter des details sur le service">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group mb-3">
                                           <label for="">Delai d'exécution</label>
-                                          <input type="text" class="form-control" id="" placeholder="Entrer la durée ">
+                                          <input type="text" class="form-control" name="delais_execution" placeholder="Entrer la durée ">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group mb-3">
                                             <label for="">Importer le cahier de charge</label>
-                                            <input type="file" class="form-control" id="" >
+                                            <input type="file" class="form-control" name="document" >
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary">Contactez</button>
+                                        <button type="submit" class="btn btn-primary w-100">Contactez</button>
                                     </form>
                                 </div>
                                 <div class="modal-footer">

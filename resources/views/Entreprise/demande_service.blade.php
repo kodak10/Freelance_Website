@@ -24,46 +24,17 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="card w-100">
-                            <img class="card-img-top" src="..." alt="Image du service">
-                            <div class="card-body">
-                              <h5 class="card-title">Création de boulangerie</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem temporibus deserunt vel harum sapiente maiores, magni eat in</p>
+                    @foreach ($demandes as $demande )
+                        <div class="col-lg-3">
+                            <div class="card w-100">
+                                <img class="card-img-top" src="..." alt="Image du service">
+                                <div class="card-body">
+                                <h5 class="card-title">Création de boulangerie</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem temporibus deserunt vel harum sapiente maiores, magni eat in</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="card w-100" >
-                            <img class="card-img-top" src="..." alt="Image du service">
-                            <div class="card-body">
-                              <h5 class="card-title">Construction</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem temporibus deserunt vel harum sapiente maiores, magni eat in</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="card w-100">
-                            <img class="card-img-top" src="..." alt="Image du service">
-                            <div class="card-body">
-                              <h5 class="card-title">Assistante juridique</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem temporibus deserunt vel harum sapiente maiores, magni eat in</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="card w-100">
-                            <img class="card-img-top" src="..." alt="Image du service">
-                            <div class="card-body">
-                              <h5 class="card-title">Création de Logo</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem temporibus deserunt vel harum sapiente maiores, magni eat in</p>
-                            </div>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
 
             </div>

@@ -65,6 +65,7 @@
     <script src="{{asset('assets/js/jquery-3.6.4.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery-migrate-3.0.0.min.js')}}"></script>
     <script src="{{asset('assets/js/popper.min.js')}}"></script>
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
     <script src="{{asset('assets/js/bootstrap-select.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery.mmenu.all.js')}}"></script>

@@ -20,6 +20,7 @@ class WebsiteController extends Controller
 
         $categories_min = Departement::paginate(4);
         $tendances = Service::paginate(8);
+
         return view('index', compact('categories', 'tendances', 'categories_min'));
     }
 

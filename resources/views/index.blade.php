@@ -96,10 +96,10 @@
                     <div class="iconbox-style1">
                     <div class="icon"><span class="flaticon-developer"></span></div>
                     <div class="details mt20">
-                        <p class="text mb5">Nombre Services</p>
+                        <p class="text mb5"><td>{{ $categorie->count() }} Services</td></p>
                         <h4 class="title">{{$categorie->libelle}}</h4>
-                        @foreach ($categorie->secteurs as $service )
-                            <p class="mb-0">{{$service->libelle}}</p>
+                        @foreach ($categorie->services as $service )
+                            <p class="mb-0"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></p>
                         @endforeach
                         <p class="mb-0">& autres</p>
 
@@ -111,7 +111,7 @@
         </div>
     </section>
 
-    
+
 
     <!-- Services tendance-->
     <section class="pb90 pb30-md bgc-thm3">
@@ -143,7 +143,7 @@
                     </div>
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1">{{$tendance->libelle}}</p>
-                      <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $tendance->libelle]) }}">I will design modern websites in figma or adobe xd</a></h5>
+                      <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $tendance->libelle ]) }}">{{ Str::limit($tendance->description, 100, '...') }}</a></h5>
                     </div>
                   </div>
                 </div>

@@ -17,4 +17,9 @@ class Departement extends Model
         return $this->hasMany(Secteur::class);
     }
 
+    public function services()
+    {
+        return $this->hasMany(Service::class);
+    }
+
 }

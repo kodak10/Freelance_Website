@@ -81,7 +81,7 @@
                                         </div>
                                         <div class="list-content">
                                             <p class="list-text body-color fz14 mb-1">{{$service->libelle}}</p>
-                                            <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->description}}</a></h5>
+                                            <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{ Str::limit($service->description, 100, '...') }}</a></h5>
                                             <hr class="my-2">
                                             <div class="list-meta d-flex justify-content-between align-items-center mt15">
                                                 <a href="#">

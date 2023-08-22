@@ -80,7 +80,7 @@
                                                 <th class="fz15 fw500" scope="col">#</th>
                                                 <th class="fz15 fw500" scope="col">Libelle</th>
                                                 <th class="fz15 fw500" scope="col">Description</th>
-                                                <th class="fz15 fw500" scope="col">Secteur Appartenant</th>
+                                                <th class="fz15 fw500" scope="col">Departement Appartenant</th>
                                                 <th width="20%"class="text-center">Action</th>
                                             </tr>
                                         </thead>
@@ -91,8 +91,8 @@
                                                     <td>{{ mb_strtoupper($val->libelle) }}</td>
                                                     <td>{{ ucwords($val->description) }}</td>
                                                     <td>
-                                                        @forelse ($secteurs as $val2)
-                                                            {{ $val2['id'] == $val['idSecteur'] ? mb_strtoupper($val2->libelle) : '' }}
+                                                        @forelse ($departements as $val2)
+                                                            {{ $val2['id'] == $val['idDepartement'] ? mb_strtoupper($val2->libelle) : '' }}
                                                         @empty
                                                             {{ 'AUCUN SECTEUR ENREGISTRE' }}
                                                         @endforelse

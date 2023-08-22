@@ -84,12 +84,12 @@
                                             <div class="col-lg-6 col-xl-6">
                                                 <div class="form-group">
                                                     <label class="form-label fw500 fz16 dark-color">Selectionnez le
-                                                        secteur appartenant</label>
+                                                        departement appartenant</label>
                                                     <div class="bootselect-multiselect">
-                                                        <select class="selectpicker" name="idSecteur"data-live-search="true"
+                                                        <select class="selectpicker" name="idDepartement"data-live-search="true"
                                                             data-width="100%">
                                                             <option>Selectionner ici...</option>
-                                                            @forelse ($secteurs as $val)
+                                                            @forelse ($departements as $val)
                                                                 <option
                                                                     value="{{ $val->id }}"data-tokens="{{ $val->libelle }}">
                                                                     {{ mb_strtoupper($val->libelle) }}</option>

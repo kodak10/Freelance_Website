@@ -23,15 +23,15 @@
                                     @foreach ($categories as $categorie )
                                         <li> <a class="dropdown" href="#"> <span class="menu-icn flaticon-developer"></span> <span class="menu-title">{{$categorie->libelle}}</span> </a>
                                             <div class="drop-menu d-flex justify-content-between">
-                                                @foreach ($categorie->secteurs as $secteur )
+                                                @foreach ($categorie->services as $service )
                                                 <div class="one-third">
 
-                                                    <div class="h6 cat-title">{{$secteur->libelle}}</div>
-                                                    <ul class="ps-0 mb40">
-                                                        @foreach ($secteur->services as $service )
+                                                    <div class="h6 cat-title"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></div>
+                                                    {{-- <ul class="ps-0 mb40">
+                                                        @foreach ($service->services as $service )
                                                             <li><a href="#">{{$service->libelle}}</a></li>
                                                         @endforeach
-                                                    </ul>
+                                                    </ul> --}}
                                                 </div>
                                                 @endforeach
                                             </div>

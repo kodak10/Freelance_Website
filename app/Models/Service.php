@@ -25,6 +25,12 @@ class Service extends Model
         return $this->hasOne(Secteur::class);
     }
 
+    public function departements()
+    {
+        return $this->hasOne(Departement::class);
+    }
+
+
     // Définir une méthode d'accessor pour générer le slug à partir du titre
     public function getSlugAttribute()
     {

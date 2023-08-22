@@ -91,9 +91,9 @@
                                                                 name="idDepartement"data-live-search="true"
                                                                 data-width="100%">
                                                                 <option>Selectionner ici...</option>
-                                                                @forelse ($secteurs as $val)
+                                                                @forelse ($departements as $val)
                                                                     <option
-                                                                        {{ ($val->id == $services->idSecteur) ? 'selected ' : '' }}
+                                                                        {{ ($val->id == $services->idDepartement) ? 'selected ' : '' }}
                                                                         value="{{ $val->id }}"data-tokens="{{ $val->libelle }}">
                                                                         {{ mb_strtoupper($val->libelle) }}</option>
                                                                 @empty

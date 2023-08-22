@@ -16,11 +16,11 @@
                 class="items-center {{ request()->routeIs('departements.index', 'departements.create', 'departements.edit', 'departements.show') ? '-is-active' : '' }}"><i
                     class="flaticon-presentation mr15"></i>Les Départements</a>
         </div>
-        <div class="sidebar_list_item ">
+        {{-- <div class="sidebar_list_item ">
             <a href="/administration/secteurs"
                 class="items-center {{ request()->routeIs('secteurs.index', 'secteurs.create', 'secteurs.edit', 'secteurs.show') ? '-is-active' : '' }}"><i
                     class="flaticon-briefcase mr15"></i>Les Secteurs</a>
-        </div>
+        </div> --}}
         <div class="sidebar_list_item ">
             <a href="/administration/services"
                 class="items-center {{ request()->routeIs('services.index', 'services.create', 'services.edit', 'services.show') ? '-is-active' : '' }}"><i
