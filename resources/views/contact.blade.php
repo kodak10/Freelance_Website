@@ -71,22 +71,22 @@
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
                 <div class="icon flex-shrink-0"><span class="flaticon-tracking"></span></div>
                 <div class="details">
-                  <h5 class="title">Addresse</h5>
-                  <p class="mb-0 text">72PP+XW5, Abidjan.</p>
+                  <h5 class="title">Adresse</h5>
+                  <p class="mb-0 text">Cocody Deux Plateaux Vallon</p>
                 </div>
               </div>
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
                 <div class="icon flex-shrink-0"><span class="flaticon-call"></span></div>
                 <div class="details">
                   <h5 class="title">Tel</h5>
-                  <p class="mb-0 text">+(0) 000 000 0000</p>
+                  <p class="mb-0 text">+(225) 0758265650 </p>
                 </div>
               </div>
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
                 <div class="icon flex-shrink-0"><span class="flaticon-mail"></span></div>
                 <div class="details">
                   <h5 class="title">Email</h5>
-                  <p class="mb-0 text">Proposedesservices@gmail.com</p>
+                  <p class="mb-0 text">Elbaragroup@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -100,19 +100,19 @@
                   <div class="col-md-6">
                     <div class="mb20">
                       <label class="heading-color ff-heading fw500 mb10" for="">Nom</label>
-                      <input type="text" class="form-control" placeholder="Ali">
+                      <input type="text" class="form-control" placeholder="Votre Nom">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb20">
                       <label class="heading-color ff-heading fw500 mb10" for="">Email</label>
-                      <input type="email" class="form-control" placeholder="Tufan">
+                      <input type="email" class="form-control" placeholder="Votre Prénoms">
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb20">
                       <label class="heading-color ff-heading fw500 mb10" for="">Messages</label>
-                      <textarea name="" id="" cols="30" rows="6" placeholder="Description"></textarea>
+                      <textarea name="" id="" cols="30" rows="6" placeholder="Laissez nous votre message"></textarea>
                     </div>
                   </div>
                   <div class="col-md-12">
@@ -129,14 +129,14 @@
     </section>
 
     <!-- Google Map -->
-    <section class="p-0 wow fadeInUp" data-wow-delay="300ms">
+    <section class="p-0 wow fadeInUp mb-5" data-wow-delay="300ms">
       <div class="mx-auto maxw1700 bdrs16 position-relative mx20-lg">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.841647296339!2d-3.965226925366187!3d5.28739159469083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ef4f28d7281f%3A0xa2324ced14932932!2sAGORA%20KOUMASSI!5e0!3m2!1sfr!2sci!4v1690083652291!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
     <!-- Faq -->
-    <section class="pb70">
+   {{--  <section class="pb70">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
@@ -197,6 +197,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
 @endsection

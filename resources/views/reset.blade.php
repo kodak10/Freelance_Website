@@ -1,5 +1,16 @@
 @extends('layouts.app')
 
+<style>
+    header.nav-homepage-style {
+        position: relative !important;
+    }
+    .mobilie_header_nav{
+        background-color: #5BBB7B !important;
+        margin-bottom: 50px
+    }
+
+</style>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

@@ -1,4 +1,4 @@
-@extends('Administration.layouts.app')
+@extends('Entreprise.layouts.app')
 
 @section('content')
     <!-- right content -->
@@ -43,13 +43,13 @@
 
         <div class="dashboard dashboard_wrapper pr30 pr0-xl">
 
-            @include('Administration.layouts.sidebar')
+            @include('Entreprise.layouts.sidebar')
 
             <div class="dashboard__main pl0-md">
                 <div class="dashboard__content hover-bgc-color">
                     <div class="row pb40">
                         <div class="col-lg-12">
-                            @include('Administration.layouts.sidebar-mobile')
+                            @include('Entreprise.layouts.sidebar-mobile')
 
                         </div>
                         <div class="col-lg-12">
@@ -62,12 +62,14 @@
                     <div class="col-lg-12">
                         <div class="ui-content">
                             <hr class="bg-dark">
-                            <h3 class="title text-center">Ajouter un service</h3>
+                            <h3 class="title text-center">Modifier un service</h3>
                             <hr class="bg-dark">
-                            <a href="/administration/services" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
+
+                            <a href="/services" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form action="{{ route('services.store') }}" method="post">
+                                    <form action="{{ route('services.update', $services->id) }}" method="post">
+                                        @method('PATCH')
                                         @csrf
                                         <div class="row mr-4 ml-4">
                                             <div class="col-lg-6 col-xl-6">
@@ -75,21 +77,23 @@
                                                     <label class="form-label fw500 fz16 dark-color">Saisissez le
                                                         Libell&eacute; du service</label>
                                                     <div class="bootselect-multiselect">
-                                                        <input required
-                                                            type="text"name="libelle"class="form-control"placeholder="Saisissez le Libelle du service">
+                                                        <input required type="text"name="libelle"
+                                                            value="{{ $services->libelle ?? '' }}"
+                                                            class="form-control"placeholder="Saisissez le Libelle du service">
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="col-lg-6 col-xl-6">
                                                 <div class="form-group">
-                                                    <label class="form-label fw500 fz16 dark-color">Selectionnez la Catégorie appartenant</label>
+                                                    <label class="form-label fw500 fz16 dark-color">Selectionnez le
+                                                        Departement appartenant</label>
                                                     <div class="bootselect-multiselect">
                                                         <select class="selectpicker" name="idDepartement"data-live-search="true"
                                                             data-width="100%">
                                                             <option>Selectionner ici...</option>
                                                             @forelse ($departements as $val)
                                                                 <option
+                                                                    {{ $val->id == $services->idDepartement ? 'selected ' : '' }}
                                                                     value="{{ $val->id }}"data-tokens="{{ $val->libelle }}">
                                                                     {{ mb_strtoupper($val->libelle) }}</option>
                                                             @empty
@@ -100,25 +104,35 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-lg-12 col-xl-12 mt-3">
+                                                <div class="form-group">
+                                                    <label class="form-label fw500 fz16 dark-color">Saisissez la
+                                                        Description du service</label>
+                                                    <div class="bootselect-multiselect">
+                                                        <textarea required name="description"class="form-control"placeholder="Saisissez la description du service">
+                                                                {{ $services->description ?? '' }}
+                                                            </textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <center>
                                                 <div class="col-sm-3 mt-3">
                                                     <div class="form-group mt-3 ">
                                                         <button
                                                             type="submit"class="btn btn-success text-white p-2 ">Valider</button>
                                                         <a href="/services"class="btn btn-danger text-white p-2 ">Retour</a>
+
                                                     </div>
                                                 </div>
                                             </center>
-
                                         </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                @include('Administration.layouts.footer')
+                @include('Entreprise.layouts.footer')
 
             </div>
         </div>

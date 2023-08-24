@@ -21,36 +21,16 @@
             <div class="row wow fadeInUp mt-5" data-wow-delay="300ms">
                 <div class="col-lg-12">
                     <div class="half_map_area_content mt30">
-                        <div class="text-center text-sm-start">
-                            <h4 class="fw700 mb20">Les Catégories</h4>
-                        </div>
-                        <div class="row align-items-center mb20">
-
-                            <div class="col-sm-6 col-xxl-4">
-                                <div class="page_control_shorting mb10 d-flex  justify-content-center justify-content-sm-end">
-                                    <div class="pcs_dropdown dark-color pr10"><span>Trier par</span>
-                                        <select class="selectpicker show-tick">
-                                            <option>Recommandation</option>
-                                            <option>Ordre Alphabetique</option>
-                                            <option>Nouveau Service</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="row d-block d-lg-flex wow fadeInUp">
                             @foreach ($categories as $categorie )
                                 <div class="col-sm-6 col-lg-4 col-xl-3">
                                     <div class="iconbox-style1">
                                     <div class="icon"><span class="flaticon-developer"></span></div>
                                     <div class="details mt20">
-                                        <p class="text mb5"><td>{{ $categorie->count() }} Services</td></p>
-                                        <h4 class="title">{{$categorie->libelle}}</h4>
-                                        @foreach ($categorie->secteurs as $service )
-                                            <p class="mb-0">{{$service->libelle}}</p>
+                                        <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
+                                        @foreach ($categorie->services as $service )
+                                            <p class="mb-0"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></p>
                                         @endforeach
-                                        <p class="mb-0">& autres</p>
-
                                     </div>
                                 </div>
                               </div>

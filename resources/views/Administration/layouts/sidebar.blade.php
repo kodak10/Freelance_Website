@@ -27,9 +27,9 @@
                     class="flaticon-briefcase mr15"></i>Les Services</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
-        <div class="sidebar_list_item ">
+        {{-- <div class="sidebar_list_item ">
             <a href="/administration/acces_utilisateurs" class="items-center {{ request()->routeIs('acces_utilisateurs.index', 'acces_utilisateurs.create', 'acces_utilisateurs.edit', 'acces_utilisateurs.show') ? '-is-active' : '' }}"><i class="flaticon-user mr15"></i>Accès utilisateurs</a>
-        </div>
+        </div> --}}
         <div class="sidebar_list_item ">
             <a href="#" class="items-center "><i class="fa-solid fa-user mr15"></i>Mon Profil</a>
         </div>

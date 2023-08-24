@@ -96,8 +96,7 @@
                     <div class="iconbox-style1">
                     <div class="icon"><span class="flaticon-developer"></span></div>
                     <div class="details mt20">
-                        <p class="text mb5"><td>{{ $categorie->count() }} Services</td></p>
-                        <h4 class="title">{{$categorie->libelle}}</h4>
+                        <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
                         @foreach ($categorie->services as $service )
                             <p class="mb-0"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></p>
                         @endforeach
@@ -142,7 +141,7 @@
                       <a href="" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                     </div>
                     <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1">{{$tendance->libelle}}</p>
+                      <p class="list-text body-color fz14 mb-1"><strong>{{$tendance->libelle}}</strong></p>
                       <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $tendance->libelle ]) }}">{{ Str::limit($tendance->description, 100, '...') }}</a></h5>
                     </div>
                   </div>
@@ -174,7 +173,7 @@
                   <div class="icon before-none"><span class="flaticon-cv"></span></div>
                   <div class="details">
                     <h4 class="title mt10 mb-3">Inscrivez-vous</h4>
-                    <p class="text">Vous inscrire ! <br> les meilleurs services freelance en ligne. Sous-traitez votre projet et faites-le réaliser rapidement. Démarrez maintenant.</p>
+                    <p class="text">Vous inscrire ! <br> les meilleurs services entreprise en ligne sont ici pour promouvoir votre activité.</p>
                   </div>
               </div>
             </div>
@@ -182,8 +181,8 @@
               <div class="iconbox-style1 border-less p-0">
                 <div class="icon before-none"><span class="flaticon-web-design"></span></div>
                 <div class="details">
-                  <h4 class="title mt10 mb-3">Choisissez des freelancers</h4>
-                  <p class="text">Avant de chercher des freelancers, assurez-vous de comprendre clairement vos besoins et objectifs pour le projet. Cela vous aidera à trouver des freelancers dont les compétences correspondent à vos attentes...</p>
+                  <h4 class="title mt10 mb-3">Poster vos services</h4>
+                  <p class="text">Trouver votre service parmi plus de 100 services dans une dizaine de catégorie.</p>
                 </div>
               </div>
             </div>
@@ -191,17 +190,8 @@
               <div class="iconbox-style1 border-less p-0">
                 <div class="icon before-none"><span class="flaticon-secure"></span></div>
                 <div class="details">
-                  <h4 class="title mt10 mb-3">Payer en toute sécurité</h4>
-                  <p class="text">Toutes les transactions sont effectuées sur la plateforme freeio. Qu'un client utilise une carte de crédit, PayPal ou un autre moyen de paiement, nous nous occupons de tout et assurons la sécurité de vos informations personnelles...</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="iconbox-style1 border-less p-0">
-                <div class="icon before-none"><span class="flaticon-customer-service"></span></div>
-                <div class="details">
-                  <h4 class="title mt10 mb-3">Service clientèle</h4>
-                  <p class="text">Votre satisfaction est notre obsession ! Découvrez le service clientèle qui va au-delà de vos attentes. Nous sommes là pour vous, à chaque étape de votre parcours avec nous. Laissez-nous prendre soin de vos besoins avec une attention personnalisée et une réactivité sans égale...</p>
+                  <h4 class="title mt10 mb-3">Discuter avec les prospects</h4>
+                  <p class="text">Une mise en relation Client Entreprise la plus simple possible pour vous aider à prospérer</p>
                 </div>
               </div>
             </div>
@@ -302,15 +292,14 @@
                 <div class="iconbox-small1 at-home1 d-none d-md-block wow fadeInRight">
                   <span class="icon flaticon-review"></span>
                   <div class="details">
-                    <h6>4.9/5</h6>
-                    <p class="text fz13 mb-0">Les clients évaluent les professionnels</p>
+                    {{-- <h6>4.9/5</h6>
+                    <p class="text fz13 mb-0">Touts les entreprises sont vérifier</p> --}}
                   </div>
                 </div>
                 <div class="iconbox-small2 d-none d-md-block wow fadeInLeft">
                   <span class="icon flaticon-review"></span>
                   <div class="details">
-                    <h6>+12M</h6>
-                    <p class="text fz13 mb-0">Projets terminés</p>
+
                   </div>
                 </div>
                 <div class="about-img wow fadeInRight" data-wow-delay="300ms">
@@ -327,9 +316,9 @@
                 <p class="text text-white mb35">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres, par opposition à l'utilisation de "Contenu ici, contenu ici", ce qui donne l'impression qu'il est lisible en anglais ...</p>
                 <div class="list-style2 light-style">
                   <ul class="mb30">
-                    <li><i class="far fa-check"></i>Connectez-vous à des pigistes ayant une expérience commerciale éprouvée</li>
-                    <li><i class="far fa-check"></i>Faites-vous associer au talent parfait par un responsable de la réussite client</li>
-                    <li><i class="far fa-check"></i>Qualité inégalée des emplois à distance, hybrides et flexibles</li>
+                    <li><i class="far fa-check"></i>Connectez-vous et recherché vos services</li>
+                    <li><i class="far fa-check"></i>Une mise en relation Client Entreprise très simple et sécurisé</li>
+                    <li><i class="far fa-check"></i>Un service client disponible 24H/24H, 7j/7</li>
                   </ul>
                 </div>
                 <a href="#" class="ud-btn btn-thm">Trouver des talents<i class="fal fa-arrow-right-long"></i></a>
@@ -355,7 +344,7 @@
                 <div class="blog-img"><img class="w-100" src="{{asset('assets/images/blog/blog-1.jpg')}}" alt=""></div>
                 <div class="blog-content">
                   <a class="date" href="#">December 2, 2022</a>
-                  <h4 class="title mt-1"><a href="blog-details.html">Start an online business and work from home</a></h4>
+                  <h4 class="title mt-1"><a href="#">Start an online business and work from home</a></h4>
                   <p class="text mb-0">A complete guide to starting a small business online</p>
                 </div>
               </div>
@@ -365,7 +354,7 @@
                 <div class="blog-img"><img class="w-100" src="{{asset('assets/images/blog/blog-2.jpg')}}" alt=""></div>
                 <div class="blog-content">
                   <a class="date" href="#">December 2, 2022</a>
-                  <h4 class="title mt-1"><a href="blog-details.html">Front becomes an official Instagram Marketing Partner</a></h4>
+                  <h4 class="title mt-1"><a href="#">Front becomes an official Instagram Marketing Partner</a></h4>
                   <p class="text mb-0">A complete guide to starting a small business online</p>
                 </div>
               </div>
@@ -375,7 +364,7 @@
                 <div class="blog-img"><img class="w-100" src="{{asset('assets/images/blog/blog-3.jpg')}}" alt=""></div>
                 <div class="blog-content">
                   <a class="date" href="#">December 2, 2022</a>
-                  <h4 class="title mt-1"><a href="blog-details.html">Engendering a culture of professional development</a></h4>
+                  <h4 class="title mt-1"><a href="#">Engendering a culture of professional development</a></h4>
                   <p class="text mb-0">A complete guide to starting a small business online</p>
                 </div>
               </div>
@@ -385,7 +374,7 @@
                 <div class="blog-img"><img class="w-100" src="{{asset('assets/images/blog/blog-4.jpg')}}" alt=""></div>
                 <div class="blog-content">
                   <a class="date" href="#">December 2, 2022</a>
-                  <h4 class="title mt-1"><a href="blog-details.html">Increasing engagement with Instagram</a></h4>
+                  <h4 class="title mt-1"><a href="#">Increasing engagement with Instagram</a></h4>
                   <p class="text mb-0">A complete guide to starting a small business online</p>
                 </div>
               </div>

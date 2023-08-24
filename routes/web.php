@@ -11,6 +11,7 @@ use App\Http\Controllers\serviceController;
 use App\Http\Controllers\departementController;
 use App\Http\Controllers\demandesInscriptionController;
 use App\Http\Controllers\EntrepriseDemandeServiceController;
+use App\Http\Controllers\ServiceEntrepriseController;
 use App\Http\Controllers\WebsiteController;
 
 // Route site Web
@@ -25,6 +26,9 @@ Route::get('/services/{slug}', [WebsiteController::class, 'serviceShow'])->name(
 Route::get('/departements', [WebsiteController::class, 'departements']);
 Route::resource('demandeService', DemandeServiceClientController::class);
 
+Route::get('/reset', function(){
+    return view('reset')->name('reset');
+});
 
 Route::get('/login', [WebsiteController::class, 'login'])->name('login');
 Route::get('/register', [WebsiteController::class, 'register'])->name('register');
@@ -72,6 +76,8 @@ Route::prefix('compagny')->middleware(['auth','role:compagny'])->group(function 
     Route::get('/', [EntrepriseDemandeServiceController::class, 'index']);
     //Route::get('/demandes', [EntrepriseDemandeServiceController::class, 'demande']);
     Route::get('/demandes', [DemandeServiceClientController::class, 'index']);
+
+    Route::get('/compagny/services', [ServiceEntrepriseController::class, 'index']);
 
 
 

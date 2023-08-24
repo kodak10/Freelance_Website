@@ -1,4 +1,4 @@
-@extends('Administration.layouts.app')
+@extends('Entreprise.layouts.app')
 
 @section('content')
     <!-- right content -->
@@ -43,13 +43,13 @@
 
         <div class="dashboard dashboard_wrapper pr30 pr0-xl">
 
-            @include('Administration.layouts.sidebar')
+            @include('Entreprise.layouts.sidebar')
 
             <div class="dashboard__main pl0-md">
                 <div class="dashboard__content hover-bgc-color">
                     <div class="row pb40">
                         <div class="col-lg-12">
-                            @include('Administration.layouts.sidebar-mobile')
+                            @include('Entreprise.layouts.sidebar-mobile')
 
                         </div>
                         <div class="col-lg-12">
@@ -77,16 +77,25 @@
 
                                         <thead class="thead-light">
                                             <tr class="text-center">
-                                                <th class="fz15 fw500" scope="col">#</th>
-                                                <th class="fz15 fw500" scope="col">Libelle</th>
+                                                <th class="fz15 fw500" scope="col">Service</th>
+                                                <th class="fz15 fw500" scope="col">Delais d'execution</th>
+                                                <th class="fz15 fw500" scope="col">Description</th>
                                                 <th width="20%"class="text-center">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @forelse($services as $val)
-                                                <tr class="text-center">
+                                                {{-- <tr class="text-center">
                                                     <td>{{ $Counter++ }}</td>
                                                     <td>{{ mb_strtoupper($val->libelle) }}</td>
+                                                    <td>{{ ucwords($val->description) }}</td>
+                                                    <td>
+                                                        @forelse ($departements as $val2)
+                                                            {{ $val2['id'] == $val['idDepartement'] ? mb_strtoupper($val2->libelle) : '' }}
+                                                        @empty
+                                                            {{ 'AUCUN SECTEUR ENREGISTRE' }}
+                                                        @endforelse
+                                                    </td>
                                                     <td width="20%">
                                                         <center>
                                                             <div class="row mr-0 text-white">
@@ -117,7 +126,7 @@
                                                             </div>
                                                         </center>
                                                     </td>
-                                                </tr>
+                                                </tr> --}}
                                             @empty
                                                 <tr>
                                                     <td colspan="5"class="text-center">Aucun enregistrement trouv&eacute;
@@ -132,7 +141,7 @@
                     </div>
                 </div>
 
-                @include('Administration.layouts.footer')
+                @include('Entreprise.layouts.footer')
 
             </div>
         </div>

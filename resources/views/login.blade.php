@@ -69,11 +69,11 @@
                     @csrf
                     <div class="mb20">
                         <label class="form-label fw600 dark-color">Email</label>
-                        <input type="email" class="form-control" placeholder="elbaragroup@gmail.com" name="email" required>
+                        <input type="email" class="form-control" placeholder="Email" name="email" required>
                     </div>
                     <div class="mb15">
                         <label class="form-label fw600 dark-color">Mot de passe</label>
-                        <input type="password" class="form-control" placeholder="*******" name="password" required>
+                        <input type="password" class="form-control" placeholder="Mot de passe" name="password" required>
                     </div>
                     <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb20">
                         <label class="custom_checkbox fz14 ff-heading">Se souvenir de moi
@@ -87,12 +87,12 @@
                     </div>
                 </form>
 
-                <div class="hr_content mb20"><hr><span class="hr_top_text">OU</span></div>
+                {{-- <div class="hr_content mb20"><hr><span class="hr_top_text">OU</span></div>
 
                 <div class="d-md-flex justify-content-between">
                     <button class="ud-btn btn-google fz14 fw400 mb-2 mb-md-0" type="button"><i class="fab fa-google"></i> Avec Gmail</button>
                     <button class="ud-btn btn-fb fz14 fw400 mb-2 mb-md-0" type="button"><i class="fab fa-facebook-f pr10"></i> Avec Facebook</button>
-                </div>
+                </div> --}}
             </div>
           </div>
         </div>

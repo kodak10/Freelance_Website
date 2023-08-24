@@ -30,26 +30,17 @@
                                     <div class="dropdown-lists">
                                         <ul class="p-0 mb-0 text-center text-sm-start">
                                             <li class="list-inline-item position-relative d-none d-xl-inline-block">
-                                                <button class="open-btn mb10 dropdown-toggle" type="button" data-bs-toggle="dropdown">Sélectionner la Catégorie<i class="fa fa-angle-down ms-2"></i></button>
+                                                <button class="open-btn mb10 dropdown-toggle" type="button" data-bs-toggle="dropdown">Toutes les catégories<i class="fa fa-angle-down ms-2"></i></button>
                                                 <div class="dropdown-menu">
                                                     <div class="widget-wrapper pb25 mb0">
+
                                                         <div class="radio-element">
-                                                            <div class="form-check d-flex align-items-center mb10">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                <label class="form-check-label" for="flexRadioDefault1">Catégorie 1</label>
-                                                            </div>
-                                                            <div class="form-check d-flex align-items-center mb10">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="checked">
-                                                                <label class="form-check-label" for="flexRadioDefault2">Catégorie 2</label>
-                                                            </div>
-                                                            <div class="form-check d-flex align-items-center mb10">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                                                <label class="form-check-label" for="flexRadioDefault3">Catégorie 3</label>
-                                                            </div>
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                                                                <label class="form-check-label" for="flexRadioDefault4">Catégorie 4</label>
-                                                            </div>
+                                                            @foreach ($categories as $categorie )
+                                                                <div class="form-check d-flex align-items-center mb10">
+                                                                    <input class="form-check-input" type="radio" name="categorie" id="">
+                                                                    <label class="form-check-label" for="">{{$categorie->libelle}}</label>
+                                                                </div>
+                                                            @endforeach
                                                         </div>
                                                     </div>
                                                     <button class="done-btn ud-btn btn-thm drop_btn">Appliquer<i class="fal fa-arrow-right-long"></i></button>
@@ -61,13 +52,7 @@
                             </div>
                             <div class="col-sm-6 col-xxl-4">
                                 <div class="page_control_shorting mb10 d-flex align-items-center justify-content-center justify-content-sm-end">
-                                    <div class="pcs_dropdown dark-color pr10"><span>Trier par</span>
-                                        <select class="selectpicker show-tick">
-                                            <option>Recommandation</option>
-                                            <option>Ordre Alphabetique</option>
-                                            <option>Nouveau Service</option>
-                                        </select>
-                                    </div>
+                                    <input type="text" placeholder="Rechercher un service" class="form-control">
                                 </div>
                             </div>
                         </div>

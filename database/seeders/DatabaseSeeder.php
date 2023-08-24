@@ -31,20 +31,20 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         //User::factory(10)->create();
-        CategoryFaq::factory(10)->create();
-        CategoryNew::factory(10)->create();
-        CategoryForum::factory(10)->create();
+        //CategoryFaq::factory(10)->create();
+        //CategoryNew::factory(10)->create();
+        //CategoryForum::factory(10)->create();
 
         // Client::factory(10)->create();
         //Departement::factory(10)->create();
-        Diplome::factory(10)->create();
-        Secteur::factory(15)->create();
+        //Diplome::factory(10)->create();
+        //Secteur::factory(15)->create();
         //Faq::factory(10)->create();
-        Forum::factory(10)->create();
+        //Forum::factory(10)->create();
         //News::factory(10)->create();
         //NewComment::factory(10)->create();
-        Service::factory(40)->create();
-        Pays::factory(10)->create();
+       // Service::factory(40)->create();
+        //Pays::factory(10)->create();
         //Notation::factory(10)->create();
         //Recompense::factory(10)->create();
 

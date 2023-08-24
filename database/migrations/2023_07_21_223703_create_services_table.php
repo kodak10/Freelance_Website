@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->string('libelle');
-            $table->text('description');
             $table->unsignedBigInteger('departement_id');
             $table->timestamps();
 

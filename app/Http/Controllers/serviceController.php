@@ -37,17 +37,13 @@ class serviceController extends Controller
         $check = array(
             'libelle' => 'required',
             'idDepartement' => 'required',
-            'description' => 'required',
         );
         $request->validate($check);
         $data = array(
             'libelle' => $request->libelle,
-            'description' => $request->description,
             'departement_id' => $request->idDepartement,
             'created_at' => now()
-            // 'updated_at'=>now()
         );
-        // agents de la police nationale* chargé de la protection des ambassades et consulats français à l'étrange
         if (Service::insert($data)) {
             return redirect('/administration/services')->with('added', 'added');
         } else {
@@ -85,14 +81,11 @@ class serviceController extends Controller
         $check = array(
             'libelle' => 'required',
             'idDepartement' => 'required',
-            'description' => 'required',
         );
         $request->validate($check);
         $data = array(
             'libelle' => $request->libelle,
             'departement_id' => $request->idDepartement,
-            'description' => $request->description,
-            //  'created_at' => now()
             'updated_at' => now()
         );
         if ($service->update($data)) {

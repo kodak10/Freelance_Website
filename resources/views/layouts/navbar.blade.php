@@ -27,17 +27,13 @@
                                     @foreach ($categories as $categorie )
                                         <li> <a class="dropdown" href="#"> <span class="menu-icn flaticon-developer"></span> <span class="menu-title">{{$categorie->libelle}}</span> </a>
                                             <div class="drop-menu d-flex justify-content-between">
-                                                @foreach ($categorie->services as $service )
                                                 <div class="one-third">
-
-                                                    <div class="h6 cat-title"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></div>
-                                                    {{-- <ul class="ps-0 mb40">
-                                                        @foreach ($service->services as $service )
-                                                            <li><a href="#">{{$service->libelle}}</a></li>
+                                                    <ul class="ps-0 mb40">
+                                                        @foreach ($categorie->services as $service )
+                                                            <li><a href="{{ route('serviceDetail.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></li>
                                                         @endforeach
-                                                    </ul> --}}
+                                                    </ul>
                                                 </div>
-                                                @endforeach
                                             </div>
                                         </li>
                                     @endforeach
@@ -54,15 +50,13 @@
                             <li><a href="/">Accueil</a></li>
                             <li> <a href="/about"><span class="title">A Propos</span></a>
                             <li><a href="/services">Touver un service</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
                             <li> <a class="list-item" href="/contact">Contact</a></li>
 
                         </ul>
 
                         <a class="login-info bdrl1 pl15-lg pl30"><span class="flaticon-loupe"></span></a>
-                        <a class="login-info mr15-lg mr30" href="/login">Se Connecter</a>
-                        <a class="ud-btn btn-white add-joining" href="/register">Nous Rejoindre</a>
+                        <a class="login-info mr15-lg mr30" href="/login"><strong>Se Connecter</strong></a>
+                        <a class="ud-btn btn-white add-joining" href="/register"><strong>Nous Rejoindre</strong></a>
 
                     </div>
                 </div>
@@ -100,8 +94,6 @@
         <li><a href="/">Accueil</a></li>
         <li> <a href="/about"><span class="title">A Propos</span></a>
         <li><a href="/services">Touver un service</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="#">Forum</a></li>
         <li> <a class="list-item" href="/contact">Contact</a></li>
         <li> <a class="list-item" href="/login">Se Connecter</a></li>
         <li> <a class="list-item" href="/register">S'inscrire</a></li>

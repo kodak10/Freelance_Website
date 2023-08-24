@@ -1,4 +1,4 @@
-@extends('Administration.layouts.app')
+@extends('Entreprise.layouts.app')
 
 @section('content')
     <!-- right content -->
@@ -43,13 +43,13 @@
 
         <div class="dashboard dashboard_wrapper pr30 pr0-xl">
 
-            @include('Administration.layouts.sidebar')
+            @include('Entreprise.layouts.sidebar')
 
             <div class="dashboard__main pl0-md">
                 <div class="dashboard__content hover-bgc-color">
                     <div class="row pb40">
                         <div class="col-lg-12">
-                            @include('Administration.layouts.sidebar-mobile')
+                            @include('Entreprise.layouts.sidebar-mobile')
 
                         </div>
                         <div class="col-lg-12">
@@ -64,7 +64,7 @@
                             <hr class="bg-dark">
                             <h3 class="title text-center">Ajouter un service</h3>
                             <hr class="bg-dark">
-                            <a href="/administration/services" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
+                            <a href="/services" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <form action="{{ route('services.store') }}" method="post">
@@ -118,7 +118,7 @@
 
                 </div>
 
-                @include('Administration.layouts.footer')
+                @include('Entreprise.layouts.footer')
 
             </div>
         </div>
