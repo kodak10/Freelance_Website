@@ -19,6 +19,7 @@ use App\Models\Pays;
 use App\Models\Recompense;
 use App\Models\Secteur;
 use App\Models\Service;
+use App\Models\ServiceEntreprise;
 use App\Models\TypeClient;
 use App\Models\User;
 use Illuminate\Database\Seeder;
@@ -47,6 +48,8 @@ class DatabaseSeeder extends Seeder
         //Pays::factory(10)->create();
         //Notation::factory(10)->create();
         //Recompense::factory(10)->create();
+        ServiceEntreprise::factory(20)->create();
+
 
     }
 }

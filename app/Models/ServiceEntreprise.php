@@ -12,5 +12,7 @@ class ServiceEntreprise extends Model
         'service_id',
         'description',
         'delais_execution',
+        'libelle',
+
     ];
 }
