@@ -22,7 +22,7 @@ Route::get('/blog', [WebsiteController::class, 'blog']);
 Route::get('/contact', [WebsiteController::class, 'contact']);
 
 Route::get('/services', [WebsiteController::class, 'services']);
-Route::get('/services/search', [WebsiteController::class, 'search'])->name('services.search');
+Route::get('/services', [WebsiteController::class, 'search'])->name('services.search');
 
 Route::get('/services/{slug}', [WebsiteController::class, 'showEntrepriseService'])->name('EntrepriseService.show');
 Route::get('/services/{entreprise_id}/details', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');

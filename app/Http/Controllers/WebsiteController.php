@@ -155,10 +155,10 @@ class WebsiteController extends Controller
             $query->where('libelle', 'like', '%' . $keyword . '%');
         }
 
-        $services = $query->get();
+        $services = $query->paginate(8);
 
 
-        return view('services_search', compact('services', 'category', 'categories'));
+        return view('services', compact('services', 'category', 'categories'));
     }
 
 

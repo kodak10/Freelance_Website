@@ -45,7 +45,7 @@
                         </form>
 
                         <div class="row">
-                            @foreach ($services as $service )
+                            @forelse ($services as $service )
                                 <div class="col-lg-3">
                                     <div class="listing-style1">
                                         <div class="list-thumb">
@@ -58,7 +58,9 @@
                                     </div>
                                 </div>
 
-                            @endforeach
+                                @empty
+                                <span>Aucun résultat trouvé</span>
+                            @endforelse
 
                             <div class="d-flex justify-content-center mb-5 ">
                                 {{ $services->links() }}
@@ -74,5 +76,5 @@
         </div>
     </section>
 
-    
+
 @endsection
