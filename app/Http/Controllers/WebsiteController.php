@@ -53,8 +53,13 @@ class WebsiteController extends Controller
 
     public function serviceShow($entreprise_id)
     {
+        $serviceDetails = DB::table('service_entreprises')
+        ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
+        ->where('entreprise_id', $entreprise_id)
+        ->select('*')
+        ->get();
 
-        $serviceDetails = ServiceEntreprise::where('entreprise_id', $entreprise_id)->firstOrFail();
+        //$serviceDetails = ServiceEntreprise::where('entreprise_id', $entreprise_id)->firstOrFail();
         $categories = Departement::get();
         return view('services_details', compact('serviceDetails', 'categories'));
     }

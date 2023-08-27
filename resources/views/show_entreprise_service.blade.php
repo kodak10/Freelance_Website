@@ -35,7 +35,7 @@
 
 
                     @empty
-                        <span>Aucune entreprise trouvé concernant ce service</span>>&eacute;
+                        <span>Aucune entreprise trouvé concernant ce service</span>
 
                 @endforelse
             </div>

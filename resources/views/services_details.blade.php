@@ -77,7 +77,7 @@
           <div class="row wow fadeInUp">
             <div class="col-xl-7">
               <div class="position-relative">
-                <h2>{{$serviceDetails->description}}</h2>
+                <h2>{{$serviceDetails->libelle}}</h2>
                 <div class="list-meta mt30">
                   <a class="list-inline-item mb5-sm" href="#">
                     <span class="position-relative mr10">
@@ -117,7 +117,7 @@
                     <div class="icon flex-shrink-0"><span class="flaticon-goal"></span></div>
                     <div class="details">
                       <h5 class="title">Type d'entreprise</h5>
-                      <p class="mb-0 text">Nationale</p>
+                      <p class="mb-0 text">{{$serviceDetails->type_entreprise}}</p>
                     </div>
                   </div>
                 </div>
@@ -126,7 +126,7 @@
                     <div class="icon flex-shrink-0"><span class="flaticon-tracking"></span></div>
                     <div class="details">
                       <h5 class="title">Localisation</h5>
-                      <p class="mb-0 text">Grand-Bassam</p>
+                      <p class="mb-0 text">{{$serviceDetails->localisation}}</p>
                     </div>
                   </div>
                 </div>
