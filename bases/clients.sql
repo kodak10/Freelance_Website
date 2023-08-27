@@ -1,5 +1,7 @@
+
 INSERT INTO `clients` (`id`, `user_id`, `name`, `prenoms`, `telephone`, `date_naissance`, `photo`, `created_at`, `updated_at`) VALUES
-(1, 1, 'user', 'User', '0101010101', '2023-08-04', NULL, '2023-08-08 10:31:14', '2023-08-08 10:31:14');
+(2, 2, 'Client', 'Client', '0103810997', '2023-08-11', NULL, '2023-08-25 09:32:03', '2023-08-25 09:32:03'),
+(3, 5, 'Tata', 'Tata', '0779792311', '2023-08-27', NULL, '2023-08-27 09:03:42', '2023-08-27 09:03:42');
 
 --
 -- Index pour les tables déchargées
@@ -20,7 +22,7 @@ ALTER TABLE `clients`
 -- AUTO_INCREMENT pour la table `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Contraintes pour les tables déchargées

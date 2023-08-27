@@ -108,7 +108,7 @@
                     <div class="icon flex-shrink-0"><span class="flaticon-calendar"></span></div>
                     <div class="details">
                       <h5 class="title">Livrer dans </h5>
-                      <p class="mb-0 text">{{$serviceDetails->delais_execution}}</p>
+                      <p class="mb-0 text">{{$serviceDetails->delais_execution}} Jours</p>
                     </div>
                   </div>
                 </div>

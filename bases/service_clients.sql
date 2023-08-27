@@ -1,5 +1,5 @@
 INSERT INTO `service_clients` (`id`, `user_id`, `nom`, `telephone`, `email`, `localisation`, `photo`, `created_at`, `updated_at`) VALUES
-(1, 3, 'Admin', '65656565', 'admin@gmail.com', '8585', '', NULL, NULL);
+(3, 1, 'Administratrateur', '0103810998', 'Admin@gmail.com ', 'Abidjan ', '', NULL, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -20,7 +20,7 @@ ALTER TABLE `service_clients`
 -- AUTO_INCREMENT pour la table `service_clients`
 --
 ALTER TABLE `service_clients`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Contraintes pour les tables déchargées

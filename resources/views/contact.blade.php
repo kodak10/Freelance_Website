@@ -106,12 +106,12 @@
                   <div class="col-md-6">
                     <div class="mb20">
                       <label class="heading-color ff-heading fw500 mb10" for="">Email</label>
-                      <input type="email" class="form-control" placeholder="Votre Prénoms">
+                      <input type="email" class="form-control" placeholder="Votre Email">
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb20">
-                      <label class="heading-color ff-heading fw500 mb10" for="">Messages</label>
+                      <label class="heading-color ff-heading fw500 mb10" for="">Message</label>
                       <textarea name="" id="" cols="30" rows="6" placeholder="Laissez nous votre message"></textarea>
                     </div>
                   </div>
