@@ -6,6 +6,7 @@ use App\Models\Service;
 use App\Models\Departement;
 use App\Models\ServiceEntreprise;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class WebsiteController extends Controller
 {
@@ -31,17 +32,29 @@ class WebsiteController extends Controller
         return view('services' , compact('categories', 'services'));
     }
 
-    public function showEntrepriseService($slug)
+    public function showEntrepriseService(string $slug)
     {
-        $serviceEntreprises = ServiceEntreprise::where('service_id', $slug)->get();
+
+        //$serviceEntreprises = ServiceEntreprise::where('service_id', $slug)->get();
+
+        //$services = Service::where('id', $id)->firstOrFail();
+
+         $serviceEntreprises = DB::table('service_entreprises')
+            ->join('services', 'service_entreprises.service_id', '=', 'services.id')
+            ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
+
+            ->select('*')
+            ->get();
+
+
         $categories = Departement::get();
         return view('show_entreprise_service', compact('serviceEntreprises', 'categories'));
     }
 
-    public function serviceShow($libelle)
+    public function serviceShow($entreprise_id)
     {
 
-        $serviceDetails = ServiceEntreprise::where('service_id', $libelle)->firstOrFail();
+        $serviceDetails = ServiceEntreprise::where('entreprise_id', $entreprise_id)->firstOrFail();
         $categories = Departement::get();
         return view('services_details', compact('serviceDetails', 'categories'));
     }

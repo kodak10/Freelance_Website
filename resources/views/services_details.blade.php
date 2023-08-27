@@ -117,7 +117,7 @@
                     <div class="icon flex-shrink-0"><span class="flaticon-goal"></span></div>
                     <div class="details">
                       <h5 class="title">Type d'entreprise</h5>
-                      <p class="mb-0 text">{{$serviceDetails->}}</p>
+                      <p class="mb-0 text">Nationale</p>
                     </div>
                   </div>
                 </div>

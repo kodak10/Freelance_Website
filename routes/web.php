@@ -24,7 +24,7 @@ Route::get('/contact', [WebsiteController::class, 'contact']);
 
 Route::get('/services', [WebsiteController::class, 'services']);
 Route::get('/services/{slug}', [WebsiteController::class, 'showEntrepriseService'])->name('EntrepriseService.show');
-Route::get('/services/{libelle}/details', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
+Route::get('/services/{entreprise_id}/details', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
 
 Route::get('/departements', [WebsiteController::class, 'departements']);
 Route::resource('demandeService', DemandeServiceClientController::class);
