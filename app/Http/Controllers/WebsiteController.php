@@ -41,7 +41,7 @@ class WebsiteController extends Controller
     public function serviceShow($libelle)
     {
 
-        $serviceDetails = ServiceEntreprise::where('service_id', $libelle)->get();
+        $serviceDetails = ServiceEntreprise::where('service_id', $libelle)->firstOrFail();
         $categories = Departement::get();
         return view('services_details', compact('serviceDetails', 'categories'));
     }

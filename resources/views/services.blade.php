@@ -6,7 +6,7 @@
         background-color: #5BBB7B !important;
     }
     header.nav-homepage-style {
-        position: relative;
+        position: relative !important;
     }
     header.nav-homepage-style a{
         color: #000000 !important;

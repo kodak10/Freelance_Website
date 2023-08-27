@@ -52,7 +52,7 @@
               <div class="breadcumb-list">
                 <a href="/">Accueil</a>
                 <a href="/services">Services</a>
-                <a href="#">{{$serviceDetails->service_id}}</a>
+                <a href="#">{{$serviceDetails->libelle}}</a>
               </div>
             </div>
           </div>
@@ -77,14 +77,14 @@
           <div class="row wow fadeInUp">
             <div class="col-xl-7">
               <div class="position-relative">
-                <h2>{{$serviceEntreprises->description}}</h2>
+                <h2>{{$serviceDetails->description}}</h2>
                 <div class="list-meta mt30">
                   <a class="list-inline-item mb5-sm" href="#">
                     <span class="position-relative mr10">
                       <img class="rounded-circle" src="{{asset('assets/images/team/fl-d-1.png')}}" alt="Freelancer Photo">
                       <span class="online-badge"></span>
                     </span>
-                    <span class="fz14">{{$serviceEntreprises->name}}</span>
+                    <span class="fz14">{{$serviceDetails->name}}</span>
                   </a>
                   <p class="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs"><i class="fas fa-star vam fz10 review-color me-2"></i> 4.82 ;4 Commentaires</p>
                   <p class="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs"><i class="flaticon-website vam fz20 me-2"></i> 90 visiteur</p>
@@ -108,7 +108,7 @@
                     <div class="icon flex-shrink-0"><span class="flaticon-calendar"></span></div>
                     <div class="details">
                       <h5 class="title">Livrer dans </h5>
-                      <p class="mb-0 text">1-3 Semaine</p>
+                      <p class="mb-0 text">{{$serviceDetails->delais_execution}}</p>
                     </div>
                   </div>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="icon flex-shrink-0"><span class="flaticon-goal"></span></div>
                     <div class="details">
                       <h5 class="title">Type d'entreprise</h5>
-                      <p class="mb-0 text">Nationale</p>
+                      <p class="mb-0 text">{{$serviceDetails->}}</p>
                     </div>
                   </div>
                 </div>
@@ -145,7 +145,7 @@
               <div class="service-about">
                 <h4>Detail du service</h4>
                 <p>
-                    {{$serviceEntreprises->description}}
+                    {{$serviceDetails->description}}
                 </p>
 
                 <hr class="opacity-100 mb15">
@@ -315,7 +315,7 @@
                                         @csrf
                                         <input type="hidden" name="client_id" value="1">
                                         <input type="hidden" name="entreprise_id" value="1">
-                                        <input type="hidden" name="service_id" value="{{$entreprise->id}}">
+                                        <input type="hidden" name="service_id" value="1">
 
                                         <div class="form-group mb-3">
                                           <label for="">Description</label>
