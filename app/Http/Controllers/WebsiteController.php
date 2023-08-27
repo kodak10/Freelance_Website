@@ -54,10 +54,28 @@ class WebsiteController extends Controller
     public function serviceShow($entreprise_id)
     {
         $serviceDetails = DB::table('service_entreprises')
+        ->join('services', 'service_entreprises.service_id', '=', 'services.id')
         ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
         ->where('entreprise_id', $entreprise_id)
-        ->select('*')
-        ->get();
+        ->select('service_entreprises.service_id',
+        'service_entreprises.entreprise_id',
+        
+        'entreprises.id as entreprise_id',
+        'services.id as services_id',
+
+        'service_entreprises.libelle as se_libelle',
+        'service_entreprises.description as se_description',
+        'service_entreprises.delais_execution as delais_execution',
+        'service_entreprises.image as se_image',
+        'services.libelle as service_libelle',
+        'entreprises.name as entreprise_name',
+        'entreprises.type_entreprise as type_entreprise',
+        'entreprises.localisation as localisation',
+        'services.libelle as service_libelle',
+
+
+        )
+        ->first();
 
         //$serviceDetails = ServiceEntreprise::where('entreprise_id', $entreprise_id)->firstOrFail();
         $categories = Departement::get();

@@ -14,6 +14,7 @@ class ServiceEntreprise extends Model
         'delais_execution',
         'libelle',
         'id',
+        'name'
 
 
     ];

@@ -52,7 +52,7 @@
               <div class="breadcumb-list">
                 <a href="/">Accueil</a>
                 <a href="/services">Services</a>
-                <a href="#">{{$serviceDetails->libelle}}</a>
+                <a href="#">{{$serviceDetails->service_libelle}}</a>
               </div>
             </div>
           </div>
@@ -77,14 +77,14 @@
           <div class="row wow fadeInUp">
             <div class="col-xl-7">
               <div class="position-relative">
-                <h2>{{$serviceDetails->libelle}}</h2>
+                <h2>{{$serviceDetails->se_libelle}}</h2>
                 <div class="list-meta mt30">
                   <a class="list-inline-item mb5-sm" href="#">
                     <span class="position-relative mr10">
                       <img class="rounded-circle" src="{{asset('assets/images/team/fl-d-1.png')}}" alt="Freelancer Photo">
                       <span class="online-badge"></span>
                     </span>
-                    <span class="fz14">{{$serviceDetails->name}}</span>
+                    <span class="fz14">{{$serviceDetails->entreprise_name}}</span>
                   </a>
                   <p class="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs"><i class="fas fa-star vam fz10 review-color me-2"></i> 4.82 ;4 Commentaires</p>
                   <p class="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs"><i class="flaticon-website vam fz20 me-2"></i> 90 visiteur</p>
@@ -145,7 +145,7 @@
               <div class="service-about">
                 <h4>Detail du service</h4>
                 <p>
-                    {{$serviceDetails->description}}
+                    {{$serviceDetails->se_description}}
                 </p>
 
                 <hr class="opacity-100 mb15">
@@ -313,9 +313,9 @@
                                 <div class="modal-body">
                                     <form method="post" action="{{route('demandeService.store')}}">
                                         @csrf
-                                        <input type="hidden" name="client_id" value="1">
-                                        <input type="hidden" name="entreprise_id" value="1">
-                                        <input type="hidden" name="service_id" value="1">
+                                        <input type="hidden" name="client_id" value="{{ Auth::user() ? Auth::user()->id : 0 }}">
+                                        <input type="hidden" name="entreprise_id" value="{{$serviceDetails->entreprise_id}}">
+                                        <input type="hidden" name="service_id" value="{{$serviceDetails->service_id}}">
 
                                         <div class="form-group mb-3">
                                           <label for="">Description</label>
