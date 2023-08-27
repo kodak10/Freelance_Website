@@ -19,7 +19,7 @@
         <div class="container">
             <h3>Les entreprises proposant le service sélectionné</h3>
             <div class="row">
-                @foreach ($serviceEntreprises as $serviceEntreprise )
+                @forelse($serviceEntreprises as $serviceEntreprise)
                     <div class="col-lg-3">
                         <div class="listing-style1">
                             <div class="list-thumb">
@@ -27,7 +27,6 @@
                                 <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                             </div>
                             <div class="list-content">
-                                {{-- <span class="hidden" value="{{$serviceEntreprises->service_id}}"></span> --}}
                                 <h4 class="fw-bold; text-uppercase">{{$serviceEntreprise->name}}</h4>
                                 <p class="list-text body-color fz14 mb-1"><a href="{{ route('serviceDetail.show', ['entreprise_id' => $serviceEntreprise->id]) }}">{{$serviceEntreprise->description}}</a></p>
                             </div>
@@ -35,7 +34,10 @@
                     </div>
 
 
-                @endforeach
+                    @empty
+                        <span>Aucune entreprise trouvé concernant ce service</span>>&eacute;
+
+                @endforelse
             </div>
 
         </div>
