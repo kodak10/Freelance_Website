@@ -20,7 +20,19 @@ class WebsiteController extends Controller
         $categories = Departement::get();
 
         $categories_min = Departement::paginate(4);
-        $tendances = Service::paginate(8);
+
+        $tendances = DB::table('services')
+        ->join('service_entreprises', 'services.id', '=', 'service_entreprises.service_id')
+        ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
+        ->select('services.*')
+        ->distinct()
+        ->whereExists(function ($query) {
+            $query->select(DB::raw(1))
+                  ->from('service_entreprises as se')
+                  ->whereRaw('se.service_id = services.id')
+                  ->whereRaw('se.entreprise_id = entreprises.id');
+        })->paginate(8);
+
 
         return view('index', compact('categories', 'tendances', 'categories_min'));
     }
@@ -28,7 +40,6 @@ class WebsiteController extends Controller
     public function services()
     {
         $categories = Departement::get();
-        //$services = Service::paginate(8);
         $services = DB::table('services')
         ->join('service_entreprises', 'services.id', '=', 'service_entreprises.service_id')
         ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
@@ -46,10 +57,6 @@ class WebsiteController extends Controller
 
     public function showEntrepriseService(string $slug)
     {
-
-        //$serviceEntreprises = ServiceEntreprise::where('service_id', $slug)->get();
-
-        //$services = Service::where('id', $id)->firstOrFail();
 
          $serviceEntreprises = DB::table('service_entreprises')
             ->join('services', 'service_entreprises.service_id', '=', 'services.id')
@@ -89,7 +96,6 @@ class WebsiteController extends Controller
         )
         ->first();
 
-        //$serviceDetails = ServiceEntreprise::where('entreprise_id', $entreprise_id)->firstOrFail();
         $categories = Departement::get();
         return view('services_details', compact('serviceDetails', 'categories'));
     }
@@ -133,24 +139,26 @@ class WebsiteController extends Controller
 
     public function search(Request $request)
     {
+
         $categories = Departement::get();
 
         $category = $request->input('category');
-        $searchQuery = $request->input('search');
+        $keyword = $request->input('keyword');
 
-        $query = Service::query();
+        $query = DB::table('services');
 
-        if ($category) {
-            $query->where('category', $category);
+        if (!empty($category)) {
+            $query->where('departement_id', $category);
         }
 
-        if ($searchQuery) {
-            $query->where('libelle', 'like', '%' . $searchQuery . '%');
+        if (!empty($keyword)) {
+            $query->where('libelle', 'like', '%' . $keyword . '%');
         }
 
         $services = $query->get();
 
-        return view('services_search', compact('services', 'category', 'searchQuery', 'categories'));
+
+        return view('services_search', compact('services', 'category', 'categories'));
     }
 
 

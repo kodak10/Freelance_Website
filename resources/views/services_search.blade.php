@@ -25,33 +25,7 @@
 </style>
 @section('content')
     <div class="container">
-        <form action="{{ route('services.search') }}" method="post">
-            @csrf
-            <div class="row mt-5 mb-5">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label for="category">Catégorie</label>
-                        <select name="category" id="category" class="form-control">
-                            <option value="">Toutes les catégories</option>
-                            @foreach ($categories as $cat)
-                                <option value="{{ $cat->libelle }}" @if($category == $cat) selected @endif>{{ $cat->libelle }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="form-group">
-                        <label for="search">Recherche</label>
-                        <input type="text" name="search" id="search" class="form-control" placeholder="Rechercher un service" value="{{ $searchQuery }}">
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <button type="submit" class="btn btn-primary">Rechercher</button>
-                </div>
-            </div>
-        </form>
+        
 
         <h4 class="">Résultats de la recherche</h4>
 

@@ -34,36 +34,32 @@
               <div class="col-xl-10 col-xxl-7">
                 <div class="position-relative">
                   <h3 class="banner-title">Trouvez des <span style="color:#5BBB7B !important;">entreprises qualifiées</span> pour vos services.</h3>
-                  <!-- <p class="banner-text text-white ff-heading mb25">Millions of people use freeio.com to turn their ideas into reality.</p> -->
+                  {{-- <p class="banner-text text-white ff-heading mb25">Millions of people use freeio.com to turn their ideas into reality.</p> --}}
                   <div class="advance-search-tab bgc-white bgct-sm p10 p0-md bdrs4 banner-btn position-relative zi9">
                     <div class="row">
-                      <div class="col-md-5 col-lg-6 col-xl-6">
-                        <div class="advance-search-field mb10-sm bdrr1 bdrn-sm">
-                          <form class="form-search position-relative" method="post" action="{{route('services.search')}}">
-                            @csrf
-                            <div class="box-search">
-                              <span class="icon far fa-magnifying-glass"></span>
-                              <input class="form-control" type="text" name="search" id="search" placeholder="Quel est le service que vous rechercher ?">
 
+                        <form action="{{ route('services.search') }}" method="GET" class="row">
+                            <div class="col-lg-5">
+                                <div class="box-search">
+                                    <input type="text" name="keyword" id="keyword" class="form-control" placeholder="Quel est le service que vous rechercher ?">
+                                </div>
                             </div>
-                          </form>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-lg-4 col-xl-4 d-none d-md-block">
-                        <div class="bselect-style1">
-                          <select class="selectpicker" data-width="100%" name="category" id="category" >
-                            <option>Toutes les Catégories</option>
-                                @foreach ($categories as $categorie )
-                                    <option data-tokens="Graphics&Design" value="{{ $categorie->libelle }}">{{$categorie->libelle}}</option>
-                                @endforeach
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-lg-2 col-xl-2 ps-md-0">
-                        <div class="text-center text-xl-end">
-                          <button class="ud-btn btn-thm w-100 px-4" type="button">Rechercher</button>
-                        </div>
-                      </div>
+                            <div class="col-lg-4">
+                                <div class="bselect-style1">
+                                    <select name="category" id="category" class="form-select">
+                                        <option value="">Toutes les catégories</option>
+                                            @foreach ($categories as $categorie)
+                                                <option value="{{ $categorie->id }}">{{ $categorie->libelle }}</option>
+                                            @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center text-xl-end">
+                                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                   </div>
                 </div>
@@ -142,7 +138,6 @@
                     </div>
                     <div class="list-content">
                       <p class="list-text body-color fz14 mb-1"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}"><strong>{{$tendance->libelle}}</strong></a> </p>
-                      {{-- <h5 class="list-title"><a href="{{ route('EntrepriseService.show', ['slug' => $tendance->libelle ]) }}">{{ Str::limit($tendance->description, 100, '...') }}</a></h5> --}}
                     </div>
                   </div>
                 </div>
