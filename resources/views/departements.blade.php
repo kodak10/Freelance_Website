@@ -29,7 +29,7 @@
                                     <div class="details mt20">
                                         <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
                                         @foreach ($categorie->services as $service )
-                                            <p class="mb-0"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></p>
+                                            <p class="mb-0"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></p>
                                         @endforeach
                                     </div>
                                 </div>

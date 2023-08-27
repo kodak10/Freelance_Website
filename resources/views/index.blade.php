@@ -98,7 +98,7 @@
                     <div class="details mt20">
                         <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
                         @foreach ($categorie->services as $service )
-                            <p class="mb-0"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></p>
+                            <p class="mb-0"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></p>
                         @endforeach
                         <p class="mb-0">& autres</p>
 
@@ -141,8 +141,8 @@
                       <a href="" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                     </div>
                     <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1"><strong>{{$tendance->libelle}}</strong></p>
-                      <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $tendance->libelle ]) }}">{{ Str::limit($tendance->description, 100, '...') }}</a></h5>
+                      <p class="list-text body-color fz14 mb-1"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}"><strong>{{$tendance->libelle}}</strong></a> </p>
+                      {{-- <h5 class="list-title"><a href="{{ route('EntrepriseService.show', ['slug' => $tendance->libelle ]) }}">{{ Str::limit($tendance->description, 100, '...') }}</a></h5> --}}
                     </div>
                   </div>
                 </div>
@@ -173,7 +173,7 @@
                   <div class="icon before-none"><span class="flaticon-cv"></span></div>
                   <div class="details">
                     <h4 class="title mt10 mb-3">Inscrivez-vous</h4>
-                    <p class="text">Vous inscrire ! <br> les meilleurs services entreprise en ligne sont ici pour promouvoir votre activité.</p>
+                    <p class="text">Inscrivez vous pour promouvoir votre activitée.</p>
                   </div>
               </div>
             </div>
@@ -182,7 +182,7 @@
                 <div class="icon before-none"><span class="flaticon-web-design"></span></div>
                 <div class="details">
                   <h4 class="title mt10 mb-3">Poster vos services</h4>
-                  <p class="text">Trouver votre service parmi plus de 100 services dans une dizaine de catégorie.</p>
+                  <p class="text">Selectionner votre service parmis une dizaine de catégorie.</p>
                 </div>
               </div>
             </div>
@@ -321,7 +321,7 @@
                     <li><i class="far fa-check"></i>Un service client disponible 24H/24H, 7j/7</li>
                   </ul>
                 </div>
-                <a href="#" class="ud-btn btn-thm">Trouver des talents<i class="fal fa-arrow-right-long"></i></a>
+                <a href="#" class="ud-btn btn-thm">Trouver votre service<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
@@ -389,7 +389,7 @@
           <div class="row justify-content-between">
             <div class="col-md-6 col-lg-7 col-xl-5 wow fadeInLeft">
               <div class="cta-style3">
-                <h2 class="cta-title">Trouvez une entreprise / particulier pour mettre sur pied vos projets.</h2>
+                <h2 class="cta-title">Trouvez une entreprise  pour mettre sur pied vos projets.</h2>
                 <a href="" class="ud-btn btn-thm2">Les Entreprises <i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>

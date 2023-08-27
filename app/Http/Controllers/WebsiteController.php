@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Service;
 use App\Models\Departement;
-use App\Models\Secteur;
 use App\Models\ServiceEntreprise;
 use Illuminate\Http\Request;
 
@@ -32,12 +31,19 @@ class WebsiteController extends Controller
         return view('services' , compact('categories', 'services'));
     }
 
-    public function serviceShow($slug)
+    public function showEntrepriseService($slug)
     {
-        //$serviceDetail = Service::where('id', $slug)->firstOrFail();
-        $serviceEntreprises = ServiceEntreprise::where('service_id', $slug);
+        $serviceEntreprises = ServiceEntreprise::where('service_id', $slug)->get();
         $categories = Departement::get();
         return view('show_entreprise_service', compact('serviceEntreprises', 'categories'));
+    }
+
+    public function serviceShow($libelle)
+    {
+
+        $serviceDetails = ServiceEntreprise::where('service_id', $libelle)->get();
+        $categories = Departement::get();
+        return view('services_details', compact('serviceDetails', 'categories'));
     }
 
     public function about()

@@ -97,14 +97,14 @@
                                                                 </div>
 
                                                                 <div class="col-md-3">
-
+                                                                    
                                                                     <a
                                                                         href="{{ route('services.edit', $val->id) }}"class="btn btn-warning text-white"title="Modifier cet Enregistrement"><i
-                                                                            class="fa fa-edit"></i></a>
+                                                                            class="fa fa-edit"></i>
+                                                                    </a>
                                                                 </div>
 
                                                                 <div class="col-md-3">
-
                                                                     <form
                                                                         method="POST"action={{ route('services.destroy', $val->id) }}>
                                                                         @csrf

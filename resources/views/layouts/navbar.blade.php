@@ -30,7 +30,8 @@
                                                 <div class="one-third">
                                                     <ul class="ps-0 mb40">
                                                         @foreach ($categorie->services as $service )
-                                                            <li><a href="{{ route('serviceDetail.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></li>
+                                                            <li><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></li>
+
                                                         @endforeach
                                                     </ul>
                                                 </div>

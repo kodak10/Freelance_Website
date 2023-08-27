@@ -17,23 +17,25 @@
 
     <section class="p-0 ">
         <div class="container">
-            <h4>Ici est afficher les entreprises proposant le services selectionner</h4>
-            <div class="row wow fadeInUp mt-5" data-wow-delay="300ms">
+            <div class="row">
                 @foreach ($serviceEntreprises as $serviceEntreprise )
-                <div class="col-lg-4">
-                    <div class="card w-100">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">{{$serviceEntreprise->libelle}}</h5>
-                          <p class="card-text">{{ Str::limit($serviceEntreprise->description, 100, '...') }}</p>
-                          <a href="#" class="btn btn-primary">Consulter</a>
+                    <div class="col-lg-3">
+                        <div class="listing-style1">
+                            <div class="list-thumb">
+                                <img class="w-100" src="{{$serviceEntreprise->image}}" alt="Image">
+                                <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                            </div>
+                            <div class="list-content">
+                                <h5><a href="{{ route('serviceDetail.show', ['libelle' => $serviceEntreprise->libelle]) }}">{{$serviceEntreprise->libelle}}</a></h5>
+                                <p class="list-text body-color fz14 mb-1"><a href="{{ route('serviceDetail.show', ['libelle' => $serviceEntreprise->libelle]) }}">{{$serviceEntreprise->description}}</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+
+
                 @endforeach
-
-
             </div>
+
         </div>
     </section>
 

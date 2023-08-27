@@ -15,10 +15,10 @@ class Service extends Model
         'description',
     ];
 
-    public function entreprise()
+    public function entreprises()
     {
-        return $this->hasMany(Entreprise::class);
-    }
+        return $this->belongsToMany(Entreprise::class, 'service_entreprises', 'service_id', 'entreprise_id');    }
+
 
     public function secteurs()
     {

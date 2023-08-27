@@ -21,8 +21,11 @@ Route::post('/services/search', [WebsiteController::class, 'search'])->name('ser
 Route::get('/about', [WebsiteController::class, 'about']);
 Route::get('/blog', [WebsiteController::class, 'blog']);
 Route::get('/contact', [WebsiteController::class, 'contact']);
+
 Route::get('/services', [WebsiteController::class, 'services']);
-Route::get('/services/{slug}', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
+Route::get('/services/{slug}', [WebsiteController::class, 'showEntrepriseService'])->name('EntrepriseService.show');
+Route::get('/services/{libelle}/details', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
+
 Route::get('/departements', [WebsiteController::class, 'departements']);
 Route::resource('demandeService', DemandeServiceClientController::class);
 

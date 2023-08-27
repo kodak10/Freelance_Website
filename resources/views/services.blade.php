@@ -65,20 +65,9 @@
                                             <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                                         </div>
                                         <div class="list-content">
-                                            <p class="list-text body-color fz14 mb-1">{{$service->libelle}}</p>
-                                            <h5 class="list-title"><a href="{{ route('serviceDetail.show', ['slug' => $service->libelle]) }}">{{ Str::limit($service->description, 100, '...') }}</a></h5>
-                                            <hr class="my-2">
-                                            <div class="list-meta d-flex justify-content-between align-items-center mt15">
-                                                <a href="#">
-                                                    <span class="position-relative mr10">
-                                                    <img class="rounded-circle" src="" alt="Photo">
-                                                    <span class="online-badge"></span>
-                                                    </span>
+                                            <li></li>
+                                            <p class="list-text body-color fz14 mb-1"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></p>
 
-                                                    {{-- <span class="fz14">{{$service->entreprise->name}}</span> --}}
-                                                    <span class="fz14">Kodak Tech</span>
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
