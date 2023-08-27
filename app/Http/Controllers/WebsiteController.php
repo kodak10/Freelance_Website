@@ -42,7 +42,7 @@ class WebsiteController extends Controller
          $serviceEntreprises = DB::table('service_entreprises')
             ->join('services', 'service_entreprises.service_id', '=', 'services.id')
             ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-
+            ->where('service_id', $slug)
             ->select('*')
             ->get();
 

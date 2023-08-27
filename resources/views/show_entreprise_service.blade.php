@@ -17,6 +17,7 @@
 
     <section class="p-0 ">
         <div class="container">
+            <h3>Les entreprises proposant le service sélectionné</h3>
             <div class="row">
                 @foreach ($serviceEntreprises as $serviceEntreprise )
                     <div class="col-lg-3">
