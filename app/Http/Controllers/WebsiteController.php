@@ -28,7 +28,19 @@ class WebsiteController extends Controller
     public function services()
     {
         $categories = Departement::get();
-        $services = Service::paginate(8);
+        //$services = Service::paginate(8);
+        $services = DB::table('services')
+        ->join('service_entreprises', 'services.id', '=', 'service_entreprises.service_id')
+        ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
+        ->select('services.*')
+        ->distinct()
+        ->whereExists(function ($query) {
+            $query->select(DB::raw(1))
+                  ->from('service_entreprises as se')
+                  ->whereRaw('se.service_id = services.id')
+                  ->whereRaw('se.entreprise_id = entreprises.id');
+        })
+        ->paginate(8);
         return view('services' , compact('categories', 'services'));
     }
 
@@ -59,7 +71,7 @@ class WebsiteController extends Controller
         ->where('entreprise_id', $entreprise_id)
         ->select('service_entreprises.service_id',
         'service_entreprises.entreprise_id',
-        
+
         'entreprises.id as entreprise_id',
         'services.id as services_id',
 
