@@ -8,6 +8,12 @@
         width: 100px;
         height: 100px;
     }
+    .ace-responsive-menu li a:hover{
+        color: #5BBB7B !important;
+    }
+    #login_link:hover{
+        color: #5BBB7B !important;
+    }
 </style>
 <header class="header-nav nav-homepage-style stricky main-menu">
     <nav class="posr">
@@ -56,7 +62,7 @@
                         </ul>
 
                         <a class="login-info bdrl1 pl15-lg pl30"><span class="flaticon-loupe"></span></a>
-                        <a class="login-info mr15-lg mr30" href="/login"><strong>Se Connecter</strong></a>
+                        <a class="login-info mr15-lg mr30" href="/login" id="login_link"><strong>Se Connecter</strong></a>
                         <a class="ud-btn btn-white add-joining" href="/register"><strong>Nous Rejoindre</strong></a>
 
                     </div>

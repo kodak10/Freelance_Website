@@ -25,7 +25,7 @@
                             @foreach ($categories as $categorie )
                                 <div class="col-sm-6 col-lg-4 col-xl-3">
                                     <div class="iconbox-style1">
-                                    <div class="icon"><span class="flaticon-developer"></span></div>
+                                        <div class="icon"><i class="{{$categorie->icones}}"></i></div>
                                     <div class="details mt20">
                                         <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
                                         @foreach ($categorie->services as $service )

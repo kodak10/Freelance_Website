@@ -5,6 +5,13 @@
     .mobilie_header_nav{
         background-color: #000000 !important;
     }
+    .btn_search{
+        color: #000000;
+        border: 1px solid #5BBB7B !important;
+    }
+    .btn_search:hover{
+        color: #000000 !important;
+    }
 </style>
 
     <!-- Home Banner -->
@@ -46,7 +53,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="bselect-style1">
-                                    <select name="category" id="category" class="form-select">
+                                    <select name="category" id="category" class="form-select form-control">
                                         <option value="">Toutes les catégories</option>
                                             @foreach ($categories as $categorie)
                                                 <option value="{{ $categorie->id }}">{{ $categorie->libelle }}</option>
@@ -56,7 +63,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="text-center text-xl-end">
-                                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                                    <button type="submit" class="btn btn-primary w-100 form-control btn_search" style="background: #5BBB7B !important">Rechercher</button>
                                 </div>
                             </div>
                         </form>
@@ -90,7 +97,7 @@
             @foreach ($categories_min as $categorie )
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="iconbox-style1">
-                    <div class="icon"><span class="flaticon-developer"></span></div>
+                    <div class="icon"><i class="{{$categorie->icone}}"></i></div>
                     <div class="details mt20">
                         <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
                         @foreach ($categorie->services as $service )
