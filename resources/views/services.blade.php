@@ -64,7 +64,7 @@
                                             <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                                         </div>
                                         <div class="list-content">
-                                            <p class="list-text body-color fz14 mb-1"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></p>
+                                            <p class="list-text body-color fz14 mb-1"><a href="{{ route('EntrepriseService.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></p>
                                         </div>
                                     </div>
                                 </div>

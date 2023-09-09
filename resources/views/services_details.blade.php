@@ -313,7 +313,9 @@
                                 <div class="modal-body">
                                     <form method="post" action="{{route('demandeService.store')}}">
                                         @csrf
-                                        <input type="hidden" name="client_id" value="{{ Auth::user() ? Auth::user()->id : 0 }}">
+                                        {{-- <input type="hidden" name="client_id" value="{{ Auth::user() ? Auth::user()->id : 0 }}"> --}}
+                                        <input type="hidden" name="client_id" value="{{ Auth::user() ? Auth::user()->client->id : 0 }}">
+
                                         <input type="hidden" name="entreprise_id" value="{{$serviceDetails->entreprise_id}}">
                                         <input type="hidden" name="service_id" value="{{$serviceDetails->service_id}}">
 

@@ -55,15 +55,29 @@
                         <!-- nav Items -->
                         <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
                             <li><a href="/">Accueil</a></li>
-                            <li> <a href="/about"><span class="title">A Propos</span></a>
+                            <li><a href="/about"><span class="title">A Propos</span></a>
                             <li><a href="/services">Touver un service</a></li>
-                            <li> <a class="list-item" href="/contact">Contact</a></li>
+                            <li><a class="list-item" href="/contact">Contact</a></li>
 
                         </ul>
+                        @auth
 
-                        <a class="login-info bdrl1 pl15-lg pl30"><span class="flaticon-loupe"></span></a>
-                        <a class="login-info mr15-lg mr30" href="/login" id="login_link"><strong>Se Connecter</strong></a>
-                        <a class="ud-btn btn-white add-joining" href="/register"><strong>Nous Rejoindre</strong></a>
+                            @if (auth()->user()->hasRole('user'))
+                                <li><a href="/user" class="list-item">Aller au tableau de bord</a></li>
+                             @elseif(auth()->user()->hasRole('compagny'))
+                                <li><a href="/compagny" class="list-item">Aller au tableau de bord</a></li>
+                            @elseif(auth()->user()->hasRole('serviceClient'))
+                                <li><a href="/administration" class="list-item">Aller au tableau de bord</a></li>
+                            @else
+                                <p>Erreur d'authentification</p>
+                            @endif
+
+                            @else
+
+                                <li><a class="login-info mr15-lg mr30" href="/login" id="login_link"><strong>Se Connecter</strong></a></li>
+                                <li><a class="ud-btn btn-white add-joining" href="/register"><strong>Nous Rejoindre</strong></a></li>
+
+                        @endauth
 
                     </div>
                 </div>
@@ -98,12 +112,31 @@
     <!-- /.mobile-menu -->
     <nav id="menu" class="">
       <ul>
-        <li><a href="/">Accueil</a></li>
-        <li> <a href="/about"><span class="title">A Propos</span></a>
-        <li><a href="/services">Touver un service</a></li>
-        <li> <a class="list-item" href="/contact">Contact</a></li>
-        <li> <a class="list-item" href="/login">Se Connecter</a></li>
-        <li> <a class="list-item" href="/register">S'inscrire</a></li>
+
+
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/about"><span class="title">A Propos</span></a></li>
+            <li><a href="/services">Touver un service</a></li>
+            <li><a class="list-item" href="/contact">Contact</a></li>
+
+            @auth
+                @if(auth()->user()->hasRole('user'))
+                    <li><a href="/user">Aller au tableau de bord</a></li>
+                @elseif(auth()->user()->hasRole('compagny'))
+                    <li><a href="/compagny">Aller au tableau de bord</a></li>
+                @elseif(auth()->user()->hasRole('serviceClient'))
+                    <li><a href="/administration">Aller au tableau de bord</a></li>
+                @else
+                    <p>Erreur d'authentification</p>
+                @endif
+
+                @else
+                <li> <a class="list-item" href="/login">Se Connecter</a></li>
+                <li> <a class="list-item" href="/register">S'inscrire</a></li>
+            @endauth
+
+
+
 
       </ul>
     </nav>

@@ -49,7 +49,7 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function user()
+    public function client()
     {
         return $this->hasOne(Client::class);
     }
@@ -62,6 +62,8 @@ class User extends Authenticatable
     {
         return $this->hasOne(ServiceClient::class);
     }
+
+
 
 
 }

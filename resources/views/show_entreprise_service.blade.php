@@ -28,7 +28,7 @@
                             </div>
                             <div class="list-content">
                                 <h4 class="fw-bold; text-uppercase">{{$serviceEntreprise->name}}</h4>
-                                <p class="list-text body-color fz14 mb-1"><a href="{{ route('serviceDetail.show', ['entreprise_id' => $serviceEntreprise->id]) }}">{{$serviceEntreprise->description}}</a></p>
+                                <p class="list-text body-color fz14 mb-1"><a href="{{ route('serviceDetail.show', ['entreprise_nom' => $serviceEntreprise->name]) }}">{{$serviceEntreprise->description}}</a></p>
                             </div>
                         </div>
                     </div>

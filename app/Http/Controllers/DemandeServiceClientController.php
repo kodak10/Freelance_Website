@@ -42,23 +42,26 @@ class DemandeServiceClientController extends Controller
             'delais_execution' => ['string', 'max:10'],
             'document' => ['max:255'],
         ]);
-        if (Auth::user() == 0)
+
+        if (!Auth::check())
         {
             return redirect()->back()->with('error',"Veuillez vous connecter avant de pouvoir contacté une entreprise");
         }
 
-        // demande de service
-        $demandeService = DemandeService::create([
-            'client_id' => $request->client_id,
-            'entreprise_id' => $request->entreprise_id,
-            'service_id' => $request->service_id,
-            'description' => $request->description,
-            'delais_execution' => $request->delais_execution,
-            'document' => $request->document,
+        else {
+            // demande de service
+            $demandeService = DemandeService::create([
+                'client_id' => $request->client_id,
+                'entreprise_id' => $request->entreprise_id,
+                'service_id' => $request->service_id,
+                'description' => $request->description,
+                'delais_execution' => $request->delais_execution,
+                'document' => $request->document,
 
-        ]);
+            ]);
 
-        return redirect()->back()->with('success',"Votre demande à été transmise avec succès à l'Entreprise");
+            return redirect()->back()->with('success',"Votre demande à été transmise avec succès à l'Entreprise");
+        }
 
     }
 

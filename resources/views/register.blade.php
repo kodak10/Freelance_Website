@@ -141,8 +141,8 @@
             @csrf
             <select name="type_entreprise" class="form-select form-select-md mb-3 form-control" aria-label=".form-select-lg example" >
                 <option >Sélectionner le type d'entreprise</option>
-                <option value="nationale">Nationale</option>
-                <option value="multinationale">Multinationale</option>
+                <option value="Nationale">Nationale</option>
+                <option value="Multinationale">Multinationale</option>
             </select>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Nom de l'entreprise</label>

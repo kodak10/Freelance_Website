@@ -97,16 +97,16 @@
             @foreach ($categories_min as $categorie )
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="iconbox-style1">
-                    <div class="icon"><i class="{{$categorie->icone}}"></i></div>
-                    <div class="details mt20">
-                        <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
-                        @foreach ($categorie->services as $service )
-                            <p class="mb-0"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></p>
-                        @endforeach
-                        <p class="mb-0">& autres</p>
+                        <div class="icon"><i class="{{$categorie->icone}}"></i></div>
+                        <div class="details mt20">
+                            <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
+                            @foreach ($categorie->services as $service )
+                                <p class="mb-0"><a href="{{ route('EntrepriseService.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></p>
+                            @endforeach
+                            <p class="mb-0">& autres</p>
 
+                        </div>
                     </div>
-                </div>
               </div>
             @endforeach
           </div>
@@ -144,7 +144,7 @@
                       <a href="" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                     </div>
                     <div class="list-content">
-                      <p class="list-text body-color fz14 mb-1"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}"><strong>{{$tendance->libelle}}</strong></a> </p>
+                      <p class="list-text body-color fz14 mb-1"><a href="{{ route('EntrepriseService.show', ['slug' => $tendance->libelle]) }}"><strong>{{$tendance->libelle}}</strong></a> </p>
                     </div>
                   </div>
                 </div>

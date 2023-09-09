@@ -62,6 +62,14 @@
                         </div>
                     @endif
 
+                    @if(session('success') === true)
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
+
+
+
                 </div>
 
                 <form method="post" action="{{route('postLogin')}}">

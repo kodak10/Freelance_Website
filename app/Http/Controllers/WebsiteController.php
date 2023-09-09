@@ -18,21 +18,8 @@ class WebsiteController extends Controller
     public function index(Request $request)
     {
         $categories = Departement::get();
-
         $categories_min = Departement::paginate(4);
-
-        $tendances = DB::table('services')
-        ->join('service_entreprises', 'services.id', '=', 'service_entreprises.service_id')
-        ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-        ->select('services.*')
-        ->distinct()
-        ->whereExists(function ($query) {
-            $query->select(DB::raw(1))
-                  ->from('service_entreprises as se')
-                  ->whereRaw('se.service_id = services.id')
-                  ->whereRaw('se.entreprise_id = entreprises.id');
-        })->paginate(8);
-
+        $tendances = Service::has('entreprises')->paginate(8);
 
         return view('index', compact('categories', 'tendances', 'categories_min'));
     }
@@ -40,18 +27,8 @@ class WebsiteController extends Controller
     public function services()
     {
         $categories = Departement::get();
-        $services = DB::table('services')
-        ->join('service_entreprises', 'services.id', '=', 'service_entreprises.service_id')
-        ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-        ->select('services.*')
-        ->distinct()
-        ->whereExists(function ($query) {
-            $query->select(DB::raw(1))
-                  ->from('service_entreprises as se')
-                  ->whereRaw('se.service_id = services.id')
-                  ->whereRaw('se.entreprise_id = entreprises.id');
-        })
-        ->paginate(8);
+        $services = Service::has('entreprises')->paginate(8);
+
         return view('services' , compact('categories', 'services'));
     }
 
@@ -61,7 +38,8 @@ class WebsiteController extends Controller
          $serviceEntreprises = DB::table('service_entreprises')
             ->join('services', 'service_entreprises.service_id', '=', 'services.id')
             ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-            ->where('service_id', $slug)
+            ->where('services.libelle', $slug)
+            ->where('entreprises.approve', '=' , '1')
             ->select('*')
             ->get();
 
@@ -70,12 +48,12 @@ class WebsiteController extends Controller
         return view('show_entreprise_service', compact('serviceEntreprises', 'categories'));
     }
 
-    public function serviceShow($entreprise_id)
+    public function serviceShow($entreprise_nom)
     {
         $serviceDetails = DB::table('service_entreprises')
         ->join('services', 'service_entreprises.service_id', '=', 'services.id')
         ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-        ->where('entreprise_id', $entreprise_id)
+        ->where('entreprises.name', $entreprise_nom)
         ->select('service_entreprises.service_id',
         'service_entreprises.entreprise_id',
 
@@ -145,7 +123,10 @@ class WebsiteController extends Controller
         $category = $request->input('category');
         $keyword = $request->input('keyword');
 
-        $query = DB::table('services');
+        // $query = DB::table('services');
+        $query = Service::has('entreprises');
+        //$services = Service::has('entreprises')->paginate(8);
+
 
         if (!empty($category)) {
             $query->where('departement_id', $category);
