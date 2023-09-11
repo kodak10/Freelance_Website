@@ -87,37 +87,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
             @include('Administration.layouts.footer')
-            
+
         </div>
     </div>
 </div>
