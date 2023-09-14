@@ -41,7 +41,7 @@
               <div class="col-xl-10 col-xxl-7">
                 <div class="position-relative">
                   <h3 class="banner-title">Trouvez des <span style="color:#5BBB7B !important;">entreprises qualifiées</span> pour vos services.</h3>
-                  <p class="banner-text text-white ff-heading mb25">Des centaines de personnes utilisent freeio.com pour concrétiser leurs idées en réalité.</p> 
+                  <p class="banner-text text-white ff-heading mb25">Des centaines de personnes utilisent <strong>ElbaraGroup</strong> pour concrétiser leurs idées en réalité.</p> 
                   <div class="advance-search-tab bgc-white bgct-sm p10 p0-md bdrs4 banner-btn position-relative zi9">
                     <div class="row">
 
