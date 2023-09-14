@@ -11,13 +11,20 @@
     header.nav-homepage-style a{
         color: #000000 !important;
     }
+    .title {
+        color: #000000 !important;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    
 
 
 </style>
 
     <section class="p-0 ">
         <div class="container">
-            <h3>Les entreprises proposant le service sélectionné</h3>
+            <h3 class="title mb-5 mt-5">Les entreprises offrant le service choisi</h3>
             <div class="row">
                 @forelse($serviceEntreprises as $serviceEntreprise)
                     <div class="col-lg-3">

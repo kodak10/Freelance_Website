@@ -65,36 +65,26 @@
                             <h3 class="title text-center">Modifier un service</h3>
                             <hr class="bg-dark">
 
-                            <a href="/services" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
+                            <a href="/service" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form action="{{ route('services.update', $services->id) }}" method="post">
+                                    <form action="{{ route('service.update', $services->id) }}" method="post">
                                         @method('PATCH')
                                         @csrf
                                         <div class="row mr-4 ml-4">
+                                            <input type="hidden" name="entreprise" value="{{ Auth::check() && Auth::user()->compagny ? Auth::user()->compagny->id : 0 }}">
+
+
                                             <div class="col-lg-6 col-xl-6">
                                                 <div class="form-group">
-                                                    <label class="form-label fw500 fz16 dark-color">Saisissez le
-                                                        Libell&eacute; du service</label>
+                                                    <label class="form-label fw500 fz16 dark-color">Selectionnez la Catégorie du service</label>
                                                     <div class="bootselect-multiselect">
-                                                        <input required type="text"name="libelle"
-                                                            value="{{ $services->libelle ?? '' }}"
-                                                            class="form-control"placeholder="Saisissez le Libelle du service">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-xl-6">
-                                                <div class="form-group">
-                                                    <label class="form-label fw500 fz16 dark-color">Selectionnez le
-                                                        Departement appartenant</label>
-                                                    <div class="bootselect-multiselect">
-                                                        <select class="selectpicker" name="idDepartement"data-live-search="true"
+                                                        <select class="selectpicker" name="service"data-live-search="true"
                                                             data-width="100%">
-                                                            <option>Selectionner ici...</option>
-                                                            @forelse ($departements as $val)
+                                                            <option value="{{$service->id}}">{{$service->libelle}}</option>
+                                                            @forelse ($service_full as $val)
                                                                 <option
-                                                                    {{ $val->id == $services->idDepartement ? 'selected ' : '' }}
-                                                                    value="{{ $val->id }}"data-tokens="{{ $val->libelle }}">
+                                                                    value="{{ $val->id }}"data-tokens="{{ $val->libelle }}"> 
                                                                     {{ mb_strtoupper($val->libelle) }}</option>
                                                             @empty
                                                                 <option>Aucun secteur trouv&eacute;
@@ -104,23 +94,58 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 col-xl-12 mt-3">
+
+
+                                            <div class="col-lg-6 col-xl-6">
                                                 <div class="form-group">
-                                                    <label class="form-label fw500 fz16 dark-color">Saisissez la
-                                                        Description du service</label>
+                                                    <label class="form-label fw500 fz16 dark-color">Saisissez le
+                                                        Libell&eacute; du service</label>
                                                     <div class="bootselect-multiselect">
-                                                        <textarea required name="description"class="form-control"placeholder="Saisissez la description du service">
-                                                                {{ $services->description ?? '' }}
-                                                            </textarea>
+                                                        <input required
+                                                            type="text" value="{{ $services->libelle ?? '' }}" name="libelle"class="form-control"placeholder="Saisissez le Libelle du service">
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-lg-6 col-xl-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw500 fz16 dark-color">Delais de livraison Approximatif (en jours)
+                                                       </label>
+                                                    <div class="bootselect-multiselect">
+                                                        <input required
+                                                            type="number" value="{{ $services->delais_execution ?? '' }}" name="delais"class="form-control"placeholder="Saisissez le nombre de jours">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-xl-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw500 fz16 dark-color">Importer vos réalisations
+                                                       </label>
+                                                    <div class="bootselect-multiselect">
+                                                        <input 
+                                                            type="file"name="realisations"class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label fw500 fz16 dark-color">Saisissez la description
+                                                        du service</label>
+                                                    <div class="bootselect-multiselect">
+                                                        <textarea name="description" id="" cols="5" rows="2" placeholder="Saisissez la description du service">{{$services->description}}</textarea>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                       
+                                           
                                             <center>
                                                 <div class="col-sm-3 mt-3">
                                                     <div class="form-group mt-3 ">
                                                         <button
                                                             type="submit"class="btn btn-success text-white p-2 ">Valider</button>
-                                                        <a href="/services"class="btn btn-danger text-white p-2 ">Retour</a>
+                                                        <a href="/compagny/service"class="btn btn-danger text-white p-2 ">Retour</a>
 
                                                     </div>
                                                 </div>

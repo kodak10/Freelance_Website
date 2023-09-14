@@ -67,9 +67,44 @@
                             <a href="/services" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form action="{{ route('services.store') }}" method="post">
+                                    <form action="{{ route('service.store') }}" method="post">
+                                        
                                         @csrf
+                                        <div class="row">
+                                            @if(session('success') === false)
+                                                <div class="alert alert-danger">
+                                                    {{ session('message') }}
+                                                </div>
+                                            @endif
+                        
+                                            @if(session('success') === true)
+                                            <div class="alert alert-success">
+                                                {{ session('message') }}
+                                            </div>
+                                        @endif
+                        
                                         <div class="row mr-4 ml-4">
+                                            <input type="hidden" name="entreprise" value="{{ Auth::check() && Auth::user()->compagny ? Auth::user()->compagny->id : 0 }}">
+                                            <div class="col-lg-6 col-xl-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw500 fz16 dark-color">Selectionnez la Catégorie du service</label>
+                                                    <div class="bootselect-multiselect">
+                                                        <select class="selectpicker" name="service"data-live-search="true"
+                                                            data-width="100%">
+                                                            <option>Selectionner ici...</option>
+                                                            @forelse ($services as $val)
+                                                                <option
+                                                                    value="{{ $val->id }}"data-tokens="{{ $val->libelle }}"> 
+                                                                    {{ mb_strtoupper($val->libelle) }}</option>
+                                                            @empty
+                                                                <option>Aucun secteur trouv&eacute;
+                                                                </option>
+                                                            @endforelse
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="col-lg-6 col-xl-6">
                                                 <div class="form-group">
                                                     <label class="form-label fw500 fz16 dark-color">Saisissez le
@@ -83,29 +118,47 @@
 
                                             <div class="col-lg-6 col-xl-6">
                                                 <div class="form-group">
-                                                    <label class="form-label fw500 fz16 dark-color">Selectionnez la Catégorie appartenant</label>
+                                                    <label class="form-label fw500 fz16 dark-color">Delais de livraison Approximatif (en jours)
+                                                       </label>
                                                     <div class="bootselect-multiselect">
-                                                        <select class="selectpicker" name="idDepartement"data-live-search="true"
-                                                            data-width="100%">
-                                                            <option>Selectionner ici...</option>
-                                                            @forelse ($departements as $val)
-                                                                <option
-                                                                    value="{{ $val->id }}"data-tokens="{{ $val->libelle }}">
-                                                                    {{ mb_strtoupper($val->libelle) }}</option>
-                                                            @empty
-                                                                <option>Aucun secteur trouv&eacute;
-                                                                </option>
-                                                            @endforelse
-                                                        </select>
+                                                        <input required
+                                                            type="number"name="delais"class="form-control"placeholder="Saisissez le nombre de jours">
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-lg-6 col-xl-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw500 fz16 dark-color">Importer vos réalisations
+                                                       </label>
+                                                    <div class="bootselect-multiselect">
+                                                        <input 
+                                                            type="file"name="realisations"class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label fw500 fz16 dark-color">Saisissez la description
+                                                        du service</label>
+                                                    <div class="bootselect-multiselect">
+                                                        <textarea name="description" id="" cols="5" rows="2" placeholder="Saisissez la description du service"></textarea>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            
+
+                                           
                                             <center>
                                                 <div class="col-sm-3 mt-3">
                                                     <div class="form-group mt-3 ">
                                                         <button
                                                             type="submit"class="btn btn-success text-white p-2 ">Valider</button>
-                                                        <a href="/services"class="btn btn-danger text-white p-2 ">Retour</a>
+                                                        <a href="/compagny/service"class="btn btn-danger text-white p-2 ">Retour</a>
                                                     </div>
                                                 </div>
                                             </center>

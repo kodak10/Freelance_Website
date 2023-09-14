@@ -2,6 +2,7 @@
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars pr10"></i>  Navigation</button>
         <ul id="myDropdown" class="dropdown-content">
+            <li class=""><a href="/"><i class="flaticon-home mr10"></i>Retour au Site</a></li>
             <li class="active"><a href="/administration"><i class="flaticon-home mr10"></i>Menu Général</a></li>
             <li><p class="fz15 fw400 ff-heading mt30 pl30">Gestion des inscriptions</p></li>
             <li><a href="/administration"><i class="flaticon-document mr10"></i>Demandes d'inscription</a></li>
@@ -20,6 +21,9 @@
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="">
                         @csrf
                     </form>
+
+
+                    
             </li>
         </ul>
     </div>

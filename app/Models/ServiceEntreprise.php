@@ -14,8 +14,7 @@ class ServiceEntreprise extends Model
         'description',
         'delais_execution',
         'libelle',
-        'id',
-        'name'
+        
     ];
 
     public function service()

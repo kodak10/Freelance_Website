@@ -68,7 +68,7 @@
                                 </h3>
                                 <hr class="bg-dark">
 
-                                <a href="{{ route('services.create') }}" class="ud-btn btn-dark mb25 me-4">Ajouter</a>
+                                <a href="{{ route('service.create') }}" class="ud-btn btn-dark mb25 me-4">Ajouter</a>
                                 <div class="table-style1 table-responsive mb-4 mb-lg-5">
                                     <table id="maintable"
                                         class="display compact cell-border table table-striped table-bordered"
@@ -77,7 +77,9 @@
 
                                         <thead class="thead-light">
                                             <tr class="text-center">
+                                                <th class="fz15 fw500" scope="col"></th>
                                                 <th class="fz15 fw500" scope="col">Service</th>
+                                                <th class="fz15 fw500" scope="col">Libelle</th>
                                                 <th class="fz15 fw500" scope="col">Delais d'execution</th>
                                                 <th class="fz15 fw500" scope="col">Description</th>
                                                 <th width="20%"class="text-center">Action</th>
@@ -85,48 +87,45 @@
                                         </thead>
                                         <tbody>
                                             @forelse($services as $val)
-                                                {{-- <tr class="text-center">
+                                                <tr class="text-center">
                                                     <td>{{ $Counter++ }}</td>
-                                                    <td>{{ mb_strtoupper($val->libelle) }}</td>
-                                                    <td>{{ ucwords($val->description) }}</td>
                                                     <td>
-                                                        @forelse ($departements as $val2)
-                                                            {{ $val2['id'] == $val['idDepartement'] ? mb_strtoupper($val2->libelle) : '' }}
+                                                        @forelse ($service as $val2)
+                                                            {{ $val2['id'] == $val['service_id'] ? mb_strtoupper($val2->libelle) : '' }}
                                                         @empty
                                                             {{ 'AUCUN SECTEUR ENREGISTRE' }}
                                                         @endforelse
                                                     </td>
+                                                    <td>{{ ucwords($val->libelle) }}</td>
+                                                    <td>{{ ucwords($val->delais_execution) }}</td>
+                                                    <td>{{ ucwords($val->description) }}</td>
+                                                   
                                                     <td width="20%">
                                                         <center>
                                                             <div class="row mr-0 text-white">
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6">
+                                                                    
                                                                     <a
-                                                                        href="{{ route('services.show', $val->id) }}"class="btn btn-info text-white"title="Informations supplementaires sur cet Enregistrement"><i
-                                                                            class="fa fa-eye"></i></a>
+                                                                        href="{{ route('service.edit', $val->id) }}"class="btn btn-warning text-white"title="Modifier "><i
+                                                                            class="fa fa-edit"></i>
+                                                                    </a>
                                                                 </div>
 
-                                                                <div class="col-md-3">
-
-                                                                    <a
-                                                                        href="{{ route('services.edit', $val->id) }}"class="btn btn-warning text-white"title="Modifier cet Enregistrement"><i
-                                                                            class="fa fa-edit"></i></a>
-                                                                </div>
-
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6">
 
                                                                     <form
-                                                                        method="POST"action={{ route('services.destroy', $val->id) }}>
+                                                                        method="POST"action={{ route('service.destroy', $val->id) }}>
                                                                         @csrf
                                                                         @method('DELETE')
                                                                         <button
-                                                                            type="submit"class="btn btn-danger"title="Supprimer cet Enregistrement"><i
+                                                                            type="submit"class="btn btn-danger"title="Supprimer"><i
                                                                                 class="fa fa-trash text-white"></i></button>
                                                                     </form>
                                                                 </div>
                                                             </div>
                                                         </center>
                                                     </td>
-                                                </tr> --}}
+                                                </tr>
                                             @empty
                                                 <tr>
                                                     <td colspan="5"class="text-center">Aucun enregistrement trouv&eacute;

@@ -54,28 +54,28 @@
 
                         <!-- nav Items -->
                         <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
-                            <li><a href="/">Accueil</a></li>
-                            <li><a href="/about"><span class="title">A Propos</span></a>
-                            <li><a href="/services">Touver un service</a></li>
-                            <li><a class="list-item" href="/contact">Contact</a></li>
+                            <li><a href="/" class="text-uppercase">Accueil</a></li>
+                            <li><a href="/about" class="text-uppercase">A Propos</a>
+                            <li><a href="/services" class="text-uppercase">Touver un service</a></li>
+                            <li><a class="text-uppercase" href="/contact">Contact</a></li>
 
                         </ul>
                         @auth
 
-                            @if (auth()->user()->hasRole('user'))
-                                <li><a href="/user" class="list-item">Aller au tableau de bord</a></li>
+                            @if (auth()->user()->hasRole('client'))
+                                <li><a href="/user" class="list-item ud-btn btn-white add-joining text-uppercase">Aller au tableau de bord</a></li>
                              @elseif(auth()->user()->hasRole('compagny'))
-                                <li><a href="/compagny" class="list-item">Aller au tableau de bord</a></li>
+                                <li><a href="/compagny" class="list-item ud-btn btn-white add-joining text-uppercase">Aller au tableau de bord</a></li>
                             @elseif(auth()->user()->hasRole('serviceClient'))
-                                <li><a href="/administration" class="list-item">Aller au tableau de bord</a></li>
+                                <li><a href="/administration" class="list-item ud-btn btn-white add-joining text-uppercase">Aller au tableau de bord</a></li>
                             @else
-                                <p>Erreur d'authentification</p>
+                                <p>Erreur d'Authentification</p>
                             @endif
 
                             @else
 
-                                <li><a class="login-info mr15-lg mr30" href="/login" id="login_link"><strong>Se Connecter</strong></a></li>
-                                <li><a class="ud-btn btn-white add-joining" href="/register"><strong>Nous Rejoindre</strong></a></li>
+                                <li><a class="login-info mr15-lg mr30 text-uppercase" href="/login" id="login_link"><strong>Se Connecter</strong></a></li>
+                                <li><a class="ud-btn btn-white add-joining text-uppercase" href="/register"><strong>Nous Rejoindre</strong></a></li>
 
                         @endauth
 

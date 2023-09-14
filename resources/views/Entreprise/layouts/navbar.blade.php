@@ -12,7 +12,7 @@
                 <div class="col-6 col-lg-auto">
                     <div class="text-center text-lg-start d-flex align-items-center">
                         <div class="dashboard_header_logo position-relative me-2 me-xl-5">
-                            <a href="/administration" class="logo"><img src="{{asset('assets/images/header-logo.png')}}" class="logo" alt=""></a>
+                            <a href="/" class="logo"><img src="{{asset('assets/images/header-logo.png')}}" class="logo" alt=""></a>
                         </div>
                         <div class="fz20 ml90">
                             <a href="#" class="dashboard_sidebar_toggle_icon vam"><img src="{{asset('assets/images/dashboard-navicon.svg')}}" alt="ElBaraGroup"></a>
@@ -70,12 +70,14 @@
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">
-                                            <a class="dropdown-item" href="javascript:void(0)"><i class="flaticon-logout mr10"
+                                            <a class="dropdown-item" href="javascript:void(0)"
                                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
                                                     <i class="flaticon-logout mr15"></i>Se Déconnecter</a>
                                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="">
                                                         @csrf
                                                     </form>
+
+                                           
                                         </div>
                                     </div>
                                 </div>

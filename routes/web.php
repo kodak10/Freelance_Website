@@ -80,10 +80,10 @@ Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
 // Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->group(function () {    // Sans validation email
 Route::prefix('compagny')->middleware(['auth','role:compagny'])->group(function () {
     Route::get('/', [EntrepriseDemandeServiceController::class, 'index']);
-    //Route::get('/demandes', [EntrepriseDemandeServiceController::class, 'demande']);
-    Route::get('/demandes', [DemandeServiceClientController::class, 'index']);
+    //Route::get('/demandes', [DemandeServiceClientController::class, 'index']);
 
-    Route::get('/compagny/services', [ServiceEntrepriseController::class, 'index']);
+    Route::resource('/service', ServiceEntrepriseController::class);
+    //Route::get('/services', [ServiceEntrepriseController::class, 'index']);
 
 
 

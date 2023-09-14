@@ -53,7 +53,8 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="bselect-style1">
-                                    <select name="category" id="category" class="form-select form-control">
+                                    <select name="category" id="category" class="form-select form-control " data-live-search="true"
+                                    data-width="100%">
                                         <option value="">Toutes les catégories</option>
                                             @foreach ($categories as $categorie)
                                                 <option value="{{ $categorie->id }}">{{ $categorie->libelle }}</option>

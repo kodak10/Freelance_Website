@@ -1,7 +1,10 @@
 <div class="dashboard__sidebar d-none d-lg-block">
     <div class="dashboard_sidebar_list">
+        <div class="sidebar_list_item mt-5">
+            <a href="/" class="items-center"><i class="flaticon-home mr15"></i>Retour au Site</a>
+        </div>
         <div class="sidebar_list_item">
-            <a href="#" class="items-center -is-active"><i class="flaticon-home mr15"></i>Menu Général</a>
+            <a href="#" class="items-center {{ request()->routeIs('home')? '-is-active' : '' }}"><i class="flaticon-home mr15"></i>Menu Général</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Title</p>
         <div class="sidebar_list_item">
@@ -20,9 +23,9 @@
 
         <p class="fz15 fw400 ff-heading pl30 mt30">Services</p>
         <div class="sidebar_list_item ">
-            <a href="/compagny/services" class="items-center"><i class="fa-solid fa-user mr15"></i>Liste de Service</a>
+            <a href="/compagny/service" class="items-center {{ request()->routeIs('/compagny/service')? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Liste de Service</a>
 
-            <a href="/compagny/demandes" class="items-center"><i class="fa-solid fa-user mr15"></i>Demandes de Service</a>
+            <a href="/compagny/demandes" class="items-center {{ request()->routeIs('home')? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Demandes de Service</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         <div class="sidebar_list_item ">

@@ -6,6 +6,7 @@ use App\Models\Service;
 use App\Models\Departement;
 use Illuminate\Http\Request;
 use App\Models\ServiceEntreprise;
+use Illuminate\Support\Facades\Auth;
 
 class ServiceEntrepriseController extends Controller
 {
@@ -14,9 +15,11 @@ class ServiceEntrepriseController extends Controller
      */
     public function index()
     {
-        $services = Service::get();
+        $services = ServiceEntreprise::where('entreprise_id', Auth::user()->compagny->id)->get();
         $departements = Departement::get();
-        return view('entreprise.service.index', compact('services', 'departements'));
+        $service = Service::get();
+        $Counter = 1;
+        return view('entreprise.service.index', compact('services', 'departements', 'Counter', 'service'));
 
     }
 
@@ -25,9 +28,9 @@ class ServiceEntrepriseController extends Controller
      */
     public function create()
     {
+       // $services = Service::get();
         $services = Service::get();
-        $departements = Departement::get();
-        return view('Entreprise.Service.create', compact('services', 'departements'));
+        return view('Entreprise.Service.create', compact('services'));
     }
 
     /**
@@ -36,21 +39,26 @@ class ServiceEntrepriseController extends Controller
     public function store(Request $request)
     {
         $check = array(
-            'idService' => 'required',
+            'service' => 'required',
+            'libelle' => 'required',
             'description' => 'required',
             'delais' => 'required',
+            'entreprise' => 'required',
 
         );
         $request->validate($check);
         $data = array(
-            'service_id' => $request->idService,
+            'entreprise_id' => $request->entreprise,
+            'service_id' => $request->service,
             'description' => $request->description,
+            'libelle' => $request->libelle,
             'delais_execution' => $request->delais,
+            
         );
         if (ServiceEntreprise::insert($data)) {
-            return redirect('/compagny/services')->with('added', 'added');
+            return redirect('/compagny/service/create')->with('added', 'added');
         } else {
-            return redirect('/compagny/services')->with('nothing', 'nothing');
+            return redirect('/compagny/service/create')->with('nothing', 'nothing');
         };
     }
 
@@ -67,9 +75,11 @@ class ServiceEntrepriseController extends Controller
      */
     public function edit(string $id)
     {
-        $services = Service::where('id', $id)->firstOrFail();
+        $services = ServiceEntreprise::where('id', $id)->firstOrFail();
+        $service = Service::where('id', $services->service->id)->firstOrFail();
+        $service_full = Service::get();
         $departements = Departement::orderBy('libelle', 'asc')->get();
-        return view('Entreprise.Service.edit', compact('services', 'departements'));
+        return view('Entreprise.Service.edit', compact('services', 'departements', 'service', 'service_full'));
     }
 
     /**
@@ -77,24 +87,33 @@ class ServiceEntrepriseController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $service = ServiceEntreprise::where('id', $id)->firstOrFail();
+        $services = ServiceEntreprise::where('id', $id)->firstOrFail();
 
+       
         $check = array(
-            'idService' => 'required',
+            'service' => 'required',
+            'libelle' => 'required',
             'description' => 'required',
             'delais' => 'required',
+            'entreprise' => 'required',
 
         );
+
         $request->validate($check);
         $data = array(
-            'service_id' => $request->idService,
+            'entreprise_id' => $request->entreprise,
+            'service_id' => $request->service,
             'description' => $request->description,
+            'libelle' => $request->libelle,
             'delais_execution' => $request->delais,
+            
         );
-        if ($service->update($data)) {
-            return redirect('/compagny/services')->with('updated', 'updated');
+
+       
+        if ($services->update($data)) {
+            return redirect('/compagny/service')->with('updated', 'updated');
         } else {
-            return redirect('/compagny/services')->with('nothing', 'nothing');
+            return redirect('/compagny/service')->with('nothing', 'nothing');
         };
     }
 
@@ -105,9 +124,9 @@ class ServiceEntrepriseController extends Controller
     {
         $info = ServiceEntreprise::where('id', $id)->firstOrFail();
         if ($info->delete()) {
-            return redirect('/compagny/services')->with('deleted', 'deleted');
+            return redirect('/compagny/service')->with('deleted', 'deleted');
         } else {
-            return redirect('/compagny/services')->with('nothing', 'nothing');
+            return redirect('/compagny/service')->with('nothing', 'nothing');
         };
     }
 }
