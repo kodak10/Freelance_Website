@@ -41,7 +41,7 @@
               <div class="col-xl-10 col-xxl-7">
                 <div class="position-relative">
                   <h3 class="banner-title">Trouvez des <span style="color:#5BBB7B !important;">entreprises qualifiées</span> pour vos services.</h3>
-                  {{-- <p class="banner-text text-white ff-heading mb25">Millions of people use freeio.com to turn their ideas into reality.</p> --}}
+                  <p class="banner-text text-white ff-heading mb25">Des centaines de personnes utilisent freeio.com pour concrétiser leurs idées en réalité.</p> 
                   <div class="advance-search-tab bgc-white bgct-sm p10 p0-md bdrs4 banner-btn position-relative zi9">
                     <div class="row">
 
@@ -98,7 +98,7 @@
             @foreach ($categories_min as $categorie )
                 <div class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="iconbox-style1">
-                        <div class="icon"><i class="{{$categorie->icone}}"></i></div>
+                        <div class="icon"><i class="{{$categorie->icones}}"></i></div>
                         <div class="details mt20">
                             <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
                             @foreach ($categorie->services as $service )
