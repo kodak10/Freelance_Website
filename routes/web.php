@@ -10,6 +10,7 @@ use App\Http\Controllers\secteurController;
 use App\Http\Controllers\serviceController;
 use App\Http\Controllers\departementController;
 use App\Http\Controllers\demandesInscriptionController;
+use App\Http\Controllers\EntrepriseController;
 use App\Http\Controllers\EntrepriseDemandeServiceController;
 use App\Http\Controllers\ServiceEntrepriseController;
 use App\Http\Controllers\WebsiteController;
@@ -85,6 +86,6 @@ Route::prefix('compagny')->middleware(['auth','role:compagny'])->group(function 
     Route::resource('/service', ServiceEntrepriseController::class);
     //Route::get('/services', [ServiceEntrepriseController::class, 'index']);
 
-
+    Route::get('/demandes/client', [EntrepriseController::class, 'demande']);
 
 });

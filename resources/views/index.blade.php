@@ -41,7 +41,7 @@
               <div class="col-xl-10 col-xxl-7">
                 <div class="position-relative">
                   <h3 class="banner-title">Trouvez des <span style="color:#5BBB7B !important;">entreprises qualifiées</span> pour vos services.</h3>
-                  <p class="banner-text text-white ff-heading mb25">Des centaines de personnes utilisent <strong>ElbaraGroup</strong> pour concrétiser leurs idées en réalité.</p> 
+                  <p class="banner-text text-white ff-heading mb25">Des centaines de personnes utilisent <strong>ElbaraGroup</strong> pour concrétiser leurs idées en réalité.</p>
                   <div class="advance-search-tab bgc-white bgct-sm p10 p0-md bdrs4 banner-btn position-relative zi9">
                     <div class="row">
 
@@ -332,7 +332,7 @@
     </section>
 
     <!-- Our Blog -->
-    <section class="pb90 pb20-md">
+   {{--  <section class="pb90 pb20-md">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
@@ -384,7 +384,7 @@
             </div>
           </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Our CTA -->
     <section class="our-cta bgc-thm4 pt90 pb90 pt60-md pb60-md mt100 mt0-lg">

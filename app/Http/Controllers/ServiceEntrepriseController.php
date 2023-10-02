@@ -53,7 +53,7 @@ class ServiceEntrepriseController extends Controller
             'description' => $request->description,
             'libelle' => $request->libelle,
             'delais_execution' => $request->delais,
-            
+
         );
         if (ServiceEntreprise::insert($data)) {
             return redirect('/compagny/service/create')->with('added', 'added');
@@ -89,7 +89,7 @@ class ServiceEntrepriseController extends Controller
     {
         $services = ServiceEntreprise::where('id', $id)->firstOrFail();
 
-       
+
         $check = array(
             'service' => 'required',
             'libelle' => 'required',
@@ -106,10 +106,10 @@ class ServiceEntrepriseController extends Controller
             'description' => $request->description,
             'libelle' => $request->libelle,
             'delais_execution' => $request->delais,
-            
+
         );
 
-       
+
         if ($services->update($data)) {
             return redirect('/compagny/service')->with('updated', 'updated');
         } else {

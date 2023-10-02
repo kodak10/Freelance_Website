@@ -27,9 +27,9 @@
               <a href="/">Accueil</a>
               <a href="/about">A Propos</a>
               <a href="/services">Touver un service</a>
-              <a href="/blog">Blog</a>
-              <a href="#">Forum</a>
               <a href="/contact">Contact</a>
+              <a href="/login">SE CONNECTER</a>
+              <a href="/register">S'INSCRIRE</a>
             </div>
           </div>
         </div>
@@ -37,15 +37,10 @@
           <div class="link-style1 mb-4 mb-sm-5">
             <h5 class="text-white mb15">Catégories</h5>
             <ul class="ps-0">
-              <li><a href="#">Graphics & Design</a></li>
-              <li><a href="#">Digital Marketing</a></li>
-              <li><a href="#">Writing & Translation</a></li>
-              <li><a href="#">Video & Animation</a></li>
-              <li><a href="#">Music & Audio</a></li>
-              <li><a href="#">Programming & Tech</a></li>
-              <li><a href="#">Data</a></li>
-              <li><a href="#">Business</a></li>
-              <li><a href="#">Lifestyle</a></li>
+                @foreach ($categories as $categorie )
+                    <li><a href="#">{{$categorie->libelle}}</a></li>
+                @endforeach
+
             </ul>
           </div>
         </div>

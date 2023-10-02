@@ -5,6 +5,13 @@
     .mobilie_header_nav{
         background-color: #5BBB7B !important;
     }
+    .btn_contact{
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
 </style>
 
 <style>
@@ -99,7 +106,7 @@
     <!-- Service Details -->
     <section class="pt10 pb90 pb30-md">
       <div class="container">
-        <div class="row wrap">
+        <div class="row wrap ">
           <div class="col-lg-8">
             <div class="column">
               <div class="row">
@@ -296,7 +303,7 @@
                             @endif
                         </div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        <button type="button" class="btn btn-primary btn_contact" data-toggle="modal" data-target="#exampleModal">
                             Contactez l'entreprise <i class="fal fa-arrow-right-long"></i>
                         </button>
 
@@ -314,7 +321,7 @@
                                     <form method="post" action="{{route('demandeService.store')}}">
                                         @csrf
                                         {{-- <input type="hidden" name="client_id" value="{{ Auth::user() ? Auth::user()->id : 0 }}"> --}}
-                                        <input type="hidden" name="client_id" value="{{ Auth::check() && Auth::user()->client ? Auth::user()->client->user_id : 0 }}">
+                                        <input type="hidden" name="client_id" value="{{ Auth::check() && Auth::user()->client->id ? Auth::user()->client->id : 0 }}">
                                         {{-- <input type="hidden" name="client_id" value="{{ Auth::check() && Auth::user()->serviceClient ? Auth::user()->serviceClient->user_id : 0 }}"> --}}
                                         {{-- <input type="hidden" name="client_id" value="{{ Auth::check() && Auth::user()->compagny ? Auth::user()->serviceClient->user_id : 0 }}"> --}}
 
@@ -335,6 +342,7 @@
                                         </div>
 
                                         <button type="submit" class="btn btn-primary w-100">Contactez</button>
+
                                     </form>
                                 </div>
                                 <div class="modal-footer">
@@ -382,19 +390,19 @@
                         <div class="list-thumb">
                             <div class="listing-thumbIn-slider position-relative navi_pagi_bottom_center slider-1-grid owl-carousel owl-theme">
                                 <div class="item">
-                                    <img class="w-100" src="assets/images/listings/g-2.jpg" alt="">
+                                    <img class="w-100" src="{{asset('assets/images/listings/g-2.jpg') }}" alt="">
                                     <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                                 </div>
                                 <div class="item">
-                                    <img class="w-100" src="assets/images/listings/g-3.jpg" alt="">
+                                    <img class="w-100" src="{{asset('assets/images/listings/g-3.jpg')}}" alt="">
                                     <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                                 </div>
                                 <div class="item">
-                                    <img class="w-100" src="assets/images/listings/g-4.jpg" alt="">
+                                    <img class="w-100" src="{{asset('assets/images/listings/g-4.jpg')}}" alt="">
                                     <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                                 </div>
                                 <div class="item">
-                                    <img class="w-100" src="assets/images/listings/g-5.jpg" alt="">
+                                    <img class="w-100" src="{{asset('assets/images/listings/g-5.jpg')}}" alt="">
                                     <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                                 </div>
                             </div>

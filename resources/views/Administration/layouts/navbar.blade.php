@@ -1,7 +1,7 @@
 <style>
     .logo{
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
 </style>
 
@@ -71,7 +71,7 @@
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">
-                                            
+
 
                                             <a class="dropdown-item" href="javascript:void(0)"
                                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit()">

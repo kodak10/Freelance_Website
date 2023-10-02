@@ -3,6 +3,7 @@
     i.fa-solid.fa-bars {
         font-size: 25px;
         color: #ffff;
+
     }
     .logo{
         width: 100px;
@@ -14,6 +15,20 @@
     #login_link:hover{
         color: #5BBB7B !important;
     }
+    .menu-title:hover{
+        color: #5BBB7B !important;
+    }
+    .drop-menu{
+        background-color: #5BBB7B !important;
+    }
+    #mega-menu .drop-menu li a{
+        color: #ffffff !important;
+        font-size: 16px;
+    }
+    #mega-menu .drop-menu li a:hover{
+        color:  #000000 !important
+    }
+    .ud-btn{border: 1px solid #000000}
 </style>
 <header class="header-nav nav-homepage-style stricky main-menu">
     <nav class="posr">
@@ -31,7 +46,7 @@
                                 <a class="btn-mega fw500" href="#"><span class="pl30 pl10-xl pr5 fz15 vam flaticon-menu"></span> Categories</a>
                                 <ul class="menu ps-0">
                                     @foreach ($categories as $categorie )
-                                        <li> <a class="dropdown" href="#"> <span class="menu-icn flaticon-developer"></span> <span class="menu-title">{{$categorie->libelle}}</span> </a>
+                                        <li> <a class="dropdown" href="#"> <span class="menu-icn {{$categorie->icones}}"></span> <span class="menu-title">{{$categorie->libelle}}</span> </a>
                                             <div class="drop-menu d-flex justify-content-between">
                                                 <div class="one-third">
                                                     <ul class="ps-0 mb40">
@@ -100,8 +115,29 @@
 
 
             <div class="right-side text-end">
-              <a class="text-white" href="/register">Nous Rejoindre</a>
-              <a class="menubar ml30" href="#menu"><i class="fa-solid fa-bars"></i></a>
+                @auth
+                @if(auth()->user()->hasRole('client'))
+                    <li>
+                        <a href="/user" style="color:#ffffff; text-transform: uppercase">Aller au tableau de bord</a>
+                        <a class="menubar ml30" href="#menu"><i class="fa-solid fa-bars"></i></a>
+                    </li>
+
+                @elseif(auth()->user()->hasRole('compagny'))
+                    <li><a href="/compagny">Aller au tableau de bord</a></li>
+                @elseif(auth()->user()->hasRole('serviceClient'))
+                    <li><a href="/administration">Aller au tableau de bord</a></li>
+                @else
+                    <p>Erreur d'authentification</p>
+                @endif
+
+                @else
+                <a class="text-white" href="/register">Nous Rejoindre</a>
+                <a class="menubar ml30" href="#menu"><i class="fa-solid fa-bars"></i></a>
+            @endauth
+
+
+              {{-- <a class="text-white" href="/register">Nous Rejoindre</a>
+              <a class="menubar ml30" href="#menu"><i class="fa-solid fa-bars"></i></a> --}}
             </div>
           </div>
         </div>
@@ -120,7 +156,7 @@
             <li><a class="list-item" href="/contact">Contact</a></li>
 
             @auth
-                @if(auth()->user()->hasRole('user'))
+                @if(auth()->user()->hasRole('client'))
                     <li><a href="/user">Aller au tableau de bord</a></li>
                 @elseif(auth()->user()->hasRole('compagny'))
                     <li><a href="/compagny">Aller au tableau de bord</a></li>

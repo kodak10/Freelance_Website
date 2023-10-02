@@ -53,8 +53,6 @@ class DemandeServiceClientController extends Controller
             return redirect()->back()->with('error',"Veuillez vous connecter à votre compte client avant de pourvoir envoyé des demandes");
         }
 
-
-
         else {
             // demande de service
             $demandeService = DemandeService::create([

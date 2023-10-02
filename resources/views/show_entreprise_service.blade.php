@@ -17,7 +17,7 @@
         text-transform: uppercase;
     }
 
-    
+
 
 
 </style>
@@ -42,7 +42,7 @@
 
 
                     @empty
-                        <span>Aucune entreprise trouvé concernant ce service</span>
+                        <span class="mb-5">Aucune entreprise trouvé concernant ce service</span>
 
                 @endforelse
             </div>

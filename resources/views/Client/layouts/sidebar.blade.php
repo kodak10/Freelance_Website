@@ -1,6 +1,9 @@
 <div class="dashboard__sidebar d-none d-lg-block">
     <div class="dashboard_sidebar_list">
         <div class="sidebar_list_item mt-5">
+            <a href="#" class="items-center"></a>
+        </div>
+        <div class="sidebar_list_item mt-5">
             <a href="/" class="items-center"><i class="flaticon-home mr15"></i>Retour au Site</a>
         </div>
         <div class="sidebar_list_item">

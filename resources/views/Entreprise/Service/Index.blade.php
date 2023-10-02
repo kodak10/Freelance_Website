@@ -63,7 +63,7 @@
                         <div class="col-lg-12">
                             <div class="ui-content">
                                 <hr class="bg-dark">
-                                <h3 class="title text-center">Liste des services (
+                                <h3 class="title text-center">Liste de vos services (
                                     <b>{{ $services->count() }}<b> au total)
                                 </h3>
                                 <hr class="bg-dark">
@@ -99,12 +99,12 @@
                                                     <td>{{ ucwords($val->libelle) }}</td>
                                                     <td>{{ ucwords($val->delais_execution) }}</td>
                                                     <td>{{ ucwords($val->description) }}</td>
-                                                   
+
                                                     <td width="20%">
                                                         <center>
                                                             <div class="row mr-0 text-white">
                                                                 <div class="col-md-6">
-                                                                    
+
                                                                     <a
                                                                         href="{{ route('service.edit', $val->id) }}"class="btn btn-warning text-white"title="Modifier "><i
                                                                             class="fa fa-edit"></i>
