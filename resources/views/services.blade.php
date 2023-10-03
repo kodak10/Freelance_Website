@@ -60,7 +60,7 @@
                                 <div class="col-lg-3">
                                     <div class="listing-style1">
                                         <div class="list-thumb">
-                                            <img class="w-100" src="{{asset('assets/images/listings/g-1.jpg')}}" alt="Image">
+                                            <img class="w-100" src="{{$service->image}}" alt="Image">
                                             <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                                         </div>
                                         <div class="list-content">

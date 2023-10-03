@@ -79,7 +79,7 @@
                 <div class="icon flex-shrink-0"><span class="flaticon-call"></span></div>
                 <div class="details">
                   <h5 class="title">Tel</h5>
-                  <p class="mb-0 text">+(225) 0101010101 </p>
+                  <p class="mb-0 text">+(225) 0758265650 </p>
                 </div>
               </div>
               <div class="iconbox-style1 contact-style d-flex align-items-start mb30">

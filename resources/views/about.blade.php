@@ -5,6 +5,11 @@
     .mobilie_header_nav{
         background-color: #5BBB7B !important;
     }
+    li img{
+        width : 100px !important;
+        height : 90px !important;
+        border-radius : 100px;
+    }
 </style>
 
 <style>

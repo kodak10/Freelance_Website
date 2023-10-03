@@ -12,6 +12,11 @@
     .btn_search:hover{
         color: #000000 !important;
     }
+    li img{
+        width : 100px !important;
+        height : 90px !important;
+        border-radius : 100px;
+    }
 </style>
 
     <!-- Home Banner -->
@@ -141,7 +146,7 @@
                 <div class="item">
                   <div class="listing-style1">
                     <div class="list-thumb">
-                      <img class="w-100" src="{{asset('assets/images/listings/g-1.jpg')}}" alt="">
+                      <img class="w-100" src="{{$tendance->image}}" alt="">
                       <a href="" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                     </div>
                     <div class="list-content">
