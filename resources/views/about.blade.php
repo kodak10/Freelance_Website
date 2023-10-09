@@ -73,7 +73,7 @@
           </div>
           <div class="col-md-6 col-xl-5 offset-xl-1">
             <div class="position-relative wow fadeInLeft" data-wow-delay="300ms">
-              <h2 class="mb25">Rejoignez la meilleure place de marché au monde <br class="d-none d-xl-block">pour les travailleurs</h2>
+              <h2 class="mb25">Rejoignez la meilleure place de marché au monde <br class="d-none d-xl-block">pour les entreprises</h2>
               <p class="text mb25">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres, par opposition à l'utilisation de "Contenu ici, contenu ici", ce qui donne l'impression qu'il est lisible en anglais..</p>
               <div class="list-style2">
                 <ul class="mb20">
@@ -82,7 +82,7 @@
                   <li><i class="far fa-check"></i>Qualité inégalée des emplois à distance, hybrides et flexibles</li>
                 </ul>
               </div>
-              <a href="#" class="ud-btn btn-thm-border">Trouver des talents<i class="fal fa-arrow-right-long"></i></a>
+              <a href="#" class="ud-btn btn-thm-border">Trouver des entreprises<i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
@@ -97,10 +97,10 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">834</div></li>
+                  <li><div class="timer">+ 234</div></li>
                   <li><span>M</span></li>
                 </ul>
-                <p class="text mb-0">Total Freelancer</p>
+                <p class="text mb-0">D'entreprises</p>
               </div>
             </div>
           </div>
@@ -108,10 +108,10 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">732</div></li>
+                  <li><div class="timer">+ 300</div></li>
                   <li><span>M</span></li>
                 </ul>
-                <p class="text mb-0">Avis positif</p>
+                <p class="text mb-0">Avis positifs</p>
               </div>
             </div>
           </div>
@@ -119,10 +119,10 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">90</div></li>
+                  <li><div class="timer">+ 300</div></li>
                   <li><span>M</span></li>
                 </ul>
-                <p class="text mb-0">Ordre reçu</p>
+                <p class="text mb-0">Clients inscrits</p>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">236</div></li>
+                  <li><div class="timer">+ 236</div></li>
                   <li><span>M</span></li>
                 </ul>
                 <p class="text mb-0">Projets terminés</p>
@@ -326,22 +326,22 @@
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-cv"></span>
-              <h4 class="iconbox-title mt20">Publier une offre d'emploi</h4>
-              <p class="text mb-0">C'est gratuit et facile de publier une offre d'emploi.<br class="d-none d-md-block"> Remplissez simplement un titre, une description.</p>
+              <h4 class="iconbox-title mt20">Selectionner un service</h4>
+              <p class="text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam repudiandae doloremque doloribus optio accusamus soluta rerum tenetur placeat cum vel, omnis consequuntur magni libero cumque nam, blanditiis esse temporibus nobis?</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-web-design"></span>
-              <h4 class="iconbox-title mt20">Choisissez des freelancers</h4>
-              <p class="text mb-0">Avant de chercher des freelancers, assurez-vous de comprendre clairement vos besoins et objectifs pour le projet. Cela vous aidera à trouver des freelancers<br class="d-none d-md-block"> dont les compétences correspondent à vos attentes...</p>
+              <h4 class="iconbox-title mt20">Choisissez choissisez l'entreprise offrant le service</h4>
+              <p class="text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eum maiores, eveniet adipisci distinctio vero neque. Soluta obcaecati, molestiae ea aliquam est assumenda reiciendis eaque non fugit? Libero, tempore ex.</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-secure"></span>
-              <h4 class="iconbox-title mt20">payer en toute sécurité</h4>
-              <p class="text mb-0">Toutes les transactions sont effectuées sur la plateforme freeio. Qu'un client utilise une carte de crédit, PayPal ou un autre moyen de paiement, nous nous occupons de tout et assurons<br class="d-none d-md-block">  la sécurité de vos informations personnelles....</p>
+              <h4 class="iconbox-title mt20">Discuter avec l'entreprise sur la plateforme</h4>
+              <p class="text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos quo voluptatem vel officia magnam, molestias unde libero modi, temporibus ratione perferendis tempora blanditiis error eum nostrum voluptate deserunt aliquid?</p>
             </div>
           </div>
         </div>
@@ -353,8 +353,8 @@
         <div class="row">
           <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
             <div class="main-title text-center">
-              <h2 class="title">Questions fréquemment posées</h2>
-              <p class="paragraph mt10">En quête de savoir ? Nos questions vous guideront vers les réponses.</p>
+              <h2 class="title">Qui sommes-nous ?</h2>
+              <p class="paragraph mt10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum, in optio, architecto quis ex cumque explicabo neque reprehenderit quaerat ab placeat deserunt ipsa mollitia officia eos incidunt vel! Inventore!</p>
             </div>
           </div>
         </div>
@@ -365,44 +365,30 @@
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item active">
                     <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Quels modes de paiement sont pris en charge?</button>
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Titre</button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="accordion-body">Votre satisfaction, notre priorité. Payez en toute facilité avec nos multiples options : cartes, PayPal, virements... Profitez de notre plateforme pour un service clientèle de premier ordre et des paiements sécurisés à chaque étape de votre projet avec nos freelances experts </div>
+                      <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum veritatis ducimus quibusdam aperiam consequuntur minus saepe repellat voluptas qui sint dolores tempora asperiores eos, veniam quaerat, ut voluptatibus molestias inventore.</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Puis-je annuler à tout moment?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Titre</button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="accordion-body">Sur Freeio, quand une commande est annulée les fonds sont crédités sur le solde Freeio du client. Freeio ne traite pas automatiquement les remboursements au prestataire de paiement après l'annulation d'une commande.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius dolores excepturi asperiores id, fuga sequi alias ab. Consequuntur mollitia voluptatibus similique maiores aut itaque enim nulla recusandae, voluptatum quo?</div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Comment obtenir un reçu pour mon achat?</button>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Titre</button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="accordion-body">La copie de la facture est disponible sur la page de commande et en cliquant sur l'onglet "détails". À partir de là vous tombez sur le lien "afficher la facture" qui permet d'ouvrir la facture correspondant à cet achat. Si vous n'arrivez pas à trouver votre facture, vous pouvez contacter notre service client.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aperiam eaque! Soluta debitis velit quaerat omnis officiis ipsa quasi hic placeat architecto? Ad temporibus sunt suscipit minus nobis accusamus id?</div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">De quelle licence ai-je besoin?</button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                      <div class="accordion-body">En achetant une « Licence d'utilisation commerciale » sur Freeio, le prestataire vous octroie une licence perpétuelle, exclusive, non transférable, mondiale pour utiliser la livraison achetée à des fins commerciales permises. Sauf indication contraire sur la page / description du service du prestataire, tous les droits de propriété intellectuelle de la livraison achetée vous sont par la présente attribués.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Comment accéder à un thème que j'ai acheté?</button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                      <div class="accordion-body">Un simple clic pour accéder à votre thème premium ! Connectez-vous à votre compte sur notre plateforme de freelance, trouvez votre thème acheté et téléchargez-le en un instant pour donner vie à votre site web de rêve </div>
-                    </div>
-                  </div>
+
+
                 </div>
               </div>
             </div>
