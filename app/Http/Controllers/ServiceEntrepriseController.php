@@ -19,7 +19,7 @@ class ServiceEntrepriseController extends Controller
         $departements = Departement::get();
         $service = Service::get();
         $Counter = 1;
-        return view('Entreprise.service.index', compact('services', 'departements', 'Counter', 'service'));
+        return view('Entreprise.Service.index', compact('services', 'departements', 'Counter', 'service'));
 
     }
 
