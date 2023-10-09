@@ -17,11 +17,13 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="dashboard_title_area">
-                            <h2>Client</h2>
+
+                            <h2>Bienvenue</h2>
+                            <p class="text">{{Auth::user()->client->name}} {{Auth::user()->client->prenoms}}</p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             @include('client.layouts.footer')

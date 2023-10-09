@@ -55,7 +55,7 @@
                         <div class="col-lg-12">
                             <div class="dashboard_title_area">
                                 <h2>Dashboard</h2>
-                                <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+                                <p class="text"></p>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                                                             <option value="{{$service->id}}">{{$service->libelle}}</option>
                                                             @forelse ($service_full as $val)
                                                                 <option
-                                                                    value="{{ $val->id }}"data-tokens="{{ $val->libelle }}"> 
+                                                                    value="{{ $val->id }}"data-tokens="{{ $val->libelle }}">
                                                                     {{ mb_strtoupper($val->libelle) }}</option>
                                                             @empty
                                                                 <option>Aucun secteur trouv&eacute;
@@ -123,7 +123,7 @@
                                                     <label class="form-label fw500 fz16 dark-color">Importer vos réalisations
                                                        </label>
                                                     <div class="bootselect-multiselect">
-                                                        <input 
+                                                        <input
                                                             type="file"name="realisations"class="form-control">
                                                     </div>
                                                 </div>
@@ -135,11 +135,11 @@
                                                         du service</label>
                                                     <div class="bootselect-multiselect">
                                                         <textarea name="description" id="" cols="5" rows="2" placeholder="Saisissez la description du service">{{$services->description}}</textarea>
-                                                        
+
                                                     </div>
                                                 </div>
-                                            </div>                                       
-                                           
+                                            </div>
+
                                             <center>
                                                 <div class="col-sm-3 mt-3">
                                                     <div class="form-group mt-3 ">
