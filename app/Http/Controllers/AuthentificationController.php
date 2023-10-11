@@ -26,41 +26,34 @@ class AuthentificationController extends Controller
     {
 
         // La validation
-        $validator = Validator::make($request->all(), [
-            'type_entrepirse' => ['required', 'string', 'max:255'],
-            'name' => ['required', 'string', 'max:255'],
-            'nationalite' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'email', 'max:255'],
+        $rules = [
+            'nom' => ['required', 'string', 'max:255'],
+            'prenoms' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'email', 'max:255', 'unique:users'],
             'telephone' => ['required', 'string', 'max:255'],
-            'password' => ['required', 'min:8', 'confirmed'],
-            'regime' => ['required'],
-            "localisation" => ["required"],
-            Rule::unique('users', 'email'),
-            Rule::unique('clients', 'email'),
-
-        ]);
+            'dat_nais' => ['required', 'date'],
+            'password' => ['required', 'min:6', 'confirmed'],
+        ];
 
         $messages = [
-            'name.required' => 'Le champ nom est requis.',
-            'nationalite.required' => 'Le champ nationalité est requis.',
-            'password.confirmed' => 'Les deux champs de mot de passe ne correspondent pas.',
+            'nom.required' => 'Le champ nom est requis.',
+            'prenoms.required' => 'Le champ prénoms est requis.',
+            'telephone.required' => 'Le champ téléphone est requis.',
+            'telephone.unique' => 'Le champ téléphone est déjà utilisée par un autre utilisateur.',
+            'dat_nais.required' => 'Le champ date de naissance est requis.',
+            'password.required' => 'Le champ mot de passe est requis.',
+            'password.confirmed' => 'Les deux mot de passe ne correspondent pas.',
             'password.min' => 'Le mot de passe doit contenir au moins 6 caractères.',
-            'old_password.custom_validation' => 'Le mot de passe actuel est incorrecte.',
-            'image.image' => 'Le fichier doit être une image valide.',
-            'image.mimes' => 'Seules les images de type :values sont autorisées.',
-            'image.max' => 'La taille maximale de l\'image est de :max kilo-octets.',
             'email.unique' => 'L\'adresse email est déjà utilisée par un autre utilisateur.',
         ];
 
-        //$validator = Validator::make($request->all(), $validator, $messages);
+        $validator = Validator::make($request->all(), $rules, $messages);
 
         if ($validator->fails()) {
             return redirect()->back()
                 ->withErrors($validator)
                 ->withInput();
         }
-
-
 
         // nouvel user pour les infos de connexion
         $user = User::create([
@@ -86,33 +79,31 @@ class AuthentificationController extends Controller
     public function registerEntreprise(Request $request)
     {
         // La validation
-        $validator = Validator::make($request->all(), [
-            'type_entrepirse' => ['required', 'string', 'max:255'],
+        $rules = [
+            'type_entreprise' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'email', 'max:255', 'unique:users'],
             'name' => ['required', 'string', 'max:255'],
             'nationalite' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'email', 'max:255', Rule::unique('users')->where(function ($query) {
-                return $query->where('role', 'compagny');
-            })],
             'telephone' => ['required', 'string', 'max:255'],
-            'password' => ['required', 'min:8', 'confirmed'],
-            'regime' => ['required'],
+            'password' => ['required', 'min:6', 'confirmed'],
+            'regime' => ['required', 'string', 'max:255', 'unique:entreprises'],
             'localisation' => ['required'],
-            'image' => ['image', 'mimes:jpeg,png,gif,webp,jpg', 'max:2048'], // Ajustez les règles pour les images
-        ]);
+        ];
 
         $messages = [
+            'type_entreprise.required' => 'Le type d\' entreprise est requis.',
             'name.required' => 'Le champ nom est requis.',
+            'localisation.required' => 'Le champ localisation est requis.',
+            'regime.required' => 'Le champ regime est requis.',
             'nationalite.required' => 'Le champ nationalité est requis.',
             'password.confirmed' => 'Les deux champs de mot de passe ne correspondent pas.',
             'password.min' => 'Le mot de passe doit contenir au moins 6 caractères.',
-            'old_password.custom_validation' => 'Le mot de passe actuel est incorrecte.',
-            'image.image' => 'Le fichier doit être une image valide.',
-            'image.mimes' => 'Seules les images de type :values sont autorisées.',
-            'image.max' => 'La taille maximale de l\'image est de :max kilo-octets.',
             'email.unique' => 'L\'adresse email est déjà utilisée par un autre utilisateur.',
+            'regime.unique' => 'Le régime est déjà utilisée par un autre utilisateur.',
+            'telephone.required' => 'Le champ telephone est requis.',
         ];
 
-        //$validator = Validator::make($request->all(), $validator, $messages);
+        $validator = Validator::make($request->all(), $rules, $messages);
 
         if ($validator->fails()) {
             return redirect()->back()

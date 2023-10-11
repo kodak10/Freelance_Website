@@ -114,7 +114,7 @@
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" class="form-control" placeholder="Entrer votre Email" name="email">
+                <input type="email" class="form-control" placeholder="Entrer votre Email" name="email" required>
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Date de naissance</label>
@@ -127,7 +127,7 @@
             </div>
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Confirmation de mot de passe</label>
-                <input type="password" class="form-control" placeholder="Confirmer le mot de passe" name="confirm-password" >
+                <input type="password" class="form-control" placeholder="Confirmer le mot de passe" name="password_confirmation" >
             </div>
 
             <div class="d-grid mb20">
@@ -156,7 +156,7 @@
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Email</label>
-                <input type="email" class="form-control" placeholder="Entrer votre Email" name="email">
+                <input type="email" class="form-control" placeholder="Entrer votre Email" name="email" required>
             </div>
             <div class="mb20">
                 <label class="form-label fw600 dark-color">Regime Social</label>
@@ -168,7 +168,7 @@
             </div>
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Mot de passe</label>
-                <input type="password" class="form-control" placeholder="Mot de passe" name="password">
+                <input type="password" class="form-control" placeholder="Mot de passe" name="password" required>
             </div>
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Confirmation de mot de passe</label>
