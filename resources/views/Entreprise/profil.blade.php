@@ -1,4 +1,4 @@
-@extends('entreprise.layouts.app')
+@extends('Entreprise.layouts.app')
 
 @section('content')
 
@@ -7,7 +7,7 @@
 
     <div class="dashboard dashboard_wrapper pr30 pr0-xl">
 
-        @include('entreprise.layouts.sidebar')
+        @include('Entreprise.layouts.sidebar')
 
         <div class="dashboard__main pl0-md">
             <div class="dashboard__content hover-bgc-color">
@@ -138,7 +138,7 @@
 
             </div>
 
-            @include('entreprise.layouts.footer')
+            @include('Entreprise.layouts.footer')
 
         </div>
     </div>
