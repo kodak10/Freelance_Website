@@ -1,4 +1,4 @@
-@extends('entreprise.layouts.app')
+@extends('Client.layouts.app')
 
 @section('content')
 
@@ -7,13 +7,16 @@
 
     <div class="dashboard dashboard_wrapper pr30 pr0-xl">
 
-        @include('entreprise.layouts.sidebar')
+        @include('Client.layouts.sidebar')
 
         <div class="dashboard__main pl0-md">
             <div class="dashboard__content hover-bgc-color">
 
 
                 <div class="row pb40">
+                    <div class="col-lg-12">
+                        @include('Client.layouts.sidebar-mobile')
+                    </div>
                     <div class="col-md-8 col-md-offset-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">Modifier le profil</div>
@@ -94,7 +97,7 @@
 
             </div>
 
-            @include('entreprise.layouts.footer')
+            @include('Client.layouts.footer')
 
         </div>
     </div>

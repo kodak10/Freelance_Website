@@ -14,6 +14,9 @@
 
 
                 <div class="row pb40">
+                    <div class="col-lg-12">
+                        @include('Entreprise.layouts.sidebar-mobile')
+                    </div>
                     <div class="col-md-8 col-md-offset-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">Modifier le profil</div>
