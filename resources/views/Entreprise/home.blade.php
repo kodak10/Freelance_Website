@@ -1,4 +1,4 @@
-@extends('entreprise.layouts.app')
+@extends('Entreprise.layouts.app')
 @section('content')
 
 
@@ -6,13 +6,13 @@
 
     <div class="dashboard dashboard_wrapper pr30 pr0-xl">
 
-        @include('entreprise.layouts.sidebar')
+        @include('Entreprise.layouts.sidebar')
 
         <div class="dashboard__main pl0-md">
             <div class="dashboard__content hover-bgc-color">
                 <div class="row pb40">
                     <div class="col-lg-12">
-                        @include('entreprise.layouts.sidebar-mobile')
+                        @include('Entreprise.layouts.sidebar-mobile')
 
                     </div>
                     <div class="col-lg-12">
@@ -120,7 +120,7 @@
 
             </div>
 
-            @include('entreprise.layouts.footer')
+            @include('Entreprise.layouts.footer')
 
         </div>
     </div>
