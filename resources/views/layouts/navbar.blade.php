@@ -123,9 +123,11 @@
                     </li>
 
                 @elseif(auth()->user()->hasRole('compagny'))
-                    <li><a href="/compagny">Aller au tableau de bord</a></li>
+                    <li><a href="/compagny" style="color:#ffffff; text-transform: uppercase">Aller au tableau de bord</a></li>
+                    <a class="menubar ml30" href="#menu"><i class="fa-solid fa-bars"></i></a>
                 @elseif(auth()->user()->hasRole('serviceClient'))
-                    <li><a href="/administration">Aller au tableau de bord</a></li>
+                    <li><a href="/administration" style="color:#ffffff; text-transform: uppercase">Aller au tableau de bord</a></li>
+                    <a class="menubar ml30" href="#menu"><i class="fa-solid fa-bars"></i></a>
                 @else
                     <p>Erreur d'authentification</p>
                 @endif
