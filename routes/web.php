@@ -39,7 +39,19 @@ Route::get('/reset', function(){
 
 Route::get('/login', [WebsiteController::class, 'login'])->name('login');
 Route::get('/register', [WebsiteController::class, 'register'])->name('register');
+
+
+Route::get('/forget', [WebsiteController::class, 'forget_password']);
+Route::post('/forget', [AuthentificationController::class, 'forget_password'])->name('send_mail');
+
+Route::get('/validation', [WebsiteController::class, 'validation']);
+Route::post('/validation', [AuthentificationController::class, 'validation'])->name('validation_email');
+
+
 Route::get('/verif', [WebsiteController::class, 'verif'])->name('verif');
+
+
+
 
 
 // Route Auth

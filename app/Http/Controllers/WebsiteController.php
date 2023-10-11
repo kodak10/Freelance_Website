@@ -149,6 +149,16 @@ class WebsiteController extends Controller
         return view('verify', compact('categories'));
     }
 
+    public function forget_password(){
 
+        $categories = Departement::get();
+        return view('Password.reset-password', compact('categories'));
+
+    }
+
+    public function validation(){
+        $categories = Departement::get();
+        return view('Password.valid-email', compact('categories'));
+    }
 
 }

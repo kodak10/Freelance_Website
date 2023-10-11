@@ -200,4 +200,12 @@ class AuthentificationController extends Controller
 
     }
 
+    public function send_mail(){
+        echo 'En cours de réalisation' ;
+    }
+
+    public function validation_email(){
+        echo 'En cours de réalisation' ;
+    }
+
 }
