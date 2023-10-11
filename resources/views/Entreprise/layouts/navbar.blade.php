@@ -3,6 +3,10 @@
         width: 100px;
         height: 100px;
     }
+    .photo{
+        width: 100px;
+        height: 100px;
+    }
 </style>
 <header class="header-nav nav-innerpage-style menu-home4 dashboard_header main-menu">
     <!-- Ace Responsive Menu -->
@@ -66,7 +70,7 @@
                             <li class="user_setting">
                                 <div class="dropdown">
                                     <a class="btn" href="#" data-bs-toggle="dropdown">
-                                        <img src="{{asset('assets/images/resource/user.png')}}" alt="Image">
+                                        <img src="{{ asset('storage/assets/images/profil/' . Auth::user()->compagny->photo) }}" alt="Photo de profil" class="photo">
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">
@@ -77,7 +81,7 @@
                                                         @csrf
                                                     </form>
 
-                                           
+
                                         </div>
                                     </div>
                                 </div>

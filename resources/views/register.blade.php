@@ -172,7 +172,7 @@
             </div>
             <div class="mb15">
                 <label class="form-label fw600 dark-color">Confirmation de mot de passe</label>
-                <input type="password" class="form-control" placeholder="Confirmer le mot de passe" name="confirm-password">
+                <input type="password" class="form-control" placeholder="Confirmer le mot de passe" name="password_confirmation">
             </div>
 
             <div class="d-grid mb20">

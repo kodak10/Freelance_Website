@@ -81,11 +81,13 @@ Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
 // Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->group(function () {    // Sans validation email
 Route::prefix('compagny')->middleware(['auth','role:compagny', ])->group(function () {
     Route::get('/', [EntrepriseController::class, 'index']);
-    //Route::get('/demandes', [DemandeServiceClientController::class, 'index']);
 
     Route::resource('/service', ServiceEntrepriseController::class);
-    //Route::get('/services', [ServiceEntrepriseController::class, 'index']);
 
     Route::get('/demandes/client', [EntrepriseController::class, 'demande']);
+
+    Route::get('/profil/edit', [EntrepriseController::class, 'edit']);
+    Route::post('/profil/edit', [EntrepriseController::class, 'update'])->name('update_profil');
+
 
 });

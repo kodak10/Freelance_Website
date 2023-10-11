@@ -95,7 +95,7 @@
                         <tbody>
                             @forelse($services as $val)
                                 <tr class="text-center">
-                                    <td>{{ $Counter++ }}</td>
+                                    <td></td>
                                     <td>
                                         @forelse ($service as $val2)
                                             {{ $val2['id'] == $val['service_id'] ? mb_strtoupper($val2->libelle) : '' }}

@@ -44,7 +44,7 @@
 
         <div class="preloader"></div>
 
-        @include('Administration.layouts.navbar')
+        @include('Entreprise.layouts.navbar')
 
         @yield('content')
 
