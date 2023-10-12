@@ -37,13 +37,27 @@ class serviceController extends Controller
         $check = array(
             'libelle' => 'required',
             'idDepartement' => 'required',
+            'image' => 'image|mimes:jpeg,png,gif,webp,jpg|max:2048'
+
         );
         $request->validate($check);
+
+        
+
         $data = array(
             'libelle' => $request->libelle,
             'departement_id' => $request->idDepartement,
+            'image' => 'default.jpg',
             'created_at' => now()
         );
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
+            $image->storeAs('public/assets/images/service', $imageName);
+            $data['image'] = $imageName;        
+        }
+        
         if (Service::insert($data)) {
             return redirect('/administration/services')->with('added', 'added');
         } else {
@@ -81,6 +95,8 @@ class serviceController extends Controller
         $check = array(
             'libelle' => 'required',
             'idDepartement' => 'required',
+            'image' => 'image|mimes:jpeg,png,gif,webp,jpg|max:2048'
+
         );
         $request->validate($check);
         $data = array(
@@ -88,6 +104,14 @@ class serviceController extends Controller
             'departement_id' => $request->idDepartement,
             'updated_at' => now()
         );
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
+            $image->storeAs('public/assets/images/service', $imageName);
+            $data['image'] = $imageName;        
+        }
+
         if ($service->update($data)) {
             return redirect('/administration/services')->with('updated', 'updated');
         } else {

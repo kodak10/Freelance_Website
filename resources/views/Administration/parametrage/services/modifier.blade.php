@@ -68,11 +68,11 @@
                             <a href="/services" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form action="{{ route('services.update', $services->id) }}" method="post">
+                                    <form action="{{ route('services.update', $services->id) }}" method="post" enctype="multipart/form-data">
                                         @method('PATCH')
                                         @csrf
                                         <div class="row mr-4 ml-4">
-                                            <div class="col-lg-6 col-xl-6">
+                                            <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <label class="form-label fw500 fz16 dark-color">Saisissez le
                                                         Libell&eacute; du service</label>
@@ -93,7 +93,7 @@
                                                             <option>Selectionner ici...</option>
                                                             @forelse ($departements as $val)
                                                                 <option
-                                                                    {{ $val->id == $services->idDepartement ? 'selected ' : '' }}
+                                                                    {{ $val->id == $services->departement_id ? 'selected ' : '' }}
                                                                     value="{{ $val->id }}"data-tokens="{{ $val->libelle }}">
                                                                     {{ mb_strtoupper($val->libelle) }}</option>
                                                             @empty
@@ -104,17 +104,17 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 col-xl-12 mt-3">
+
+                                            <div class="col-lg-6">
                                                 <div class="form-group">
-                                                    <label class="form-label fw500 fz16 dark-color">Saisissez la
-                                                        Description du service</label>
+                                                    <label class="form-label fw500 fz16 dark-color">Image de couverture du service</label>
                                                     <div class="bootselect-multiselect">
-                                                        <textarea required name="description"class="form-control"placeholder="Saisissez la description du service">
-                                                                {{ $services->description ?? '' }}
-                                                            </textarea>
+                                                        <input required
+                                                            type="file" name="image"class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
+                                            
                                             <center>
                                                 <div class="col-sm-3 mt-3">
                                                     <div class="form-group mt-3 ">

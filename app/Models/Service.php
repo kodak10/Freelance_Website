@@ -13,6 +13,7 @@ class Service extends Model
         'libelle',
         'idSecteur',
         'description',
+        'image'
     ];
 
     public function entreprises()
