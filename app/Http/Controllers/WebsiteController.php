@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Image;
 use App\Models\Service;
 use App\Models\Departement;
-use App\Models\ServiceEntreprise;
 use Illuminate\Http\Request;
+use App\Models\ServiceEntreprise;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class WebsiteController extends Controller
 {
@@ -50,6 +52,16 @@ class WebsiteController extends Controller
 
     public function serviceShow($entreprise_nom)
     {
+
+
+        $images = DB::table('images_service_entreprises')
+        ->join('service_entreprises', 'images_service_entreprises.service_entreprise_id', '=', 'service_entreprises.id')
+        //->join('entreprises', 'entreprises.entreprise_id', '=','entreprises.id')
+        //->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
+        ->where('service_entreprises.entreprise_id', Auth::user()->compagny->id)
+        ->get();
+
+
         $serviceDetails = DB::table('service_entreprises')
         ->join('services', 'service_entreprises.service_id', '=', 'services.id')
         ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
@@ -75,7 +87,7 @@ class WebsiteController extends Controller
         ->first();
 
         $categories = Departement::get();
-        return view('services_details', compact('serviceDetails', 'categories'));
+        return view('services_details', compact('serviceDetails', 'categories', 'images'));
     }
 
     public function about()

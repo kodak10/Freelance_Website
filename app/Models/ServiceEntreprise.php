@@ -14,7 +14,7 @@ class ServiceEntreprise extends Model
         'description',
         'delais_execution',
         'libelle',
-        
+
     ];
 
     public function service()
@@ -25,6 +25,11 @@ class ServiceEntreprise extends Model
     public function entreprise()
     {
         return $this->belongsTo(Entreprise::class, 'entreprise_id', 'id');
+    }
+
+    public function images()
+    {
+        return $this->hasMany(Image::class);
     }
 
 }

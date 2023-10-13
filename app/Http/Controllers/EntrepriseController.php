@@ -31,7 +31,7 @@ class EntrepriseController extends Controller
     }
 
     public function update(Request $request)
-{
+    {
     $user = Auth::user() ;
     $compagny = Auth::user()->compagny ;
 

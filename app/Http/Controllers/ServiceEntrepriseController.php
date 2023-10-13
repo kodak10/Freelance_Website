@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Image;
 use App\Models\Service;
 use App\Models\Departement;
 use Illuminate\Http\Request;
@@ -44,22 +45,67 @@ class ServiceEntrepriseController extends Controller
             'description' => 'required',
             'delais' => 'required',
             'entreprise' => 'required',
+            'images*' => 'image|mimes:jpeg,png,gif,webp,jpg|max:2048'
+
 
         );
         $request->validate($check);
+
+
         $data = array(
             'entreprise_id' => $request->entreprise,
             'service_id' => $request->service,
             'description' => $request->description,
             'libelle' => $request->libelle,
             'delais_execution' => $request->delais,
+            'created_at' => now(),
 
         );
+
+
+
+
+
         if (ServiceEntreprise::insert($data)) {
+
+            $serviceEntreprise = new ServiceEntreprise();
+            $serviceEntreprise->entreprise_id = $request->entreprise;
+            $serviceEntreprise->service_id = $request->service;
+            $serviceEntreprise->description = $request->description;
+            $serviceEntreprise->libelle = $request->libelle;
+            $serviceEntreprise->delais_execution = $request->delais;
+            $serviceEntreprise->created_at = now();
+            $serviceEntreprise->save();
+
+
+
+            $serviceEntrepriseId = $serviceEntreprise->id;
+
+            if ($request->hasFile('images')) {
+                $images = $request->file('images');
+
+                foreach ($images as $image) {
+                    // Générez un nom de fichier unique pour chaque image
+                    $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
+
+                    // Stockez chaque image dans le répertoire spécifié
+                    $imagePath = $image->storeAs('public/assets/images/portofolio', $imageName);
+
+                    // Créez un nouvel enregistrement dans la table "images" pour chaque image
+                    $newImage = new Image();
+                    $newImage->file_name = $imageName;
+                    $newImage->file_path = $imagePath;
+                    $newImage->service_entreprise_id = $serviceEntrepriseId; // Remplacez par l'ID du service
+                    $newImage->save();
+                }
+            }
+
             return redirect('/compagny/service/create')->with('added', 'added');
         } else {
             return redirect('/compagny/service/create')->with('nothing', 'nothing');
         };
+
+
     }
 
     /**

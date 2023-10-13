@@ -67,7 +67,7 @@
                             <a href="/compagny/service" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form action="{{ route('service.store') }}" method="post">
+                                    <form action="{{ route('service.store') }}" method="post"  enctype="multipart/form-data">
 
                                         @csrf
                                         <div class="row">
@@ -132,8 +132,7 @@
                                                     <label class="form-label fw500 fz16 dark-color">Importer vos réalisations
                                                        </label>
                                                     <div class="bootselect-multiselect">
-                                                        <input
-                                                            type="file"name="realisations"class="form-control">
+                                                        <input type="file" class="form-control" name="images[]" id="images" multiple accept="image/*">
                                                     </div>
                                                 </div>
                                             </div>
