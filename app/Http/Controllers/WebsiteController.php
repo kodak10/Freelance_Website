@@ -50,15 +50,15 @@ class WebsiteController extends Controller
         return view('show_entreprise_service', compact('serviceEntreprises', 'categories'));
     }
 
-    public function serviceShow($entreprise_nom)
+    public function serviceShow($entreprise_nom, $entreprise_id)
     {
 
 
         $images = DB::table('images_service_entreprises')
         ->join('service_entreprises', 'images_service_entreprises.service_entreprise_id', '=', 'service_entreprises.id')
-        //->join('entreprises', 'entreprises.entreprise_id', '=','entreprises.id')
+        ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
         //->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-        ->where('service_entreprises.entreprise_id', Auth::user()->compagny->id)
+        //->where('service_entreprises.entreprise_id', )
         ->get();
 
 
