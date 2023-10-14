@@ -48,11 +48,11 @@ class DemandeServiceClientController extends Controller
             return redirect()->back()->with('error',"Veuillez vous connecter avant de pouvoir contacté une entreprise");
         }
 
-        if (Auth::user()->client->id === 0)
+        <!-- if (Auth::user()->id === 0)
         {
             return redirect()->back()->with('error',"Veuillez vous connecter à votre compte client avant de pourvoir envoyé des demandes");
         }
-
+ -->
         else {
             // demande de service
             $demandeService = DemandeService::create([
