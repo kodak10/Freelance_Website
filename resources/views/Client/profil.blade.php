@@ -22,39 +22,78 @@
                             <div class="panel-heading">Modifier le profil</div>
 
                             <div class="panel-body">
-                                <form class="form-horizontal" method="POST" action="{{ route('update_profil') }}">
-                                    {{ csrf_field() }}
-
-                                    <div class="form-group">
-                                        <label for="nom" class="col-md-4 control-label">Type d'entreprise</label>
-                                        <div class="col-md-6">
-                                            <select name="type_entreprise" class="form-select form-select-md mb-3 form-control" aria-label=".form-select-lg example" >
-                                                <option value="{{ old('name', Auth::user()->compagny->name) }}" disabled>{{ old('name', Auth::user()->compagny->name) }}</option>
-                                            </select>
+                                <div class="row">
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
                                         </div>
-                                    </div>
+                                    @endif
 
-                                    <!-- Nom -->
-                                    <div class="form-group">
-                                        <label for="nom" class="col-md-4 control-label">Nom</label>
-                                        <div class="col-md-6">
-                                            <input id="nom" type="text" class="form-control" name="name" value="{{ old('name', Auth::user()->compagny->name) }}" required autofocus>
+                                    @if(session('error'))
+                                        <div class="alert alert-danger">
+                                            {{ session('error') }}
                                         </div>
-                                    </div>
+                                    @endif
 
-                                    <!-- Prénoms -->
-                                    <div class="form-group">
-                                        <label for="prenom" class="col-md-4 control-label">N</label>
-                                        <div class="col-md-6">
-                                            <input id="prenom" type="text" class="form-control" name="prenoms" value="{{ old('prenoms', Auth::user()->compagny->prenoms) }}" required>
+                                    @if (session('success'))
+                                        <div class="alert alert-success">
+                                            {{ session('success') }}
                                         </div>
-                                    </div>
+                                    @endif
 
-                                    <!-- Date de naissance -->
+                                    <form class="form-horizontal" method="POST" action="{{ route('update_profil_client') }}" enctype="multipart/form-data">
+                                        {{ csrf_field() }}
+    
+                                                                           
+                                        <!-- Nom -->
+                                        <div class="form-group">
+                                            <label for="nom" class="col-md-4 control-label">Nom</label>
+                                            <div class="col-md-6">
+                                                <input id="nom" type="text" class="form-control" name="name" value="{{ old('name', Auth::user()->client->name) }}" required autofocus>
+                                            </div>
+                                        </div>
+    
+                                        <!-- Prénoms -->
+                                        <div class="form-group">
+                                            <label for="prenom" class="col-md-4 control-label">Prénoms</label>
+                                            <div class="col-md-6">
+                                                <input id="prenom" type="text" class="form-control" name="prenoms" value="{{ old('prenoms', Auth::user()->client->prenoms) }}" required>
+                                            </div>
+                                        </div>
+    
+                                        <!-- telephone -->
+                                        <div class="form-group">
+                                            <label for="telephone" class="col-md-4 control-label">Téléphone</label>
+                                            <div class="col-md-6">
+                                                <input id="telephone" type="text" class="form-control" name="telephone" value="{{ old('telephone', Auth::user()->client->telephone) }}" required>
+                                            </div>
+                                        </div>
+    
+                                        <!-- Email -->
+                                        <div class="form-group">
+                                            <label for="mot_de_passe" class="col-md-4 control-label">Email</label>
+                                            <div class="col-md-6">
+                                                <input id=" email" type="email" class="form-control" value="{{ old('email', Auth::user()->email) }}" disabled>
+                                            </div>
+                                        </div>
+    
+                                        <!-- Date de naissance -->
+                                        <div class="form-group">
+                                            <label for="date_naissance" class="col-md-4 control-label">Date de naissance</label>
+                                            <div class="col-md-6">
+                                                <input id="date_naissance" type="date" class="form-control" name="date_naissance" value="{{ old('date_naissance', Auth::user()->client->date_naissance) }}">
+                                            </div>
+                                        </div>
+    
+                                       <!-- Acien Mot de passe -->
                                     <div class="form-group">
-                                        <label for="date_naissance" class="col-md-4 control-label">Date de naissance</label>
+                                        <label for="mot_de_passe" class="col-md-4 control-label">Ancien mot de passe</label>
                                         <div class="col-md-6">
-                                            <input id="date_naissance" type="date" class="form-control" name="date_naissance" value="{{ old('date_de_naissance', Auth::user()->compagny->date_naissance) }}">
+                                            <input id=" old_password" type="password" class="form-control" name="old_password">
                                         </div>
                                     </div>
 
@@ -69,26 +108,28 @@
                                     <div class="form-group">
                                         <label for="password" class="col-md-4 control-label">Confirmer le mot de passe</label>
                                         <div class="col-md-6">
-                                            <input id="password" type="password" class="form-control" name="confirm-password">
+                                            <input id="password" type="password" class="form-control" name="password_confirmation">
                                         </div>
                                     </div>
+                                        <!-- Image -->
+                                        <div class="form-group">
+                                            <label for="image" class="col-md-4 control-label">Image de profil</label>
+                                            <div class="col-md-6">
+                                                <input id="image" type="file" class="form-control" name="image">
+                                            </div>
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <div class="col-md-6 col-md-offset-4">
+                                                <button type="submit" class="btn btn-primary">
+                                                    Enregistrer les modifications
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
 
-                                    <!-- Téléphone -->
-                                    <div class="form-group">
-                                        <label for="telephone" class="col-md-4 control-label">Téléphone</label>
-                                        <div class="col-md-6">
-                                            <input id="telephone" type="text" class="form-control" name="telephone" value="{{ old('telephone', Auth::user()->compagny->telephone) }}">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-md-6 col-md-offset-4">
-                                            <button type="submit" class="btn btn-primary">
-                                                Enregistrer les modifications
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

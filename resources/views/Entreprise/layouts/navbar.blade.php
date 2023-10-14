@@ -4,8 +4,10 @@
         height: 100px;
     }
     .photo{
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+
     }
 </style>
 <header class="header-nav nav-innerpage-style menu-home4 dashboard_header main-menu">

@@ -3,6 +3,11 @@
         width: 90px;
         height: 90px;
     }
+    .photo{
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+    }
 </style>
 
 <header class="header-nav nav-innerpage-style menu-home4 dashboard_header main-menu">
@@ -67,7 +72,7 @@
                             <li class="user_setting">
                                 <div class="dropdown">
                                     <a class="btn" href="#" data-bs-toggle="dropdown">
-                                        <img src="{{asset('assets/images/resource/user.png')}}" alt="Image">
+                                        <img src="{{ asset('public/storage/assets/images/profil/' . Auth::user()->client->photo) }}" alt="Photo de profil" class="photo">
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">

@@ -44,6 +44,9 @@ class serviceController extends Controller
 
 
 
+
+
+
         $data = array(
             'libelle' => $request->libelle,
             'departement_id' => $request->idDepartement,

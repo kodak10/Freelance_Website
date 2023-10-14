@@ -14,6 +14,7 @@ use App\Http\Controllers\EntrepriseController;
 use App\Http\Controllers\EntrepriseDemandeServiceController;
 use App\Http\Controllers\ServiceEntrepriseController;
 use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\ClientController;
 
 // Route site Web
 Route::get('/', [WebsiteController::class, 'index']);
@@ -84,9 +85,11 @@ Route::prefix('administration')->middleware(['auth', 'role:serviceClient'])->gro
 // Vos routes d'user ici
 // Route::prefix('user')->middleware(['auth', 'verified','role:client'])->group(function () {   // Sans validation email
 Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
-    Route::get('/', function () {
-        return view('Client.home');
-    });
+
+    Route::get('/', [ClientController::class, 'index']);
+    Route::get('/profil/edit', [ClientController::class, 'edit']);
+    Route::post('/profil/edit', [ClientController::class, 'update_profil'])->name('update_profil_client');
+
 });
 
 // Vos routes d'user ici
