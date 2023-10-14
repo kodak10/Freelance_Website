@@ -50,7 +50,7 @@ class WebsiteController extends Controller
         return view('show_entreprise_service', compact('serviceEntreprises', 'categories'));
     }
 
-    public function serviceShow($entreprise_nom, $entreprise_id)
+    public function serviceShow($entreprise_nom)
     {
 
 
