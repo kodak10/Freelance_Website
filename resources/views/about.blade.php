@@ -83,7 +83,7 @@
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="accordion-body">
-                          Nous sommes ELBARA-AFRICA GROUP en abrégé E-BAG.<br>
+                          Nous sommes <strong>ELBARA-AFRICA GROUP</strong> en abrégé <strong>E-BAG.</strong><br>
                           E-BAG est une corporation novatrice et dynamique basée en Côte d'Ivoire,
                           dont la mission principale est une vision de partenariat à savoir:
                           <ul>
