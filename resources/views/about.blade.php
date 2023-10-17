@@ -146,7 +146,7 @@
                   <li><i class="far fa-check"></i>Accompagnement personnalisé.</li>
                 </ul>
               </div>
-              <a href="#" class="ud-btn btn-thm-border">Trouver des entreprises<i class="fal fa-arrow-right-long"></i></a>
+              <a href="#" class="ud-btn btn-thm-border">Trouver votre service<i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>

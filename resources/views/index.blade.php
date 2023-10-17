@@ -182,8 +182,9 @@
                 <div class="iconbox-style1 border-less p-0">
                   <div class="icon before-none"><span class="flaticon-cv"></span></div>
                   <div class="details">
-                    <h4 class="title mt10 mb-3">Inscrivez-vous</h4>
-                    <p class="text">Inscrivez vous pour promouvoir votre activitée.</p>
+                    <h4 class="title mt10 mb-3"><strong>Inscrivez-vous</strong></h4>
+                    <p class="text">L'Inscription est simple et rapide, vous permettant d'accéder après verifications de nos services à un monde de possibilités.
+                        Rejoignez notre communauté d'entrepreneurs proactifs en quelques clics et commencez à faire évoluer votre entreprise.</p>
                   </div>
               </div>
             </div>
@@ -191,8 +192,11 @@
               <div class="iconbox-style1 border-less p-0">
                 <div class="icon before-none"><span class="flaticon-web-design"></span></div>
                 <div class="details">
-                  <h4 class="title mt10 mb-3">Poster vos services</h4>
-                  <p class="text">Selectionner votre service parmis une dizaine de catégorie.</p>
+                  <h4 class="title mt10 mb-3"><strong>Poster vos services</strong></h4>
+                  <p class="text">
+                    Choisissez parmi plus de 200 services en mettant en avant vos services, atouts et spécificités pour convaincre les clients potentiels de sélectionner vos services.
+                    Utilisez notre interface conviviale pour des publications claires et attrayantes.
+                  </p>
                 </div>
               </div>
             </div>
@@ -200,8 +204,10 @@
               <div class="iconbox-style1 border-less p-0">
                 <div class="icon before-none"><span class="flaticon-secure"></span></div>
                 <div class="details">
-                  <h4 class="title mt10 mb-3">Discuter avec les prospects</h4>
-                  <p class="text">Une mise en relation Client Entreprise la plus simple possible pour vous aider à prospérer</p>
+                  <h4 class="title mt10 mb-3"><strong>Discuter avec les clients</strong></h4>
+                  <p class="text">Répondez à leurs questions, clarifiez les détails, et négociez les conditions pour établir un lien de confiance,
+                    montrant ainsi votre engagement envers la satisfaction de vos clients.
+                    Engagez rapidement des conversations constructives avec des prospects en quête de vos services et expertises.</p>
                 </div>
               </div>
             </div>
@@ -295,7 +301,7 @@
     <section class="our-about bgc-thm2">
         <div class="container">
           <div class="row align-items-center">
-            <h2 class="title" style =" color : #FFFFFF;">Pourquoi nous faire confiance ?</h2>
+            {{-- <h2 class="title" style =" color : #FFFFFF;">Pourquoi nous faire confiance ?</h2> --}}
 
             <div class="col-xl-6">
               <div class="position-relative mb30-lg">
@@ -322,14 +328,16 @@
             </div>
             <div class="col-xl-5 offset-xl-1">
               <div class="position-relative wow fadeInLeft" data-wow-delay="300ms">
-                <h2 class="text-white mb35">Rejoignez la meilleure place de marché au monde <br class="d-none d-lg-block"> pour donner vie à vos projet ou ceux des autres</h2>
-                <p class="text text-white mb35">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres, par opposition à l'utilisation de "Contenu ici, contenu ici", ce qui donne l'impression qu'il est lisible en anglais ...</p>
+                <h2 class="text-white mb35">Rejoignez notre plateforme de mise en relation client-entreprise grâce à nos services de premier ordre.</h2>
+                <p class="text text-white mb35">Vous avez désormais l'opportunité de vous connecter avec les entreprises du monde entier.
+                    Nous mettons à votre disposition un réseau d'entreprise dotés d'une solide expérience commerciale.
+                    Profitez de la meilleure qualité de service de plus de 200 services d'entreprises.</p>
                 <div class="list-style2 light-style">
-                  <ul class="mb30">
-                    <li><i class="far fa-check"></i>Connectez-vous et recherché vos services</li>
-                    <li><i class="far fa-check"></i>Une mise en relation Client Entreprise très simple et sécurisé</li>
-                    <li><i class="far fa-check"></i>Un service client disponible 24H/24H, 7j/7</li>
-                  </ul>
+                    <ul class="mb20">
+                        <li><i class="far fa-check"></i>Connectez-vous à des entreprises ayant une expérience commerciale approuvée.</li>
+                        <li><i class="far fa-check"></i>Entrer en contact avec les meilleurs entreprises pour votre service.</li>
+                        <li><i class="far fa-check"></i>Accompagnement personnalisé.</li>
+                      </ul>
                 </div>
                 <a href="#" class="ud-btn btn-thm">Trouver votre service<i class="fal fa-arrow-right-long"></i></a>
               </div>
