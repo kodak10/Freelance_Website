@@ -62,6 +62,67 @@
       </div>
     </section>
 
+    <section class="pb70">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
+              <div class="main-title text-center">
+                <h2 class="title">Qui sommes-nous ?</h2>
+                {{-- <p class="paragraph mt10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum, in optio, architecto quis ex cumque explicabo neque reprehenderit quaerat ab placeat deserunt ipsa mollitia officia eos incidunt vel! Inventore!</p> --}}
+              </div>
+            </div>
+          </div>
+          <div class="row wow fadeInUp" data-wow-delay="300ms">
+            <div class="col-lg-8 mx-auto">
+              <div class="ui-content">
+                <div class="accordion-style1 faq-page">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item active">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>Principes et Missions</strong></button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Nous sommes ELBARA-AFRICA GROUP en abrégé E-BAG.<br>
+                          E-BAG est une corporation novatrice et dynamique basée en Côte d'Ivoire,
+                          dont la mission principale est une vision de partenariat à savoir:
+                          <ul>
+                            <li><i class="fal fa-arrow-right-long"></i> L'accompagnement des entreprises dans divers secteurs d'activité pour l’atteinte de leur objectif;</li>
+                            <li><i class="fal fa-arrow-right-long"></i> Apporte son expertise auprès des entreprises et particulier en Afrique afin de maximiser leur rendement.</li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong>Notre Vision</strong></button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Notre vision est d'apporté notre pierre à l'édifice qui contribue au développement du continent africain pour la satisfaction de nos partenaires.
+                          Elle vise à révolutionner les différentes prestations d'entreprises afin de les rendre plus adaptés au besoin des populations.
+                        </div>
+                      </div>
+                    </div>
+                    {{-- <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong>Titre</strong></button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aperiam eaque! Soluta debitis velit quaerat omnis officiis ipsa quasi hic placeat architecto? Ad temporibus sunt suscipit minus nobis accusamus id?</div>
+                      </div>
+                    </div> --}}
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <!-- About Section Area -->
     <section class="our-about pb0 pt60-lg">
       <div class="container">
@@ -73,13 +134,16 @@
           </div>
           <div class="col-md-6 col-xl-5 offset-xl-1">
             <div class="position-relative wow fadeInLeft" data-wow-delay="300ms">
-              <h2 class="mb25">Rejoignez la meilleure place de marché au monde <br class="d-none d-xl-block">pour les entreprises</h2>
-              <p class="text mb25">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres, par opposition à l'utilisation de "Contenu ici, contenu ici", ce qui donne l'impression qu'il est lisible en anglais..</p>
+              <h2 class="mb25">Rejoignez notre plateforme de mise en relation client-entreprise grâce à nos services de premier ordre.</h2>
+
+              <p class="text mb25">Vous avez désormais l'opportunité de vous connecter avec les entreprises du monde entier.
+                Nous mettons à votre disposition un réseau d'entreprise dotés d'une solide expérience commerciale.
+                Profitez de la meilleure qualité de service de plus de 200 services d'entreprises.</p>
               <div class="list-style2">
                 <ul class="mb20">
-                  <li><i class="far fa-check"></i>Connectez-vous à des pigistes ayant une expérience commerciale éprouvée</li>
-                  <li><i class="far fa-check"></i>Faites-vous associer au talent parfait par un responsable de la réussite client</li>
-                  <li><i class="far fa-check"></i>Qualité inégalée des emplois à distance, hybrides et flexibles</li>
+                  <li><i class="far fa-check"></i>Connectez-vous à des entreprises ayant une expérience commerciale approuvée.</li>
+                  <li><i class="far fa-check"></i>Entrer en contact avec les meilleurs entreprises pour votre service.</li>
+                  <li><i class="far fa-check"></i>Accompagnement personnalisé.</li>
                 </ul>
               </div>
               <a href="#" class="ud-btn btn-thm-border">Trouver des entreprises<i class="fal fa-arrow-right-long"></i></a>
@@ -98,9 +162,9 @@
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
                   <li><div class="timer">+ 234</div></li>
-                  <li><span>M</span></li>
+                  {{-- <li><span>M</span></li> --}}
                 </ul>
-                <p class="text mb-0">D'entreprises</p>
+                <p class="text mb-0">Entreprises enregistrés</p>
               </div>
             </div>
           </div>
@@ -108,7 +172,7 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">+ 300</div></li>
+                  <li><div class="timer">+ 02</div></li>
                   <li><span>M</span></li>
                 </ul>
                 <p class="text mb-0">Avis positifs</p>
@@ -119,7 +183,7 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">+ 300</div></li>
+                  <li><div class="timer">+ 03</div></li>
                   <li><span>M</span></li>
                 </ul>
                 <p class="text mb-0">Clients inscrits</p>
@@ -130,7 +194,7 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">+ 236</div></li>
+                  <li><div class="timer">+ 16</div></li>
                   <li><span>M</span></li>
                 </ul>
                 <p class="text mb-0">Projets terminés</p>
@@ -149,7 +213,7 @@
             <div class="col-md-6 col-xl-5 pl30-md pl15-xs wow fadeInRight" data-wow-delay="500ms">
               <div class="mb30">
                 <div class="main-title">
-                  <h2 class="title">De nombreuses personnes de <br class="d-none d-lg-block"> talent à portée de doigts</h2>
+                  <h2 class="title">De nombreuses entreprises à <br class="d-none d-lg-block"> portée de doigts</h2>
                 </div>
               </div>
               <div class="why-chose-list">
@@ -157,14 +221,14 @@
                   <span class="list-icon flex-shrink-0 flaticon-badge"></span>
                   <div class="list-content flex-grow-1 ml20">
                     <h4 class="mb-1">Preuve de qualité</h4>
-                    <p class="text mb-0 fz15">Vérifiez les échantillons de travail de n'importe quel pro, les avis des clients et la vérification <br class="d-none d-lg-block"> d'identité .</p>
+                    <p class="text mb-0 fz15">Examinez les échantillons de travail des entreprises, consultez les avis de nos clients et bénéficiez de notre procédure de vérification d'identité.</p>
                   </div>
                 </div>
                 <div class="list-one d-flex align-items-start mb30">
                   <span class="list-icon flex-shrink-0 flaticon-money"></span>
                   <div class="list-content flex-grow-1 ml20">
-                    <h4 class="mb-1">Aucun frais jusqu'à ce que vous embauchiez</h4>
-                    <p class="text mb-0 fz15">Interviewez les candidats potentiels pour votre travail, négociez les tarifs et ne payez que <br class="d-none d-lg-block"> pour le travail que vous approuvez.</p>
+                    <h4 class="mb-1">Zéro frais avant satisfaction</h4>
+                    <p class="text mb-0 fz15">Conversez avec les entreprises potentiels pour votre projet, négociez les tarifs, et ne rémunérez que lorsque le travail est approuvé par vos soins.</p>
                   </div>
                 </div>
                 <div class="list-one d-flex align-items-start mb30">
@@ -192,8 +256,8 @@
         <div class="row align-items-center">
           <div class="col-md-6 col-xl-4 offset-xl-1 wow fadeInRight" data-wow-delay="100ms">
             <div class="cta-style6 mb30-sm">
-              <h2 class="cta-title mb25">Trouvez les talents nécessaires pour <br class="d-none d-lg-block">faire croître votre entreprise.</h2>
-              <p class="text-thm2 fz15 mb25">Des services de qualité qui sont <br class="d-none d-md-block"> en adequation avec votre vision.</p>
+              <h2 class="cta-title mb25">Trouvez les entreprises nécessaires pour <br class="d-none d-lg-block">faire croître votre activité.</h2>
+              <p class="text-thm2 fz15 mb25">Des entreprises de qualité qui sont <br class="d-none d-md-block"> en adequation avec votre vision.</p>
               <a href="#" class="ud-btn btn-thm">Commencer <i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
@@ -205,24 +269,26 @@
                     <li><div class="timer title mb15">4</div></li>
                     <li><span>.9/5</span></li>
                   </ul>
-                  <p class="fz15 dark-color">Les clients évaluent  <br>les professionnels sur Freeio</p>
+                  <p class="fz15 dark-color">Les clients évaluent  <br>les entreprises sur Elbaragroup</p>
                 </div>
                 <div class="funfact-style1 bdrs16 text-center ms-md-auto">
                   <ul class="ps-0 mb-0 d-flex justify-content-center">
                     <li><div class="timer title mb15">96</div></li>
                     <li><span>%</span></li>
                   </ul>
-                  <p class="fz15 dark-color">95% des clients sont satisfaits de voir leurs <br>freelances</p>
+                  <p class="fz15 dark-color">95% des clients sont satisfaits des services des <br>entreprises</p>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="funfact-style1 bdrs16 text-center">
                   <ul class="ps-0 mb-0 d-flex justify-content-center">
-                    <li><div class="title mb15">Prix</div></li>
+                    <li><div class="title mb15"></div></li>
                   </ul>
-                  <p class="fz15 dark-color">G2’s 2023 Meilleures <br>Récompenses logicielles</p>
+                  <p class="fz15 dark-color"> <br></p>
                 </div>
               </div>
+
+
             </div>
           </div>
         </div>
@@ -230,7 +296,7 @@
     </section>
 
      <!-- Our Testimonials -->
-     <section class="our-testimonial">
+    {{--  <section class="our-testimonial">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
@@ -308,10 +374,10 @@
             </div>
           </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- CTA Banner -->
-    <section class="cta-banner-about2 mx-auto maxw1700 position-relative mx20-lg pt60-lg pb60-lg">
+   {{--  <section class="cta-banner-about2 mx-auto maxw1700 position-relative mx20-lg pt60-lg pb60-lg">
       <img class="cta-about2-img d-none d-xl-block" src="{{asset('assets/images/about/about-7.png')}}" alt="">
       <div class="container">
         <div class="row">
@@ -346,55 +412,8 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="pb70">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
-            <div class="main-title text-center">
-              <h2 class="title">Qui sommes-nous ?</h2>
-              <p class="paragraph mt10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum, in optio, architecto quis ex cumque explicabo neque reprehenderit quaerat ab placeat deserunt ipsa mollitia officia eos incidunt vel! Inventore!</p>
-            </div>
-          </div>
-        </div>
-        <div class="row wow fadeInUp" data-wow-delay="300ms">
-          <div class="col-lg-8 mx-auto">
-            <div class="ui-content">
-              <div class="accordion-style1 faq-page">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item active">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Titre</button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum veritatis ducimus quibusdam aperiam consequuntur minus saepe repellat voluptas qui sint dolores tempora asperiores eos, veniam quaerat, ut voluptatibus molestias inventore.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Titre</button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eius dolores excepturi asperiores id, fuga sequi alias ab. Consequuntur mollitia voluptatibus similique maiores aut itaque enim nulla recusandae, voluptatum quo?</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Titre</button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aperiam eaque! Soluta debitis velit quaerat omnis officiis ipsa quasi hic placeat architecto? Ad temporibus sunt suscipit minus nobis accusamus id?</div>
-                    </div>
-                  </div>
+    </section> --}}
 
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 @endsection
