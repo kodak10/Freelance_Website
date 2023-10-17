@@ -116,7 +116,7 @@
 
             <div class="right-side text-end">
                 @auth
-                @if(auth()->user()->hasRole('client'))
+                @if(auth()->user()->hasRole('Client'))
                     <li>
                         <a href="/user" style="color:#ffffff; text-transform: uppercase">Aller au tableau de bord</a>
                         <a class="menubar ml30" href="#menu"><i class="fa-solid fa-bars"></i></a>
@@ -158,7 +158,7 @@
             <li><a class="list-item" href="/contact">Contact</a></li>
 
             @auth
-                @if(auth()->user()->hasRole('client'))
+                @if(auth()->user()->hasRole('Client'))
                     <li><a href="/user">Aller au tableau de bord</a></li>
                 @elseif(auth()->user()->hasRole('compagny'))
                     <li><a href="/compagny">Aller au tableau de bord</a></li>
