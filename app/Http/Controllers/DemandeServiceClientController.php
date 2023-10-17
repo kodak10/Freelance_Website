@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Client;
 use App\Models\Entreprise;
 use Illuminate\Http\Request;
 use App\Models\DemandeService;
@@ -43,12 +44,21 @@ class DemandeServiceClientController extends Controller
             'document' => ['max:255'],
         ]);
 
+        $client_id = $request->input('client_id');
+        $client = Client::find($client_id);
+
+
         if (!Auth::check())
         {
             return redirect()->back()->with('error',"Veuillez vous connecter avant de pouvoir contacté une entreprise");
         }
 
-       
+        if (!$client) {
+            // Le client n'existe pas, renvoyez un message d'erreur
+            return redirect()->back()->with('error', 'Veuillez vous connecter avec un compte client afin de pourvoir contacter l\'entreprise.');
+        }
+
+
         else {
             // demande de service
             $demandeService = DemandeService::create([

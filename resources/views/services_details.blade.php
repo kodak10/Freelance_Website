@@ -320,10 +320,17 @@
                                 <div class="modal-body">
                                     <form method="post" action="{{route('demandeService.store')}}">
                                         @csrf
-                                        {{-- <input type="hidden" name="client_id" value="{{ Auth::user() ? Auth::user()->id : 0 }}"> --}}
-                                        <input type="hidden" name="client_id" value="{{ Auth::check() && Auth::user()->client->id ? Auth::user()->client->id : 0 }}">
-                                        {{-- <input type="hidden" name="client_id" value="{{ Auth::check() && Auth::user()->serviceClient ? Auth::user()->serviceClient->user_id : 0 }}"> --}}
-                                        {{-- <input type="hidden" name="client_id" value="{{ Auth::check() && Auth::user()->compagny ? Auth::user()->serviceClient->user_id : 0 }}"> --}}
+                                        <input type="hidden" name="client_id" value="{{
+                                            Auth::check() &&
+                                            (
+                                                (Auth::user()->company && Auth::user()->company->id) ||
+                                                (Auth::user()->serviceclient && Auth::user()->serviceclient->id) ||
+                                                (Auth::user()->client && Auth::user()->client->id)
+                                            ) ?
+                                            (Auth::user()->company ? Auth::user()->company->id : (Auth::user()->serviceclient ? Auth::user()->serviceclient->id : Auth::user()->client->id))
+                                            :
+                                            0
+                                        }}">
 
                                         <input type="hidden" name="entreprise_id" value="{{$serviceDetails->entreprise_id}}">
                                         <input type="hidden" name="service_id" value="{{$serviceDetails->service_id}}">
