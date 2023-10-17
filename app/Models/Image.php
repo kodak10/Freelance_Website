@@ -10,7 +10,7 @@ class Image extends Model
     use HasFactory;
 
     protected $table = 'images_service_entreprises';
-    //protected $primaryKey = 'id';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'file_name',

@@ -17,8 +17,8 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="dashboard_title_area">
-                            <h2>Demande de service client</h2>
-                            <p class="text">Les demandes de service reçu sont affichés ici avec les détails</p>
+                            <h2>Demande de service client reçu</h2>
+                            {{-- <p class="text">Les demandes de service reçu sont affichés ici avec les détails....</p> --}}
                         </div>
                     </div>
                 </div>
@@ -27,10 +27,18 @@
                     @foreach ($demandes as $demande )
                         <div class="col-lg-3">
                             <div class="card w-100">
-                                <img class="card-img-top" src="..." alt="Image du service">
+                                <img class="card-img-top" src="{{ asset('storage/assets/images/services/' . $demande->service->image) }}" alt="Image du service">
                                 <div class="card-body">
-                                <h5 class="card-title">Création de boulangerie</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem temporibus deserunt vel harum sapiente maiores, magni eat in</p>
+                                    <h5 class="card-title">{{$demande->service->libelle}}</h5>
+                                    <p class="card-text">{{$demande->description}}</p>
+                                </div>
+                                <div class="row p-2 text-center">
+                                    <div class="col-lg-6">
+                                        <a class="ud-btn2" href="#">Contactez le client</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a class="ud-btn2" href="#">Plus de details</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

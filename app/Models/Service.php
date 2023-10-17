@@ -21,7 +21,7 @@ class Service extends Model
         return $this->belongsToMany(Entreprise::class, 'service_entreprises', 'service_id', 'entreprise_id');
     }
 
-   
+
     public function secteurs()
     {
         return $this->hasOne(Secteur::class);
@@ -30,6 +30,11 @@ class Service extends Model
     public function departements()
     {
         return $this->hasOne(Departement::class);
+    }
+
+    public function demandeServices()
+    {
+        return $this->hasMany(DemandeService::class, 'service_id');
     }
 
 

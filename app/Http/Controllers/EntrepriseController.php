@@ -21,7 +21,8 @@ class EntrepriseController extends Controller
     }
 
     public function demande(){
-        $demandes = DemandeService::where('entreprise_id', Auth::user()->compagny->id);
+        $demandes = DemandeService::where('entreprise_id', Auth::user()->compagny->id)->get();
+        //dd($demandes);
         return view('Entreprise.demande_service', compact('demandes'));
     }
 
