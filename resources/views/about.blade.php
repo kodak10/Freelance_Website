@@ -63,7 +63,7 @@
       </div>
     </section>
 
-    <section class="pb70">
+    <section class="pb30">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
@@ -84,13 +84,23 @@
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="accordion-body">
-                          Nous sommes <strong>ELBARA-AFRICA GROUP</strong> en abrégé <strong>E-BAG.</strong><br>
+                            <strong>E-BAG</strong> est une Corporation novatrice et dynamique basée en Côte d'Ivoire .dont la vision principale se présente comme étant un partenaire d’accompagnement des entreprises dans divers secteurs d’activité.
+                            En resumé E-BAG est une plateforme autour de laquelle gravite <strong>Offre et Demande</strong>; une corporation englobant plusieurs secteurs d'activité.
+
+                            <strong>E-BAG</strong> l'une des actions serait d'apporter son expertise auprès des entreprises et particuliers en Afrique afin de maximiser leur rendement ( Indice de performance) .
+
+                            Pour les Entrepreneurs africains, la corporation vise à apporter sa pierre à cette édifice qui contribue au développement du continent africain pour un mieux être de sa population.
+                            Car nous porterons écoute et assistante...
+
+                            Elle vise à révolutionner les différentes prestations d'entreprises afin de les rendre plus adaptées au besoin des populations...
+
+                         {{--  Nous sommes <strong>ELBARA-AFRICA GROUP</strong> en abrégé <strong>E-BAG.</strong><br>
                           E-BAG est une corporation novatrice et dynamique basée en Côte d'Ivoire,
                           dont la mission principale est une vision de partenariat à savoir:
                           <ul>
                             <li><i class="fa-solid fa-angle-right"></i> L'accompagnement des entreprises dans divers secteurs d'activité pour l’atteinte de leur objectif;</li>
                             <li><i class="fa-solid fa-angle-right"></i> Apporte son expertise auprès des entreprises et particulier en Afrique afin de maximiser leur rendement.</li>
-                          </ul>
+                          </ul> --}}
 
                         </div>
                       </div>
@@ -100,7 +110,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong>Notre Vision</strong></button>
                       </h2>
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="accordion-body" style="size: 18px; line-height:2.0">
                             Notre vision est de devenir le partenaire privilégié des principaux secteurs d’activité dont dispose le monde.
                             En proposant des solutions avant-gardiste qui répondent aux besoins constamment changeant de nos collaborateurs.
                             Nous aspirons à être reconnus pour notre engagement indéfectible envers l'excellence, l'innovation et la satisfaction de nos partenaires.
@@ -138,7 +148,7 @@
                       </div>
                     </div>
 
-                    <div class="accordion-item">
+                    {{-- <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFor">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor"><strong>Nos Avantages</strong></button>
                         </h2>
@@ -155,9 +165,9 @@
                             </ul>
                           </div>
                         </div>
-                      </div>
+                      </div> --}}
 
-                    <div class="accordion-item">
+                    {{-- <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSix">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><strong>Histogramme</strong></button>
                         </h2>
@@ -179,7 +189,7 @@
                               </div>
                           </div>
                         </div>
-                      </div>
+                    </div> --}}
 
 
                   </div>
@@ -213,7 +223,7 @@
                   <li><i class="far fa-check"></i>Accompagnement personnalisé.</li>
                 </ul>
               </div>
-              <a href="#" class="ud-btn btn-thm-border">Trouver votre service<i class="fal fa-arrow-right-long"></i></a>
+              <a href="/services" class="ud-btn btn-thm-border">Trouver votre service<i class="fal fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
@@ -321,29 +331,25 @@
       <img class="right-bottom-img wow zoomIn d-none d-lg-block" src="{{asset('assets/images/vector-img/right-bottom.png')}}" alt="">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 col-xl-4 offset-xl-1 wow fadeInRight" data-wow-delay="100ms">
-            <div class="cta-style6 mb30-sm">
-              <h2 class="cta-title mb25">Trouvez les entreprises nécessaires pour <br class="d-none d-lg-block">faire croître votre activité.</h2>
-              <p class="text-thm2 fz15 mb25">Des entreprises de qualité qui sont <br class="d-none d-md-block"> en adequation avec votre vision.</p>
-              <a href="#" class="ud-btn btn-thm">Commencer <i class="fal fa-arrow-right-long"></i></a>
-            </div>
+          <div class="col-md-8 wow fadeInRight" data-wow-delay="100ms">
+            <img src="{{asset('assets/images/historigramme/1.png')}}" >
           </div>
-          <div class="col-md-6 col-xl-6 offset-xl-1 wow fadeInLeft" data-wow-delay="300ms">
+          <div class="col-md-4  wow fadeInLeft" data-wow-delay="300ms">
             <div class="row align-items-center">
               <div class="col-sm-6">
                 <div class="funfact-style1 bdrs16 text-center ms-md-auto">
                   <ul class="ps-0 mb-0 d-flex justify-content-center">
-                    <li><div class="timer title mb15">4</div></li>
-                    <li><span>.9/5</span></li>
+
+                    {{-- <li><span>Avantage</span></li> --}}
                   </ul>
-                  <p class="fz15 dark-color">Les clients évaluent  <br>les entreprises sur Elbaragroup</p>
+                  <p class="fz15 dark-color">Avantage</p>
                 </div>
                 <div class="funfact-style1 bdrs16 text-center ms-md-auto">
                   <ul class="ps-0 mb-0 d-flex justify-content-center">
-                    <li><div class="timer title mb15">96</div></li>
-                    <li><span>%</span></li>
+
+                    {{-- <li><span>Avantage</span></li> --}}
                   </ul>
-                  <p class="fz15 dark-color">95% des clients sont satisfaits des services des <br>entreprises</p>
+                  <p class="fz15 dark-color">Avantage</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -351,7 +357,25 @@
                   <ul class="ps-0 mb-0 d-flex justify-content-center">
                     <li><div class="title mb15"></div></li>
                   </ul>
-                  <p class="fz15 dark-color"> <br></p>
+                  <p class="fz15 dark-color">Avantage</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="funfact-style1 bdrs16 text-center">
+                  <ul class="ps-0 mb-0 d-flex justify-content-center">
+                    <li><div class="title mb15"></div></li>
+                  </ul>
+                  <p class="fz15 dark-color">Avantage</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="funfact-style1 bdrs16 text-center">
+                  <ul class="ps-0 mb-0 d-flex justify-content-center">
+                    <li><div class="title mb15"></div></li>
+                  </ul>
+                  <p class="fz15 dark-color">Avantage</p>
                 </div>
               </div>
 

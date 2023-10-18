@@ -27,7 +27,7 @@
                     @foreach ($demandes as $demande )
                         <div class="col-lg-3">
                             <div class="card w-100">
-                                <img class="card-img-top" src="{{ asset('storage/assets/images/services/' . $demande->service->image) }}" alt="Image du service">
+                                <img class="card-img-top" src="{{ asset('public/storage/assets/images/services/' . $demande->service->image) }}" alt="Image du service">
                                 <div class="card-body">
                                     <h5 class="card-title">{{$demande->service->libelle}}</h5>
                                     <p class="card-text">{{$demande->description}}</p>

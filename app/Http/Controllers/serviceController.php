@@ -42,11 +42,6 @@ class serviceController extends Controller
         );
         $request->validate($check);
 
-
-
-
-
-
         $data = array(
             'libelle' => $request->libelle,
             'departement_id' => $request->idDepartement,
@@ -57,7 +52,7 @@ class serviceController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-            $image->storeAs('assets/images/service', $imageName);
+            $image->storeAs('public/assets/images/service', $imageName);
             $data['image'] = $imageName;
         }
 
@@ -111,7 +106,7 @@ class serviceController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-            $image->storeAs('assets/images/service', $imageName);
+            $image->storeAs('public/assets/images/service', $imageName);
             $data['image'] = $imageName;
         }
 

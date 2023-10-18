@@ -2,8 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&display=swap');
+
 :root {
-  --title-font-family: "DM Sans", sans-serif;
+  --title-font-family: "Lato", sans-serif;
   --body-font-family: "DM Sans", sans-serif;
   --icon-font-family: "Font Awesome 6 Pro";
   --icon-font-family2: "Flaticon";
@@ -10599,7 +10601,7 @@ input:focus-visible {
 
 .table-style2 {
   position: relative;
-  border-collapse: collapse; 
+  border-collapse: collapse;
   width: 100%;
 }
 .table-style2 .table .t-head th {
