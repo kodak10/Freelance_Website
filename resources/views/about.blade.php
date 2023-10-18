@@ -55,6 +55,7 @@
             <div class="col-xl-5">
               <div class="position-relative">
                 <h2 class="text-white">A propos</h2>
+                <span><a href="/">Elbaragroup -></a>A Propos</span>
               </div>
             </div>
           </div>
@@ -73,7 +74,7 @@
             </div>
           </div>
           <div class="row wow fadeInUp" data-wow-delay="300ms">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-10 mx-auto">
               <div class="ui-content">
                 <div class="accordion-style1 faq-page">
                   <div class="accordion" id="accordionExample">
@@ -87,8 +88,8 @@
                           E-BAG est une corporation novatrice et dynamique basée en Côte d'Ivoire,
                           dont la mission principale est une vision de partenariat à savoir:
                           <ul>
-                            <li><i class="fal fa-arrow-right-long"></i> L'accompagnement des entreprises dans divers secteurs d'activité pour l’atteinte de leur objectif;</li>
-                            <li><i class="fal fa-arrow-right-long"></i> Apporte son expertise auprès des entreprises et particulier en Afrique afin de maximiser leur rendement.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> L'accompagnement des entreprises dans divers secteurs d'activité pour l’atteinte de leur objectif;</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Apporte son expertise auprès des entreprises et particulier en Afrique afin de maximiser leur rendement.</li>
                           </ul>
 
                         </div>
@@ -100,19 +101,85 @@
                       </h2>
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="accordion-body">
-                          Notre vision est d'apporté notre pierre à l'édifice qui contribue au développement du continent africain pour la satisfaction de nos partenaires.
-                          Elle vise à révolutionner les différentes prestations d'entreprises afin de les rendre plus adaptés au besoin des populations.
+                            Notre vision est de devenir le partenaire privilégié des principaux secteurs d’activité dont dispose le monde.
+                            En proposant des solutions avant-gardiste qui répondent aux besoins constamment changeant de nos collaborateurs.
+                            Nous aspirons à être reconnus pour notre engagement indéfectible envers l'excellence, l'innovation et la satisfaction de nos partenaires.
                         </div>
                       </div>
                     </div>
-                    {{-- <div class="accordion-item">
+                    <div class="accordion-item">
                       <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong>Titre</strong></button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong>Nos Départements</strong></button>
                       </h2>
                       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aperiam eaque! Soluta debitis velit quaerat omnis officiis ipsa quasi hic placeat architecto? Ad temporibus sunt suscipit minus nobis accusamus id?</div>
+                        <div class="accordion-body">
+                            Nous déployons une gamme diversifiée de prestation aupres de nos partenaires ,
+                            englobant une expertise a la fois intérieur et extérieur, des outils adaptés selon le
+                            secteur d’activité et selon le besoin; visant à améliorer la sécurité et le confort de conduite.
+
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> LA SANTÉ</li>
+                                <li><i class="fa-solid fa-angle-right"></i> LA SÉCURITÉ</li>
+                                <li><i class="fa-solid fa-angle-right"></i> TRANSIT ET LOGISTIQUE</li>
+                                <li><i class="fa-solid fa-angle-right"></i> TECHNOLOGIE/ÉNERGIE</li>
+                                <li><i class="fa-solid fa-angle-right"></i> TÉLÉCOMMUNICATION</li>
+                                <li><i class="fa-solid fa-angle-right"></i> FINANCES ET CONSEILS JURIDIQUES</li>
+                                <li><i class="fa-solid fa-angle-right"></i> ASSOCIATION PROFESSIONNELLE</li>
+                                <li><i class="fa-solid fa-angle-right"></i> FORMATION PROFESSIONNEL ET DIPLOMATIQUE</li>
+                                <li><i class="fa-solid fa-angle-right"></i> EMPLOI/CONCOURS</li>
+                                <li><i class="fa-solid fa-angle-right"></i> AUTO/MOTO</li>
+                                <li><i class="fa-solid fa-angle-right"></i> BÂTIMENT ET TRAVAUX PUBLICS</li>
+                                <li><i class="fa-solid fa-angle-right"></i> VOYAGE ET DÉCOUVERTE</li>
+                                <li><i class="fa-solid fa-angle-right"></i> ÉLEVAGE</li>
+                                <li><i class="fa-solid fa-angle-right"></i> ENVIRONNEMENT/AGRICULTURE</li>
+                                <li><i class="fa-solid fa-angle-right"></i> AUTRES DEPARTEMENTS</li>
+                            </ul>
+                        </div>
                       </div>
-                    </div> --}}
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFor">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor"><strong>Nos Avantages</strong></button>
+                        </h2>
+                        <div id="collapseFor" class="accordion-collapse collapse" aria-labelledby="headingFor" data-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> Notre constante vigilance envers les dernières reformes pour l’innovation
+                                    nous permet de créer des solutions novatrices prévoyant ainsi les besoins futurs du marché .
+                                </li>
+
+                                <li><i class="fa-solid fa-angle-right"></i> Nous accordons un service clientèle exemplaire. Notre équipe dévouée est présente pour guider nos clients,
+                                    de la sélection a l'utilisation de nos services.
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><strong>Histogramme</strong></button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img src="{{asset('assets/images/historigramme/1.png')}}" alt=""  class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="{{asset('assets/images/historigramme/2.png')}}" alt=""  class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="{{asset('assets/images/historigramme/3.png')}}" alt=""  class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="{{asset('assets/images/historigramme/4.png')}}" alt="" class="img-fluid">
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
 
 
                   </div>
@@ -296,7 +363,7 @@
     </section>
 
      <!-- Our Testimonials -->
-    {{--  <section class="our-testimonial">
+     <section class="our-testimonial">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="300ms">
@@ -374,17 +441,17 @@
             </div>
           </div>
         </div>
-    </section> --}}
+    </section>
 
     <!-- CTA Banner -->
-   {{--  <section class="cta-banner-about2 mx-auto maxw1700 position-relative mx20-lg pt60-lg pb60-lg">
+    <section class="cta-banner-about2 mx-auto maxw1700 position-relative mx20-lg pt60-lg pb60-lg">
       <img class="cta-about2-img d-none d-xl-block" src="{{asset('assets/images/about/about-7.png')}}" alt="">
       <div class="container">
         <div class="row">
           <div class="col-md-11 wow fadeInUp" data-wow-delay="200ms">
             <div class="main-title">
               <h2 class="title text-capitalize">Besoin de faire quelque chose?</h2>
-              <p class="text">Services les plus consultés et les plus vendus de tous les temps</p>
+              <p class="text">Vous êtes à la recherche d'une entreprise pour réaliser vos projets ?</p>
             </div>
           </div>
         </div>
@@ -392,27 +459,32 @@
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-cv"></span>
-              <h4 class="iconbox-title mt20">Selectionner un service</h4>
-              <p class="text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam repudiandae doloremque doloribus optio accusamus soluta rerum tenetur placeat cum vel, omnis consequuntur magni libero cumque nam, blanditiis esse temporibus nobis?</p>
+
+              <h4 class="iconbox-title mt20"><strong>Sélectionner un service</strong></h4>
+              <p class="text mb-0">
+                Vous êtes à la recherche d'une entreprise pour réaliser vos projets ? Notre plateforme simplifie votre choix
+                Sélectionnez votre service parmi une variété de catégories.
+              </p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-web-design"></span>
-              <h4 class="iconbox-title mt20">Choisissez choissisez l'entreprise offrant le service</h4>
-              <p class="text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eum maiores, eveniet adipisci distinctio vero neque. Soluta obcaecati, molestiae ea aliquam est assumenda reiciendis eaque non fugit? Libero, tempore ex.</p>
+              <h4 class="iconbox-title mt20"><strong>Choisissez l'entreprise offrant le service</strong></h4>
+              <p class="text mb-0">Consultez les avis et réalisations des entreprisants proposant ce service, et faites un choix éclairé pour la réalisation de votre projet</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-secure"></span>
-              <h4 class="iconbox-title mt20">Discuter avec l'entreprise sur la plateforme</h4>
-              <p class="text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos quo voluptatem vel officia magnam, molestias unde libero modi, temporibus ratione perferendis tempora blanditiis error eum nostrum voluptate deserunt aliquid?</p>
+              <h4 class="iconbox-title mt20"><strong>Discuter avec l'entreprise sur la plateforme</strong></h4>
+              <p class="text mb-0">Soumettez vos besoins à lentreprise dans un formulaire, et l'entreprise entrera en contact avec vous pour vos besoins.</p>
             </div>
           </div>
+
         </div>
       </div>
-    </section> --}}
+    </section>
 
 
 

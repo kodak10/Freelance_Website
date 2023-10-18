@@ -15,6 +15,22 @@
 
 </style>
 
+    <!-- Breadcumb Sections -->
+    <section class="breadcumb-section mt40">
+        <div class="cta-about-v1 mx-auto maxw1700 pt120 pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg">
+        <div class="container">
+            <div class="row">
+            <div class="col-xl-5">
+                <div class="position-relative">
+                    <h2 class="text-white">Les Départements</h2>
+                    <span><a href="/">Elbaragroup -></a>Départements</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
     <!-- Property Half Map V1 -->
     <section class="p-0 ">
         <div class="container">

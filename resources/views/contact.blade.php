@@ -52,6 +52,7 @@
               <div class="position-relative wow fadeInUp" data-wow-delay="300ms">
                 <h2 class="text-white">Contactez-nous</h2>
                 <p class="text mb0 text-white">Nous serions ravis de discuter de la manière dont nous pouvons vous aider.</p>
+                <span><a href="/">Elbaragroup -> </a>Contact</span>
               </div>
             </div>
           </div>
