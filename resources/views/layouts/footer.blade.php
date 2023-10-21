@@ -28,17 +28,17 @@
               <a href="/about">A Propos</a>
               <a href="/services">Touver un service</a>
               <a href="/contact">Contact</a>
-              <a href="/login">SE CONNECTER</a>
-              <a href="/register">S'INSCRIRE</a>
+              <a href="/login">Se Connecter</a>
+              <a href="/register">S'Inscrire</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="link-style1 mb-4 mb-sm-5">
-            <h5 class="text-white mb15">Catégories</h5>
+            <h5 class="text-white mb15">Nos départements</h5>
             <ul class="ps-0">
                 @foreach ($categories as $categorie )
-                    <li><a href="#">{{$categorie->libelle}}</a></li>
+                    <li><a href="#" style="text-transform: uppercase">{{$categorie->libelle}}</a></li>
                 @endforeach
 
             </ul>

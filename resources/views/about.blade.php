@@ -42,7 +42,14 @@
         color: #000000 !important;
         font-weight: 600;
     }
-
+    .breadcumb-section span{
+        margin-top: 20px;
+        font-size: 21px;
+        color: #5BBB7B;
+    }
+    .breadcumb-section span a{
+        color: #E9E9E9;
+    }
 </style>
 
   <div class="body_content">
@@ -147,7 +154,29 @@
                       </div>
                     </div>
 
-                   {{--  <div class="accordion-item">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><strong>Notre structuration au niveau national</strong></button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                          <div class="accordion-body">
+
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><strong>Notre structuration au niveau international</strong></button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                          <div class="accordion-body">
+
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFor">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor"><strong>Nos Avantages</strong></button>
                         </h2>
@@ -164,31 +193,9 @@
                             </ul>
                           </div>
                         </div>
-                      </div> --}}
+                    </div>
 
-                    {{-- <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingSix">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><strong>Histogramme</strong></button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img src="{{asset('assets/images/historigramme/1.png')}}" alt=""  class="img-fluid">
-                                </div>
-                                <div class="col-lg-6">
-                                    <img src="{{asset('assets/images/historigramme/2.png')}}" alt=""  class="img-fluid">
-                                </div>
-                                <div class="col-lg-6">
-                                    <img src="{{asset('assets/images/historigramme/3.png')}}" alt=""  class="img-fluid">
-                                </div>
-                                <div class="col-lg-6">
-                                    <img src="{{asset('assets/images/historigramme/4.png')}}" alt="" class="img-fluid">
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                    </div> --}}
+
 
 
                   </div>
@@ -200,14 +207,18 @@
       </section>
 
 
-      <section class="bgc-light-yellow pb90 pb30-md overflow-hidden maxw1700 mx-auto bdrs4">
+    <section class="bgc-light-yellow pb90 pb30-md overflow-hidden maxw1700 mx-auto bdrs4">
         <img class="left-top-img wow zoomIn d-none d-lg-block" src="{{asset('assets/images/vector-img/left-top.png')}}" alt="">
         <img class="right-bottom-img wow zoomIn d-none d-lg-block" src="{{asset('assets/images/vector-img/right-bottom.png')}}" alt="">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-8 wow fadeInRight" data-wow-delay="100ms">
-              <img src="{{asset('assets/images/historigramme/1.png')}}" >
+            <div class="col-md-8 fadeInRight" data-wow-delay="100ms">
+                <div class="cta-style6 mb30-sm">
+                    <img src="{{asset('assets/images/historigramme/1.png')}}" class="img-fluid mb-3">
+                </div>
+
             </div>
+
             <div class="col-md-4  wow fadeInLeft" data-wow-delay="300ms">
               <div class="row align-items-center">
                 <div class="col-sm-6">
@@ -545,14 +556,14 @@
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-web-design"></span>
               <h4 class="iconbox-title mt20"><strong>Choisissez l'entreprise offrant le service</strong></h4>
-              <p class="text mb-0">Consultez les avis et réalisations des entreprisants proposant ce service, et faites un choix éclairé pour la réalisation de votre projet</p>
+              <p class="text mb-0">Consultez les avis et réalisations des entreprises proposant ce service, et faites un choix éclairé pour la réalisation de votre projet</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-secure"></span>
               <h4 class="iconbox-title mt20"><strong>Discuter avec l'entreprise sur la plateforme</strong></h4>
-              <p class="text mb-0">Soumettez vos besoins à lentreprise dans un formulaire, et l'entreprise entrera en contact avec vous pour vos besoins.</p>
+              <p class="text mb-0">Veuillez compléter le formulaire renseignant vos besoins, et l'entreprise vous contactera pour en discuté.</p>
             </div>
           </div>
 
