@@ -563,7 +563,7 @@
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-secure"></span>
               <h4 class="iconbox-title mt20"><strong>Discuter avec l'entreprise sur la plateforme</strong></h4>
-              <p class="text mb-0">Veuillez compléter le formulaire renseignant vos besoins, et l'entreprise vous contactera pour en discuté.</p>
+              <p class="text mb-0">Veuillez compléter le formulaire en renseignant vos besoins, et l'entreprise vous contactera pour en discuté.</p>
             </div>
           </div>
 
