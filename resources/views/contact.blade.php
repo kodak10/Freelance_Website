@@ -39,6 +39,18 @@
         font-weight: 600;
     }
 
+    .breadcumb-section span {
+    margin-top: 20px;
+    font-size: 21px;
+    color: #5BBB7B;
+    }
+    .breadcumb-section span a {
+    color: #E9E9E9;
+    }
+    .breadcumb-section span a:hover{
+        color: #5BBB7B;
+        transition: all 0.3s
+    }
 </style>
 
     <!-- Breadcumb Sections -->

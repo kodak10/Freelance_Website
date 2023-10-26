@@ -50,6 +50,18 @@
     .breadcumb-section span a{
         color: #E9E9E9;
     }
+    .breadcumb-section span {
+    margin-top: 20px;
+    font-size: 21px;
+    color: #5BBB7B;
+    }
+    .breadcumb-section span a {
+    color: #E9E9E9;
+    }
+    .breadcumb-section span a:hover{
+        color: #5BBB7B;
+        transition: all 0.3s
+    }
 </style>
 
   <div class="body_content">
@@ -207,69 +219,7 @@
       </section>
 
 
-    <section class="bgc-light-yellow pb90 pb30-md overflow-hidden maxw1700 mx-auto bdrs4">
-        <img class="left-top-img wow zoomIn d-none d-lg-block" src="{{asset('assets/images/vector-img/left-top.png')}}" alt="">
-        <img class="right-bottom-img wow zoomIn d-none d-lg-block" src="{{asset('assets/images/vector-img/right-bottom.png')}}" alt="">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-8 fadeInRight" data-wow-delay="100ms">
-                <div class="cta-style6 mb30-sm">
-                    <img src="{{asset('assets/images/historigramme/1.png')}}" class="img-fluid mb-3">
-                </div>
 
-            </div>
-
-            <div class="col-md-4  wow fadeInLeft" data-wow-delay="300ms">
-              <div class="row align-items-center">
-                <div class="col-sm-6">
-                  <div class="funfact-style1 bdrs16 text-center ms-md-auto">
-                    <ul class="ps-0 mb-0 d-flex justify-content-center">
-
-                      {{-- <li><span>Avantage</span></li> --}}
-                    </ul>
-                    <p class="fz15 dark-color">Avantage</p>
-                  </div>
-                  <div class="funfact-style1 bdrs16 text-center ms-md-auto">
-                    <ul class="ps-0 mb-0 d-flex justify-content-center">
-
-                      {{-- <li><span>Avantage</span></li> --}}
-                    </ul>
-                    <p class="fz15 dark-color">Avantage</p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="funfact-style1 bdrs16 text-center">
-                    <ul class="ps-0 mb-0 d-flex justify-content-center">
-                      <li><div class="title mb15"></div></li>
-                    </ul>
-                    <p class="fz15 dark-color">Avantage</p>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="funfact-style1 bdrs16 text-center">
-                    <ul class="ps-0 mb-0 d-flex justify-content-center">
-                      <li><div class="title mb15"></div></li>
-                    </ul>
-                    <p class="fz15 dark-color">Avantage</p>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="funfact-style1 bdrs16 text-center">
-                    <ul class="ps-0 mb-0 d-flex justify-content-center">
-                      <li><div class="title mb15"></div></li>
-                    </ul>
-                    <p class="fz15 dark-color">Avantage</p>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
 
     <!-- About Section Area -->
     <section class="our-about pb0 pt60-lg">
