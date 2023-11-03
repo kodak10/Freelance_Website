@@ -195,13 +195,14 @@
                         <div id="collapseFor" class="accordion-collapse collapse" aria-labelledby="headingFor" data-parent="#accordionExample">
                           <div class="accordion-body">
                             <ul>
-                                <li><i class="fa-solid fa-angle-right"></i> Notre constante vigilance envers les dernières reformes pour l’innovation
-                                    nous permet de créer des solutions novatrices prévoyant ainsi les besoins futurs du marché .
-                                </li>
+                                <li><i class="fa-solid fa-angle-right"></i> Être prioritaire en cas d'appel d'offre.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Beneficie d'une réduction pour tous les produits et services en tant que membre.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> L'aide à l'atteinte de vos objectifs.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> La communication</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Une carte passe-partout de membre.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Une assistance 24h/24</li>
 
-                                <li><i class="fa-solid fa-angle-right"></i> Nous accordons un service clientèle exemplaire. Notre équipe dévouée est présente pour guider nos clients,
-                                    de la sélection a l'utilisation de nos services.
-                                </li>
+
                             </ul>
                           </div>
                         </div>
