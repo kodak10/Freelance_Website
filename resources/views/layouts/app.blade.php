@@ -34,7 +34,9 @@
 
     <!-- Apple Touch Icon -->
     <link href="{{asset('assets/images/apple-touch-icon.png')}}" sizes="60x60" rel="apple-touch-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oS3vJxgFhfqD5PdHf4yoMzjsPL3Ha1DQMEDbGBDTNEbO5kFj6Gg2MT6XBy0NeCC"
+        crossorigin="anonymous">
 
 
 

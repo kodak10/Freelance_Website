@@ -77,7 +77,7 @@
 
                                         <thead class="thead-light">
                                             <tr class="text-center">
-                                                <th class="fz15 fw500" scope="col"></th>
+                                                <th class="fz15 fw500" scope="col">N°</th>
                                                 <th class="fz15 fw500" scope="col">Service</th>
                                                 <th class="fz15 fw500" scope="col">Libelle</th>
                                                 <th class="fz15 fw500" scope="col">Delais d'execution</th>

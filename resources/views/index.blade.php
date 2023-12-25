@@ -89,7 +89,7 @@
           <div class="row align-items-center wow fadeInUp" data-wow-delay="300ms">
             <div class="col-lg-9">
               <div class="main-title2">
-                <h2 class="title">Recherchez des services par catégorie</h2>
+                <h2 class="title">Recherchez des services par catégories</h2>
                 <!-- <p class="paragraph">Get some Inspirations from 1800+ skills</p> -->
               </div>
             </div>
@@ -147,7 +147,7 @@
                   <div class="listing-style1">
                     <div class="list-thumb">
                       {{-- <img class="w-100" src="{{$tendance->image}}" alt=""> --}}
-                      <img src="{{ asset('storage/assets/images/service/' . $tendance->image) }}" alt="Photo de profil" class="photo">
+                      <img src="{{ asset('storage/assets/images/service/' . $tendance->image) }}" alt="Image de service" class="photo">
 
                       <a href="" class="listing-fav fz12"><span class="far fa-heart"></span></a>
                     </div>

@@ -45,7 +45,9 @@
         color: #000000 !important;
         font-weight: 600;
     }
-
+    .slide-detail-service .owl-dots{
+        display: none;
+    }
 </style>
 
 
@@ -139,11 +141,11 @@
                 </div>
               </div>
 
-              <div class="service-single-sldier vam_nav_style slider-1-grid owl-carousel owl-theme mb60">
+              <div class="service-single-sldier vam_nav_style slider-1-grid owl-carousel owl-theme mb60 slide-detail-service">
                 @foreach ($images as $image )
                     <div class="item">
                         <div class="thumb p50 p30-sm">
-                            <img src="{{asset('storage/assets/images/portofolio/' . $image->file_name)}}" alt="" class="w-100" style="height: 200px;">
+                            <img src="{{asset('storage/assets/images/portofolio/' . $image->file_name)}}" alt="" class="w-100" style="height: 300px;">
                         </div>
                     </div>
                 @endforeach
