@@ -90,14 +90,14 @@
                 <div class="list-meta mt30">
                   <a class="list-inline-item mb5-sm" href="#">
                     <span class="position-relative mr10">
-                      <img class="rounded-circle" src="{{asset('assets/images/team/fl-d-1.png')}}" alt="Freelancer Photo">
+                      <img class="rounded-circle" src="{{asset('assets/images/team/fl-d-1.png')}}" alt="Logo">
                       <span class="online-badge"></span>
                     </span>
                     <span class="fz14">{{$serviceDetails->entreprise_name}}</span>
                   </a>
-                  <p class="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs"><i class="fas fa-star vam fz10 review-color me-2"></i> 4.82 ;4 Commentaires</p>
+{{--                   <p class="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs"><i class="fas fa-star vam fz10 review-color me-2"></i> 4.82 ;4 Commentaires</p>
                   <p class="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs"><i class="flaticon-website vam fz20 me-2"></i> 90 visiteur</p>
-                </div>
+ --}}                </div>
               </div>
             </div>
           </div>
