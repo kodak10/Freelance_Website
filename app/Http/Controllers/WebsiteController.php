@@ -159,4 +159,18 @@ class WebsiteController extends Controller
         return view('Password.valid-email', compact('categories'));
     }
 
+    public function entreprise_service_index()
+    {
+        $categories = Departement::get();
+        $entreprises = Entreprise::paginate(8);
+        return view('entreprise', compact('categories', 'entreprises'));
+
+    }
+    public function entreprise_service($id){
+        $categories = Departement::get();
+        $entreprises = Entreprise::with('services')->find($id);
+        $services = $entreprises->services()->paginate(8);
+        return view('service_entreprises', compact('categories', 'entreprises', 'services'));
+    }
+
 }

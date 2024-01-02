@@ -52,6 +52,9 @@ Route::post('/validation', [AuthentificationController::class, 'validation'])->n
 Route::get('/verif', [WebsiteController::class, 'verif'])->name('verif');
 
 
+Route::get('/entreprise', [WebsiteController::class, 'entreprise_service_index']);
+Route::get('/entreprise/{id}', [WebsiteController::class, 'entreprise_service']);
+
 
 
 
