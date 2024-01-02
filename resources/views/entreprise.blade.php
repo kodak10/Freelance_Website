@@ -75,7 +75,7 @@
                 <div class="employer-block">
                 <div class="inner-box">
                     <div class="logo-company">
-                    <img src="{{asset('assets/images/logo-company/cty11.png')}}"
+                    <img src="{{asset('assets/website/images/logo-company/cty11.png')}}"
                         alt="logo" />
                     </div>
                     <div class="box-content">
