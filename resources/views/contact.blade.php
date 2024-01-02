@@ -57,7 +57,7 @@
               <div class="icon flex-shrink-0"><span class="flaticon-tracking"></span></div>
               <div class="details">
                 <h5 class="title">Adresse</h5>
-                <p class="mb-0 text">Cocody Deux Plateaux Vallon</p>
+                <p class="mb-0 text">Yopougon</p>
               </div>
             </div>
             <div class="iconbox-style1 contact-style d-flex align-items-start mb30">

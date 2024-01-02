@@ -119,6 +119,9 @@
         #menu-primary-menu>li>a:hover{
             color: var(--color-jaune) !important;
         }
+        .btn_registration a{
+            color: #000000 !important;
+        }
     </style>
 </head>
 
@@ -165,7 +168,7 @@
 
         @yield('content')
 
-        {{-- @include('layouts.footer') --}}
+        @include('layouts.footer')
 
     </div>
 

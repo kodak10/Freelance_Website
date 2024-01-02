@@ -86,7 +86,7 @@
                             <a href="/compagny/mon_compte"><span class="icon-mypackage"></span>Parametrage du compte</a>
                         </div>
                         <div class="sub-account-item">
-                            <a href="/compagny/create-service"><span class="icon-submit"></span>Poster un service</a>
+                            <a href="/compagny/service/create"><span class="icon-submit"></span>Poster un service</a>
                         </div>
                         <div class="sub-account-item">
                             <a href="/compagny/service"><span class="icon-work"></span>Mes Services</a>
@@ -194,7 +194,7 @@
                     <div class="header-customize-item button mr-3">
                         <a href="/connexion">Se Connecter</a>
                     </div>
-                    <div class="header-customize-item button">
+                    <div class="header-customize-item button btn_registration">
                         <a href="/inscription">S'inscire</a>
                     </div>
                 @endguest
