@@ -46,7 +46,7 @@
                 @auth
 
                 <div class="header-customize-item account">
-                    <img src="{{asset('assets/images/user/avatar/image-01.jpg')}}" alt="" />
+                    <img src="{{asset('assets/website/images/user/avatar/image-01.jpg')}}" alt="" />
                     @if (auth()->user()->hasRole('client'))
                         <div class="name">
                             {{Auth::user()->name}}<span class="icon-keyboard_arrow_down"></span>
