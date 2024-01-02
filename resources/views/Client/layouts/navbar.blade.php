@@ -72,7 +72,7 @@
                             <li class="user_setting">
                                 <div class="dropdown">
                                     <a class="btn" href="#" data-bs-toggle="dropdown">
-                                        <img src="{{ asset('public/storage/assets/images/profil/' . Auth::user()->client->photo) }}" alt="Photo de profil" class="photo">
+                                        <img src="{{ asset('storage/assets/images/profil/' . Auth::user()->client->photo) }}" alt="Photo de profil" class="photo">
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">

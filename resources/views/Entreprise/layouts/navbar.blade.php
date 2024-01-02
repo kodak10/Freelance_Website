@@ -10,6 +10,7 @@
 
     }
 </style>
+
 <header class="header-nav nav-innerpage-style menu-home4 dashboard_header main-menu">
     <!-- Ace Responsive Menu -->
     <nav class="posr">
@@ -72,7 +73,11 @@
                             <li class="user_setting">
                                 <div class="dropdown">
                                     <a class="btn" href="#" data-bs-toggle="dropdown">
-                                        <img src="{{ asset('public/storage/assets/images/profil/' . Auth::user()->compagny->photo) }}" alt="Photo de profil" class="photo">
+                                       
+                                        
+                                        <img src="{{ asset('storage/assets/images/profil/' . Auth::user()->compagny->photo) }}" alt="Photo de profil" class="photo">
+
+                                        
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="user_setting_content">

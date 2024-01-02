@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
+use App\Models\Departement;
+use App\Models\Entreprise;
 use App\Models\Image;
 use App\Models\Service;
-use App\Models\Departement;
-use Illuminate\Http\Request;
 use App\Models\ServiceEntreprise;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class WebsiteController extends Controller
 {
@@ -20,10 +22,10 @@ class WebsiteController extends Controller
     public function index(Request $request)
     {
         $categories = Departement::get();
-        $categories_min = Departement::paginate(4);
-        $tendances = Service::has('entreprises')->paginate(8);
-
-        return view('index', compact('categories', 'tendances', 'categories_min'));
+        $categories_smalls = Departement::take(10)->get();
+        $entreprises = Entreprise::take(8)->get();
+        $services = Service::take(8)->get();
+        return view('index', compact('entreprises', 'categories', 'categories_smalls', 'services'));
     }
 
     public function services()
@@ -43,11 +45,11 @@ class WebsiteController extends Controller
             ->where('services.libelle', $slug)
             ->where('entreprises.approve', '=' , '1')
             ->select('*')
-            ->get();
+            ->paginate(10);
 
 
         $categories = Departement::get();
-        return view('show_entreprise_service', compact('serviceEntreprises', 'categories'));
+        return view('show_entreprises_services', compact('serviceEntreprises', 'categories'));
     }
 
     public function serviceShow($entreprise_nom)
@@ -66,28 +68,12 @@ class WebsiteController extends Controller
         ->join('services', 'service_entreprises.service_id', '=', 'services.id')
         ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
         ->where('entreprises.name', $entreprise_nom)
-        ->select('service_entreprises.service_id',
-        'service_entreprises.entreprise_id',
-
-        'entreprises.id as entreprise_id',
-        'services.id as services_id',
-
-        'service_entreprises.libelle as se_libelle',
-        'service_entreprises.description as se_description',
-        'service_entreprises.delais_execution as delais_execution',
-        'service_entreprises.image as se_image',
-        'services.libelle as service_libelle',
-        'entreprises.name as entreprise_name',
-        'entreprises.type_entreprise as type_entreprise',
-        'entreprises.localisation as localisation',
-        'services.libelle as service_libelle',
-
-
-        )
+        ->select('*')
+        
         ->first();
 
         $categories = Departement::get();
-        return view('services_details', compact('serviceDetails', 'categories', 'images'));
+        return view('show_services_details', compact('serviceDetails', 'categories', 'images'));
     }
 
     public function about()

@@ -154,6 +154,24 @@ class ServiceEntrepriseController extends Controller
             'delais_execution' => $request->delais,
 
         );
+         if ($request->hasFile('images')) {
+                $images = $request->file('images');
+
+                foreach ($images as $image) {
+                    // Générez un nom de fichier unique pour chaque image
+                    $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
+
+                    // Stockez chaque image dans le répertoire spécifié
+                    $imagePath = $image->storeAs('public/assets/images/portofolio', $imageName);
+
+                    // Créez un nouvel enregistrement dans la table "images" pour chaque image
+                    $newImage = new Image();
+                    $newImage->file_name = $imageName;
+                    $newImage->file_path = $imagePath;
+                    $newImage->service_entreprise_id = $serviceEntrepriseId; // Remplacez par l'ID du service
+                    $newImage->save();
+                }
+            }
 
 
         if ($services->update($data)) {

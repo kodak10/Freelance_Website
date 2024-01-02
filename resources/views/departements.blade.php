@@ -1,76 +1,95 @@
 @extends('layouts.app')
 @section('content')
-
 <style>
-    .mobilie_header_nav{
-        background-color: #5BBB7B !important;
-    }
-    header.nav-homepage-style {
-        position: relative;
-    }
-    header.nav-homepage-style a{
-        color: #000000 !important;
-    }
 
-    .breadcumb-section span {
-    margin-top: 20px;
-    font-size: 21px;
-    color: #5BBB7B;
-    }
-    .breadcumb-section span a {
-    color: #E9E9E9;
-    }
-    .breadcumb-section span a:hover{
-        color: #5BBB7B;
-        transition: all 0.3s
-    }
+  .nav-mobile{
+    background-color: var(--color-bleu) !important;
+  }
+</style>
+<style>
+  .features-job .job-archive-header h3 a{
+      font-weight: 600 !important;
+  }
+  .bgc-thm2 {
+      background-color: var(--color-bleu) !important;
+  }
+  .tf-slider.sl3 {
 
+      background: var(--color-bleu) !important;
+  }
+  .btn-category-job{
+      color: var(--color-jaune) !important;
+  }
+  .job-category-header h1 a{
+      color: var(--color-bleu) !important;
+  }
 
+  .tf-button{
+      border-color: var(--color-jaune) !important;
+  }
+  .tf-iconbox path{
+      color: var(--color-bleu) !important;
+  }
+  .position{
+      color: var(--color-bleu) !important;
+  }
+  .box-header path{
+      color: var(--color-jaune) !important;
+  }
+  .wd-list-icon path{
+      color: var(--color-jaune) !important;
+  }
+  .nice-select .option{
+    text-transform: uppercase !important;
+  }
+  #header.style-absolute #main-nav #menu-primary-menu>li>a{
+      color: #000000 !important;
+    }
+    #header.style-absolute #main-nav #menu-primary-menu>li>a:hover{
+      color: var(--color-jaune) !important;
+    }
+    #header.style-absolute #main-nav #menu-primary-menu>li.current-item>a{
+      color: var(--color-jaune) !important ;
+    }
 </style>
 
-    <!-- Breadcumb Sections -->
-    <section class="breadcumb-section mt40">
-        <div class="cta-about-v1 mx-auto maxw1700 pt120 pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg">
-        <div class="container">
-            <div class="row">
-            <div class="col-xl-5">
-                <div class="position-relative">
-                    <h2 class="text-white">Les Départements</h2>
-                    <span><a href="/">Elbaragroup -></a>Départements</span>
+
+  <section class="account-section">
+    <div class="tf-container">
+      <div class="row">
+        <section class="page-title-dashboard">
+            <div class="themes-container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 ">
+                  <div class="title-dashboard">
+                    <div class="title-dash flex2">Catégories</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
+    </div>
+  </section>
+  <section class="job-category-section">
+    <div class="tf-container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="group-category-job wow fadeInUp">
+                    @foreach($categories as $categorie)
+                        <div class="job-category-box">
+                            <div class="job-category-header">
+                                <h1><a href="">{{$categorie->libelle}}</a></h1>
+                                <p>120 services disponible</p>
+                            </div>
+                            <a href="" class="btn-category-job">Voir les services <span class="icon-keyboard_arrow_right"></span></a>
+                        </div>
+                    @endforeach
+
                 </div>
             </div>
-            </div>
         </div>
-        </div>
-    </section>
-
-    <!-- Property Half Map V1 -->
-    <section class="p-0 ">
-        <div class="container">
-            <div class="row wow fadeInUp mt-5" data-wow-delay="300ms">
-                <div class="col-lg-12">
-                    <div class="half_map_area_content mt30">
-                        <div class="row d-block d-lg-flex wow fadeInUp">
-                            @foreach ($categories as $categorie )
-                                <div class="col-sm-6 col-lg-4 col-xl-3">
-                                    <div class="iconbox-style1">
-                                        <div class="icon"><i class="{{$categorie->icones}}"></i></div>
-                                    <div class="details mt20">
-                                        <h4 class="title"><strong>{{$categorie->libelle}}</strong></h4>
-                                        @foreach ($categorie->services as $service )
-                                            <p class="mb-0"><a href="{{ route('EntrepriseService.show', ['slug' => $service->id]) }}">{{$service->libelle}}</a></p>
-                                        @endforeach
-                                    </div>
-                                </div>
-                              </div>
-                            @endforeach
-                          </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
+    </div>
+</section>
 @endsection

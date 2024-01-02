@@ -38,8 +38,8 @@ Route::get('/reset', function(){
     return view('reset')->name('reset');
 });
 
-Route::get('/login', [WebsiteController::class, 'login'])->name('login');
-Route::get('/register', [WebsiteController::class, 'register'])->name('register');
+Route::get('/connexion', [WebsiteController::class, 'login'])->name('login');
+Route::get('/inscription', [WebsiteController::class, 'register'])->name('inscription');
 
 
 Route::get('/forget', [WebsiteController::class, 'forget_password']);
@@ -56,9 +56,9 @@ Route::get('/verif', [WebsiteController::class, 'verif'])->name('verif');
 
 
 // Route Auth
-Route::post('/login', [AuthentificationController::class, 'login'])->name('postLogin');
-Route::post('/register/client', [AuthentificationController::class, 'registerClient'])->name('inscriptionClient');
-Route::post('/register/entreprise', [AuthentificationController::class, 'registerEntreprise'])->name('inscriptionEntreprise');
+Route::post('/connexion', [AuthentificationController::class, 'login'])->name('postLogin');
+Route::post('/inscription_client', [AuthentificationController::class, 'registerClient'])->name('inscriptionClient');
+Route::post('/inscription_entreprise', [AuthentificationController::class, 'registerEntreprise'])->name('inscriptionEntreprise');
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout' ])->name('logout');
 
 

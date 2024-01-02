@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Carbon;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Session;
+
 
 
 
@@ -31,7 +33,6 @@ class AuthentificationController extends Controller
             'prenoms' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255', 'unique:users'],
             'telephone' => ['required', 'string', 'max:255'],
-            'dat_nais' => ['required', 'date'],
             'password' => ['required', 'min:6', 'confirmed'],
         ];
 
@@ -40,7 +41,6 @@ class AuthentificationController extends Controller
             'prenoms.required' => 'Le champ prénoms est requis.',
             'telephone.required' => 'Le champ téléphone est requis.',
             'telephone.unique' => 'Le champ téléphone est déjà utilisée par un autre utilisateur.',
-            'dat_nais.required' => 'Le champ date de naissance est requis.',
             'password.required' => 'Le champ mot de passe est requis.',
             'password.confirmed' => 'Les deux mot de passe ne correspondent pas.',
             'password.min' => 'Le mot de passe doit contenir au moins 6 caractères.',
@@ -68,12 +68,12 @@ class AuthentificationController extends Controller
             'name' => $request->nom,
             'prenoms' => $request->prenoms,
             'telephone' => $request->telephone,
-            'date_naissance' => $request->dat_nais,
             'user_id' => $user->id,
         ]);
 
-        return redirect()->route('verif')->with('success','Votre inscription à été prise en compte');
+        Session::flash('success', 'Inscription réussie ! Connectez-vous maintenant.');
 
+        return redirect()->route('inscription');
     }
 
     public function registerEntreprise(Request $request)
@@ -134,8 +134,9 @@ class AuthentificationController extends Controller
             'image' => 'default.jpg',
         ]);
 
-        return redirect()->route('verif')->with('success','Votre inscription à été prise en compte');
+        Session::flash('success', 'Inscription réussie ! Connectez-vous maintenant.');
 
+        return redirect()->route('inscription');
     }
 
     public function registerServiceClient(Request $request)
@@ -175,7 +176,7 @@ class AuthentificationController extends Controller
 
         // Si l'utilisateur est un client
         if (Auth::user()->hasRole('client')) {
-            return redirect('/login')->with(["success" => true, "message" => "Vous êtes connecter avec succès"], 403);
+            return redirect('/connexion')->with(["success" => true, "message" => "Vous êtes connecter avec succès"], 403);
         }
 
         // Si l'utilisateur est une entreprise
@@ -183,12 +184,12 @@ class AuthentificationController extends Controller
         if (Auth::user()->hasRole('compagny')) {
 
             if (Auth::user()->compagny->approve != 0) {
-                return redirect('/login')->with(["success" => true, "message" => "Vous êtes connecter avec succès"], 403);
+                return redirect('/connexion')->with(["success" => true, "message" => "Vous êtes connecter avec succès"], 403);
             }
 
             else if (Auth::user()->compagny->approve !== 0) {
                 auth()->user()->tokens()->delete();
-                return redirect('/login')->with(["success" => false, "message" => "Votre compte est en attente de vérification"], 403);
+                return redirect('/connexion')->with(["success" => false, "message" => "Votre compte est en attente de vérification"], 403);
             }
 
 
