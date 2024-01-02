@@ -38,7 +38,7 @@
     <link rel="apple-touch-icon-precomposed" href="{{asset('assets/website/images/favicon.png')}}">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/stylesheets/responsive.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/responsive.css')}}" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
