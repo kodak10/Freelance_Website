@@ -91,22 +91,22 @@
               <div class="wd-review-job thumb2 widget-counter tf-sl3">
                 <div class="thumb">
                   <div class="box1">
-                    <img src="{{asset('assets/images/review/thumb5.png')}}" alt="images" />
+                    <img src="{{asset('assets/website/images/review/thumb5.png')}}" alt="images" />
                     <div class="markk ani3">
-                      <img src="{{asset('assets/images/review/shape3.png')}}" alt="images" />
+                      <img src="{{asset('assets/website/images/review/shape3.png')}}" alt="images" />
                     </div>
                   </div>
                   <div class="box2">
-                    <img src="{{asset('assets/images/review/thumb6.png')}}" alt="images" />
+                    <img src="{{asset('assets/website/images/review/thumb6.png')}}" alt="images" />
                     <div class="markk ani3">
-                      <img src="{{asset('assets/images/review/shape4.png')}}" alt="images" />
+                      <img src="{{asset('assets/website/images/review/shape4.png')}}" alt="images" />
                     </div>
                   </div>
                 </div>
                 <div class="tes-box ani5">
                   <div class="client-box">
                     <div class="avt">
-                      <img src="{{asset('assets/images/review/client.jpg')}}" alt="images" />
+                      <img src="{{asset('assets/website/images/review/client.jpg')}}" alt="images" />
                       <div class="badge"></div>
                     </div>
                     <div class="content">
@@ -116,13 +116,13 @@
                   </div>
                 </div>
                 <div class="icon1 ani3">
-                  <img src="{{asset('assets/images/review/icon2.png')}}" alt="images" />
+                  <img src="{{asset('assets/website/images/review/icon2.png')}}" alt="images" />
                 </div>
                 <div class="icon2 ani4">
-                  <img src="{{asset('assets/images/review/icon3.png')}}" alt="images" />
+                  <img src="{{asset('assets/website/images/review/icon3.png')}}" alt="images" />
                 </div>
                 <div class="icon3 ani6">
-                  <img src="{{asset('assets/images/review/icon11.png')}}" alt="images" />
+                  <img src="{{asset('assets/website/images/review/icon11.png')}}" alt="images" />
                 </div>
                 <!-- bug counter -->
                 <div class="chart-box counter">
@@ -166,7 +166,7 @@
                                     <h1><a href="">{{$categories_small->libelle}}</a></h1>
                                     <p>120 services disponible</p>
                                 </div>
-                                <a href="/service" class="btn-category-job">Voir les services <span class="icon-keyboard_arrow_right"></span></a>
+                                <a href="/services" class="btn-category-job">Voir les services <span class="icon-keyboard_arrow_right"></span></a>
                             </div>
                         @endforeach
 
@@ -501,7 +501,7 @@
                 </div>
                 <div class="box-content">
                 <h1 class="box-title">
-                    <a href="about-us.html">Lorem ipsum dolor sit amet</a>
+                    <a href="#">Lorem ipsum dolor sit amet</a>
                 </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -583,7 +583,7 @@
                         <p class="description">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -630,7 +630,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -677,7 +677,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -724,7 +724,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -782,7 +782,7 @@
             <div class="box">
               <div class="column-6">
                 <div class="img-iconbox">
-                  <img src="{{asset('assets/images/about/about-7.jpg')}}" alt="image" />
+                  <img src="{{asset('assets/website/images/about/about-7.jpg')}}" alt="image" />
                 </div>
               </div>
               <div class="column-6">
@@ -1016,22 +1016,22 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                 <a class="logo-partner" href="#">
-                    <img src="images/partners/Logo.png" alt="images/partners/Logo.png">
+                    <img src="images/website/partners/Logo.png" alt="images/partners/Logo.png">
                 </a>
                 </div>
                 <div class="swiper-slide">
                 <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-1.png" alt="images/partners/Logo.png">
+                    <img src="images/website/partners/Logo-1.png" alt="images/partners/Logo.png">
                 </a>
                 </div>
                 <div class="swiper-slide">
                 <a href="#" class="logo-partner">
-                    <img  src="images/partners/Logo-2.png" alt="images/partners/Logo.png">
+                    <img  src="images/website/partners/Logo-2.png" alt="images/partners/Logo.png">
                 </a>
                 </div>
                 <div class="swiper-slide">
                 <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-3.png" alt="images/partners/Logo.png">
+                    <img src="images/website/partners/Logo-3.png" alt="images/partners/Logo.png">
                 </a>
                 </div>
                 <div class="swiper-slide">
@@ -1121,7 +1121,7 @@
             <div class="col-lg-6 col-md-12">
               <div class="wd-review-job thumb2 widget-counter">
                 <div class="thumb">
-                  <img src="{{asset('assets/images/review/thumb2.png')}}" alt="images" />
+                  <img src="{{asset('assets/website/images/review/thumb2.png')}}" alt="images" />
                 </div>
                 <div class="trader-box">
                   <div class="content">
@@ -1131,13 +1131,13 @@
                     <div class="des">Services disponibles</div>
                   </div>
                   <div class="shape ani7">
-                    <img src="{{asset('assets/images/review/shape.png')}}" alt="images" />
+                    <img src="{{asset('assets/website/images/review/shape.png')}}" alt="images" />
                   </div>
                 </div>
                 <div class="tes-box ani5">
                   <div class="client-box">
                     <div class="avt">
-                      <img src="{{asset('assets/images/review/client.jpg')}}" alt="images" />
+                      <img src="{{asset('assets/website/images/review/client.jpg')}}" alt="images" />
                       <div class="badge"></div>
                     </div>
                     <div class="content">
@@ -1149,13 +1149,13 @@
                   </div>
                 </div>
                 <div class="icon1 ani3">
-                  <img src="{{asset('assets/images/review/icon1.png')}}" alt="images" />
+                  <img src="{{asset('assets/website/images/review/icon1.png')}}" alt="images" />
                 </div>
                 <div class="icon2 ani1">
-                  <img src="{{asset('assets/images/review/icon2.png')}}" alt="images" />
+                  <img src="{{asset('assets/website/images/review/icon2.png')}}" alt="images" />
                 </div>
                 <div class="icon3 ani6">
-                  <img src="{{asset('assets/images/review/icon3.png')}}" alt="images" />
+                  <img src="{{asset('assets/website/images/review/icon3.png')}}" alt="images" />
                 </div>
               </div>
             </div>
