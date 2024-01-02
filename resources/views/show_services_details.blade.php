@@ -26,7 +26,7 @@
     }
 </style>
 <section class="single-job-thumb">
-    <img src="{{asset('assets/images/review/singlejob.jpg')}}" alt="images">
+    <img src="{{asset('assets/website/images/review/singlejob.jpg')}}" alt="images">
 </section>
 
 <section class="form-sticky fixed-space">
