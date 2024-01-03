@@ -79,19 +79,16 @@
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="logo-company">
-                                            <img class="img-fluid w-100" src="{{$service->image}}"
-                                                alt="image" />
+                                            <img class="img-fluid w-100" src="{{ asset('assets/images/services/' . $service->image) }}" alt="image" />
+
                                         </div>
                                    </div>
                                     <div class="col-lg-8">
                                         <div class="box-content">
-
                                             <h3>
                                                 <a href="{{ route('EntrepriseService.show', ['slug' => $service->libelle]) }}">{{$service->libelle}} </a>
                                                 <span class="icon-bolt"></span>
                                             </h3>
-
-
                                         </div>
                                     </div>
                                 </div>
