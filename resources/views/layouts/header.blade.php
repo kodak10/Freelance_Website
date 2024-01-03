@@ -58,11 +58,11 @@
                         </div>
 
                         <div class="sub-account-item">
-                            <a href="/user/mon_compte"><span class="icon-mypackage"></span>Parametrage du compte</a>
+                            <a href="/user/profil/edit"><span class="icon-mypackage"></span>Parametrage du compte</a>
                         </div>
 
                         <div class="sub-account-item">
-                            <a href="/user/message"><span class="icon-chat"></span>Messages</a>
+                            <a href="#"><span class="icon-chat"></span>Messages</a>
                         </div>
 
                         <div class="sub-account-item">
@@ -86,7 +86,7 @@
                         </div>
 
                         <div class="sub-account-item">
-                            <a href="/compagny/mon_compte"><span class="icon-mypackage"></span>Parametrage du compte</a>
+                            <a href="/compagny/profil/edit"><span class="icon-mypackage"></span>Parametrage du compte</a>
                         </div>
                         <div class="sub-account-item">
                             <a href="/compagny/service/create"><span class="icon-submit"></span>Poster un service</a>
@@ -95,7 +95,7 @@
                             <a href="/compagny/service"><span class="icon-work"></span>Mes Services</a>
                         </div>
                         <div class="sub-account-item">
-                            <a href="/compagny/message"><span class="icon-chat"></span>Messages</a>
+                            <a href="#"><span class="icon-chat"></span>Messages</a>
                         </div>
 
                         <div class="sub-account-item">
