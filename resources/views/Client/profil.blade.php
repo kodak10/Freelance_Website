@@ -81,13 +81,7 @@
                                             </div>
                                         </div>
     
-                                        <!-- Date de naissance -->
-                                        <div class="form-group">
-                                            <label for="date_naissance" class="col-md-4 control-label">Date de naissance</label>
-                                            <div class="col-md-6">
-                                                <input id="date_naissance" type="date" class="form-control" name="date_naissance" value="{{ old('date_naissance', Auth::user()->client->date_naissance) }}">
-                                            </div>
-                                        </div>
+                                       
     
                                        <!-- Acien Mot de passe -->
                                     <div class="form-group">

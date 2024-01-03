@@ -75,7 +75,7 @@ class ClientController extends Controller
     if ($request->hasFile('image')) {
         $image = $request->file('image');
         $imageName = $user->id . '_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-        $image->storeAs('public/assets/images/profil', $imageName);
+        $image->move(public_path)('public/assets/images/profil', $imageName);
         $client->photo = $imageName;
     }
 
