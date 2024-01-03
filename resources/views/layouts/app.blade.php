@@ -40,7 +40,7 @@
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/responsive.css')}}" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJopfHf5fZ5l2cN6UARb2m5p1XM2rC2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <style>
         :root {

@@ -1017,7 +1017,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                 <a class="logo-partner" href="#">
-                    <img src="{{asset('assets/website/images/partners/Logo.png')}}" alt="iLogo.png">
+                    <img src="{{asset('assets/website/images/partners/01.png')}}" alt="Logo.png">
                 </a>
                 </div>
                 <div class="swiper-slide">

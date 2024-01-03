@@ -82,7 +82,7 @@
                         <ul class="pop-up">
                             @foreach ($categories as $categorie )
                             <li>
-                                <a class="text-uppercase" href="#"><span class="{{$categorie->icones}}"></span>{{$categorie->libelle}}</a>
+                                <a class="text-uppercase" href="#"><i class="{{$categorie->icones}}"></i>{{$categorie->libelle}}</a>
                             </li>
                         @endforeach
                         </ul>

@@ -637,80 +637,80 @@
         </div>
     </section>
 
-    <section class="d-none">
-        <div class="wd-partner">
-        <div class="tf-container">
-            <h1 class="title-partner">
-            Over 100,000 recruiters use Jobtex to modernize their hiring
-            </h1>
-            <div class="swiper partner-type-6">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                <a class="logo-partner" href="#">
-                    <img src="images/partners/Logo.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-1.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img  src="images/partners/Logo-2.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-3.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img  src="images/partners/Logo-4.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-5.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-1.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-2.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-3.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-4.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-                <div class="swiper-slide">
-                <a href="#" class="logo-partner">
-                    <img src="images/partners/Logo-5.png" alt="images/partners/Logo.png">
-                </a>
-                </div>
-            </div>
+    <section class="">
+      <div class="wd-partner">
+      <div class="tf-container">
+          <h1 class="title-partner">
+         Nos partenaires
+          </h1>
+          <div class="swiper partner-type-6">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+              <a class="logo-partner" href="#">
+                  <img src="{{asset('assets/website/images/partners/01.png')}}" alt="Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo-1.png')}}" alt="Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img  src="{{asset('assets/website/images/partners/Logo-2.png')}}" alt="Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo-3.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img  src="{{asset('assets/website/images/partners/Logo-4.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo-5.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo-1.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo-2.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo-3.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo-4.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+              <div class="swiper-slide">
+              <a href="#" class="logo-partner">
+                  <img src="{{asset('assets/website/images/partners/Logo-5.png')}}" alt="images/partners/Logo.png">
+              </a>
+              </div>
+          </div>
 
-            </div>
-        </div>
-        </div>
-    </section>
+          </div>
+      </div>
+      </div>
+  </section>
 
     <!-- CTA Banner -->
     <section class="cta-banner-about2 mx-auto maxw1700 position-relative mx20-lg pt60-lg pb60-lg">
