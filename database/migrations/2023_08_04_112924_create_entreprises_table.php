@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('regime');
             $table->string('localisation');
-            $table->string('photo')->nullable();
+            $table->string('photo')->default('logo');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
