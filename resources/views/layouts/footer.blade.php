@@ -42,7 +42,7 @@
                         </form> --}}
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-6 col-6">
+                <div class="col-lg-2 col-md-6 col-6">
                     <div class="footer-cl-2">
                         <h6 class="ft-title">
                             Lien de navigation
@@ -59,36 +59,32 @@
                         </ul>
                     </div>
                 </div>
-                {{-- <div class="col-lg-2 col-md-4 col-6">
+                <div class="col-lg-2 col-md-4 col-6">
                     <div class="footer-cl-3">
                         <h6 class="ft-title">
-                            For Candidates
+                            Actions entreprises
                         </h6>
                         <ul class="navigation-menu-footer">
-                            <li> <a href="dashboard.html">User Dashboard</a> </li>
-                            <li> <a href="sample-cv.html">CV Packages</a> </li>
-                            <li> <a href="candidate-list-sidebar.html">Candidate Listing</a> </li>
-                            <li> <a href="candidate-grid.html">Candidates Grid</a> </li>
-                            <li> <a href="about-us.html">About us</a> </li>
-                            <li> <a href="contact-us.html">Contact us </a> </li>
+                            <li> <a href="/compagny">Menu Général</a> </li>
+                            <li> <a href="/compagny/profil/edit">Paramètre de compte</a> </li>
+                            <li> <a href="/compagny/service/create">Poster un Service</a> </li>
+                            <li> <a href="/compagny/service">Mes services</a> </li>
+                            <li> <a href="#">Messages</a> </li>
                         </ul>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-2 col-md-4 col-6">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
                     <div class="footer-cl-4">
                         <h6 class="ft-title">
-                            For Employers
+                            Actions clients
                         </h6>
                         <ul class="navigation-menu-footer">
-                            <li> <a href="find-jobs-list.html">Post New Job</a> </li>
-                            <li> <a href="employers-list.html">Employer Listing</a> </li>
-                            <li> <a href="employers-grid-sidebar.html">Employers Grid</a> </li>
-                            <li> <a href="find-jobs-list.html">Job Packages</a> </li>
-                            <li> <a href="find-jobs-list.html">Jobs Listing</a> </li>
-                            <li> <a href="find-jobs-grid.html">Jobs Style Grid</a> </li>
+                            <li> <a href="/user">Menu Général</a> </li>
+                            <li> <a href="/user/profil/edit">Paramétrage de compte</a> </li>
+                            <li> <a href="#">Messages</a> </li>
                         </ul>
                     </div>
-                </div> --}}
+                </div>
                 
             </div>
         </div>
