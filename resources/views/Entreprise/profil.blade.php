@@ -134,6 +134,32 @@
                                     </div>
 
 
+                                    <hr class="mt-3 mb-3">
+
+
+               
+                                    <div class="form-group">
+                                        <label for="nom" class="col-md-4 control-label">Site Web</label>
+                                        <div class="col-md-6">
+                                            <input style="text-transform: uppercase"  type="text" class="form-control"  name="site_web" value="{{ old('site_web', Auth::user()->compagny->site_web) }}">
+                                        </div>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="nom" class="col-md-4 control-label">Page Facebook</label>
+                                        <div class="col-md-6">
+                                            <input style="text-transform: uppercase"  type="text" class="form-control"  name="facebook" value="{{ old('facebook', Auth::user()->compagny->facebook) }}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nom" class="col-md-4 control-label">A Propos de vous</label>
+                                        <div class="col-md-12">
+                                            <textarea class="form-control" value="{{ old('about', Auth::user()->compagny->about) }}" name="about" id="" cols="30" rows="5"></textarea>
+                                        </div>
+                                    </div>
+
+
+
                                     <div class="form-group">
                                         <div class="col-md-6 col-md-offset-4">
                                             <button type="submit" class="btn btn-primary">

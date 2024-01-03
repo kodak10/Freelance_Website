@@ -97,6 +97,9 @@ class EntrepriseController extends Controller
     $compagny->name = $request->input('name');
     $compagny->nationalite = $request->input('nationalite');
     $compagny->telephone = $request->input('telephone');
+    $compagny->site_web = $request->input('site_web');
+    $compagny->about = $request->input('about');
+    $compagny->facebook = $request->input('facebook');
 
 
     $user->save();
