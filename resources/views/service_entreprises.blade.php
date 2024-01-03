@@ -79,7 +79,7 @@
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="logo-company">
-                                            <img class="img-fluid w-100" src="{{ asset('assets/images/services/' . $service->image) }}" alt="image" />
+                                            <img class="img-fluid w-100" src="{{ asset($service->image) }}" alt="image" />
 
                                         </div>
                                    </div>
