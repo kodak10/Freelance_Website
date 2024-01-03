@@ -46,8 +46,9 @@
                 @auth
 
                 <div class="header-customize-item account">
-                    <img src="{{asset('assets/website/images/user/avatar/image-01.jpg')}}" alt="" />
+                    
                     @if (auth()->user()->hasRole('client'))
+                    <img src="{{ asset('assets/images/profil/' . Auth::user()->client->photo) }}" alt="logo profil" />
                         <div class="name">
                             {{Auth::user()->name}}<span class="icon-keyboard_arrow_down"></span>
                         </div>
@@ -74,6 +75,8 @@
                         </div>
 
                     @elseif(auth()->user()->hasRole('compagny'))
+                    <img src="{{ asset('assets/images/profil/' . Auth::user()->compagny->photo) }}" alt="logo profil" />
+
                         <div class="name">
                             {{Auth::user()->name}}<span class="icon-keyboard_arrow_down"></span>
                         </div>
