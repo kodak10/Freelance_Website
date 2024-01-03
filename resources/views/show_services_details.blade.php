@@ -36,7 +36,7 @@
     <div class="wd-job-author2">
       <div class="content-left">
         <div class="thumb">
-          <img src="{{$serviceDetails->photo}}" alt="logo">
+          <img src="{{ asset('assets/images/profil/' . $serviceDetails->photo) }}" alt="logo">
         </div>
         <div class="content">
           <a href="#" class="category">{{$serviceDetails->libelle}}</a>

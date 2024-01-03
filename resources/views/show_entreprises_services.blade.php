@@ -51,7 +51,7 @@
                     @forelse ($serviceEntreprises as $serviceEntreprise)
                         <div class="job-category-box">
                             <div class="logo">
-                                <img class="img-fluid" src="{{asset('assets/website/images/dashboard/logo-company-4.png')}}" alt="image">
+                                <img class="img-fluid" src="{{ asset('assets/images/profil/' . $serviceEntreprise->photo) }}" alt="image">
 
                             </div>
                             <div class="job-category-header">
