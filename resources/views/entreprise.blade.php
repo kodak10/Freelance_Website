@@ -75,7 +75,7 @@
                 <div class="employer-block">
                 <div class="inner-box">
                     <div class="logo-company">
-                    <img class="img-fluid" src="{{asset('assets/images/profil/' . $entreprise->photo)}}"
+                    <img class="img-fluid" src="{{ asset('assets/images/profil/' . $entreprise->photo) }}"
                         alt="logo" />
                     </div>
                     <div class="box-content">

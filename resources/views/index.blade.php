@@ -531,8 +531,9 @@
                         <div class="employer-block">
                         <div class="inner-box">
                             <div class="logo-company">
-                            <img src="{{asset('assets/website/images/logo-company/cty11.png')}}"
-                                alt="logo" />
+                              <img src="{{ asset('assets/images/profil/' . $entreprise->photo) }}" alt="logo" />
+
+
                             </div>
                             <div class="box-content">
                             {{-- <div class="star">
