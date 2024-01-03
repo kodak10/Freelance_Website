@@ -75,7 +75,7 @@
                                     <a class="btn" href="#" data-bs-toggle="dropdown">
                                        
                                         
-                                        <img src="{{ asset('storage/assets/images/profil/' . Auth::user()->compagny->photo) }}" alt="Photo de profil" class="photo">
+                                        <img src="{{ asset('assets/images/profil/' . Auth::user()->compagny->photo) }}" alt="Photo de profil" class="photo">
 
                                         
                                     </a>
