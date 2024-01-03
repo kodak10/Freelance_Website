@@ -75,10 +75,9 @@ class ClientController extends Controller
     if ($request->hasFile('image')) {
         $image = $request->file('image');
         $imageName = $user->id . '_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path)('public/assets/images/profil', $imageName);
+        $image->move(public_path('assets/images/profil'), $imageName);
         $client->photo = $imageName;
     }
-
 
     $user->name = $request->input('name');
 
@@ -86,10 +85,8 @@ class ClientController extends Controller
     $client->prenoms = $request->input('prenoms');
     $client->telephone = $request->input('telephone');
 
-
     $user->save();
     $client->save();
-
 
     return redirect('/user/profil/edit')->with('success', 'Profil mis à jour avec succès.');
 }
