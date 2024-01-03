@@ -76,7 +76,7 @@
                 <div class="col-lg-2 col-md-4 col-6">
                     <div class="footer-cl-4">
                         <h6 class="ft-title">
-                            Actions clients
+                            Actions clients 
                         </h6>
                         <ul class="navigation-menu-footer">
                             <li> <a href="/user">Menu Général</a> </li>
