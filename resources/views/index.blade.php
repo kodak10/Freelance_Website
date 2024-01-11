@@ -194,7 +194,7 @@
                               <div class="row">
                                 <div class="col-lg-4">
                                   <div class="logo-company">
-                                    <img class="img-fluid w-100" src="{{$service->image}}"
+                                    <img class="img-fluid w-100" src="/{{$service->image}}"
                                         alt="image" />
                                 </div>
                                 </div>
