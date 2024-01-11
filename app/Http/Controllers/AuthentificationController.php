@@ -132,6 +132,7 @@ class AuthentificationController extends Controller
             'localisation' => $request->localisation,
             'user_id' => $user->id,
             'image' => 'default.jpg',
+            'approve' => '1',
         ]);
 
         Session::flash('success', 'Inscription réussie ! Connectez-vous maintenant.');
