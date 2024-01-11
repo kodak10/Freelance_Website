@@ -2,10 +2,12 @@
 
 namespace Database\Factories;
 
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Hash;
+use App\Models\User;
+use Faker\Generator as Faker;
 use Illuminate\Database\Eloquent\Factories\Factory;
-
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use Spatie\Permission\Traits\HasRoles;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
  */
@@ -18,13 +20,25 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => Hash::make('password'), // password
-            'remember_token' => Str::random(10),
-        ];
+        $factory->define(User::class, function (Faker $faker) {
+            // Ajoute le trait HasRoles pour pouvoir utiliser assignRole
+            User::mixin(new HasRoles);
+        
+            $role = $faker->randomElement(['compagny', 'client']);
+        
+            $user = factory(User::class)->create();
+        
+            // Assigne le rôle au nouvel utilisateur
+            $user->assignRole($role);
+        
+            return [
+                'name' => $faker->name,
+                'email' => $faker->unique()->safeEmail,
+                'email_verified_at' => now(),
+                'password' => Hash::make('password'), // Mot de passe par défaut : 'password'
+                'remember_token' => Str::random(10),
+            ];
+        });
     }
 
     /**

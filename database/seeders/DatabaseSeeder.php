@@ -10,6 +10,7 @@ use App\Models\CategoryNew;
 use App\Models\Client;
 use App\Models\Departement;
 use App\Models\Diplome;
+use App\Models\Entreprise;
 use App\Models\Faq;
 use App\Models\Forum;
 use App\Models\NewComment;
@@ -31,9 +32,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        //User::factory(10)->create();
-        //CategoryFaq::factory(10)->create();
-        //CategoryNew::factory(10)->create();
+        // User::factory(5)->create();
+        // Entreprise::factory(3)->create();
+        // Client::factory(2)->create();
         //CategoryForum::factory(10)->create();
 
         // Client::factory(10)->create();
@@ -48,7 +49,7 @@ class DatabaseSeeder extends Seeder
         //Pays::factory(10)->create();
         //Notation::factory(10)->create();
         //Recompense::factory(10)->create();
-        ServiceEntreprise::factory(20)->create();
+        //ServiceEntreprise::factory(20)->create();
 
 
     }

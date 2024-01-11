@@ -16,18 +16,18 @@ class ClientFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'photo' => fake()->imageUrl(),
-            'nom' => fake()->firstName(),
-            'prenoms' => fake()->lastName(),
-            'site_web' => fake()->url(),
-            'type_entreprise' => fake()->lastName(),
-            'telephone' => fake()->phoneNumber(),
-            'description' => fake()->paragraph(),
-            // 'diplome' => json_encode([fake()->numberBetween(1,50), fake()->numberBetween(1, 50), fake()->numberBetween(1, 50)]),
-            'date_naissance' => fake()->date(),
-            'id_type_client' => fake()->numberBetween(1, 2),
-
-        ];
+        $factory->define(App\Models\Client::class, function (Faker $faker) {
+            // Créez un utilisateur
+            $user = factory(App\Models\User::class)->create();
+        
+            return [
+                'name' => $faker->firstName,
+                'prenoms' => $faker->lastName,
+                'telephone' => $faker->phoneNumber,
+                'photo' => "logo.png",
+                'user_id' => $user->id, // Utilisez l'ID de l'utilisateur créé
+            ];
+        });
+        
     }
 }
