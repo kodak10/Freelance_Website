@@ -245,11 +245,11 @@
     <section class="wd-iconbox flat-row background1">
         <div class="tf-container">
         <div class="title-iconbox">
-            <h1>Que puis-je faire sur Elbara Africa Group ?</h1>
-            <p>Rationalisez votre processus de recherche afin atteindre des entreprises qualifiées pour vos projets.</p>
+            <h1>Les avantages d'Elbara Africa Group ?</h1>
+            {{-- <p>Rationalisez votre processus de recherche afin atteindre des entreprises qualifiées pour vos projets.</p> --}}
         </div>
         <div class="row">
-            <div class="col-lg-3 col-sm-6 wow fadeInUp">
+            <div class="col-lg-4 col-sm-6 wow fadeInUp">
             <!-- tf-iconbox -->
             <div class="tf-iconbox">
                 <div class="box-header">
@@ -291,12 +291,12 @@
                 </div>
                 <div class="box-content">
                 <h1 class="box-title">
-                    <a href="about-us.html">Interagissez directement avec des entreprises qualifiées.</a>
+                    <a href="">Interagissez directement avec des entreprises qualifiées.</a>
                 </h1>
                 <p>Établissez un contact direct avec des entreprises qualifiées, facilitez les échanges et les opportunités professionnelles tout en évitant les intermédiaires.            </div>
             </div>
             </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
             <!-- tf-iconbox -->
             <div class="tf-iconbox">
                 <div class="box-header">
@@ -365,13 +365,16 @@
                 </div>
                 <div class="box-content">
                 <h1 class="box-title">
-                    <a href="about-us.html">Gagnez du temps et de l'espace libre</a>
+                    <a href="">Promotion des services à un ensemble de clientèle bien définis</a>
                 </h1>
-                <p>Réduisez votre délai pour trouver des entreprises à la fois qualifiées et professionnelles.</p>
+                <p>
+                  les entreprises inscritent sur E-BAG pourront bénéficier d'une assistance comptable et de gestion la d'entreprise 
+assistance en terme de technique de communication.
+                </p>
                 </div>
             </div>
             </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
             <!-- tf-iconbox -->
             <div class="tf-iconbox">
                 <div class="box-header">
@@ -443,70 +446,19 @@
                 </div>
                 </div>
                 <div class="box-content">
-                <h1 class="box-title">
-                    <a href="about-us.html">Lorem ipsum dolor sit amet</a>
+                  <h1 class="box-title">
+                    <a href="#">Un large réseau de clientèle</a>
+                    
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br>
+                <p>
+                  Accéder à notre large réseau de clientèle présente dans toute la diaspora africaine afin de bénéficier d'un grand réseau d'entreprise mais aussi de bénéficier des offres et des opportunités que d'autres entreprises qui sont déjà présentes à E-BAG.  
+                </p>
+                
                 </div>
             </div>
             </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-            <!-- tf-iconbox -->
-            <div class="tf-iconbox">
-                <div class="box-header">
-                <div class="icon">
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M24.6022 17.3248C26.8874 19.5926 26.8874 23.2869 24.6022 25.5547C22.317 27.8224 18.6241 27.8224 16.3389 25.5547C14.0537 23.2869 14.0537 19.5926 16.3389 17.3248C17.8563 15.8068 20.0135 15.313 21.9514 15.8251"
-                        stroke="#14A077" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path
-                        d="M29.4277 12.5338C34.3637 17.4535 34.3637 25.4273 29.4277 30.347C24.4917 35.2666 16.4661 35.2666 11.5301 30.347C6.59412 25.4273 6.59412 17.4535 11.5301 12.5338C15.7532 8.32746 22.2248 7.72393 27.106 10.7233"
-                        stroke="#14A077" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path
-                        d="M28.7514 3.88295C21.5302 0.517835 12.6636 1.79804 6.70384 7.72356C-0.901279 15.2951 -0.901279 27.5667 6.70384 35.1382C14.309 42.7097 26.649 42.7097 34.2541 35.1382C40.9634 28.4446 41.7496 18.0932 36.6124 10.5583"
-                        stroke="#14A077" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M30.6152 11.3447L31.2368 10.7412" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M29.4279 12.5332L24.6016 17.3248" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M24.6005 17.3252L20.2129 21.6962" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M31.2383 10.7418L33.2127 8.7666" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M29.4277 12.5337L30.616 11.3449" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M30.5254 10.6494L30.6169 11.3444" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M35.8086 6.18795V5.14551" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M32.6816 4.10248L35.8078 1.01172V5.14495" stroke="#14A077" stroke-width="2"
-                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M31.4023 5.40093L32.6821 4.10242" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M31.4022 5.40039L30.0859 6.69888L30.5247 10.6492" stroke="#14A077" stroke-width="2"
-                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M30.6152 11.345L35.277 11.8754L36.5933 10.5586" stroke="#14A077" stroke-width="2"
-                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M36.8507 6.1875H35.8086" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M36.5938 10.5585L40.9996 6.1875H36.8497" stroke="#14A077" stroke-width="2"
-                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M30.5254 10.6494L31.2384 10.7409" stroke="#14A077" stroke-width="2" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-                </div>
-                <div class="box-content">
-                <h1 class="box-title">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
-                </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            </div>
+           
         </div>
         </div>
     </section>
