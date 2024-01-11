@@ -543,7 +543,7 @@ assistance en terme de technique de communication.
                       <li><div class="timer title mb15">4</div></li>
                       <li><span>.9/5</span></li>
                     </ul>
-                    <p class="fz15 dark-color">Les clients évaluent  <br>les entreprises sur Elbaragroup</p>
+                    <p class="fz15 dark-color">Les clients évaluent  <br>les entreprises sur Elbara Africa Group</p>
                   </div>
                   <div class="funfact-style1 bdrs16 text-center ms-md-auto">
                     <ul class="ps-0 mb-0 d-flex justify-content-center">
@@ -556,9 +556,10 @@ assistance en terme de technique de communication.
                 <div class="col-sm-6">
                   <div class="funfact-style1 bdrs16 text-center">
                     <ul class="ps-0 mb-0 d-flex justify-content-center">
-                      <li><div class="title mb15"></div></li>
+                      <li><div class="title mb15">100</div></li>
+                      <li><span>%</span></li>
                     </ul>
-                    <p class="fz15 dark-color"> <br></p>
+                    <p class="fz15 dark-color">des entreprises bénéficient d'un accompagnement. <br></p>
                   </div>
                 </div>
 
@@ -764,7 +765,7 @@ assistance en terme de technique de communication.
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
