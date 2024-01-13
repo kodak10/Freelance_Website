@@ -41,8 +41,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/responsive.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/flaticon.css')}}" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <style>
         :root {
 
@@ -50,6 +49,16 @@
 --body-text-color: #6B7177 ;
 --color-bleu: #102a87;
 --color-jaune:#fc950d ;
+}
+a:hover{
+    color: var(--color-jaune);
+}
+.tf-button.style-1:hover {
+    background: var(--color-jaune);
+    color: #fff;
+}
+.features-job .job-archive-header h3 a:hover{
+    color: var(--color-jaune)
 }
 
         /* Définir l'animation */
@@ -87,7 +96,7 @@
             background-color: var(--color-jaune) !important;
         }
         .header i{
-            color: var(--color-bleu) !important;
+            color: var(--color-jaune) !important;
         }
         .header.style-absolute .nav-filter .nav-mobile span{
             background-color: #000000 !important;

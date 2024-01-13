@@ -1,4 +1,5 @@
 <style>
+    
     .tf-tab .menu-tab .active{
         background-color: var(--color-bleu) !important;
     }
@@ -81,8 +82,8 @@
                     <div class="sub-categorie-mobile">
                         <ul class="pop-up">
                             @foreach ($categories as $categorie )
-                            <li>
-                                <a class="text-uppercase" href="#"><i class="{{$categorie->icones}}"></i>{{$categorie->libelle}}</a>
+                            <li style="font-size: 18px;" class="mb-3">
+                                <a class="text-uppercase" href="#"><i class="{{$categorie->icones}}" style="margin-right: 10px; color:#fc950d !important;"></i>{{$categorie->libelle}}</a>
                             </li>
                         @endforeach
                         </ul>

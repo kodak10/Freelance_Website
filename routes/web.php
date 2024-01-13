@@ -21,6 +21,7 @@ Route::get('/', [WebsiteController::class, 'index']);
 Route::get('/about', [WebsiteController::class, 'about']);
 Route::get('/blog', [WebsiteController::class, 'blog']);
 Route::get('/contact', [WebsiteController::class, 'contact']);
+Route::get('/post', [WebsiteController::class, 'send_message'])->name('send_message');
 
 Route::get('/services', [WebsiteController::class, 'services']);
 Route::get('/services', [WebsiteController::class, 'search'])->name('services.search');
