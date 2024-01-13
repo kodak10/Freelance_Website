@@ -158,12 +158,12 @@ class ServiceEntrepriseController extends Controller
             $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
     
             // Stockez chaque image dans le répertoire spécifié
-            $image->move(public_path('assets/images/profil'), $imageName);
+            $image->move(public_path('assets/images/portfolio'), $imageName);
     
             // Créez un nouvel enregistrement dans la table "images" pour chaque image
             $newImage = new Image();
             $newImage->file_name = $imageName;
-            $newImage->file_path = 'assets/images/profil/' . $imageName; // Utilisez le bon chemin
+            $newImage->file_path = 'assets/images/portfolio/' . $imageName; // Utilisez le bon chemin
             $newImage->service_entreprise_id = $serviceEntrepriseId;
             $newImage->save();
         }
@@ -220,7 +220,7 @@ class ServiceEntrepriseController extends Controller
             'delais_execution' => $request->delais,
 
         );
-        
+
         if ($request->hasFile('images')) {
             $images = $request->file('images');
         
@@ -229,12 +229,12 @@ class ServiceEntrepriseController extends Controller
                 $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
         
                 // Stockez chaque image dans le répertoire spécifié
-                $image->move(public_path('assets/images/profil'), $imageName);
+                $image->move(public_path('assets/images/portfolio'), $imageName);
         
                 // Créez un nouvel enregistrement dans la table "images" pour chaque image
                 $newImage = new Image();
                 $newImage->file_name = $imageName;
-                $newImage->file_path = 'assets/images/profil/' . $imageName; // Utilisez le bon chemin
+                $newImage->file_path = 'assets/images/portfolio/' . $imageName; // Utilisez le bon chemin
                 $newImage->service_entreprise_id = $serviceEntrepriseId;
                 $newImage->save();
             }
