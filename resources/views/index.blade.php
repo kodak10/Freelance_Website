@@ -64,7 +64,7 @@
                 </div>
                 <div class="form-sl">
                   <form method="get" action="{{route('services.search')}}">
-                    @csrf
+                    
                     <div class="row-group-search home1 st">
                       <div class="form-group-1">
                         <span class="icon-search search-job"></span>
