@@ -84,7 +84,7 @@ class EntrepriseController extends Controller
         $image->move(public_path('assets/images/profil'), $imageName);
         $compagny->photo = $imageName;
     }
-    if ($request->hasFile('image')) {
+    if ($request->hasFile('couverture')) {
         $image = $request->file('couverture');
         $imageName = $user->id . '_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
         $image->move(public_path('assets/images/couverture'), $imageName);
