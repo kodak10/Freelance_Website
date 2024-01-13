@@ -37,76 +37,142 @@ class ServiceEntrepriseController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+    // public function store(Request $request)
+    // {
+    //     $check = array(
+    //         'service' => 'required',
+    //         'libelle' => 'required',
+    //         'description' => 'required',
+    //         'delais' => 'required',
+    //         'entreprise' => 'required',
+    //         'images*' => 'image|mimes:jpeg,png,gif,webp,jpg|max:2048'
+
+
+    //     );
+    //     $request->validate($check);
+
+
+    //     $data = array(
+    //         'entreprise_id' => $request->entreprise,
+    //         'service_id' => $request->service,
+    //         'description' => $request->description,
+    //         'libelle' => $request->libelle,
+    //         'delais_execution' => $request->delais,
+    //         'created_at' => now(),
+
+    //     );
+
+    //     if (ServiceEntreprise::insert($data)) {
+
+    //         $serviceEntreprise = new ServiceEntreprise();
+    //         $serviceEntreprise->entreprise_id = $request->entreprise;
+    //         $serviceEntreprise->service_id = $request->service;
+    //         $serviceEntreprise->description = $request->description;
+    //         $serviceEntreprise->libelle = $request->libelle;
+    //         $serviceEntreprise->delais_execution = $request->delais;
+    //         $serviceEntreprise->created_at = now();
+    //        // $serviceEntreprise->save();
+
+
+
+    //         $serviceEntrepriseId = $serviceEntreprise->id;
+
+    //         // if ($request->hasFile('images')) {
+    //         //     $images = $request->file('images');
+
+    //         //     foreach ($images as $image) {
+    //         //         // Générez un nom de fichier unique pour chaque image
+    //         //         $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
+
+    //         //         // Stockez chaque image dans le répertoire spécifié
+    //         //         //$imagePath = $image->storeAs('assets/images/portofolio', $imageName);
+    //         //         $imagePath->move(public_path('assets/images/profil'), $imageName);
+
+
+    //         //         // Créez un nouvel enregistrement dans la table "images" pour chaque image
+    //         //         $newImage = new Image();
+    //         //         $newImage->file_name = $imageName;
+    //         //         $newImage->file_path = $imagePath;
+    //         //         $newImage->service_entreprise_id = $serviceEntrepriseId; // Remplacez par l'ID du service
+    //         //         $newImage->save();
+    //         //     }
+    //         // }
+
+    //         if ($request->hasFile('images')) {
+    //             $images = $request->file('images');
+            
+    //             foreach ($images as $image) {
+    //                 // Générez un nom de fichier unique pour chaque image
+    //                 $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
+            
+    //                 // Stockez chaque image dans le répertoire spécifié
+    //                 $image->move(public_path('assets/images/profil'), $imageName);
+            
+    //                 // Créez un nouvel enregistrement dans la table "images" pour chaque image
+    //                 $newImage = new Image();
+    //                 $newImage->file_name = $imageName;
+    //                 $newImage->file_path = 'assets/images/profil/' . $imageName; // Utilisez le bon chemin
+    //                 $newImage->service_entreprise_id = $serviceEntrepriseId;
+    //                 $newImage->save();
+    //             }
+    //         }
+            
+
+    //         return redirect('/compagny/service/create')->with('added', 'added');
+    //     } else {
+    //         return redirect('/compagny/service')->with('nothing', 'nothing');
+    //     };
+
+
+    // }
+
     public function store(Request $request)
-    {
-        $check = array(
-            'service' => 'required',
-            'libelle' => 'required',
-            'description' => 'required',
-            'delais' => 'required',
-            'entreprise' => 'required',
-            'images*' => 'image|mimes:jpeg,png,gif,webp,jpg|max:2048'
+{
+    $check = array(
+        'service' => 'required',
+        'libelle' => 'required',
+        'description' => 'required',
+        'delais' => 'required',
+        'entreprise' => 'required',
+        'images*' => 'image|mimes:jpeg,png,gif,webp,jpg|max:2048'
+    );
 
+    $request->validate($check);
 
-        );
-        $request->validate($check);
+    $serviceEntreprise = new ServiceEntreprise();
+    $serviceEntreprise->entreprise_id = $request->entreprise;
+    $serviceEntreprise->service_id = $request->service;
+    $serviceEntreprise->description = $request->description;
+    $serviceEntreprise->libelle = $request->libelle;
+    $serviceEntreprise->delais_execution = $request->delais;
+    $serviceEntreprise->created_at = now();
+    $serviceEntreprise->save();
 
+    $serviceEntrepriseId = $serviceEntreprise->id;
 
-        $data = array(
-            'entreprise_id' => $request->entreprise,
-            'service_id' => $request->service,
-            'description' => $request->description,
-            'libelle' => $request->libelle,
-            'delais_execution' => $request->delais,
-            'created_at' => now(),
-
-        );
-
-
-
-
-
-        if (ServiceEntreprise::insert($data)) {
-
-            $serviceEntreprise = new ServiceEntreprise();
-            $serviceEntreprise->entreprise_id = $request->entreprise;
-            $serviceEntreprise->service_id = $request->service;
-            $serviceEntreprise->description = $request->description;
-            $serviceEntreprise->libelle = $request->libelle;
-            $serviceEntreprise->delais_execution = $request->delais;
-            $serviceEntreprise->created_at = now();
-            $serviceEntreprise->save();
-
-
-
-            $serviceEntrepriseId = $serviceEntreprise->id;
-
-            if ($request->hasFile('images')) {
-                $images = $request->file('images');
-
-                foreach ($images as $image) {
-                    // Générez un nom de fichier unique pour chaque image
-                    $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-
-                    // Stockez chaque image dans le répertoire spécifié
-                    $imagePath = $image->storeAs('public/assets/images/portofolio', $imageName);
-
-                    // Créez un nouvel enregistrement dans la table "images" pour chaque image
-                    $newImage = new Image();
-                    $newImage->file_name = $imageName;
-                    $newImage->file_path = $imagePath;
-                    $newImage->service_entreprise_id = $serviceEntrepriseId; // Remplacez par l'ID du service
-                    $newImage->save();
-                }
-            }
-
-            return redirect('/compagny/service/create')->with('added', 'added');
-        } else {
-            return redirect('/compagny/service/create')->with('nothing', 'nothing');
-        };
-
-
+    if ($request->hasFile('images')) {
+        $images = $request->file('images');
+    
+        foreach ($images as $image) {
+            // Générez un nom de fichier unique pour chaque image
+            $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
+    
+            // Stockez chaque image dans le répertoire spécifié
+            $image->move(public_path('assets/images/profil'), $imageName);
+    
+            // Créez un nouvel enregistrement dans la table "images" pour chaque image
+            $newImage = new Image();
+            $newImage->file_name = $imageName;
+            $newImage->file_path = 'assets/images/profil/' . $imageName; // Utilisez le bon chemin
+            $newImage->service_entreprise_id = $serviceEntrepriseId;
+            $newImage->save();
+        }
     }
+    
+
+    return redirect('/compagny/service/create')->with('added', 'added');
+}
+
 
     /**
      * Display the specified resource.
@@ -154,24 +220,25 @@ class ServiceEntrepriseController extends Controller
             'delais_execution' => $request->delais,
 
         );
-         if ($request->hasFile('images')) {
-                $images = $request->file('images');
-
-                foreach ($images as $image) {
-                    // Générez un nom de fichier unique pour chaque image
-                    $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-
-                    // Stockez chaque image dans le répertoire spécifié
-                    $imagePath = $image->storeAs('public/assets/images/portofolio', $imageName);
-
-                    // Créez un nouvel enregistrement dans la table "images" pour chaque image
-                    $newImage = new Image();
-                    $newImage->file_name = $imageName;
-                    $newImage->file_path = $imagePath;
-                    $newImage->service_entreprise_id = $serviceEntrepriseId; // Remplacez par l'ID du service
-                    $newImage->save();
-                }
+        
+        if ($request->hasFile('images')) {
+            $images = $request->file('images');
+        
+            foreach ($images as $image) {
+                // Générez un nom de fichier unique pour chaque image
+                $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
+        
+                // Stockez chaque image dans le répertoire spécifié
+                $image->move(public_path('assets/images/profil'), $imageName);
+        
+                // Créez un nouvel enregistrement dans la table "images" pour chaque image
+                $newImage = new Image();
+                $newImage->file_name = $imageName;
+                $newImage->file_path = 'assets/images/profil/' . $imageName; // Utilisez le bon chemin
+                $newImage->service_entreprise_id = $serviceEntrepriseId;
+                $newImage->save();
             }
+        }
 
 
         if ($services->update($data)) {

@@ -164,9 +164,9 @@
                             <div class="job-category-box">
                                 <div class="job-category-header">
                                     <h1><a href="">{{$categories_small->libelle}}</a></h1>
-                                    <p>120 services disponible</p>
+                                    {{-- <p>{{ $count ++ }}</p> --}}
                                 </div>
-                                <a href="/services" class="btn-category-job">Voir les services <span class="icon-keyboard_arrow_right"></span></a>
+                                <a href="/services?keyword=&category={{$categories_small->id}}" class="btn-category-job">Voir les services <span class="icon-keyboard_arrow_right"></span></a>
                             </div>
                         @endforeach
 

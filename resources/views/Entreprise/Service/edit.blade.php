@@ -122,9 +122,8 @@
                                                 <div class="form-group">
                                                     <label class="form-label fw500 fz16 dark-color">Importer vos réalisations
                                                        </label>
-                                                    <div class="bootselect-multiselect">
-                                                        <input
-                                                            type="file"name="realisations"class="form-control">
+                                                       <div class="bootselect-multiselect">
+                                                        <input type="file" class="form-control" name="images[]" id="images" multiple accept="image/*">
                                                     </div>
                                                 </div>
                                             </div>

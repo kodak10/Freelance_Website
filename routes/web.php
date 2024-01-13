@@ -41,21 +41,16 @@ Route::get('/reset', function(){
 Route::get('/connexion', [WebsiteController::class, 'login'])->name('login');
 Route::get('/inscription', [WebsiteController::class, 'register'])->name('inscription');
 
-
 Route::get('/forget', [WebsiteController::class, 'forget_password']);
 Route::post('/forget', [AuthentificationController::class, 'forget_password'])->name('send_mail');
 
 Route::get('/validation', [WebsiteController::class, 'validation']);
 Route::post('/validation', [AuthentificationController::class, 'validation'])->name('validation_email');
 
-
 Route::get('/verif', [WebsiteController::class, 'verif'])->name('verif');
-
 
 Route::get('/entreprise', [WebsiteController::class, 'entreprise_service_index']);
 Route::get('/entreprise/{id}', [WebsiteController::class, 'entreprise_service']);
-
-
 
 
 // Route Auth

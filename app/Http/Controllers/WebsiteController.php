@@ -25,6 +25,7 @@ class WebsiteController extends Controller
         $categories_smalls = Departement::take(10)->get();
         $entreprises = Entreprise::take(8)->get();
         $services = Service::take(8)->get();
+        
         return view('index', compact('entreprises', 'categories', 'categories_smalls', 'services'));
     }
 

@@ -121,7 +121,7 @@
                                     <div class="form-group">
                                         <label for="image" class="col-md-4 control-label">Image de profil</label>
                                         <div class="col-md-6">
-                                            <input id="image" type="file" class="form-control" name="image">
+                                            <input id="image" type="file" accept="image/*" class="form-control" name="image">
                                         </div>
                                     </div>
 
@@ -129,7 +129,7 @@
                                     <div class="form-group">
                                         <label for="image" class="col-md-4 control-label">Image de couverture</label>
                                         <div class="col-md-6">
-                                            <input id="image" type="file" class="form-control" name="couverture">
+                                            <input id="image" type="file" accept="image/*" class="form-control" name="couverture">
                                         </div>
                                     </div>
 

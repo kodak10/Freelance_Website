@@ -29,7 +29,7 @@
         <div class="tf-container">
         <div class="job-search-form inner-form-map st1">
             <form method="get" action="{{route('services.search')}}">
-                @csrf
+                
                 <div class="row-group-search">
                     <div class="form-group-1">
                         <input type="text" name="keyword" id="keyword" class="input-filter-search" placeholder="Quel est le service que vous rechercher ?">
