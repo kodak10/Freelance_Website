@@ -163,9 +163,11 @@
             <div class="video-thumb">
 
                 <ul class="thumb-menu menu-tab2">
-                  <li class="ct-tab2"> <a class="lightbox-gallery" href="{{asset('assets/website/images/review/thumbv4.jpg')}}"><img src="{{asset('assets/website/images/review/thumbv4.jpg')}}" alt="images"></a> </li>
-                  <li class="ct-tab2"> <a class="lightbox-gallery" href="{{asset('assets/website/images/review/thumbv1.jpg')}}"><img src="{{asset('assets/website/images/review/thumbv1.jpg')}}" alt="images"></a></li>
-                  <li class="ct-tab2"><a class="lightbox-gallery" href="{{asset('assets/website/images/review/thumbv2.jpg')}}"><img src="{{asset('assets/website/images/review/thumbv2.jpg')}}" alt="images"></a></li>
+                  @foreach ($images as $image)
+                    <li class="ct-tab2"> <a class="lightbox-gallery" href="{{ asset('assets/images/couverture/' . $image->file_path) }}"><img src="{{asset('assets/website/images/review/thumbv4.jpg')}}" alt="images"></a> </li>
+                  @endforeach
+                  {{-- <li class="ct-tab2"> <a class="lightbox-gallery" href="{{asset('assets/website/images/review/thumbv1.jpg')}}"><img src="{{asset('assets/website/images/review/thumbv1.jpg')}}" alt="images"></a></li>
+                  <li class="ct-tab2"><a class="lightbox-gallery" href="{{asset('assets/website/images/review/thumbv2.jpg')}}"><img src="{{asset('assets/website/images/review/thumbv2.jpg')}}" alt="images"></a></li> --}}
                 </ul>
               </div>
         </div>
