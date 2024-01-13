@@ -242,9 +242,9 @@ class ServiceEntrepriseController extends Controller
 
 
         if ($services->update($data)) {
-            return redirect('/compagny/service/edit')->with('updated', 'updated');
+            return redirect('/compagny/service')->with('updated', 'updated');
         } else {
-            return redirect('/compagny/service/edit')->with('nothing', 'nothing');
+            return redirect('/compagny/service')->with('nothing', 'nothing');
         };
     }
 
