@@ -26,7 +26,7 @@
     }
 </style>
 <section class="single-job-thumb">
-    <img src="{{ asset('assets/images/couverture/' . $serviceDetails->couverture) }}" alt="images">
+    <img src="{{ asset('assets/images/couverture/' . $serviceDetails->couverture) }}" class="w-100 img-fluid" alt="images">
 </section>
 
 <section class="form-sticky fixed-space">
