@@ -29,7 +29,7 @@
                                 <div class="form-group">
                                     <label for="nom" class="col-md-4 control-label">Description</label>
                                     <div class="col-md-6">
-                                        <input style="text-transform: uppercase"  type="text" class="form-control">
+                                        <input style="text-transform: uppercase" value="{{ $demandes_details->description }}"  type="text" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@
                                 <div class="form-group">
                                     <label for="nom" class="col-md-4 control-label">Duréee d'exécution</label>
                                     <div class="col-md-6">
-                                        <input style="text-transform: uppercase"  type="text" class="form-control">
+                                        <input style="text-transform: uppercase"value="{{ $demandes_details->delais_execution }}"  type="text" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                 <div class="form-group">
                                     <label for="nom" class="col-md-4 control-label">Cahier de charge</label>
                                     <div class="col-md-6">
-                                        <input style="text-transform: uppercase"  type="text" class="form-control">
+                                        <input style="text-transform: uppercase"  type="file" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -59,6 +59,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <button><a href="/compagny/demandes">Retour</a></button>
+                        <button><a href="#">Conatez le client</a></button>
 
                     </div>
                 </div>

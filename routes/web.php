@@ -15,6 +15,8 @@ use App\Http\Controllers\EntrepriseDemandeServiceController;
 use App\Http\Controllers\ServiceEntrepriseController;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+
 
 // Route site Web
 Route::get('/', [WebsiteController::class, 'index']);
@@ -61,6 +63,10 @@ Route::post('/inscription_entreprise', [AuthentificationController::class, 'regi
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout' ])->name('logout');
 
 
+Route::get('/password/reset', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+Route::post('/password/email', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
+
+
 // Vos routes d'administration ici
 // Route::prefix('administration')->middleware(['auth', 'verified' ,'role:serviceClient'])->group(function () {  // Sans validation email
 Route::prefix('administration')->middleware(['auth', 'role:serviceClient'])->group(function () {
@@ -99,7 +105,8 @@ Route::prefix('compagny')->middleware(['auth','role:compagny', ])->group(functio
     Route::resource('/service', ServiceEntrepriseController::class);
 
     Route::get('/demandes', [EntrepriseController::class, 'demandes']);
-    Route::get('/demandes/details', [EntrepriseController::class, 'demandes_details']);
+    Route::get('/demandes/details/{id}', [EntrepriseController::class, 'demandes_details'])->name('demande.details');
+    //Route::get('/compagny/demandes/details/{id}', [DemandeController::class, 'show'])->name('demande.details');
 
     Route::get('/profil/edit', [EntrepriseController::class, 'edit']);
     Route::post('/profil/edit', [EntrepriseController::class, 'update'])->name('update_profil');

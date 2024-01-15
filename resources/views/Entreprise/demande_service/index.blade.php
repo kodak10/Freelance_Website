@@ -25,7 +25,7 @@
 
                 <div class="row">
                     @foreach ($demandes as $demande )
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="card w-100">
                                 <img class="card-img-top img-fluid" src="{{ asset($demande->service->image) }}" alt="Image du service" style="height: 200px !important; width:100% !important">
                                 <div class="card-body">
@@ -38,7 +38,7 @@
                                         <button><a class="ud-btn2" href="#">Contactez le client</a></button>
                                     </div>
                                     <div class="col-lg-6">
-                                       <button><a class="ud-btn2" href="/compagny/demandes/details">Plus de details</a></button> 
+                                       <button><a class="ud-btn2" href="{{ route('demande.details', ['id' => $demande->id]) }}">Plus de details</a></button> 
                                     </div>
                                 </div>
                             </div>
