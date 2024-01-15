@@ -60,8 +60,7 @@ class WebsiteController extends Controller
         $images = DB::table('images_service_entreprises')
         ->join('service_entreprises', 'images_service_entreprises.service_entreprise_id', '=', 'service_entreprises.id')
         ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-        //->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-        //->where('service_entreprises.entreprise_id', )
+        ->where('entreprises.name', $entreprise_nom )
         ->get();
 
 

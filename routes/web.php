@@ -98,7 +98,8 @@ Route::prefix('compagny')->middleware(['auth','role:compagny', ])->group(functio
 
     Route::resource('/service', ServiceEntrepriseController::class);
 
-    Route::get('/demandes/client', [EntrepriseController::class, 'demande']);
+    Route::get('/demandes', [EntrepriseController::class, 'demandes']);
+    Route::get('/demandes/details', [EntrepriseController::class, 'demandes_details']);
 
     Route::get('/profil/edit', [EntrepriseController::class, 'edit']);
     Route::post('/profil/edit', [EntrepriseController::class, 'update'])->name('update_profil');

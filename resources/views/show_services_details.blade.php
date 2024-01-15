@@ -24,6 +24,9 @@
     #header.style-absolute #main-nav #menu-primary-menu>li.current-item>a{
       color: var(--color-jaune) !important ;
     }
+    .tf-tab .menu-tab .active {
+    background-color: initial !important;
+}
 </style>
 <section class="single-job-thumb">
     <img src="{{ asset('assets/images/couverture/' . $serviceDetails->couverture) }}" class="w-100 img-fluid" alt="images">
@@ -173,9 +176,8 @@
         </div>
 
         <div class="inner-content">
-          <h5>Full Reviews</h5>
-          <p>Are you a User Experience Designer with a track record of delivering intuitive digital experiences that
-            drive results? Are you a strategic storyteller and systems thinker who can concept and craft smart.
+          <p>
+            {{ $serviceDetails->about }}
           </p>
         </div>
       </div>

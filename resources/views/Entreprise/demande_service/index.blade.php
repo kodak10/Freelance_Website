@@ -25,7 +25,7 @@
 
                 <div class="row">
                     @foreach ($demandes as $demande )
-                        <div class="col-lg-3">
+                        <div class="col-lg-4">
                             <div class="card w-100">
                                 <img class="card-img-top img-fluid" src="{{ asset($demande->service->image) }}" alt="Image du service" style="height: 200px !important; width:100% !important">
                                 <div class="card-body">
@@ -34,10 +34,11 @@
                                 </div>
                                 <div class="row p-2 text-center">
                                     <div class="col-lg-6">
-                                        <a class="ud-btn2" href="#">Contactez le client</a>
+                                        
+                                        <button><a class="ud-btn2" href="#">Contactez le client</a></button>
                                     </div>
                                     <div class="col-lg-6">
-                                        <a class="ud-btn2" href="#">Plus de details</a>
+                                       <button><a class="ud-btn2" href="/compagny/demandes/details">Plus de details</a></button> 
                                     </div>
                                 </div>
                             </div>

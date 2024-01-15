@@ -20,10 +20,14 @@ class EntrepriseController extends Controller
         return view('Entreprise.home', compact('demandes', 'services', 'service'));
     }
 
-    public function demande(){
+    public function demandes(){
         $demandes = DemandeService::where('entreprise_id', Auth::user()->compagny->id)->get();
-        //dd($demandes);
-        return view('Entreprise.demande_service', compact('demandes'));
+        return view('Entreprise.demande_service.index', compact('demandes'));
+    }
+
+    public function demandes_details(){
+        $demandes_details = DemandeService::where('entreprise_id', Auth::user()->compagny->id)->get();
+        return view('Entreprise.demande_service.details', compact('demandes_details'));
     }
 
     public function edit()
