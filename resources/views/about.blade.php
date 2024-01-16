@@ -27,6 +27,22 @@
     .iconbox-style9{
       padding: 20px !important;
     }
+    .image-departement{
+      width: 80% !important; 
+      height:80% !important;
+      margin:auto;"
+
+    }
+    .fa-check{
+      margin-right: 10px;
+    }
+    @media (max-width:768px){
+      .image-departement{
+        width: 100% !important;
+        height: 100% !important;
+      }
+     
+    }
 </style>
 
 <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
@@ -113,7 +129,7 @@
                             Nous déployons une gamme diversifiée de prestation aupres de nos partenaires ,
                             englobant une expertise a la fois intérieur et extérieur, des outils adaptés selon le
                             secteur d’activité et selon le besoin; visant à améliorer la sécurité et le confort de conduite.
-                            <img src="{{asset('assets/website/images/departement.jpg')}}" class="img-fluid w-100 mt-5" alt="image">
+                            <img src="{{asset('assets/website/images/departement.jpg')}}"  class=" d-flex img-fluid w-100 mt-5 image-departement" alt="image">
                         </div>
                       </div>
                     </div>
@@ -192,12 +208,12 @@
                 Profitez de la meilleure qualité de service de plus de 200 services d'entreprises.</p>
               <div class="list-style2">
                 <ul class="mb20">
-                  <li><i class="far fa-check"></i>Connectez-vous à des entreprises ayant une expérience commerciale approuvée.</li>
-                  <li><i class="far fa-check"></i>Entrer en contact avec les meilleurs entreprises pour votre service.</li>
-                  <li><i class="far fa-check"></i>Accompagnement personnalisé.</li>
+                  <li><i class="fa-solid fa-check mr-3"></i>Connectez-vous à des entreprises ayant une expérience commerciale approuvée.</li>
+                  <li><i class="fa-solid fa-check mr-3"></i>Entrer en contact avec les meilleurs entreprises pour votre service.</li>
+                  <li><i class="fa-solid fa-check mr-3"></i>Accompagnement personnalisé.</li>
                 </ul>
               </div>
-              <a href="/services" class="ud-btn btn-thm-border ">Trouver votre service<i class="fal fa-arrow-right-long"></i></a>
+              <a href="/services" class="ud-btn btn-thm-border ">Trouver votre service<i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>

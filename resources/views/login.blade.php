@@ -57,7 +57,7 @@
             </div>
             <div class="group-ant-choice">
               <div class="sub-ip"><input type="checkbox">Se souvenir de moi</div>
-              <a href="{{ route('password.request') }}" class="forgot">Mot de passe oublié</a>
+              <a href="" class="forgot">Mot de passe oublié</a>
             </div>
 
             <button type="submit">Se Connecter</button>

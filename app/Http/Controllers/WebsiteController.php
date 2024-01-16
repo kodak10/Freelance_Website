@@ -70,7 +70,8 @@ class WebsiteController extends Controller
         ->where('entreprises.name', $entreprise_nom)
         ->select('*')
         
-        ->first();
+        ->get();
+        
 
         $categories = Departement::get();
         return view('show_services_details', compact('serviceDetails', 'categories', 'images'));

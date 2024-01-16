@@ -58,7 +58,7 @@
               <div class="icon flex-shrink-0"><span class="flaticon-tracking"></span></div>
               <div class="details">
                 <h5 class="title">Adresse</h5>
-                <p class="mb-0 text">Yopougon</p>
+                <p class="mb-0 text">Yopougon Sable</p>
               </div>
             </div>
             <div class="iconbox-style1 contact-style d-flex align-items-start mb30">
@@ -117,8 +117,7 @@
   <!-- Google Map -->
   <section class="p-0 wow fadeInUp mb-5" data-wow-delay="300ms">
     <div class="mx-auto maxw1700 bdrs16 position-relative mx20-lg">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.841647296339!2d-3.965226925366187!3d5.28739159469083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ef4f28d7281f%3A0xa2324ced14932932!2sAGORA%20KOUMASSI!5e0!3m2!1sfr!2sci!4v1690083652291!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.377160044176!2d-4.06953302500909!3d5.359287935596452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eb0034d24721%3A0x7d6317a9785edbe2!2sELBARA-AFRICA%20GROUP!5e0!3m2!1sfr!2sci!4v1705401761687!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
   </section>
 
   <!-- Faq -->
