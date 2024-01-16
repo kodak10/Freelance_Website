@@ -7,7 +7,7 @@
             <a href="/" class="items-center"><i class="flaticon-home mr15"></i>Retour au Site</a>
         </div>
         <div class="sidebar_list_item">
-            <a href="/compagny" class="items-center {{ request()->routeIs('home')? '-is-active' : '' }}"><i class="flaticon-home mr15"></i>Menu Général</a>
+            <a href="/compagny" class="items-center {{ request()->is('/compagny')? 'is-active' : '' }}"><i class="flaticon-home mr15"></i>Menu Général</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Title</p>
         <div class="sidebar_list_item">
@@ -32,7 +32,7 @@
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         <div class="sidebar_list_item ">
-            <a href="/compagny/profil/edit" class="items-center"><i class="fa-solid fa-user mr15"></i>Mon Profil</a>
+            <a href="/compagny/profil/edit" class="items-center"><i class="fa-solid fa-user mr15"></i>Paramétrage de compte</a>
         </div>
         <div class="sidebar_list_item ">
             <a href="javascript:void(0)"

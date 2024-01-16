@@ -7,7 +7,7 @@
             <li><p class="fz15 fw400 ff-heading mt30 pl30">Conversation</p></li>
             <li><a href="#"><i class="flaticon-receipt mr10"></i>Messages</a></li>
             <li><p class="fz15 fw400 ff-heading mt30 pl30">Comptes</p></li>
-            <li><a href="/user/profil/edit"><i class="flaticon-receipt mr10"></i>Mon Profil</a></li>
+            <li><a href="/user/profil/edit"><i class="flaticon-receipt mr10"></i>Paramétrage de compte</a></li>
             <li>
                 <a href="javascript:void(0)"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit()">

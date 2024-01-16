@@ -24,7 +24,7 @@
 
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         <div class="sidebar_list_item ">
-            <a href="/user/profil/edit" class="items-center"><i class="fa-solid fa-user mr15"></i>Mon Profil</a>
+            <a href="/user/profil/edit" class="items-center"><i class="fa-solid fa-user mr15"></i>Paramétrage de compte</a>
         </div>
         <div class="sidebar_list_item ">
             <a href="javascript:void(0)"

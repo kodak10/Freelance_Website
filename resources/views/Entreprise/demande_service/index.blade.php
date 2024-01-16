@@ -17,7 +17,7 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="dashboard_title_area">
-                            <h2>Demande de service client reçu</h2>
+                            <h3 style="font-family: poppins">Demande de service client reçu</h3>
                             {{-- <p class="text">Les demandes de service reçu sont affichés ici avec les détails....</p> --}}
                         </div>
                     </div>
@@ -35,10 +35,10 @@
                                 <div class="row p-2 text-center">
                                     <div class="col-lg-6">
                                         
-                                        <button><a class="ud-btn2" href="#">Contactez le client</a></button>
+                                        <button class="btn btn-success"><a class="ud-btn2" href="#">Contactez le client</a></button>
                                     </div>
                                     <div class="col-lg-6">
-                                       <button><a class="ud-btn2" href="{{ route('demande.details', ['id' => $demande->id]) }}">Plus de details</a></button> 
+                                       <button class="btn btn-danger"><a class="ud-btn2" href="{{ route('demande.details', ['id' => $demande->id]) }}">Plus de details</a></button> 
                                     </div>
                                 </div>
                             </div>
