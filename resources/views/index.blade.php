@@ -366,7 +366,7 @@
                     <a href="">Promotion des services à un ensemble de clientèle bien définis</a>
                 </h1>
                 <p>
-                  les entreprises inscritent sur E-BAG pourront bénéficier d'une assistance comptable et de gestion la d'entreprise 
+                  les entreprises inscritent sur E-BAG pourront bénéficier d'une assistance comptable et de gestion d'entreprise 
 assistance en terme de technique de communication.
                 </p>
                 </div>
