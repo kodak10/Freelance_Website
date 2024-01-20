@@ -60,13 +60,15 @@
                         @empty
                         Aucune Entreprise ne propose ce service
                     @endforelse
-                    <div class="d-flex justify-content-center mb-5 mt-5">
-                        {{ $entreprises->links() }}
-                    </div>
+                            <div class="d-flex justify-content-center mb-5 mt-5">
+                                {{ $entreprises->links() }}
+                            </div>
 
+                        </div>
                 </div>
             </div>
         </div>
+    </div>
 
       
 
