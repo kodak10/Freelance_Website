@@ -893,7 +893,7 @@ assistance en terme de technique de communication.
               </div>
               <div class="swiper-slide">
               <a href="#" class="logo-partner">
-                  <img src="{{asset('assets/website/images/partners/Logo-1.png')}}" alt="Logo.png">
+                <img src="{{asset('assets/website/images/partners/02.jpeg')}}" alt="Logo.png">
               </a>
               </div>
               <div class="swiper-slide">

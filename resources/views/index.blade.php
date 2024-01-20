@@ -972,7 +972,7 @@
                 </div>
                 <div class="swiper-slide">
                   <a class="logo-partner" href="#">
-                      <img src="{{asset('assets/website/images/partners/02.peg')}}" alt="Logo.png">
+                      <img src="{{asset('assets/website/images/partners/02.jpeg')}}" alt="Logo.png">
                   </a>
                   </div>
                 <div class="swiper-slide">
