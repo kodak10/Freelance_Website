@@ -38,5 +38,9 @@ class Entreprise extends Model
     {
         return $this->hasMany(DemandeService::class, 'entreprise_id');
     }
+    public function services_entreprise()
+    {
+        return $this->belongsTo(ServiceEntreprise::class);
+    }
 
 }

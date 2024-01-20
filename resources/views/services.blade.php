@@ -59,7 +59,7 @@
                         <div class="card w-100">
                             <img src="{{$service->image}}" class="card-img-top zoomRotateImage img-fluid w-100" alt="..." style="height: 200px !important">
                             <div class="card-body p-2 mb-3">
-                              <p class="card-text"><a href="{{ route('EntrepriseService.show', ['slug' => $service->libelle]) }}">{{$service->libelle}}</a></p>
+                              <p class="card-text"><a href="{{ route('services_entreprises', $service) }}">{{$service->libelle}}</a></p>
                             </div>
                           </div>
                     </div>

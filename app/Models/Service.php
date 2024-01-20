@@ -37,6 +37,11 @@ class Service extends Model
         return $this->hasMany(DemandeService::class, 'service_id');
     }
 
+    public function service_entreprise()
+    {
+        return $this->hasMany(ServiceEntreprise::class, 'service_id', 'id');
+    }
+
 
     // Définir une méthode d'accessor pour générer le slug à partir du titre
     public function getSlugAttribute()

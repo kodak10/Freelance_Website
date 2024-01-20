@@ -37,23 +37,26 @@ class WebsiteController extends Controller
         return view('services' , compact('categories', 'services'));
     }
 
-    public function showEntrepriseService(string $slug)
+    public function showEntrepriseService(Service $service)
     {
 
-         $serviceEntreprises = DB::table('service_entreprises')
-            ->join('services', 'service_entreprises.service_id', '=', 'services.id')
-            ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-            ->where('services.libelle', $slug)
-            ->where('entreprises.approve', '=' , '1')
-            ->select('*')
-            ->paginate(10);
+        $entreprises = $service->entreprises()->paginate(10);
+        //$entreprises = $service->entreprises;
+
+        //  $serviceEntreprises = DB::table('service_entreprises')
+        //     ->join('services', 'service_entreprises.service_id', '=', 'services.id')
+        //     ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
+        //     ->where('services.libelle', $slug)
+        //     ->where('entreprises.approve', '=' , '1')
+        //     ->select('*')
+        //     ->paginate(10);
 
 
         $categories = Departement::get();
-        return view('show_entreprises_services', compact('serviceEntreprises', 'categories'));
+        return view('show_entreprises_services', compact('entreprises', 'categories', 'service'));
     }
 
-    public function serviceShow($entreprise_nom)
+    public function serviceShow($serviceId, $entrepriseId)
     {
 
 
@@ -64,13 +67,32 @@ class WebsiteController extends Controller
         ->where('entreprises.id', '=', 'images_service_entreprises.service_entreprise_id' )
         ->get();
 
-
-        $serviceDetails = DB::table('service_entreprises')
+        $serviceDetails = ServiceEntreprise::query()
         ->join('services', 'service_entreprises.service_id', '=', 'services.id')
         ->join('entreprises', 'service_entreprises.entreprise_id', '=', 'entreprises.id')
-        ->where('entreprises.name', $entreprise_nom)
-        ->select('*')
-        
+        ->select(
+            // Service entreprise
+            'service_entreprises.delais_execution as delais_execution',
+            'service_entreprises.description as descript ',
+            // Service
+            'services.id as service_id', 
+            'services.libelle as libelle',
+            // Entreprises
+            'entreprises.id as entreprise_id',
+            'entreprises.name as name',
+            'entreprises.type_entreprise as type_entreprise',
+            'entreprises.nationalite as nationalite',
+            'entreprises.telephone as telephone',
+            'entreprises.email as email',
+            'entreprises.localisation as localisation',
+            'entreprises.photo as photo',
+            'entreprises.couverture as couverture',
+            'entreprises.site_web as site_web',
+            'entreprises.facebook as facebook',
+            'entreprises.about as about',
+            )
+        ->where('services.id', $serviceId)
+        ->where('entreprises.id', $entrepriseId)
         ->first();
 
         $categories = Departement::get();

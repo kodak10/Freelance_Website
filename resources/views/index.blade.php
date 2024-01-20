@@ -367,7 +367,7 @@
                 </h1>
                 <p>
                   les entreprises inscritent sur E-BAG pourront bénéficier d'une assistance comptable et de gestion d'entreprise 
-assistance en terme de technique de communication.
+                  e de technique de communication.
                 </p>
                 </div>
             </div>
@@ -970,6 +970,11 @@ assistance en terme de technique de communication.
                     <img src="{{asset('assets/website/images/partners/01.png')}}" alt="Logo.png">
                 </a>
                 </div>
+                <div class="swiper-slide">
+                  <a class="logo-partner" href="#">
+                      <img src="{{asset('assets/website/images/partners/02.peg')}}" alt="Logo.png">
+                  </a>
+                  </div>
                 <div class="swiper-slide">
                 <a href="#" class="logo-partner">
                     <img src="{{asset('assets/website/images/partners/Logo-1.png')}}" alt="Logo.png">

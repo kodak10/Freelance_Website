@@ -28,11 +28,13 @@ Route::get('/post', [WebsiteController::class, 'send_message'])->name('send_mess
 Route::get('/services', [WebsiteController::class, 'services']);
 Route::get('/services', [WebsiteController::class, 'search'])->name('services.search');
 
-Route::get('/services/{slug}', [WebsiteController::class, 'showEntrepriseService'])->name('EntrepriseService.show');
+// Route::get('/services/{slug}', [WebsiteController::class, 'showEntrepriseService'])->name('EntrepriseService.show');
 
 
-Route::get('/services/{entreprise_nom}/details', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
+// Route::get('/services/{entreprise_nom}/details', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
 
+Route::get('/services/{service}/entreprises', [WebsiteController::class, 'showEntrepriseService'])->name('services_entreprises');
+Route::get('/entreprises/{service}/{entreprise}/details', [WebsiteController::class, 'serviceShow'])->name('services_entreprise_details');
 
 Route::get('/departements', [WebsiteController::class, 'departements']);
 Route::resource('demandeService', DemandeServiceClientController::class);

@@ -32,7 +32,7 @@
     <img src="{{ asset('assets/images/couverture/' . $serviceDetails->couverture) }}" class="w-100 img-fluid" alt="images">
 </section>
 
-<section class="form-sticky fixed-space">
+<section class="mt-3">
 <div class="tf-container">
 <div class="row">
   <div class="col-lg-12">
@@ -161,7 +161,7 @@
       </ul>
       <div class="content-tab">
         <div class="inner-content">
-            <p>{{$serviceDetails->description}}</p>
+            <p>{{$serviceDetails->descript}}</p>
 
             <div class="video-thumb">
 
@@ -178,6 +178,7 @@
         <div class="inner-content">
           <p>
             {{ $serviceDetails->about }}
+            
           </p>
         </div>
       </div>
