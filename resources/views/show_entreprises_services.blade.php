@@ -58,13 +58,13 @@
                                 <a href="{{ route('services_entreprise_details', ['service' => $service->id, 'entreprise' => $entreprise->id]) }}">Voir les détails</a>                            
                             </div>
                         @empty
-                        Aucune Entreprise ne propose ce service
-                    @endforelse
-                            <div class="d-flex justify-content-center mb-5 mt-5">
-                                {{ $entreprises->links() }}
-                            </div>
-
+                            Aucune Entreprise ne propose ce service
                         </div>
+                    @endforelse
+                        
+                    <div class="d-flex justify-content-center mb-5 mt-5">
+                        {{ $entreprises->links() }}
+                    </div>
                 </div>
             </div>
         </div>
