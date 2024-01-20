@@ -144,5 +144,5 @@ Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->gr
 
 });
 
-
+Auth::routes();
 
