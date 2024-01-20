@@ -63,7 +63,7 @@
                         Aucune Entreprise ne propose ce service
                     @endforelse
                     <div class="d-flex justify-content-center mb-5 mt-5">
-                        {{ $entreprise->links() }}
+                        {{ $entreprises->links() }}
                     </div>
 
                 </div>
