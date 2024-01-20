@@ -113,7 +113,7 @@
 
                                 <div class="d-grid mb20">
                                     <button class="ud-btn btn-thm default-box-shadow2" type="submit" style=" text-align :center; width :100%">S'inscrire <i class="fal fa-arrow-right-long"></i></button>
-                                    <div class="sign-up">Vous avez déjà un compte ?<a href="/connexion">Se Connecter</a></div>
+                                    <div class="sign-up">Vous avez déjà un compte ?<a href="/login">Se Connecter</a></div>
                                 </div>
                             </form>
                             {{-- <form method="post" action="{{route('inscription_entreprise')}}">
@@ -199,7 +199,7 @@
                                   <div class="sub-ip"><input type="checkbox">I agree to the <a href="#">Terms of User</a></div>
                                 </div> --}}
                                 <button>S'inscrire</button>
-                                <div class="sign-up">Vous avez déjà un compte ?<a href="/connexion">Se Connecter</a></div>
+                                <div class="sign-up">Vous avez déjà un compte ?<a href="/login">Se Connecter</a></div>
                             </form>
                         </div>
                     </div>

@@ -3,8 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\Client;
-use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
@@ -30,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -51,8 +49,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'nom' => ['required', 'string', 'max:255'],
-            //'prenoms' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -66,42 +63,10 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        // dd($data);
-        if ($data['id_type_client'] == 1) {
-            $array = [
-                'nom' => $data['nom'],
-                'prenoms' => $data['prenoms'],
-                'telephone' => $data['telephone'],
-                'description' => $data['description'],
-                'date_naissance' => $data['date_naissance'],
-                'id_type_client' => $data['id_type_client'],
-                'email' => $data['email'],
-                'approve' => true,
-            ];
-        } else if ($data['id_type_client'] == 2) {
-            $data['prenoms'] = "";
-            $array = [
-                'nom' => $data['nom'],
-                // 'prenoms' =>'',
-                'telephone' => $data['telephone'],
-                'description' => $data['description'],
-                'type_entreprise' => $data['type_entreprise'],
-                'site_web' => $data['site_web'],
-                //'date_naissance' => $data['date_de_naissance'],
-                'id_type_client' => $data['id_type_client'],
-            ];
-        }
-        $insertion = Client::create($array);
-        // dd($insertion);
-        if ($insertion) {
-            return User::create([
-                'name' => $data['nom'] . " " . $data['prenoms'],
-                'email' => $data['email'],
-                'id_client' => $insertion->id,
-                'password' => Hash::make($data['password']),
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
-        }
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
     }
 }

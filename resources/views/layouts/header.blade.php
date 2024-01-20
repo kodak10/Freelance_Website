@@ -195,7 +195,7 @@
                 <!-- Liens à afficher uniquement lorsque l'utilisateur n'est pas connecté -->
                 @guest
                     <div class="header-customize-item button mr-3">
-                        <a href="/connexion">Se Connecter</a>
+                        <a href="/login">Se Connecter</a>
                     </div>
                     <div class="header-customize-item button btn_registration">
                         <a href="/inscription">S'inscire</a>

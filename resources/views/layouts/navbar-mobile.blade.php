@@ -63,7 +63,7 @@
                                         <a href="/contact">Contact</a>
                                     </li>
                                     <li class="menu-item menu-item-mobile">
-                                        <a href="/connexion">Se Connecter</a>
+                                        <a href="/login">Se Connecter</a>
                                     </li>
                                     <li class="menu-item menu-item-mobile">
                                         <a href="/inscription">S'inscrire</a>

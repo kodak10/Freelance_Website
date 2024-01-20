@@ -1,14 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
-use Illuminate\Foundation\Auth\ResetsPasswords;
 
+use App\Http\Controllers\Controller;
+use App\Models\Departement;
+use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller
 {
-    
     /*
     |--------------------------------------------------------------------------
     | Password Reset Controller
@@ -20,20 +19,16 @@ class ForgotPasswordController extends Controller
     |
     */
 
-    //use SendsPasswordResetEmails;
-
-    use SendsPasswordResetEmails, ResetsPasswords {
-        ResetsPasswords::broker insteadof SendsPasswordResetEmails;
-        SendsPasswordResetEmails::broker as sendsPasswordResetEmailsBroker;
-    }
-
-    // Utilisez cette méthode si nécessaire pour résoudre le conflit
-    public function broker()
+    use SendsPasswordResetEmails;
+    public function showLinkRequestForm()
     {
-        return $this->sendsPasswordResetEmailsBroker();
+        $categories = Departement::get();
+
+        // Ajoutez votre logique personnalisée ici
+
+        return view('auth.passwords.email', ['categories' => $categories]);
     }
-    public function showResetForm($token)
-    {
-        return view('auth.passwords.reset')->with(['token' => $token]);
-    }
+
+    
+    
 }

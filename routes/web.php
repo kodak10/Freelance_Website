@@ -43,7 +43,7 @@ Route::get('/reset', function(){
     return view('reset')->name('reset');
 });
 
-Route::get('/connexion', [WebsiteController::class, 'login'])->name('login');
+// Route::get('/connexion', [WebsiteController::class, 'login'])->name('login');
 Route::get('/inscription', [WebsiteController::class, 'register'])->name('inscription');
 
 Route::get('/forget', [WebsiteController::class, 'forget_password']);
@@ -130,18 +130,19 @@ Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
 });
 
 // Vos routes d'user ici
-// Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->group(function () {    // Sans validation email
-Route::prefix('compagny')->middleware(['auth','role:compagny', ])->group(function () {
+Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->group(function () {    // Sans validation email
+// Route::prefix('compagny')->middleware(['auth','role:compagny', ])->group(function () {
     Route::get('/', [EntrepriseController::class, 'index']);
 
     Route::resource('/service', ServiceEntrepriseController::class);
 
     Route::get('/demandes', [EntrepriseController::class, 'demandes']);
     Route::get('/demandes/details/{id}', [EntrepriseController::class, 'demandes_details'])->name('demande.details');
-    //Route::get('/compagny/demandes/details/{id}', [DemandeController::class, 'show'])->name('demande.details');
 
     Route::get('/profil/edit', [EntrepriseController::class, 'edit']);
     Route::post('/profil/edit', [EntrepriseController::class, 'update'])->name('update_profil');
 
-
 });
+
+
+
