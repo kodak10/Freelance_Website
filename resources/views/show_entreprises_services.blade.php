@@ -48,14 +48,14 @@
 
             <div class="col-md-12">
                 <div class="group-category-job wow fadeInUp">
-                    @forelse ($serviceEntreprises as $serviceEntreprise)
+                    @forelse ($entreprises as $entreprise)
                         <div class="job-category-box">
                             <div class="logo">
-                                <img class="img-fluid" src="{{ asset('assets/images/profil/' . $serviceEntreprise->photo) }}" alt="image">
+                                <img class="img-fluid" src="{{ asset('assets/images/profil/' . $entreprise->photo) }}" alt="image">
 
                             </div>
                             <div class="job-category-header">
-                                <h1><a href="{{ route('services_entreprise_details', ['service' => $service->id, 'entreprise' => $entreprise->id]) }}">{{$serviceEntreprise->name}}</a></h1>
+                                <h1><a href="{{ route('services_entreprise_details', ['service' => $service->id, 'entreprise' => $entreprise->id]) }}">{{$entreprise->name}}</a></h1>
                             </div>
                             <a href="{{ route('services_entreprise_details', ['service' => $service->id, 'entreprise' => $entreprise->id]) }}" class="btn-category-job">En savoir plus <span class="icon-keyboard_arrow_right"></span></a>
                         </div>
@@ -63,7 +63,7 @@
                         Aucune Entreprise ne propose ce service
                     @endforelse
                     <div class="d-flex justify-content-center mb-5 mt-5">
-                        {{ $serviceEntreprises->links() }}
+                        {{ $entreprise->links() }}
                     </div>
 
                 </div>
