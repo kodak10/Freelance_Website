@@ -202,7 +202,7 @@
                                   <div class="box-content">
 
                                     <h3>
-                                        <a href="{{ route('EntrepriseService.show', ['slug' => $service->libelle]) }}">{{$service->libelle}} </a>
+                                        <a href="{{ route('services_entreprises', $service) }}">{{$service->libelle}} </a>
                                         <span class="icon-bolt"></span>
                                     </h3>
 
