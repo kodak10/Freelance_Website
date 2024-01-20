@@ -48,29 +48,30 @@
 
             <div class="col-md-12">
                 <div class="group-category-job wow fadeInUp">
-                    @forelse ($entreprises as $entreprise)
+                    @forelse ($serviceEntreprises as $serviceEntreprise)
                         <div class="job-category-box">
                             <div class="logo">
-                                <img class="img-fluid" style="width:200px !important; height:200px !important" src="{{ asset('assets/images/profil/' . $entreprise->photo) }}" alt="image">
+                                <img class="img-fluid" src="{{ asset('assets/images/profil/' . $serviceEntreprise->photo) }}" alt="image">
 
                             </div>
-                            <div class="job-category-header d-flex">
-                                <a href="{{ route('services_entreprise_details', ['service' => $service->id, 'entreprise' => $entreprise->id]) }}">Voir les détails</a>                            
+                            <div class="job-category-header">
+                                <h1><a href="{{ route('services_entreprise_details', ['service' => $service->id, 'entreprise' => $entreprise->id]) }}">{{$serviceEntreprise->name}}</a></h1>
                             </div>
-                        @empty
-                            Aucune Entreprise ne propose ce service
+                            <a href="{{ route('services_entreprise_details', ['service' => $service->id, 'entreprise' => $entreprise->id]) }}" class="btn-category-job">En savoir plus <span class="icon-keyboard_arrow_right"></span></a>
                         </div>
+                        @empty
+                        Aucune Entreprise ne propose ce service
                     @endforelse
-                        
                     <div class="d-flex justify-content-center mb-5 mt-5">
-                        {{ $entreprises->links() }}
+                        {{ $serviceEntreprises->links() }}
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
 
       
 
   </section>
 @endsection
+
