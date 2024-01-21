@@ -16,7 +16,7 @@ class ServiceEntrepriseController extends Controller
      */
     public function index()
     {
-        $services = ServiceEntreprise::where('entreprise_id', Auth::user()->compagny->id)->get();
+        $services = ServiceEntreprise::where('entreprise_id', Auth::user()->compagny->id)->paginate(5);
         $departements = Departement::get();
         $service = Service::get();
         $Counter = 1;

@@ -132,6 +132,9 @@
                                                     </td>
                                                 </tr>
                                             @endforelse
+                                           
+                                                {{ $services->links() }}
+                                            
                                         </tbody>
                                     </table>
                                 </div>
