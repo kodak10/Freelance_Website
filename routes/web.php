@@ -135,6 +135,7 @@ Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->gr
     Route::get('/', [EntrepriseController::class, 'index']);
 
     Route::resource('/service', ServiceEntrepriseController::class);
+    Route::delete('/service/{id}/delete-image', [ServiceEntrepriseController::class, 'destroy_image'])->name('image_destroy');
 
     Route::get('/demandes', [EntrepriseController::class, 'demandes']);
     Route::get('/demandes/details/{id}', [EntrepriseController::class, 'demandes_details'])->name('demande.details');

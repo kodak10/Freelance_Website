@@ -68,7 +68,7 @@
                             <a href="/service" class="ud-btn btn-dark mb25 me-4">Liste des services</a>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form action="{{ route('service.update', $services->id) }}" method="post">
+                                    <form action="{{ route('service.update', $services->id) }}" method="post" enctype="multipart/form-data">
                                         @method('PATCH')
                                         @csrf
                                         <div class="row mr-4 ml-4">
@@ -139,6 +139,8 @@
                                                 </div>
                                             </div>
 
+                                            
+
                                             <center>
                                                 <div class="col-sm-3 mt-3">
                                                     <div class="form-group mt-3 ">
@@ -150,6 +152,24 @@
                                                 </div>
                                             </center>
                                         </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-12">
+                                    <div class="form-group d-flex justify-content-center align-items-center">
+                                        @foreach ($images as $image)
+                                        <img style="width: 100px; height: 100px; margin: 10px 20px;" src="/{{ $image->file_path }}" alt="Image Réalisation">
+                                        <form method="POST" action={{ route('image_destroy', $image->id) }}>
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn" title="Supprimer">
+                                                    <i class="fa-solid fa-circle-xmark"></i>
+                                                </button>
+                                            </form>
+                                            
+                                        @endforeach
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -68,7 +68,7 @@
                              <form method="post" action="{{route('inscriptionEntreprise')}}">
                                 @csrf
                                 <select name="type_entreprise" class="form-select form-select-md mb-3 form-control" aria-label=".form-select-lg example" >
-                                    <option >Sélectionner le type d'entreprise</option>
+                                    <option value="">Sélectionner le type d'entreprise</option>
                                     <option value="Nationale">Nationale</option>
                                     <option value="Multinationale">Multinationale</option>
                                 </select>
@@ -116,35 +116,7 @@
                                     <div class="sign-up">Vous avez déjà un compte ?<a href="/login">Se Connecter</a></div>
                                 </div>
                             </form>
-                            {{-- <form method="post" action="{{route('inscription_entreprise')}}">
-                                @csrf
-
-                                <div class="ip">
-                                    <label >Nom de l'entreprise<span>*</span></label>
-                                    <input type="text" placeholder="Nom de l'entreprise" name="name" required>
-                                </div>
-                                <div class="ip">
-                                    <label >Email<span>*</span></label>
-                                    <input type="text" placeholder="Email" name="email" required>
-                                </div>
-                                <div class="ip">
-                                    <label >Mot de passe<span>*</span></label>
-                                    <div class="inputs-group auth-pass-inputgroup">
-                                        <input type="password" class="input-form password-input" name="password"  placeholder="Mot de passe" required>
-                                        <a class="icon-eye-off password-addon"></a>
-                                    </div>
-                                </div>
-                                <div class="ip">
-                                    <label >Confirmation du mot de passe<span>*</span></label>
-                                    <div class="inputs-group auth-pass-inputgroup">
-                                        <input type="password" class="input-form password-input" name="password_confirmation" placeholder="Confirmation du mot de passe" required>
-                                        <a class="icon-eye-off password-addon"></a>
-                                    </div>
-                                </div>
-
-                                <button type="submit">S'inscrire</button>
-                                <div class="sign-up">Vous avez déjà un compte ?<a href="/login">Se Connecter</a></div>
-                            </form> --}}
+                           
                         </div>
                         <div class="inner">
                             @if(Session::has('success'))

@@ -190,8 +190,9 @@ class ServiceEntrepriseController extends Controller
         $services = ServiceEntreprise::where('id', $id)->firstOrFail();
         $service = Service::where('id', $services->service->id)->firstOrFail();
         $service_full = Service::get();
+        $images = Image::where('service_entreprise_id', $id)->get();
         $departements = Departement::orderBy('libelle', 'asc')->get();
-        return view('Entreprise.Service.edit', compact('services', 'departements', 'service', 'service_full'));
+        return view('Entreprise.Service.edit', compact('services', 'departements', 'service', 'service_full', 'images'));
     }
 
     /**
@@ -224,20 +225,26 @@ class ServiceEntrepriseController extends Controller
         if ($request->hasFile('images')) {
             $images = $request->file('images');
         
+            $counter = 1; // Initialiser le compteur
+
             foreach ($images as $image) {
-                // Générez un nom de fichier unique pour chaque image
-                $imageName = 'image_' . now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-        
+                // Générez un nom de fichier unique pour chaque image avec incrémentation
+                $imageName = 'image_' . now()->format('Ymd_His') . '_' . $counter . '.' . $image->getClientOriginalExtension();
+
                 // Stockez chaque image dans le répertoire spécifié
                 $image->move(public_path('assets/images/portfolio'), $imageName);
-        
+
                 // Créez un nouvel enregistrement dans la table "images" pour chaque image
                 $newImage = new Image();
                 $newImage->file_name = $imageName;
                 $newImage->file_path = 'assets/images/portfolio/' . $imageName; // Utilisez le bon chemin
-                $newImage->service_entreprise_id = $serviceEntrepriseId;
+                $newImage->service_entreprise_id = $services->id;
                 $newImage->save();
+
+                // Incrémentez le compteur
+                $counter++;
             }
+
         }
 
 
@@ -259,5 +266,15 @@ class ServiceEntrepriseController extends Controller
         } else {
             return redirect('/compagny/service')->with('nothing', 'nothing');
         };
+    }
+
+    public function destroy_image(string $id){
+        $image = Image::where('id', $id)->firstOrFail();
+
+        if ($image->delete()) {
+            return redirect()->back()->with('deleted', 'deleted');
+        } else {
+            return redirect()->back()->with('nothing', 'deleted');
+        }
     }
 }
