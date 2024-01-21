@@ -1,28 +1,21 @@
 <?php
 
+use Spatie\Permission\Models\Role;
 use App\Http\Controllers\accesUtilisateurController;
-use App\Http\Controllers\Auth\ForgotPasswordController;
-use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AuthentificationController;
-use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DemandeServiceClientController;
-use App\Http\Controllers\demandesInscriptionController;
-use App\Http\Controllers\departementController;
-use App\Http\Controllers\EntrepriseController;
-use App\Http\Controllers\EntrepriseDemandeServiceController;
-use App\Http\Controllers\secteurController;
-use App\Http\Controllers\serviceController;
-use App\Http\Controllers\ServiceEntrepriseController;
-use App\Http\Controllers\WebsiteController;
-use Chatify\Http\Controllers\MessagesController;
-use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Spatie\Permission\Models\Role;
-
-
-
-
+use App\Http\Controllers\secteurController;
+use App\Http\Controllers\serviceController;
+use App\Http\Controllers\departementController;
+use App\Http\Controllers\demandesInscriptionController;
+use App\Http\Controllers\EntrepriseController;
+use App\Http\Controllers\EntrepriseDemandeServiceController;
+use App\Http\Controllers\ServiceEntrepriseController;
+use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
 
 
 // Route site Web
@@ -133,8 +126,6 @@ Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
     Route::get('/', [ClientController::class, 'index']);
     Route::get('/profil/edit', [ClientController::class, 'edit']);
     Route::post('/profil/edit', [ClientController::class, 'update_profil'])->name('update_profil_client');
-   //Route::get('/message', 'MessagesController@index');
-
 
 });
 
@@ -151,10 +142,6 @@ Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->gr
 
     Route::get('/profil/edit', [EntrepriseController::class, 'edit']);
     Route::post('/profil/edit', [EntrepriseController::class, 'update'])->name('update_profil');
-    //Route::get('/message', [MessageController::class, 'index']);
-
-    //Route::get('/message', [EntrepriseController::class, 'update'])->name('update_profil');
-
 
 });
 

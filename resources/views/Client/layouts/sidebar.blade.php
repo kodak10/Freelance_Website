@@ -19,7 +19,7 @@
         <p class="fz15 fw400 ff-heading pl30 mt30">Conversation</p>
 
         <div class="sidebar_list_item ">
-            <a href="user/message" class="items-center {{ request()->is('user/message') ? '-is-active' : '' }}"><i class="flaticon-briefcase mr15"></i>Messages</a>
+            <a href="#" class="items-center {{ request()->is('user/message') ? '-is-active' : '' }}"><i class="flaticon-briefcase mr15"></i>Messages</a>
         </div>
 
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
