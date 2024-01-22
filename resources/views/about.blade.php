@@ -87,26 +87,11 @@
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="accordion-body">
-                          L’appellation EL BARA est une expression hébraïque composée de EL qui renvoi à la puissance, la force et de BARA qui signifie la création, l’invention, l’innovation, l’imagination etc.…Outre ces sémantiques hébraïques, EL BARA trouve son sens en langue Malinké (un groupe ethnique ivoirien) et dans le jargon ivoirien à travers le travail surtout le travail bien fait. 
-                            <strong>E-BAG</strong> est une Corporation novatrice et dynamique basée en Côte d'Ivoire dont la mission principale se présente comme étant un partenaire d’accompagnement des entreprises dans divers secteurs d’activitées.
-                            En resumé E-BAG est une plateforme autour de laquelle gravite <strong>Offre et Demande</strong>; une corporation englobant plusieurs secteurs d'activitées.
-
-                            . Il est important de noter que le boom entrepreneurial africain réside dans la communalisation des services des entreprises africaines. EL BARA -AFRICA GROUP est donc le creuset de cette homogénéité entrepreneuriale qui créera un véritable essor économique en Afrique, dans la mesure où EL BARA -AFRICA GROUP se veut un carrefour d'affaires, un creuset d’approvisionnement et de ravitaillement de toutes les couches sociales notamment des entreprises et des particuliers.
-                            <strong>E-BAG</strong> l'une des actions serait d'apporter son expertise auprès des entreprises et particuliers en Afrique afin de maximiser leur rendement ( Indice de performance) .
-
-                            Pour les Entrepreneurs africains, la corporation vise à apporter sa pierre à cette édifice qui contribue au développement du continent africain pour un mieux être de sa population.
-                            Car nous porterons écoute et assistante...
-
-                            Elle vise à révolutionner les différentes prestations d'entreprises afin de les rendre plus adaptées au besoin des populations...
-
-                         {{--  Nous sommes <strong>ELBARA-AFRICA GROUP</strong> en abrégé <strong>E-BAG.</strong><br>
-                          E-BAG est une corporation novatrice et dynamique basée en Côte d'Ivoire,
-                          dont la mission principale est une vision de partenariat à savoir:
-                          <ul>
-                            <li><i class="fa-solid fa-angle-right"></i> L'accompagnement des entreprises dans divers secteurs d'activité pour l’atteinte de leur objectif;</li>
-                            <li><i class="fa-solid fa-angle-right"></i> Apporte son expertise auprès des entreprises et particulier en Afrique afin de maximiser leur rendement.</li>
-                          </ul> --}}
-
+                          L’appellation EL BARA est une expression hébraïque composée de EL qui renvoi à la puissance, la force et de BARA qui signifie la création, l’invention, l’innovation, l’imagination etc.… <br>Outre ces sémantiques hébraïques, EL BARA trouve son sens en langue Malinké (un groupe ethnique ivoirien) et dans le jargon ivoirien à travers le travail surtout le travail bien fait. 
+                            <strong>E-BAG</strong> est une Corporation novatrice et dynamique basée en Côte d'Ivoire dont la mission principale se présente comme étant un partenaire d’accompagnement des entreprises dans divers secteurs d’activités.
+                            En resumé E-BAG est une plateforme autour de laquelle gravite <strong>Offre et Demande</strong>; <br>Une corporation englobant plusieurs secteurs d'activités.
+                            .Il est important de noter que le boom entrepreneurial africain réside dans la communalisation des services des entreprises africaines. EL BARA -AFRICA GROUP est donc le creuset de cette homogénéité entrepreneuriale qui créera un véritable essor économique en Afrique, dans la mesure où EL BARA -AFRICA GROUP se veut un carrefour d'affaires, un creuset d’approvisionnement et de ravitaillement de toutes les couches sociales notamment des entreprises et des particuliers.
+                            
                         </div>
                       </div>
                     </div>
@@ -170,8 +155,8 @@
                                 <li><i class="fa-solid fa-angle-right"></i> Bénéficier d'une réduction pour tous les produits et services en tant que membre.</li>
                                 <li><i class="fa-solid fa-angle-right"></i> Aider à l'atteinte de vos objectifs.</li>
                                 <li><i class="fa-solid fa-angle-right"></i> Communiquer sur vos entreprises.</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Bénéfichier d'une carte membre d'Elbara.</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Bénéfichier d'un carnet d'adresse</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Bénéficier d'une carte membre de Elbara Africa Group.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Bénéficier d'un carnet d'adresse</li>
                                 <li><i class="fa-solid fa-angle-right"></i> Une assistance 24h/24</li>
                             </ul>
                           </div>
@@ -322,7 +307,7 @@
     <section class="wd-iconbox flat-row background1">
       <div class="tf-container">
       <div class="title-iconbox">
-          <h1>Les avantages d'Elbara Africa Group ?</h1>
+          <h1>Les avantages de Elbara Africa Group ?</h1>
           {{-- <p>Rationalisez votre processus de recherche afin atteindre des entreprises qualifiées pour vos projets.</p> --}}
       </div>
       <div class="row">

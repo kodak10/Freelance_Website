@@ -60,7 +60,7 @@
                             <a href="{{ route('services_entreprise_details', ['service' => $service->id, 'entreprise' => $entreprise->id]) }}" class="btn-category-job">En savoir plus <span class="icon-keyboard_arrow_right"></span></a>
                         </div>
                         @empty
-                        Aucune Entreprise ne propose ce service
+                       
                     @endforelse
                     <div class="d-flex justify-content-center mb-5 mt-5">
                         {{ $entreprises->links() }}
