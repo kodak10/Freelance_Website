@@ -181,8 +181,8 @@
         <div class="tf-container">
         <div class="tf-title style-2">
             <div class="group-title ">
-            <h1>Services en vedette</h1>
-            <p>Trouvez l'entreprise qui vous convient parfaitement. Environ 200+ services sur Elbara Africa Group .</p>
+            <h1>Services en vedettes</h1>
+            <p>Trouvez l'entreprise qui vous convient parfaitement. Environ 200 services sur Elbara Africa Group .</p>
             </div>
         </div>
         <div class="row wow fadeInUp">
@@ -366,8 +366,8 @@
                     <a href="">Promotion des services à un ensemble de clientèle bien définis</a>
                 </h1>
                 <p>
-                  les entreprises inscritent sur E-BAG pourront bénéficier d'une assistance comptable et de gestion d'entreprise 
-                  e de technique de communication.
+                  les entreprises inscritent sur E-BAG pourront bénéficier d'une assistance comptable de gestion d'entreprise 
+                  et de technique de communication.
                 </p>
                 </div>
             </div>
@@ -512,8 +512,7 @@
         </div>
         </div>
     </section>
-    <!-- End-WD-employer -->
-    <!-- WD-testimonials -->
+    
     <section class="testimonials-section">
         <div class="wrap-testimonials over-flow-hidden">
         <div class="tf-container">
@@ -724,9 +723,7 @@
         </div>
         </div>
     </section>
-    <!--End testimonials -->
-    <!-- wd-partner -->
-
+    
     <section class="wd-iconbox style-1 bgc-thm2 p-3">
         <div class="tf-container">
           <div class="row">
@@ -742,7 +739,7 @@
                     <h3 class="text-white">Rejoignez notre plateforme de mise en relation client-entreprise grâce à nos services de premier ordre.</h3>
                     <p class="text-white">
                         Vous avez désormais l'opportunité de vous connecter avec les entreprises du monde entier.
-                        Nous mettons à votre disposition un réseau d'entreprise dotés d'une solide expérience commerciale.
+                        Nous mettons à votre disposition un réseau d'entreprises dotées d'une solide expérience commerciale.
                         Profitez de la meilleure qualité de service de plus de 200 services d'entreprises.
                     </p>
                   </div>
@@ -842,7 +839,7 @@
                       </div>
                       <div class="box-content">
                         <h1 class="box-title">
-                          <a href="#" class="text-white">Entrer en contact avec les meilleurs entreprises pour votre service.</a>
+                          <a href="#" class="text-white">Entrer en contact avec les meilleures entreprises pour votre service.</a>
                         </h1>
 
                       </div>
@@ -956,7 +953,6 @@
         </div>
     </section>
 
-
     <section class="">
         <div class="wd-partner">
         <div class="tf-container">
@@ -1042,9 +1038,9 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <div class="wd-review-job contentbox1 padding">
-                <h3>Trouvez une entreprise  pour mettre sur pied vos projets.</h3>
+                <h3>Trouvez une entreprise pour mettre sur pied vos projets.</h3>
                 <p>
-                    Recherchez des entreprise certifié et qualifiées afin de repondre à vos besoins.
+                  Recherchez des entreprises certifiées et qualifiées afin de répondre à vos besoins.
                 </p>
                 <ul class="wd-list-icon wow fadeInLeft">
                   <li>
@@ -1061,7 +1057,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M0 8.79492C0 13.2061 3.5888 16.7949 8 16.7949C12.4112 16.7949 16 13.2061 16 8.79492C16 4.38372 12.4112 0.794922 8 0.794922C3.5888 0.794922 0 4.38372 0 8.79492ZM12.1657 7.36061C12.4781 7.04819 12.4781 6.54166 12.1657 6.22924C11.8533 5.91682 11.3467 5.91682 11.0343 6.22924L7.2 10.0636L5.36569 8.22924C5.05327 7.91682 4.54673 7.91682 4.23431 8.22924C3.9219 8.54166 3.9219 9.04819 4.23431 9.36061L6.63432 11.7606C6.94673 12.073 7.45327 12.073 7.76569 11.7606L12.1657 7.36061Z"
                           fill="#14A077" />
-                      </svg> </span>Contacter directement avec les entreprises.
+                      </svg> </span>Contactez directement avec les entreprises.
                   </li>
                   <li>
                     <span class="icon">
@@ -1117,6 +1113,6 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
 @endsection

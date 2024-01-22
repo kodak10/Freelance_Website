@@ -177,7 +177,7 @@ class AuthentificationController extends Controller
 
         // Si l'utilisateur est un client
         if (Auth::user()->hasRole('client')) {
-            return redirect('/login')->with(["success" => true, "message" => "Vous êtes connecter avec succès"], 403);
+            return redirect('/login')->with(["success" => true, "message" => "Vous êtes connectés avec succès"], 403);
         }
 
         // Si l'utilisateur est une entreprise
@@ -185,7 +185,7 @@ class AuthentificationController extends Controller
         if (Auth::user()->hasRole('compagny')) {
 
             if (Auth::user()->compagny->approve != 0) {
-                return redirect('/login')->with(["success" => true, "message" => "Vous êtes connecter avec succès"], 403);
+                return redirect('/login')->with(["success" => true, "message" => "Vous êtes connectés avec succès"], 403);
             }
 
             else if (Auth::user()->compagny->approve !== 0) {

@@ -32,7 +32,7 @@ class WebsiteController extends Controller
     public function services()
     {
         $categories = Departement::get();
-        $services = Service::has('entreprises')->paginate(8);
+        $services = Service::paginate(8);
 
         return view('services' , compact('categories', 'services'));
     }
@@ -145,7 +145,7 @@ class WebsiteController extends Controller
         $keyword = $request->input('keyword');
 
         // $query = DB::table('services');
-        $query = Service::has('entreprises');
+        $query = Service::query();
         //$services = Service::has('entreprises')->paginate(8);
 
 

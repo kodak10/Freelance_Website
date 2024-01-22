@@ -1,28 +1,21 @@
 <?php
 
+use Spatie\Permission\Models\Role;
 use App\Http\Controllers\accesUtilisateurController;
-use App\Http\Controllers\Auth\ForgotPasswordController;
-use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AuthentificationController;
-use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DemandeServiceClientController;
-use App\Http\Controllers\demandesInscriptionController;
-use App\Http\Controllers\departementController;
-use App\Http\Controllers\EntrepriseController;
-use App\Http\Controllers\EntrepriseDemandeServiceController;
-use App\Http\Controllers\secteurController;
-use App\Http\Controllers\serviceController;
-use App\Http\Controllers\ServiceEntrepriseController;
-use App\Http\Controllers\WebsiteController;
-use Chatify\Http\Controllers\MessagesController;
-use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Spatie\Permission\Models\Role;
-
-
-
-
+use App\Http\Controllers\secteurController;
+use App\Http\Controllers\serviceController;
+use App\Http\Controllers\departementController;
+use App\Http\Controllers\demandesInscriptionController;
+use App\Http\Controllers\EntrepriseController;
+use App\Http\Controllers\EntrepriseDemandeServiceController;
+use App\Http\Controllers\ServiceEntrepriseController;
+use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
 
 
 // Route site Web
@@ -35,31 +28,14 @@ Route::get('/post', [WebsiteController::class, 'send_message'])->name('send_mess
 Route::get('/services', [WebsiteController::class, 'services']);
 Route::get('/services', [WebsiteController::class, 'search'])->name('services.search');
 
-// Route::get('/services/{slug}', [WebsiteController::class, 'showEntrepriseService'])->name('EntrepriseService.show');
-
-
-// Route::get('/services/{entreprise_nom}/details', [WebsiteController::class, 'serviceShow'])->name('serviceDetail.show');
-
 Route::get('/services/{service}/entreprises', [WebsiteController::class, 'showEntrepriseService'])->name('services_entreprises');
 Route::get('/entreprises/{service}/{entreprise}/details', [WebsiteController::class, 'serviceShow'])->name('services_entreprise_details');
 
 Route::get('/departements', [WebsiteController::class, 'departements']);
 Route::resource('demandeService', DemandeServiceClientController::class);
 
-Route::get('/reset', function(){
-    return view('reset')->name('reset');
-});
-
-// Route::get('/connexion', [WebsiteController::class, 'login'])->name('login');
 Route::get('/inscription', [WebsiteController::class, 'register'])->name('inscription');
 
-Route::get('/forget', [WebsiteController::class, 'forget_password']);
-Route::post('/forget', [AuthentificationController::class, 'forget_password'])->name('send_mail');
-
-Route::get('/validation', [WebsiteController::class, 'validation']);
-Route::post('/validation', [AuthentificationController::class, 'validation'])->name('validation_email');
-
-Route::get('/verif', [WebsiteController::class, 'verif'])->name('verif');
 
 Route::get('/entreprise', [WebsiteController::class, 'entreprise_service_index']);
 Route::get('/entreprise/{id}', [WebsiteController::class, 'entreprise_service']);
@@ -133,8 +109,6 @@ Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
     Route::get('/', [ClientController::class, 'index']);
     Route::get('/profil/edit', [ClientController::class, 'edit']);
     Route::post('/profil/edit', [ClientController::class, 'update_profil'])->name('update_profil_client');
-   //Route::get('/message', 'MessagesController@index');
-
 
 });
 
@@ -151,10 +125,6 @@ Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->gr
 
     Route::get('/profil/edit', [EntrepriseController::class, 'edit']);
     Route::post('/profil/edit', [EntrepriseController::class, 'update'])->name('update_profil');
-    //Route::get('/message', [MessageController::class, 'index']);
-
-    //Route::get('/message', [EntrepriseController::class, 'update'])->name('update_profil');
-
 
 });
 
