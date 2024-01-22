@@ -450,7 +450,7 @@
                 </h1>
                 <br>
                 <p>
-                  Accéder à notre large réseau de clientèle présente dans toute la diaspora africaine afin de bénéficier d'un grand réseau d'entreprise mais aussi de bénéficier des offres et des opportunités que d'autres entreprises qui sont déjà présentes à E-BAG.  
+                  Accédez à notre large réseau de clientèle présente dans toute la diaspora africaine afin de bénéficier d'un grand réseau d'entreprise mais aussi de bénéficier des offres et des opportunités que d'autres entreprises qui sont déjà présentes à E-BAG.  
                 </p>
                 
                 </div>

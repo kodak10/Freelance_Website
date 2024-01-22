@@ -83,13 +83,15 @@
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item active">
                       <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>Principes et Missions</strong></button>
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong></strong></button>
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>E-BAG</strong> est une Corporation novatrice et dynamique basée en Côte d'Ivoire .dont la vision principale se présente comme étant un partenaire d’accompagnement des entreprises dans divers secteurs d’activité.
-                            En resumé E-BAG est une plateforme autour de laquelle gravite <strong>Offre et Demande</strong>; une corporation englobant plusieurs secteurs d'activité.
+                          L’appellation EL BARA est une expression hébraïque composée de EL qui renvoi à la puissance, la force et de BARA qui signifie la création, l’invention, l’innovation, l’imagination etc.…Outre ces sémantiques hébraïques, EL BARA trouve son sens en langue Malinké (un groupe ethnique ivoirien) et dans le jargon ivoirien à travers le travail surtout le travail bien fait. 
+                            <strong>E-BAG</strong> est une Corporation novatrice et dynamique basée en Côte d'Ivoire dont la mission principale se présente comme étant un partenaire d’accompagnement des entreprises dans divers secteurs d’activitées.
+                            En resumé E-BAG est une plateforme autour de laquelle gravite <strong>Offre et Demande</strong>; une corporation englobant plusieurs secteurs d'activitées.
 
+                            . Il est important de noter que le boom entrepreneurial africain réside dans la communalisation des services des entreprises africaines. EL BARA -AFRICA GROUP est donc le creuset de cette homogénéité entrepreneuriale qui créera un véritable essor économique en Afrique, dans la mesure où EL BARA -AFRICA GROUP se veut un carrefour d'affaires, un creuset d’approvisionnement et de ravitaillement de toutes les couches sociales notamment des entreprises et des particuliers.
                             <strong>E-BAG</strong> l'une des actions serait d'apporter son expertise auprès des entreprises et particuliers en Afrique afin de maximiser leur rendement ( Indice de performance) .
 
                             Pour les Entrepreneurs africains, la corporation vise à apporter sa pierre à cette édifice qui contribue au développement du continent africain pour un mieux être de sa population.
@@ -114,8 +116,9 @@
                       </h2>
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="accordion-body" style="size: 18px; line-height:2.0">
-                            Notre vision est de devenir le partenaire privilégié des principaux secteurs d’activité dont dispose le monde.
-                            En proposant des solutions avant-gardiste qui répondent aux besoins constamment changeant de nos collaborateurs.
+                            Notre vision est de devenir le partenaire privilégié des principaux secteurs d’activités dont dispose le monde
+                            en proposant des solutions avant-gardiste qui répondent aux besoins constamment changeant de nos collaborateurs.
+                            Revolutionner l'entrepreunariat africain de sorte à facilité  les habitudes des populations africaines en créant le réseau client-entreprise et entreprise-bailleur à travers le trio achats, consommation et commercialisation.
                             Nous aspirons à être reconnus pour notre engagement indéfectible envers l'excellence, l'innovation et la satisfaction de nos partenaires.
                         </div>
                       </div>
@@ -164,13 +167,12 @@
                           <div class="accordion-body">
                             <ul>
                                 <li><i class="fa-solid fa-angle-right"></i> Être prioritaire en cas d'appel d'offre.</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Beneficie d'une réduction pour tous les produits et services en tant que membre.</li>
-                                <li><i class="fa-solid fa-angle-right"></i> L'aide à l'atteinte de vos objectifs.</li>
-                                <li><i class="fa-solid fa-angle-right"></i> La communication</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Une carte passe-partout de membre.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Bénéficier d'une réduction pour tous les produits et services en tant que membre.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Aider à l'atteinte de vos objectifs.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Communiquer sur vos entreprises.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Bénéfichier d'une carte membre d'Elbara.</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Bénéfichier d'un carnet d'adresse</li>
                                 <li><i class="fa-solid fa-angle-right"></i> Une assistance 24h/24</li>
-
-
                             </ul>
                           </div>
                         </div>
@@ -440,11 +442,11 @@
               </div>
               <div class="box-content">
               <h1 class="box-title">
-                  <a href="">Promotion des services à un ensemble de clientèle bien définis</a>
+                  <a href="">Promotion des services à un ensemble de clientèle bien définies</a>
               </h1>
               <p>
-                les entreprises inscritent sur E-BAG pourront bénéficier d'une assistance comptable et de gestion d'entreprise 
-assistance en terme de technique de communication.
+                Les entreprises inscrites sur E-BAG pourront bénéficier d'une assistance comptable et de gestion d'entreprise 
+                  assistance en terme de technique de communication.
               </p>
               </div>
           </div>
@@ -527,7 +529,7 @@ assistance en terme de technique de communication.
               </h1>
               <br>
               <p>
-                Accéder à notre large réseau de clientèle présente dans toute la diaspora africaine afin de bénéficier d'un grand réseau d'entreprise mais aussi de bénéficier des offres et des opportunités que d'autres entreprises qui sont déjà présentes à E-BAG.  
+                Accédez à notre large réseau de clientèle présente dans toute la diaspora africaine afin de bénéficier d'un grand réseau d'entreprise mais aussi de bénéficier des offres et des opportunités que d'autres entreprises qui sont déjà présentes à E-BAG.  
               </p>
               
               </div>
@@ -970,7 +972,7 @@ assistance en terme de technique de communication.
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-cv"></span>
 
-              <h4 class="iconbox-title mt20"><strong>Sélectionner un service</strong></h4>
+              <h4 class="iconbox-title mt20"><strong>Sélectionnez un service</strong></h4>
               <p class="text mb-0">
                 Vous êtes à la recherche d'une entreprise pour réaliser vos projets ? Notre plateforme simplifie votre choix
                 Sélectionnez votre service parmi une variété de catégories.
@@ -987,7 +989,7 @@ assistance en terme de technique de communication.
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="iconbox-style9 default-box-shadow1 bgc-white p40 bdrs12 position-relative mb30">
               <span class="icon fz40 flaticon-secure"></span>
-              <h4 class="iconbox-title mt20"><strong>Discuter avec l'entreprise sur la plateforme</strong></h4>
+              <h4 class="iconbox-title mt20"><strong>Discutez avec l'entreprise sur la plateforme</strong></h4>
               <p class="text mb-0">Veuillez compléter le formulaire en renseignant vos besoins, et l'entreprise vous contactera pour en discuté.</p>
             </div>
           </div>
