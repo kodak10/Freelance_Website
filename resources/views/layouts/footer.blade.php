@@ -50,10 +50,10 @@
                         <ul class="navigation-menu-footer">
                             <li> <a href="/">Accueil</a> </li>
                             <li> <a href="/about">A Propos</a> </li>
-                            <li> <a href="/services">Trouver un service</a> </li>
+                            <li> <a href="/services">Trouvez un service</a> </li>
                             <li> <a href="/entreprise">Les entreprises</a> </li>
                             <li> <a href="/contact">Contactez-nous</a> </li>
-                            <li> <a href="/connexion">Se Connecter</a> </li>
+                            <li> <a href="/login">Se Connecter</a> </li>
                             <li> <a href="/inscription">S'inscrire</a> </li>
 
                         </ul>

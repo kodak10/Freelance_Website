@@ -8,7 +8,7 @@
             <a href="/about">A Propos </a>
         </li>
         <li class="menu-item {{ request()->is('services') ? 'current-item' : ''}}">
-            <a href="/services">Trouver un service </a>
+            <a href="/services">Trouvez un service </a>
         </li>
         <li class="menu-item {{ request()->is('contact') ? 'current-item' : '' }}">
             <a href="/contact">Contact </a>

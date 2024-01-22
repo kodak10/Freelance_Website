@@ -42,7 +42,7 @@
                                         <a href="/about">A Propos</a>
                                     </li>
                                     <li class="menu-item menu-item-mobile">
-                                        <a href="/services">Trouver un service</a>
+                                        <a href="/services">Trouvez un service</a>
                                     </li>
                                     <li class="menu-item menu-item-mobile">
                                         <a href="/contact">Contact</a>
@@ -57,7 +57,7 @@
                                         <a href="/about">A Propos</a>
                                     </li>
                                     <li class="menu-item menu-item-mobile">
-                                        <a href="/services">Trouver un service</a>
+                                        <a href="/services">Trouvez un service</a>
                                     </li>
                                     <li class="menu-item menu-item-mobile">
                                         <a href="/contact">Contact</a>

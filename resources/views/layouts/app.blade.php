@@ -132,6 +132,9 @@ a:hover{
         .btn_registration a{
             color: #000000 !important;
         }
+        .tf-iconbox .box-content p {
+            text-transform: none;
+        }
     </style>
 </head>
 
