@@ -32,9 +32,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(5)->create();
-        // Entreprise::factory(3)->create();
-        // Client::factory(2)->create();
+        //User::factory(100)->create();
+        
+        //Entreprise::factory(70)->create();
+        //Client::factory(20)->create();
         //CategoryForum::factory(10)->create();
 
         // Client::factory(10)->create();
@@ -49,8 +50,10 @@ class DatabaseSeeder extends Seeder
         //Pays::factory(10)->create();
         //Notation::factory(10)->create();
         //Recompense::factory(10)->create();
-        //ServiceEntreprise::factory(20)->create();
+        ServiceEntreprise::factory(100)->create();
 
 
+       
+       
     }
 }
