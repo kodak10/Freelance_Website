@@ -45,6 +45,9 @@
                                         <a href="/services">Trouvez un service</a>
                                     </li>
                                     <li class="menu-item menu-item-mobile">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="menu-item menu-item-mobile">
                                         <a href="/contact">Contact</a>
                                     </li>
                                 @endauth
