@@ -92,6 +92,17 @@
     <div class="bottom">
         <div class="tf-container">
             <div class="row">
+                <div class="col-lg-12">
+                    <div class="bt-left text-center d-flex justify-content-center">
+                        <div class="copyright texte-center"><strong>Redéfinir l’entrepreneuriat africain !!</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="tf-container">
+            <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="bt-left">
                         <div class="copyright">©2024 Elbara Africa Group. Tous droits réservés.</div>
