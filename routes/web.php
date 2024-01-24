@@ -1,21 +1,27 @@
 <?php
 
-use Spatie\Permission\Models\Role;
 use App\Http\Controllers\accesUtilisateurController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AuthentificationController;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DemandeServiceClientController;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\secteurController;
-use App\Http\Controllers\serviceController;
-use App\Http\Controllers\departementController;
 use App\Http\Controllers\demandesInscriptionController;
+use App\Http\Controllers\departementController;
 use App\Http\Controllers\EntrepriseController;
 use App\Http\Controllers\EntrepriseDemandeServiceController;
+use App\Http\Controllers\secteurController;
+use App\Http\Controllers\ServiceClientController;
+use App\Http\Controllers\serviceController;
 use App\Http\Controllers\ServiceEntrepriseController;
 use App\Http\Controllers\WebsiteController;
-use App\Http\Controllers\ClientController;
-use App\Http\Controllers\Auth\ForgotPasswordController;
+use Illuminate\Auth\Events\PasswordReset;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use Spatie\Permission\Models\Role;
+
+
+
 
 
 // Route site Web
@@ -100,6 +106,9 @@ Route::prefix('administration')->middleware(['auth', 'role:serviceClient'])->gro
     Route::resource('demandes_inscription', demandesInscriptionController::class);
     // route des acces users
     Route::resource('acces_utilisateurs', accesUtilisateurController::class);
+    Route::get('/clients', [ServiceClientController::class, 'liste_clients']);
+    Route::get('/clients/create', [ServiceClientController::class, 'create_clients']);
+
 });
 
 // Vos routes d'user ici

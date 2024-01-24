@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mar. 23 jan. 2024 à 12:07
+-- Généré le : mar. 23 jan. 2024 à 12:44
 -- Version du serveur : 10.5.23-MariaDB-cll-lve
 -- Version de PHP : 8.1.26
 
@@ -497,6 +497,7 @@ INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (1, 'App\\Models\\User', 351),
 (1, 'App\\Models\\User', 352),
 (1, 'App\\Models\\User', 353),
+(2, 'App\\Models\\User', 355),
 (3, 'App\\Models\\User', 183),
 (3, 'App\\Models\\User', 186),
 (3, 'App\\Models\\User', 188),
@@ -877,6 +878,13 @@ CREATE TABLE `service_clients` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Déchargement des données de la table `service_clients`
+--
+
+INSERT INTO `service_clients` (`id`, `user_id`, `nom`, `telephone`, `email`, `localisation`, `photo`, `created_at`, `updated_at`) VALUES
+(1, 355, 'Administrateur', '', 'administrateur@elbaragroup.com', '', 'logo.png', '2024-01-23 13:10:17', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -1119,7 +1127,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 (351, 'Prof. Janick Carter DDS', 'elissa.haley@example.net', '2024-01-22 15:32:09', '$2y$10$iOdjGKvXC3O.V7q3S3NuV.YO/79SSQQhlxUqTzwludST8JAzNqfLu', 'W7GXI70RsS', '2024-01-22 15:32:09', '2024-01-22 15:32:09'),
 (352, 'Fern Reichel', 'ida85@example.org', '2024-01-22 15:32:09', '$2y$10$sIwhPupnMUvGZZ.KkegTx.WFLcDA0tUR3Mo8qkRdaeJKjnAtzx5hK', 'xH48v3YvDW', '2024-01-22 15:32:09', '2024-01-22 15:32:09'),
 (353, 'Kouassi', 'atchinaymard10@gmail.com', '2024-01-22 16:00:11', '$2y$10$S/es84Njsrqg8E5GZepCVeKuwWdyP8D.nBDVCaQxKXjT4qIALTani', 'nXi6gNvZo61yp2TDxiOgHbV15MkNaGekUioQlPo5siQwiCJszaIDs9sQx9Ew', '2024-01-22 16:00:11', '2024-01-22 16:01:10'),
-(354, 'Kodak Tech', 'kodak@gmail.com', '2024-01-22 16:03:41', '$2y$10$i8IeybLUYfSytsnD8Cm08edX9um4l7Alb40JvHqNb1VJqCCc4C7b6', NULL, '2024-01-22 16:03:41', '2024-01-22 16:03:41');
+(354, 'Kodak Tech', 'kodak@gmail.com', '2024-01-22 16:03:41', '$2y$10$i8IeybLUYfSytsnD8Cm08edX9um4l7Alb40JvHqNb1VJqCCc4C7b6', NULL, '2024-01-22 16:03:41', '2024-01-22 16:03:41'),
+(355, 'Administrateur', 'administrateur@elbargroup.com', '2024-01-23 13:08:20', '$2y$10$reW5YQ3Sdty/hEyaYvENnOyDlbqpEf0F94IO1Nvm0jxpDeYgBCzLi', NULL, '2024-01-23 13:08:20', NULL);
 
 --
 -- Index pour les tables déchargées
@@ -1485,7 +1494,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT pour la table `service_clients`
 --
 ALTER TABLE `service_clients`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `service_entreprises`
@@ -1497,7 +1506,7 @@ ALTER TABLE `service_entreprises`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=355;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=356;
 
 --
 -- Contraintes pour les tables déchargées

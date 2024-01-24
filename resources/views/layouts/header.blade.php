@@ -108,9 +108,17 @@
                             {{-- <a href="/dashboard-entreprise"><span class="icon-dashboard"></span>Menu Général</a> --}}
                         </div>
                     @elseif(auth()->user()->hasRole('serviceClient'))
-                        <li><a href="/administration" class="list-item ud-btn btn-white add-joining text-uppercase">Aller au tableau de bord</a></li>
-                    @else
-                        <p>Erreur d'authentification</p>
+                        <img src="{{ asset('assets/images/profil/' . Auth::user()->serviceClient->photo) }}" alt="logo profil" />
+
+                        <div class="name">
+                            {{Auth::user()->name}}<span class="icon-keyboard_arrow_down"></span>
+                        </div>
+                        <div class="sub-account">
+                        <div class="sub-account-item">
+                            <a href="/administration"><span class="icon-dashboard"></span>Menu Général</a>
+                        </div>                    
+                        @else
+                            <p>Erreur d'authentification</p>
                     @endif
 
 

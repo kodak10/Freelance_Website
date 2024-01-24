@@ -22,16 +22,16 @@
         <div class="sidebar_list_item">
             <a href="/administration/demandes_services" class="items-center {{ request()->is('administration/demandes_services') ? '-is-active' : '' }}"><i class="flaticon-like mr15"></i>Demandes de Services </a>
         </div>
-        <p class="fz15 fw400 ff-heading pl30 mt30">Paramétrage</p>
+        <p class="fz15 fw400 ff-heading pl30 mt30">Paramétrages</p>
         <div class="sidebar_list_item ">
             <a href="/administration/departements"
-                class="items-center  {{ request()->is('departements.index', 'departements.create', 'departements.edit', 'departements.show') ? '-is-active' : '' }}"><i
+                class="items-center {{ request()->is('administration/departements', 'administration/departements/create') ? '-is-active' : '' }} "><i
                     class="flaticon-presentation mr15"></i>Les Départements</a>
         </div>
        
         <div class="sidebar_list_item ">
             <a href="/administration/services"
-                class="items-center {{ request()->is('services.index', 'services.create', 'services.edit', 'services.show') ? '-is-active' : '' }}"><i
+                class="items-center {{ request()->is('administration/services', 'administration/services/create') ? '-is-active' : '' }}"><i
                     class="flaticon-briefcase mr15"></i>Les Services</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
