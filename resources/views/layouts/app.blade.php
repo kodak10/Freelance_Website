@@ -29,9 +29,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/shortcodes.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/style.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/jquery.fancybox.min.css')}}">
-
-    <!-- Colors -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/colors/color1.css')}}" id="colors">
+   
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/favicon.png">

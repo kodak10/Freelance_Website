@@ -968,7 +968,7 @@
                 </div>
                 <div class="swiper-slide">
                   <a class="logo-partner" href="#">
-                      <img src="{{asset('assets/website/images/partners/02.jpeg')}}" alt="Logo.png">
+                      <img style="width: 60%; height:60%" src="{{asset('assets/website/images/partners/02.png')}}" alt="Logo.png">
                   </a>
                   </div>
                 <div class="swiper-slide">

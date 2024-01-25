@@ -118,7 +118,7 @@
                       </h2>
                       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="accordion-body">
-                            Nous déployons une gamme diversifiée de prestation aupres de nos partenaires ,
+                            Nous déployons une gamme diversifiée de prestation aupres de nos partenaires,
                             englobant une expertise a la fois intérieur et extérieur, des outils adaptés selon le
                             secteur d’activité et selon le besoin; visant à améliorer la sécurité et le confort de conduite.
                             <img src="{{asset('assets/website/images/departement.jpg')}}"  class=" d-flex img-fluid w-100 mt-5 image-departement" alt="image">
@@ -906,7 +906,7 @@
               </div>
               <div class="swiper-slide">
               <a href="#" class="logo-partner">
-                <img class="img-fluid" src="{{asset('assets/website/images/partners/02.jpeg')}}" alt="Logo.png">
+                <img style="width: 60%; height:60%" src="{{asset('assets/website/images/partners/02.png')}}" alt="Logo.png">
               </a>
               </div>
               <div class="swiper-slide">
