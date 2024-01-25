@@ -26,13 +26,13 @@
         <div class="sidebar_list_item ">
             <a href="/administration/departements"
                 class="items-center {{ request()->is('administration/departements', 'administration/departements/create') ? '-is-active' : '' }} "><i
-                    class="flaticon-presentation mr15"></i>Les Départements</a>
+                    class="flaticon-presentation mr15"></i>Départements</a>
         </div>
        
         <div class="sidebar_list_item ">
             <a href="/administration/services"
                 class="items-center {{ request()->is('administration/services', 'administration/services/create') ? '-is-active' : '' }}"><i
-                    class="flaticon-briefcase mr15"></i>Les Services</a>
+                    class="flaticon-briefcase mr15"></i>Services</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         {{-- <div class="sidebar_list_item ">

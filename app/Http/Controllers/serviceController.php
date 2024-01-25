@@ -45,15 +45,15 @@ class serviceController extends Controller
         $data = array(
             'libelle' => $request->libelle,
             'departement_id' => $request->idDepartement,
-            'image' => 'default.jpg',
+            'image' => 'assets/images/services/default.jpg',
             'created_at' => now()
         );
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-            $image->storeAs('public/assets/images/service', $imageName);
-            $data['image'] = $imageName;
+            $image->move(public_path('assets/images/services'), $imageName);
+            $data['image'] = 'assets/images/services/' .  $imageName;
         }
 
         if (Service::insert($data)) {
@@ -106,8 +106,10 @@ class serviceController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = now()->format('Ymd_His') . '.' . $image->getClientOriginalExtension();
-            $image->storeAs('public/assets/images/service', $imageName);
-            $data['image'] = $imageName;
+            //$image->storeAs('public/assets/images/service', $imageName);
+            $image->move(public_path('assets/images/services'), $imageName);
+
+            $data['image'] = 'assets/images/services/' .  $imageName;
         }
 
         if ($service->update($data)) {

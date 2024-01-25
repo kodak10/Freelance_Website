@@ -64,12 +64,11 @@
                         <div class="col-lg-12">
                             <div class="ui-content">
                                 <hr class="bg-dark">
-                                <h3 class="title text-center">Listes des Demandes d'inscription (
-                                    <b>{{ $clients->count() }}<b> au total)
+                                <h3 class="title text-center">Liste des Clients (<b>{{ $clients->count() }}<b> au total)
                                 </h3>
                                 <hr class="bg-dark">
 
-                                {{-- <a href="{{ route('demandes_inscriprion.create') }}" class="ud-btn btn-dark mb25 me-4">Ajouter</a> --}}
+                                <a href="{{ route('demandes_inscriprion.create') }}" class="ud-btn btn-dark mb25 me-4">Ajouter</a>
                                 <div class="table-style1 table-responsive mb-4 mb-lg-5">
                                     <table id="maintable"
                                         class="display compact cell-border table table-striped table-bordered"
@@ -78,48 +77,30 @@
 
                                         <thead class="thead-light">
                                             <tr class="text-center">
-                                                <th class="fz15 fw500" scope="col">Numero Inscription</th>
-                                                <th class="fz15 fw500" scope="col">Date</th>
-                                                <th class="fz15 fw500" scope="col">Nom</th>
+                                                <th class="fz15 fw500" scope="col">Date D'inscription</th>
+                                                <th class="fz15 fw500" scope="col">Nom & Prénoms</th>
                                                 <th class="fz15 fw500" scope="col">Email</th>
+                                                <th class="fz15 fw500" scope="col">Téléphone</th>
                                                 <th width="20%"class="text-center">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @forelse($clients as $client)
                                                 <tr class="text-center"id="tr{{ $client->id }}">
-                                                    <td>{{ $val->num_inscription }}</td>
-                                                    <td>
-                                                        {{ $val->created_at->format('d/m/Y') }}
-                                                    </td>
-                                                    <td>{{ mb_strtoupper($val->name) }}</td>
-                                                    <td>
-                                                        {{ $val->email }}
-                                                    </td>
+                                                    <td>{{ $client->created_at->format('d/m/Y') }}</td>
+                                                    <td> {{ mb_strtoupper($client->name) }} {{ mb_strtoupper($client->prenoms) }}</td>
+                                                    <td>{{ $client->user->email }}</td>
+                                                    <td>{{ $client->telephone }}</td>
                                                     <td width="20%">
                                                         <center>
                                                             <div class="row mr-0 text-white">
-                                                                <div class="col-md-4">
-                                                                </div>
-
-                                                                <div class="col-md-2">
-                                                                    <a
-                                                                        onclick="Approve({{ $val->id }})"class="btn btn-success"title="Approuver"><i
-                                                                            class="fa fa-check text-white"></i></a>
-                                                                </div>
-                                                                <div class="col-md-2">
-                                                                    <a
-                                                                        type="submit"onclick="Disapprove({{ $val->id }})"class="btn btn-danger"title="Annuler cette demande"><i
+                                                                
+                                                                <div class="col-md-12">
+                                                                    <a type="submit"onclick="Disapprove({{ $client->id }})"class="btn btn-danger"title="Clôturer le compte"><i
                                                                             class="fa fa-close text-white"></i></a>
                                                                     </form>
                                                                 </div>
-                                                                <div class="col-md-2">
-                                                                    <a
-                                                                        class="btn btn-success"title="Annuler cette demande"><i
-                                                                            class="fa fa-eye text-white"></i></a>
-                                                                    </form>
-                                                                </div>
-
+                                                               
                                                             </div>
                                                         </center>
                                                     </td>
