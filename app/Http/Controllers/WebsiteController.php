@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use App\Models\Departement;
 use App\Models\Entreprise;
 use App\Models\Image;
@@ -126,14 +127,37 @@ class WebsiteController extends Controller
     public function blog()
     {
         $categories = Departement::get();
-        return view('blog', compact('categories'));
+        $blogs = Blog::where('status', 'active')->paginate(8);
+        return view('blog', compact('categories', 'blogs'));
     }
+
+    public function blog_show($id)
+    {
+        $categories = Departement::get();
+    
+        $blog = Blog::findOrFail($id); // Assurez-vous que le blog existe
+    
+        $previousBlog = Blog::where('status', 'active')->where('id', '<', $blog->id)->orderBy('id', 'desc')->first();
+        $nextBlog = Blog::where('status', 'active')->where('id', '>', $blog->id)->orderBy('id', 'asc')->first();
+        
+        $images = DB::table('image_blogs')
+        ->join('blogs', 'image_blogs.blog_id', '=', 'blogs.id')
+        ->where('image_blogs.blog_id', $id )
+
+        ->select('image_blogs.*', 'blogs.*')
+        ->get();
+    
+        return view('blog-details', compact('blog', 'previousBlog', 'nextBlog', 'categories', 'images'));
+    }
+    
 
     public function departements()
     {
         $categories = Departement::get();
         return view('departements', compact('categories'));
     }
+
+    
 
 
     public function search(Request $request)

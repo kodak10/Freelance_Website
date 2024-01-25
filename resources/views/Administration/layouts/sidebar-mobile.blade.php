@@ -13,8 +13,8 @@
             <li class="{{ request()->is('administration/departements') ? 'active' : '' }} "><a href="/administration/departements"><i class="flaticon-chat mr10"></i>Les Départements</a></li>
             <li class="{{ request()->is('administration/services') ? 'active' : '' }} "><a href="/administration/services"><i class="flaticon-review-1 mr10"></i>Les Services</a></li>
             
-            <li><p class="fz15 fw400 ff-heading mt30 pl30">Blog</p></li>
-            <li class="{{ request()->is('administration/blog') ? 'active' : '' }} "><a href="/administration/blog"><i class="flaticon-document mr10"></i>Blog</a></li>
+            <li><p class="fz15 fw400 ff-heading mt30 pl30">Blogs</p></li>
+            <li class="{{ request()->is('administration/blogs') ? 'active' : '' }} "><a href="/administration/blogs"><i class="flaticon-document mr10"></i>Blog</a></li>
 
             <li><p class="fz15 fw400 ff-heading mt30 pl30">Comptes</p></li>
             <li class="{{ request()->is('administration/profil/edit') ? 'active' : '' }} "><a href="#"><i class="flaticon-receipt mr10"></i>Parametrage de compte</a></li>

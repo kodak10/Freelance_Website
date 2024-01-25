@@ -2,15 +2,16 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Spatie\Permission\Traits\HasRoles;
+use App\Models\Blog;
 use App\Models\Client;
 use App\Models\Entreprise;
 use App\Models\ServiceClient;
-use Laravel\Sanctum\HasApiTokens;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -61,6 +62,11 @@ class User extends Authenticatable implements MustVerifyEmail
     public function serviceClient()
     {
         return $this->hasOne(ServiceClient::class);
+    }
+
+    public function blog()
+    {
+        return $this->hasMany(Blog::class);
     }
 
 

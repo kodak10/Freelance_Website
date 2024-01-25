@@ -7,6 +7,7 @@ use App\Http\Controllers\AdministrationEntrepriseController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AuthentificationController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DemandeServiceClientController;
 use App\Http\Controllers\demandesInscriptionController;
@@ -22,6 +23,7 @@ use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Role;
+
 
 
 
@@ -51,6 +53,10 @@ Route::get('/inscription', [WebsiteController::class, 'register'])->name('inscri
 
 Route::get('/entreprise', [WebsiteController::class, 'entreprise_service_index']);
 Route::get('/entreprise/{id}', [WebsiteController::class, 'entreprise_service']);
+
+// web.php
+
+Route::get('/blog/{id}', [WebsiteController::class, 'blog_show'])->name('blog.details');
 
 
 // Route Auth
@@ -116,6 +122,8 @@ Route::prefix('administration')->middleware(['auth', 'role:serviceClient'])->gro
     
     Route::resource('/clients', AdministrationClientController::class);
     Route::resource('/entreprises', AdministrationEntrepriseController::class);
+    Route::resource('/blogs', BlogController::class);
+    Route::delete('/blog/{id}/delete-image', [BlogController::class, 'destroy_image'])->name('blog_image_destroy');
 
 });
 

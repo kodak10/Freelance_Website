@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="dashboard_title_area">
-                                <h2>Liste des clients</h2>
+                                <h2>Liste des articles</h2>
                             </div>
                         </div>
                     </div>
@@ -62,11 +62,11 @@
                         <div class="col-lg-12">
                             <div class="ui-content">
                                 <hr class="bg-dark">
-                                <h3 class="title text-center">(<b>{{ $blogs->count() }}<b>d'article au total sur le Blog)
+                                <h3 class="title text-center">(<b>{{ $blogs->count() }}<b> articles au total sur le Blog)
                                 </h3>
                                 <hr class="bg-dark">
 
-                                <a href="{{ route('clients.create') }}" class="ud-btn btn-dark mb25 me-4">Ajouter</a>
+                                <a href="{{ route('blogs.create') }}" class="ud-btn btn-dark mb25 me-4">Ajouter</a>
                                 <div class="table-style1 table-responsive mb-4 mb-lg-5">
                                     <table id="maintable"
                                         class="display compact cell-border table table-striped table-bordered"
@@ -75,32 +75,58 @@
 
                                         <thead class="thead-light">
                                             <tr class="text-center">
-                                                <th class="fz15 fw500" scope="col">Date D'inscription</th>
-                                                <th class="fz15 fw500" scope="col">Nom & Prénoms</th>
-                                                <th class="fz15 fw500" scope="col">Email</th>
-                                                <th class="fz15 fw500" scope="col">Téléphone</th>
+                                                <th class="fz15 fw500" scope="col">Status</th>
+                                                <th class="fz15 fw500" scope="col">Couverture</th>
+                                                <th class="fz15 fw500" scope="col">Libellé</th>
+                                                <th class="fz15 fw500" scope="col">Description</th>
                                                 <th width="20%"class="text-center">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @forelse($clients as $client)
-                                                <tr class="text-center"id="tr{{ $client->id }}">
-                                                    <td>{{ $client->created_at->format('d/m/Y') }}</td>
-                                                    <td> {{ mb_strtoupper($client->name) }} {{ mb_strtoupper($client->prenoms) }}</td>
-                                                    <td>{{ $client->user->email }}</td>
-                                                    <td>{{ $client->telephone }}</td>
+                                            @forelse($blogs as $blog)
+                                                <tr class="text-center"id="tr{{ $blog->id }}">
+                                                    <td style="color: {{ $blog->status == 'active' ? 'green' : 'red' }}">
+                                                        {{ $blog->status == 'active' ? 'Active' : 'Non Activé' }}
+                                                    </td>
+                                                    <td>
+                                                        <img style="width: 60px; height:60px" src="{{ asset('assets/images/blog/couverture/'. $blog->image_path) }}" alt="Couverture" srcset="">
+                                                    </td>
+                                                    <td>
+                                                        {{ (strlen($blog->libelle) > 60) ? substr($blog->libelle, 0, 60) . '...' : $blog->libelle }}
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        {{ (strlen($blog->description) > 100) ? substr($blog->description, 0, 100) . '...' : $blog->description }}
+                                                    </td>
+                                                    
+                                                    
                                                     <td width="20%">
                                                         <center>
                                                             <div class="row mr-0 text-white">
-                                                                
-                                                                <div class="col-md-12">
-                                                                    {{-- <a type="submit"onclick="Disapprove({{ $client->id }})"class="btn btn-danger"title="Clôturer le compte"><i
-                                                                            class="fa fa-close text-white"></i></a> --}}
-                                                                            <a class="btn btn-danger"title="Clôturer le compte"><i
-                                                                                class="fa fa-close text-white"></i></a>                
+                                                                <div class="col-md-3">
+                                                                    <a
+                                                                        href="{{ route('blogs.show', $blog->id) }}"class="btn btn-info text-white"title="Informations supplementaires sur l'article"><i
+                                                                            class="fa fa-eye"></i></a>
+                                                                </div>
+
+                                                                <div class="col-md-3">
+                                                                    
+                                                                    <a
+                                                                        href="{{ route('blogs.edit', $blog->id) }}"class="btn btn-warning text-white"title="Modifier l'article"><i
+                                                                            class="fa fa-edit"></i>
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="col-md-3">
+                                                                    <form
+                                                                        method="POST"action={{ route('blogs.destroy', $blog->id) }}>
+                                                                        @csrf
+                                                                        @method('DELETE')
+                                                                        <button
+                                                                            type="submit"class="btn btn-danger"title="Supprimer l'article"><i
+                                                                                class="fa fa-trash text-white"></i></button>
                                                                     </form>
                                                                 </div>
-                                                               
                                                             </div>
                                                         </center>
                                                     </td>

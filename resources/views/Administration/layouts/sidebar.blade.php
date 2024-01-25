@@ -34,10 +34,10 @@
                 class="items-center {{ request()->is('administration/services', 'administration/services/create') ? '-is-active' : '' }}"><i
                     class="flaticon-briefcase mr15"></i>Services</a>
         </div>
-        <p class="fz15 fw400 ff-heading pl30 mt30">Blog</p>
+        <p class="fz15 fw400 ff-heading pl30 mt30">Blogs</p>
        
         <div class="sidebar_list_item ">
-            <a href="administration/blog" class="items-center {{ request()->is('administration/blog') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Blog</a>
+            <a href="administration/blogs" class="items-center {{ request()->is('administration/blogs') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Blog</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         
