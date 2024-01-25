@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\accesUtilisateurController;
+use App\Http\Controllers\AdministrationClientController;
+use App\Http\Controllers\AdministrationController;
+use App\Http\Controllers\AdministrationEntrepriseController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\AuthentificationController;
@@ -19,6 +22,9 @@ use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Role;
+
+
+
 
 
 
@@ -92,7 +98,8 @@ Route::post('/password/reset', function (Request $request) {
 // Route::prefix('administration')->middleware(['auth', 'verified' ,'role:serviceClient'])->group(function () {  // Sans validation email
 Route::prefix('administration')->middleware(['auth', 'role:serviceClient'])->group(function () {
 
-    Route::get('/', [App\Http\Controllers\demandesInscriptionController::class, 'index']);
+    Route::get('/', [AdministrationController::class, 'index']);
+    
     Route::get('/detail', function () {
         return view('Administration.detail');
     });
@@ -106,8 +113,9 @@ Route::prefix('administration')->middleware(['auth', 'role:serviceClient'])->gro
     Route::resource('demandes_inscription', demandesInscriptionController::class);
     // route des acces users
     Route::resource('acces_utilisateurs', accesUtilisateurController::class);
-    Route::get('/clients', [ServiceClientController::class, 'liste_clients']);
-    Route::get('/clients/create', [ServiceClientController::class, 'create_clients']);
+    
+    Route::resource('/clients', AdministrationClientController::class);
+    Route::resource('/entreprises', AdministrationEntrepriseController::class);
 
 });
 
@@ -135,6 +143,7 @@ Route::prefix('compagny')->middleware(['auth', 'verified' ,'role:compagny'])->gr
     Route::get('/profil/edit', [EntrepriseController::class, 'edit']);
     Route::post('/profil/edit', [EntrepriseController::class, 'update'])->name('update_profil');
 
+    
 });
 
 Auth::routes();

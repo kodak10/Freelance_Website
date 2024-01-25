@@ -11,7 +11,7 @@
             <a href="/services">Trouvez un service </a>
         </li>
         <li class="menu-item {{ request()->is('blog') ? 'current-item' : ''}}">
-            <a href="#">Blog </a>
+            <a href="/blog">Blog </a>
         </li>
         <li class="menu-item {{ request()->is('contact') ? 'current-item' : '' }}">
             <a href="/contact">Contact </a>

@@ -55,8 +55,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="dashboard_title_area">
-                                <h2>Dashboard</h2>
-                                <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+                                <h2>Menu Général</h2>
                             </div>
                         </div>
                     </div>
@@ -78,7 +77,7 @@
 
                                         <thead class="thead-light">
                                             <tr class="text-center">
-                                                <th class="fz15 fw500" scope="col">Numero Inscription</th>
+                                                <th class="fz15 fw500" scope="col">Numéro d'Inscription</th>
                                                 <th class="fz15 fw500" scope="col">Date</th>
                                                 <th class="fz15 fw500" scope="col">Nom</th>
                                                 <th class="fz15 fw500" scope="col">Email</th>

@@ -15,8 +15,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="dashboard_title_area">
-                                <h2>Dashboard</h2>
-                                <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+                                <h2>Menu Général</h2>
                             </div>
                         </div>
                     </div>

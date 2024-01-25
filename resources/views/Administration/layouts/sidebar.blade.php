@@ -17,11 +17,11 @@
             <a href="/administration/entreprises" class="items-center {{ request()->is('administration/entreprises') ? '-is-active' : '' }}"><i class="flaticon-document mr15"></i>Liste des Entreprises</a>
         </div>
         <div class="sidebar_list_item">
-            <a href="/administration/demandes_inscriptions" class="items-center"><i class="flaticon-document mr15"></i>Demandes d'inscriptions</a>
+            <a href="/administration/demandes_inscription" class="items-center {{ request()->is('administration/demandes_inscription') ? '-is-active' : '' }}"><i class="flaticon-document mr15"></i>Demandes d'inscriptions</a>
         </div>
-        <div class="sidebar_list_item">
+        {{-- <div class="sidebar_list_item">
             <a href="/administration/demandes_services" class="items-center {{ request()->is('administration/demandes_services') ? '-is-active' : '' }}"><i class="flaticon-like mr15"></i>Demandes de Services </a>
-        </div>
+        </div> --}}
         <p class="fz15 fw400 ff-heading pl30 mt30">Paramétrages</p>
         <div class="sidebar_list_item ">
             <a href="/administration/departements"
@@ -34,10 +34,13 @@
                 class="items-center {{ request()->is('administration/services', 'administration/services/create') ? '-is-active' : '' }}"><i
                     class="flaticon-briefcase mr15"></i>Services</a>
         </div>
+        <p class="fz15 fw400 ff-heading pl30 mt30">Blog</p>
+       
+        <div class="sidebar_list_item ">
+            <a href="administration/blog" class="items-center {{ request()->is('administration/blog') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Blog</a>
+        </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
-        {{-- <div class="sidebar_list_item ">
-            <a href="/administration/acces_utilisateurs" class="items-center {{ request()->routeIs('acces_utilisateurs.index', 'acces_utilisateurs.create', 'acces_utilisateurs.edit', 'acces_utilisateurs.show') ? '-is-active' : '' }}"><i class="flaticon-user mr15"></i>Accès utilisateurs</a>
-        </div> --}}
+        
         <div class="sidebar_list_item ">
             <a href="administration/profil/edit" class="items-center {{ request()->is('administration/profil/edit') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Parametrage de compte</a>
         </div>

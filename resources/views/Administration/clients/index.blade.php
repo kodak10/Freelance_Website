@@ -56,7 +56,6 @@
                         <div class="col-lg-12">
                             <div class="dashboard_title_area">
                                 <h2>Liste des clients</h2>
-                                <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                         </div>
                     </div>
@@ -68,7 +67,7 @@
                                 </h3>
                                 <hr class="bg-dark">
 
-                                <a href="{{ route('demandes_inscriprion.create') }}" class="ud-btn btn-dark mb25 me-4">Ajouter</a>
+                                <a href="{{ route('clients.create') }}" class="ud-btn btn-dark mb25 me-4">Ajouter</a>
                                 <div class="table-style1 table-responsive mb-4 mb-lg-5">
                                     <table id="maintable"
                                         class="display compact cell-border table table-striped table-bordered"
@@ -96,8 +95,10 @@
                                                             <div class="row mr-0 text-white">
                                                                 
                                                                 <div class="col-md-12">
-                                                                    <a type="submit"onclick="Disapprove({{ $client->id }})"class="btn btn-danger"title="Clôturer le compte"><i
-                                                                            class="fa fa-close text-white"></i></a>
+                                                                    {{-- <a type="submit"onclick="Disapprove({{ $client->id }})"class="btn btn-danger"title="Clôturer le compte"><i
+                                                                            class="fa fa-close text-white"></i></a> --}}
+                                                                            <a class="btn btn-danger"title="Clôturer le compte"><i
+                                                                                class="fa fa-close text-white"></i></a>                
                                                                     </form>
                                                                 </div>
                                                                
@@ -177,7 +178,7 @@
             function Disapprove(id) {
                 var csrf_token = $('meta[name="csrf-token"]').attr('content');
                 Swal.fire({
-                    title: 'Etes vous sur de desapprouver cette demande?',
+                    title: 'Voulez vous clôturer le compte ?',
                     text: "il est a noter que cette action est irreversible!",
                     icon: 'warning',
                     showCancelButton: true,

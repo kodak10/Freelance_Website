@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <p>La recherche de service est devenue facile. Utilisez Elbara Africa group pour trouver des entreprises qualifiées pour vos projets.</p>
-                        <div class="ft-icon"> <i class="icon-map-pin"></i> Côte d'ivoire, Abidjan, Yopougon</div>
+                        <div class="ft-icon"> <i class="icon-map-pin"></i> Côte d'ivoire, Abidjan, Yopougon sable</div>
                         {{-- <form action="#" id="subscribe-form">
                             <input type="email" placeholder="Your email address" required="" id="subscribe-email">
                             <button class="tf-button" type="submit" id="subscribe-button"><i class="icon-paper-plane-o"></i></button>
@@ -52,6 +52,7 @@
                             <li> <a href="/about">A Propos</a> </li>
                             <li> <a href="/services">Trouvez un service</a> </li>
                             <li> <a href="/entreprise">Les entreprises</a> </li>
+                            <li> <a href="/blog">Blog</a> </li>
                             <li> <a href="/contact">Contactez-nous</a> </li>
                             <li> <a href="/login">Se Connecter</a> </li>
                             <li> <a href="/inscription">S'inscrire</a> </li>
