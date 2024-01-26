@@ -204,6 +204,18 @@
             <li><a href="#"><i class="icon-facebook"></i>{{$serviceDetails->facebook}}</a></li>
         </ul>
     </div>
+
+      {{-- <div class="form-job-single">
+        <h6>Laissez un message via Email</h6>
+        <form action="https://themesflat.co/html/jobtex/post">
+          <input type="text" placeholder="Subject">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Message..."></textarea>
+          <button>Envoyer le message</button>
+        </form>
+
+      </div> --}}
    
     </div>
   </div>

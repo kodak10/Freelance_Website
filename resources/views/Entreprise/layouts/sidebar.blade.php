@@ -8,10 +8,10 @@
         </div>
         <div class="sidebar_list_item">
             <a href="/compagny" class="items-center {{ request()->is('compagny') ? '-is-active' : '' }}"><i class="flaticon-home mr15"></i>Menu Général</a>        </div>
-        <p class="fz15 fw400 ff-heading pl30 mt30">Message</p>
+        {{-- <p class="fz15 fw400 ff-heading pl30 mt30">Message</p>
         <div class="sidebar_list_item">
             <a href="#" class="items-center {{ request()->is('compagny/message') ? '-is-active' : '' }}"><i class="flaticon-document mr15"></i>Messages</a>
-        </div>
+        </div> --}}
         {{-- <div class="sidebar_list_item">
             <a href="#" class="items-center"><i class="flaticon-like mr15"></i>Demandes de Services </a>
         </div>

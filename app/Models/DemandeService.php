@@ -38,7 +38,12 @@ class DemandeService extends Model
     public function service()
     {
         return $this->belongsTo(Service::class, 'service_id');
-}
+    }
+
+    public function client()
+    {
+        return $this->belongsTo(Client::class, 'client_id');
+    }
 
 
 }

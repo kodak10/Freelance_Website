@@ -34,8 +34,8 @@
                                 </div>
                                 <div class="row p-2 text-center">
                                     <div class="col-lg-6">
-                                        
-                                        <button class="btn btn-success"><a class="ud-btn2" href="#">Contactez le client</a></button>
+
+                                        <button class="btn btn-success"><a class="ud-btn2" href="tel:{{ $demande->client->telephone }}">Contactez le client</a></button>
                                     </div>
                                     <div class="col-lg-6">
                                        <button class="btn btn-danger"><a class="ud-btn2" href="{{ route('demande.details', ['id' => $demande->id]) }}">Plus de details</a></button> 

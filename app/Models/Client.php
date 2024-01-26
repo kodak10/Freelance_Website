@@ -22,5 +22,9 @@ class Client extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function demandeServices()
+    {
+        return $this->hasMany(DemandeService::class, 'client_id');
+    }
 
 }

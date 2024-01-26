@@ -18,9 +18,9 @@
         </div>--}}
         <p class="fz15 fw400 ff-heading pl30 mt30">Conversation</p>
 
-        <div class="sidebar_list_item ">
+        {{-- <div class="sidebar_list_item ">
             <a href="#" class="items-center {{ request()->is('user/message') ? '-is-active' : '' }}"><i class="flaticon-briefcase mr15"></i>Messages</a>
-        </div>
+        </div> --}}
 
         <div class="sidebar_list_item ">
             <a href="/user/demandes" class="items-center {{ request()->is('user/demandess') ? '-is-active' : '' }}"><i class="flaticon-briefcase mr15"></i>Demande de service</a>
