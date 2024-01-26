@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
 use App\Models\DemandeService;
+use App\Models\Departement;
+use App\Models\Entreprise;
+use App\Models\Service;
 use App\Models\ServiceEntreprise;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use App\Models\Service;
-use App\Models\Departement;
 
 
 class ClientController extends Controller
@@ -90,5 +91,25 @@ class ClientController extends Controller
 
     return redirect('/user/profil/edit')->with('success', 'Profil mis à jour avec succès.');
 }
+
+    public function demandes()
+    {
+        $counter = 1;
+        $entreprises= Entreprise::get();
+
+        $demandes = DemandeService::where('client_id', Auth::user()->client->id)->paginate(5);
+
+        return view('Client.demande.index', compact('demandes', 'counter', 'entreprises'));
+    }
+
+    public function demandes_destroy(string $id)
+    {
+        $info = DemandeService::where('id', $id)->firstOrFail();
+        if ($info->delete()) {
+            return redirect()->back()->with('deleted', 'deleted');
+        } else {
+            return redirect()->back()->with('nothing', 'nothing');
+        };
+    }
 
 }

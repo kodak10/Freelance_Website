@@ -133,6 +133,10 @@ Route::prefix('user')->middleware(['auth','role:client'])->group(function () {
     Route::get('/', [ClientController::class, 'index']);
     Route::get('/profil/edit', [ClientController::class, 'edit']);
     Route::post('/profil/edit', [ClientController::class, 'update_profil'])->name('update_profil_client');
+    Route::get('/demandes', [ClientController::class, 'demandes']);
+    Route::delete('/demandes/{id}', [ClientController::class, 'demandes_destroy'])->name('destroy_demande');
+
+
 
 });
 

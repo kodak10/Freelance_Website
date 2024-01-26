@@ -55,7 +55,21 @@
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 <div class="body_content">
    
-  <section class="account-section">
+  <section class="breadcumb-section mt40 mt-5">
+    <div class="cta-about-v1 mx-auto maxw1700 pt120 pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5">
+            <div class="position-relative">
+              <h2 class="text-white">BLOG</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{-- <section class="account-section">
     <div class="tf-container">
       <div class="row">
         <section class="page-title-dashboard">
@@ -71,7 +85,7 @@
           </section>
       </div>
     </div>
-  </section>
+  </section> --}}
 
     <section class="our-blog">
         <div class="container">
@@ -81,7 +95,7 @@
                   <div class="blog-style1">
                       <div class="blog-img"><img class="w-100" style="height:250px" src="{{ asset('assets/images/blog/couverture/' . $blog->image_path) }}" alt=""></div>
                       <div class="blog-content">
-                          <a class="date" href="#">{{ $blog->created_at->format('d/m/Y') }}</a>
+                          <a class="date" href="#"><span class="icon-calendar"></span> {{ $blog->created_at->format('d/m/Y') }}</a>
                           <h4 class="title mt-1"><a href="{{ route('blog.details', ['id' => $blog->id]) }}">{{$blog->libelle}}</a></h4>
                           <p class="text mb-0">{{ (strlen($blog->description) > 100) ? substr($blog->description, 0, 100) . '...' : $blog->description }}</p>
                       </div>

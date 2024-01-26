@@ -22,6 +22,9 @@
             <a href="#" class="items-center {{ request()->is('user/message') ? '-is-active' : '' }}"><i class="flaticon-briefcase mr15"></i>Messages</a>
         </div>
 
+        <div class="sidebar_list_item ">
+            <a href="/user/demandes" class="items-center {{ request()->is('user/demandess') ? '-is-active' : '' }}"><i class="flaticon-briefcase mr15"></i>Demande de service</a>
+        </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         <div class="sidebar_list_item ">
             <a href="/user/profil/edit" class="items-center {{ request()->is('user/profil/edit') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Paramétrage de compte</a>

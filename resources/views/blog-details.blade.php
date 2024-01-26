@@ -66,7 +66,7 @@
                         <h3 class="main-heading">{{ $blog->libelle }}</h3>
                         <ul class="meta">
                           {{-- <li class="author"><span>by</span>Avitex</li> --}}
-                          <li class="time">Date de publication <span class="icon-calendar"></span> {{ $blog->created_at->format('d/m/Y') }}</li>
+                          <li class="time"><span class="icon-calendar"></span> Date de publication:  {{ $blog->created_at->format('d/m/Y') }}</li>
                         </ul>
                     </div>
                 </div>

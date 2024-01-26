@@ -20,14 +20,25 @@ class DemandeService extends Model
         'document',
 
     ];
+    // public function compagny()
+    // {
+    //     return $this->belongsTo(Entreprise::class);
+    // }
+
+    // public function service()
+    // {
+    //     return $this->belongsTo(Service::class);
+    // }
+
     public function compagny()
     {
-        return $this->belongsTo(Entreprise::class);
+        return $this->belongsTo(Entreprise::class, 'entreprise_id');
     }
 
     public function service()
     {
-        return $this->belongsTo(Service::class);
-    }
+        return $this->belongsTo(Service::class, 'service_id');
+}
+
 
 }
