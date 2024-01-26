@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Blog;
 use App\Models\CategoryFaq;
 use App\Models\CategoryForum;
 use App\Models\CategoryNew;
@@ -13,6 +14,7 @@ use App\Models\Diplome;
 use App\Models\Entreprise;
 use App\Models\Faq;
 use App\Models\Forum;
+use App\Models\ImageBlog;
 use App\Models\NewComment;
 use App\Models\News;
 use App\Models\Notation;
@@ -32,10 +34,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(100)->create();
+        //User::factory(100)->create();
         
-        Entreprise::factory(70)->create();
-        Client::factory(20)->create();
+        //Entreprise::factory(70)->create();
+        //Client::factory(20)->create();
         //CategoryForum::factory(10)->create();
 
         // Client::factory(10)->create();
@@ -50,7 +52,10 @@ class DatabaseSeeder extends Seeder
         //Pays::factory(10)->create();
         //Notation::factory(10)->create();
         //Recompense::factory(10)->create();
-        ServiceEntreprise::factory(100)->create();
+        Blog::factory(30)->create();
+        ImageBlog::factory(100)->create();
+
+        //ServiceEntreprise::factory(100)->create();
 
 
        
