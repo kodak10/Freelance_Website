@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Models\Image;
+use App\Models\ImageBlog;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -25,6 +25,6 @@ class Blog extends Model
 
     public function images()
     {
-        return $this->hasMany(Image::class);
+        return $this->hasMany(ImageBlog::class);
     }
 }

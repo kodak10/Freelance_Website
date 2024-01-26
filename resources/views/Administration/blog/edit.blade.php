@@ -1,44 +1,7 @@
 @extends('Administration.layouts.app')
 
 @section('content')
-    <!-- right content -->
-    @if (session()->has('deleted'))
-        <script>
-            Swal.fire(
-                'Effectué!',
-                'suppression effectuée avec succès!',
-                'success'
-            );
-            // alert('suppression effectuee avec succes')
-        </script>
-    @elseif(session()->has('added'))
-        <script>
-            Swal.fire(
-                'Effectué!',
-                'Ajout effectué avec succès!',
-                'success'
-            );
-            // alert('Ajout effectue avec succes')
-        </script>
-    @elseif(session()->has('updated'))
-        <script>
-            Swal.fire(
-                'Effectué!',
-                'Mise a jour effectuée avec succès!',
-                'success'
-            );
-            // alert('Mise a jour effectuee avec succes')
-        </script>
-    @elseif(session()->has('nothing'))
-        <script>
-            Swal.fire(
-                'Erreur!',
-                'Oups ,une erreur s\'est produite!',
-                'danger'
-            );
-            // alert('Oups ,une erreur s\'est produite')
-        </script>
-    @endif
+
     <div class="dashboard_content_wrapper">
 
         <div class="dashboard dashboard_wrapper pr30 pr0-xl">
@@ -93,8 +56,8 @@
                                                 <div class="form-group">
                                                     <label class="form-label fw500 fz16 dark-color">Status</label>
                                                     <select name="status" class="form-select form-select-md mb-3 form-control" aria-label=".form-select-lg example" >
-                                                        <option value="">Sélectionner le status</option>
-                                                        <option value="active">Publier</option>
+                                                        <option value="{{$blogs->status}}">{{$blogs->status}}</option>
+                                                        <option value="active">Active</option>
                                                         <option value="non actie">Ne pas publié</option>
                                                     </select>
                                                 </div>
@@ -146,6 +109,7 @@
 
 
                                         </div>
+                                    </form>
                                 </div>
                             </div>
                             <div class="row mt-3">
@@ -153,13 +117,14 @@
                                     <div class="form-group d-flex justify-content-center align-items-center">
                                         @foreach ($images as $image)
                                         <img style="width: 100px; height: 100px; margin: 10px 20px;" src="/{{ $image->file_path }}" alt="Image Réalisation">
-                                        <form method="POST" action={{ route('blog_image_destroy', $image->id) }}>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn" title="Supprimer">
-                                                    <i class="fa-solid fa-circle-xmark"></i>
-                                                </button>
-                                            </form>
+                                        <form method="POST" action="{{ route('blog_image_destroy', $image->id) }}">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn" title="Supprimer">
+                                                <i class="fa-solid fa-circle-xmark"></i>
+                                            </button>
+                                        </form>
+                                        
                                             
                                         @endforeach
                                     </div>

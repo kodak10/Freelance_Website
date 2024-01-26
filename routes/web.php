@@ -66,10 +66,6 @@ Route::post('/inscription_entreprise', [AuthentificationController::class, 'regi
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout' ])->name('logout');
 
 
-// Route::get('/password/reset', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
-// Route::post('/password/email', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
-// Route::get('/password/reset', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.reset');
-
 Route::get('/password/reset/{token}', function (string $token) {
     return view('auth.passwords.reset', ['token' => $token]);
 })->middleware('guest')->name('password.reset');
@@ -123,7 +119,10 @@ Route::prefix('administration')->middleware(['auth', 'role:serviceClient'])->gro
     Route::resource('/clients', AdministrationClientController::class);
     Route::resource('/entreprises', AdministrationEntrepriseController::class);
     Route::resource('/blogs', BlogController::class);
-    Route::delete('/blog/{id}/delete-image', [BlogController::class, 'destroy_image'])->name('blog_image_destroy');
+    Route::delete('/blogs/{id}/delete-image', [BlogController::class, 'destroy_image'])->name('blog_image_destroy');
+
+
+    
 
 });
 

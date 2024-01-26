@@ -2,44 +2,7 @@
 
 @section('content')
 
-    <!-- right content -->
-    @if (session()->has('deleted'))
-        <script>
-            Swal.fire(
-                'Effectué!',
-                'Demande annulée avec succès!',
-                'success'
-            );
-            // alert('suppression effectuee avec succes')
-        </script>
-    @elseif(session()->has('added'))
-        <script>
-            Swal.fire(
-                'Effectué!',
-                'Ajout effectué avec succès!',
-                'success'
-            );
-            // alert('Ajout effectue avec succes')
-        </script>
-    @elseif(session()->has('updated'))
-        <script>
-            Swal.fire(
-                'Effectué!',
-                'Mise a jour effectuée avec succès!',
-                'success'
-            );
-            // alert('Mise a jour effectuee avec succes')
-        </script>
-    @elseif(session()->has('nothing'))
-        <script>
-            Swal.fire(
-                'Erreur!',
-                'Oups ,une erreur s\'est produite!',
-                'danger'
-            );
-            // alert('Oups ,une erreur s\'est produite')
-        </script>
-    @endif
+
     <div class="dashboard_content_wrapper">
 
         <div class="dashboard dashboard_wrapper pr30 pr0-xl">

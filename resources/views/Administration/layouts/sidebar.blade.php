@@ -37,12 +37,12 @@
         <p class="fz15 fw400 ff-heading pl30 mt30">Blogs</p>
        
         <div class="sidebar_list_item ">
-            <a href="administration/blogs" class="items-center {{ request()->is('administration/blogs') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Blog</a>
+            <a href="/administration/blogs" class="items-center {{ request()->is('administration/blogs') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Blog</a>
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         
         <div class="sidebar_list_item ">
-            <a href="administration/profil/edit" class="items-center {{ request()->is('administration/profil/edit') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Parametrage de compte</a>
+            <a href="/administration/profil/edit" class="items-center {{ request()->is('administration/profil/edit') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Parametrage de compte</a>
         </div>
         <div class="sidebar_list_item ">
 

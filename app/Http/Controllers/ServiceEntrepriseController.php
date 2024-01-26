@@ -8,6 +8,8 @@ use App\Models\Departement;
 use Illuminate\Http\Request;
 use App\Models\ServiceEntreprise;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class ServiceEntrepriseController extends Controller
 {
@@ -258,15 +260,43 @@ class ServiceEntrepriseController extends Controller
     /**
      * Remove the specified resource from storage.
      */
+    // public function destroy(string $id)
+    // {
+    //     $info = ServiceEntreprise::where('id', $id)->firstOrFail();
+    //     if ($info->delete()) {
+    //         return redirect('/compagny/service')->with('deleted', 'deleted');
+    //     } else {
+    //         return redirect('/compagny/service')->with('nothing', 'nothing');
+    //     };
+    // }
+
     public function destroy(string $id)
-    {
-        $info = ServiceEntreprise::where('id', $id)->firstOrFail();
-        if ($info->delete()) {
-            return redirect('/compagny/service')->with('deleted', 'deleted');
-        } else {
-            return redirect('/compagny/service')->with('nothing', 'nothing');
-        };
+{
+    try {
+        DB::beginTransaction();
+
+        $serviceEntreprise = ServiceEntreprise::findOrFail($id);
+
+        // Supprimer toutes les images associées (si applicable)
+        $images = $serviceEntreprise->images;
+        foreach ($images as $image) {
+            Storage::delete($image->file_path);
+        }
+
+        // Supprimer toutes les images de la base de données
+        $serviceEntreprise->images()->delete();
+
+        // Supprimer l'enregistrement principal
+        $serviceEntreprise->delete();
+
+        DB::commit();
+
+        return redirect('/compagny/service')->with('deleted', 'deleted');
+    } catch (\Exception $e) {
+        DB::rollBack();
+        return redirect('/compagny/service')->with('nothing', 'nothing')->with('error', 'Error deleting service: ' . $e->getMessage());
     }
+}
 
     public function destroy_image(string $id){
         $image = Image::where('id', $id)->firstOrFail();

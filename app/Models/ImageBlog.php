@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class ImageBlog extends Model
 {
     use HasFactory;
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'file_path',

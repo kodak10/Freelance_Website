@@ -7,6 +7,8 @@ use App\Models\ImageBlog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -37,6 +39,7 @@ class BlogController extends Controller
     
         // Validation des champs
         $validator = Validator::make($request->all(), [
+            'status' => ['required', 'string', 'max:255'],
             'libelle' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
             'couverture' => ['image', 'mimes:jpeg,png,jpg,gif', 'max:2048'], // Exemple de validation pour la couverture (image)
@@ -128,27 +131,89 @@ class BlogController extends Controller
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
-    {
-        //
+{
+    $blog = Blog::findOrFail($id);
+
+    $request->validate([
+        'libelle' => ['required', 'string', 'max:255'],
+        'description' => ['required', 'string'],
+        'couverture' => ['image', 'mimes:jpeg,png,jpg,gif', 'max:2048'],
+        'images.*' => ['image', 'mimes:jpeg,png,jpg,gif', 'max:2048'],
+    ]);
+
+    $data = [
+        'libelle' => $request->libelle,
+        'description' => $request->description,
+    ];
+
+    // Traitement de la couverture du blog
+    if ($request->hasFile('couverture')) {
+        $couverture = $request->file('couverture');
+        $imageName = 'couverture_' . now()->format('Ymd_His') . '.' . $couverture->getClientOriginalExtension();
+        $couverture->move(public_path('assets/images/blog/couverture'), $imageName);
+        $data['image_path'] = $imageName;
     }
+
+    if ($request->hasFile('images')) {
+        $images = $request->file('images');
+    
+        $counter = 1;
+
+        foreach ($images as $image) {
+            $imageName = 'image_' . now()->format('Ymd_His') . '_' . $counter . '.' . $image->getClientOriginalExtension();
+
+            $image->move(public_path('assets/images/blog'), $imageName);
+
+            $newImage = new ImageBlog();
+            $newImage->file_path = 'assets/images/blog/' . $imageName;
+            $newImage->blog_id = $blog->id; // Utilisez le bon ID du blog
+            $newImage->save();
+
+            $counter++;
+        }
+    }
+
+    if ($blog->update($data)) {
+        return redirect()->back()->with('updated', 'updated');
+    } else {
+        return redirect()->back()->with('nothing', 'nothing');
+    }
+}
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
-    {
+{
+    try {
+        DB::beginTransaction();
+
         $blog = Blog::findOrFail($id);
-    
-        // Supprimer les images liées
-        ImageBlog::where('blog_id', $id)->delete();
-    
-        // Supprimer le blog
-        if ($blog->delete()) {
-            return redirect('/administration/blogs')->with('deleted', 'deleted');
-        } else {
-            return redirect('/administration/blogs')->with('nothing', 'nothing');
+
+        // Récupérer toutes les images associées au blog
+        $images = $blog->images;
+
+        // Supprimer les images physiquement du stockage (facultatif, si vous le souhaitez)
+        foreach ($images as $image) {
+            Storage::delete($image->file_path); // Assurez-vous d'avoir l'utilisation de Storage à votre début de fichier
         }
+
+        // Supprimer toutes les images de la base de données
+        $blog->images()->delete();
+
+        // Supprimer le blog
+        $blog->delete();
+
+        DB::commit();
+
+        return redirect('/administration/blogs')->with('deleted', 'deleted');
+    } catch (\Exception $e) {
+        DB::rollBack();
+        return redirect('/administration/blogs')->with('nothing', 'nothing')->with('error', 'Error deleting blog: ' . $e->getMessage());
     }
+}
+
+
 
     public function destroy_image(string $id){
         $image = ImageBlog::where('id', $id)->firstOrFail();
