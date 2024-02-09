@@ -74,7 +74,7 @@ class WebsiteController extends Controller
         ->select(
             // Service entreprise
             'service_entreprises.delais_execution as delais_execution',
-            'service_entreprises.description as descript ',
+            'service_entreprises.description as descript',
             // Service
             'services.id as service_id', 
             'services.libelle as libelle',
