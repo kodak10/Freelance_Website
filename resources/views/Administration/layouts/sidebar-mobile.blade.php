@@ -17,7 +17,7 @@
             <li class="{{ request()->is('administration/blogs') ? 'active' : '' }} "><a href="/administration/blogs"><i class="flaticon-document mr10"></i>Blog</a></li>
 
             <li><p class="fz15 fw400 ff-heading mt30 pl30">Comptes</p></li>
-            <li class="{{ request()->is('administration/profil/edit') ? 'active' : '' }} "><a href="#"><i class="flaticon-receipt mr10"></i>Parametrage de compte</a></li>
+            {{-- <li class="{{ request()->is('administration/profil/edit') ? 'active' : '' }} "><a href="#"><i class="flaticon-receipt mr10"></i>Parametrage de compte</a></li> --}}
             <li>
                 <a href="javascript:void(0)"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit()">

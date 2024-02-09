@@ -41,9 +41,9 @@
         </div>
         <p class="fz15 fw400 ff-heading pl30 mt30">Comptes</p>
         
-        <div class="sidebar_list_item ">
+        {{-- <div class="sidebar_list_item ">
             <a href="/administration/profil/edit" class="items-center {{ request()->is('administration/profil/edit') ? '-is-active' : '' }}"><i class="fa-solid fa-user mr15"></i>Parametrage de compte</a>
-        </div>
+        </div> --}}
         <div class="sidebar_list_item ">
 
             <a href="javascript:void(0)"
