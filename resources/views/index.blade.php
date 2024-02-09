@@ -189,12 +189,12 @@
 
                 @foreach ($services as $service)
                     <div class="col-lg-6 ">
-                        <div class="features-job">
+                        <div class="features-job " >
                             <div class="job-archive-header">
                               <div class="row">
                                 <div class="col-lg-4">
                                   <div class="logo-company">
-                                    <img class="img-fluid w-100" src="/{{$service->image}}"
+                                    <img style="height: 150px !important; width:100%" class="img-fluid w-100" src="/{{$service->image}}"
                                         alt="image" />
                                 </div>
                                 </div>

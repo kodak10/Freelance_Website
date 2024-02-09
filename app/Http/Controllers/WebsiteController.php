@@ -25,7 +25,7 @@ class WebsiteController extends Controller
         $categories = Departement::get();
         $categories_smalls = Departement::take(10)->get();
         $entreprises = Entreprise::take(8)->get();
-        $services = Service::take(8)->get();
+        $services = Service::has('entreprises')->paginate(8);
         
         return view('index', compact('entreprises', 'categories', 'categories_smalls', 'services'));
     }
