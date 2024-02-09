@@ -21,7 +21,7 @@ window.console =
 $(document).ready(function () {
   var e =
     '<div class="switcher-container">' +
-    '<h2>Style Selector<a href="#" class="sw-click"><img src="images/settings1.png" class="setting"></img></a></h2>' +
+    // '<h2>Style Selector<a href="#" class="sw-click"><img src="images/settings1.png" class="setting"></img></a></h2>' +
     '<div class="selector-box">' +
     '<div class="clearfix"></div>' +
     '<div class="sw-odd"><h3>Color:</h3>' +

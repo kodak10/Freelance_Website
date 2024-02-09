@@ -58,10 +58,10 @@
     <script src="{{asset('assets/js/popper.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap-select.min.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.mmenu.all.js')}}"></script>
+    {{-- <script src="{{asset('assets/js/jquery.mmenu.all.js')}}"></script> --}}
     <script src="{{asset('assets/js/ace-responsive-menu.js')}}"></script>
-    <script src="{{asset('assets/js/chart.min.js')}}"></script>
-    <script src="{{asset('assets/js/chart-custome.js')}}"></script>
+    {{-- <script src="{{asset('assets/js/chart.min.js')}}"></script>
+    <script src="{{asset('assets/js/chart-custome.js')}}"></script> --}}
     <script src="{{asset('assets/js/jquery-scrolltofixed-min.js')}}"></script>
     <script src="{{asset('assets/js/dashboard-script.js')}}"></script>
 

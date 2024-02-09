@@ -51,12 +51,12 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="d-none d-sm-block">
+                            {{-- <li class="d-none d-sm-block">
                                 <a class="text-center mr5 text-thm2 dropdown-toggle fz20" type="button" data-bs-toggle="dropdown" href="#"><span class="flaticon-mail"></span></a>
                                 <div class="dropdown-menu">
                                     <div class="dboard_notific_dd px30 pt20 pb15">
                                         <div class="notif_list d-flex align-items-start bdrb1 pb25 mb10">
-                                            <img class="img-2" src="images/testimonials/testi-1.png" alt="">
+                                            <img class="img-2" src="{{asset('assets/images/testimonials/testi-1.png')}}" alt="">
                                             <div class="details ml15">
                                             <p class="dark-color fw500 mb-2">Douffi Alexandre</p>
                                             <p class="text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -69,7 +69,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li> --}}
                             <li class="user_setting">
                                 <div class="dropdown">
                                     <a class="btn" href="#" data-bs-toggle="dropdown">

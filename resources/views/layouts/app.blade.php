@@ -200,7 +200,6 @@ a:hover{
     <script src="{{asset('assets/website/javascript/jquery.cookie.js')}}"></script>
     <script src="{{asset('assets/website/javascript/switcher.js')}}"></script>
     <script src="{{asset('assets/website/javascript/main.js')}}"></script>
-    <script src="{{asset('assets/website/javascript/messages.js')}}"></script>
     <script src="{{asset('assets/website/javascript/password-addon.js')}}"></script>
 
 
