@@ -133,13 +133,25 @@ class ServiceEntrepriseController extends Controller
     $check = array(
         'service' => 'required',
         'libelle' => 'required',
-        'description' => 'required',
         'delais' => 'required',
         'entreprise' => 'required',
         'images*' => 'image|mimes:jpeg,png,gif,webp,jpg|max:2048'
     );
 
-    $request->validate($check);
+    //$request->validate($check);
+
+    $messages = [
+        'service.required' => 'Le champ service est requis.',
+        'libelle.required' => 'Le champ libelle est requis.',
+        'delais.required' => 'Le champ delais est requis.',
+        'entreprise.required' => 'Le champ entreprise est requis.',
+        'images.*.image' => 'Le fichier doit être une image.',
+        'images.*.mimes' => 'Le fichier doit être de type :values.',
+        'images.*.max' => 'Le fichier ne doit pas dépasser :max kilo-octets.'
+    ];
+
+    $request->validate($check, $messages);
+
 
     $serviceEntreprise = new ServiceEntreprise();
     $serviceEntreprise->entreprise_id = $request->entreprise;
@@ -172,7 +184,9 @@ class ServiceEntrepriseController extends Controller
     }
     
 
-    return redirect('/compagny/service/create')->with('added', 'added');
+    //return redirect('/compagny/service/create')->with('success', true)->with('message', 'Le service a été ajouté avec succès.');
+    return redirect('/compagny/service/create')->with('success', 'Le service a été ajouté avec succès.');
+
 }
 
 
@@ -208,13 +222,25 @@ class ServiceEntrepriseController extends Controller
         $check = array(
             'service' => 'required',
             'libelle' => 'required',
-            'description' => 'required',
             'delais' => 'required',
             'entreprise' => 'required',
 
         );
 
-        $request->validate($check);
+        //$request->validate($check);
+
+        $messages = [
+            'service.required' => 'Le champ service est requis.',
+            'libelle.required' => 'Le champ libelle est requis.',
+            'delais.required' => 'Le champ delais est requis.',
+            'entreprise.required' => 'Le champ entreprise est requis.',
+            'images.*.image' => 'Le fichier doit être une image.',
+            'images.*.mimes' => 'Le fichier doit être de type :values.',
+            'images.*.max' => 'Le fichier ne doit pas dépasser :max kilo-octets.'
+        ];
+    
+        $request->validate($check, $messages);
+
         $data = array(
             'entreprise_id' => $request->entreprise,
             'service_id' => $request->service,

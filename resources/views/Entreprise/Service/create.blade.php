@@ -71,17 +71,21 @@
 
                                         @csrf
                                         <div class="row">
-                                            @if(session('success') === false)
+                                            @if ($errors->any())
                                                 <div class="alert alert-danger">
-                                                    {{ session('message') }}
+                                                    <ul>
+                                                        @foreach ($errors->all() as $error)
+                                                            <li>{{ $error }}</li>
+                                                        @endforeach
+                                                    </ul>
                                                 </div>
                                             @endif
-
-                                            @if(session('success') === true)
-                                            <div class="alert alert-success">
-                                                {{ session('message') }}
-                                            </div>
-                                        @endif
+                                            @if(session('success'))
+                                                <div class="alert alert-success">
+                                                    {{ session('success') }}
+                                                </div>
+                                            @endif
+                                        </div>
 
                                         <div class="row mr-4 ml-4">
                                             <input type="hidden" name="entreprise" value="{{ Auth::check() && Auth::user()->compagny ? Auth::user()->compagny->id : 0 }}">
