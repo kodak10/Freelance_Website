@@ -66,7 +66,7 @@
                                                     <td>{{ $entreprise->regime }}</td>
                                                     <td>{{ $entreprise->site_web }}</td>
                                                     <td>{{ $entreprise->facebook }}</td>
-                                                    <td><img src="{{ asset('assets/images/profil/' . $entreprise->photo) }}" alt="Logo" srcset=""></td>
+                                                    <td><img src="{{ asset('assets/images/profil/' . $entreprise->photo) }}" alt="Logo" srcset="" style="height: 100px !important; width:100px !important;"></td>
                                                     <td width="20%">
                                                         <center>
                                                             <div class="row mr-0 text-white">
