@@ -10,9 +10,9 @@
         <li class="menu-item {{ request()->is('services') ? 'current-item' : ''}}">
             <a href="/services">Trouvez un service </a>
         </li>
-        <li class="menu-item {{ request()->is('blog') ? 'current-item' : ''}}">
+        {{-- <li class="menu-item {{ request()->is('blog') ? 'current-item' : ''}}">
             <a href="/blog">Blog </a>
-        </li>
+        </li> --}}
         <li class="menu-item {{ request()->is('contact') ? 'current-item' : '' }}">
             <a href="/contact">Contact </a>
         </li>

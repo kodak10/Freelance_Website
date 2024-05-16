@@ -44,9 +44,9 @@
                                     <li class="menu-item menu-item-mobile">
                                         <a href="/services">Trouvez un service</a>
                                     </li>
-                                    <li class="menu-item menu-item-mobile">
+                                    {{-- <li class="menu-item menu-item-mobile">
                                         <a href="/blog">Blog</a>
-                                    </li>
+                                    </li> --}}
                                     <li class="menu-item menu-item-mobile">
                                         <a href="/contact">Contact</a>
                                     </li>
@@ -62,9 +62,9 @@
                                     <li class="menu-item menu-item-mobile">
                                         <a href="/services">Trouvez un service</a>
                                     </li>
-                                    <li class="menu-item menu-item-mobile">
+                                    {{-- <li class="menu-item menu-item-mobile">
                                         <a href="/blog">Blog</a>
-                                    </li>
+                                    </li> --}}
                                     <li class="menu-item menu-item-mobile">
                                         <a href="/contact">Contact</a>
                                     </li>

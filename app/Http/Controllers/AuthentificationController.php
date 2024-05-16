@@ -86,7 +86,7 @@ class AuthentificationController extends Controller
             'nationalite' => ['required', 'string', 'max:255'],
             'telephone' => ['required', 'string', 'max:255'],
             'password' => ['required', 'min:6', 'confirmed'],
-            'regime' => ['required', 'string', 'max:255', 'unique:entreprises'],
+            'regime' => ['required', 'string', 'max:255',],
             'localisation' => ['required'],
         ];
 
@@ -99,7 +99,6 @@ class AuthentificationController extends Controller
             'password.confirmed' => 'Les deux champs de mot de passe ne correspondent pas.',
             'password.min' => 'Le mot de passe doit contenir au moins 6 caractères.',
             'email.unique' => 'L\'adresse email est déjà utilisée par un autre utilisateur.',
-            'regime.unique' => 'Le régime est déjà utilisée par un autre utilisateur.',
             'telephone.required' => 'Le champ telephone est requis.',
         ];
 
@@ -177,7 +176,7 @@ class AuthentificationController extends Controller
 
         // Si l'utilisateur est un client
         if (Auth::user()->hasRole('client')) {
-            return redirect('/login')->with(["success" => true, "message" => "Vous êtes connectés avec succès"], 403);
+            return redirect('/')->with(["success" => true, "message" => "Vous êtes connectés avec succès"], 403);
         }
 
         // Si l'utilisateur est une entreprise
@@ -185,7 +184,7 @@ class AuthentificationController extends Controller
         if (Auth::user()->hasRole('compagny')) {
 
             if (Auth::user()->compagny->approve != 0) {
-                return redirect('/login')->with(["success" => true, "message" => "Vous êtes connectés avec succès"], 403);
+                return redirect('/')->with(["success" => true, "message" => "Vous êtes connectés avec succès"], 403);
             }
 
             else if (Auth::user()->compagny->approve !== 0) {

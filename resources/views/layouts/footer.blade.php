@@ -13,7 +13,7 @@
                         <ul class="list-social d-flex aln-center">
                             <li><a href="#"><i class="icon-facebook"></i></a></li>
                             <li><a href="#"><i class="icon-instagram1"></i></a></li>
-                            <li><a href="#"><i class="icon-youtube"></i></a></li>
+                            {{-- <li><a href="#"><i class="icon-youtube"></i></a></li> --}}
                         </ul>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                             <li> <a href="/about">A Propos</a> </li>
                             <li> <a href="/services">Trouvez un service</a> </li>
                             <li> <a href="/entreprise">Les entreprises</a> </li>
-                            <li> <a href="/blog">Blog</a> </li>
+                            {{-- <li> <a href="/blog">Blog</a> </li> --}}
                             <li> <a href="/contact">Contactez-nous</a> </li>
                             <li> <a href="/login">Se Connecter</a> </li>
                             <li> <a href="/inscription">S'inscrire</a> </li>
@@ -112,9 +112,9 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <ul class="menu-bottom d-flex aln-center">
-                        <li><a href="#">Conditions de services</a> </li>
-                        <li><a href="#">Politique de confidentialité</a> </li>
-                        <li><a href="#">Politique en matière de cookies</a> </li>
+                        {{-- <li><a href="#">Conditions de services</a> </li> --}}
+                        <li><a href="{{asset('documents/POLITIQUE DE CONFIDENTIALITE.pdf')}}">Politique de confidentialité</a> </li>
+                        <li><a href="{{asset('documents/POLITIQUE EN MATIERE DE COOKIES.pdf')}}">Politique en matière de cookies</a> </li>
                     </ul>
                 </div>
             </div>

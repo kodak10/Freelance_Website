@@ -12,6 +12,7 @@ use App\Models\ServiceEntreprise;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Mail\ContactMail;
 
 class WebsiteController extends Controller
 {
@@ -26,7 +27,7 @@ class WebsiteController extends Controller
         $categories_smalls = Departement::take(10)->get();
         $entreprises = Entreprise::take(8)->get();
         $services = Service::has('entreprises')->paginate(8);
-        
+
         return view('index', compact('entreprises', 'categories', 'categories_smalls', 'services'));
     }
 
@@ -76,7 +77,7 @@ class WebsiteController extends Controller
             'service_entreprises.delais_execution as delais_execution',
             'service_entreprises.description as descript',
             // Service
-            'services.id as service_id', 
+            'services.id as service_id',
             'services.libelle as libelle',
             // Entreprises
             'entreprises.id as entreprise_id',
@@ -134,22 +135,22 @@ class WebsiteController extends Controller
     public function blog_show($id)
     {
         $categories = Departement::get();
-    
+
         $blog = Blog::findOrFail($id); // Assurez-vous que le blog existe
-    
+
         $previousBlog = Blog::where('status', 'active')->where('id', '<', $blog->id)->orderBy('id', 'desc')->first();
         $nextBlog = Blog::where('status', 'active')->where('id', '>', $blog->id)->orderBy('id', 'asc')->first();
-        
+
         $images = DB::table('image_blogs')
         ->join('blogs', 'image_blogs.blog_id', '=', 'blogs.id')
         ->where('image_blogs.blog_id', $id )
 
         ->select('image_blogs.*', 'blogs.*')
         ->get();
-    
+
         return view('blog-details', compact('blog', 'previousBlog', 'nextBlog', 'categories', 'images'));
     }
-    
+
 
     public function departements()
     {
@@ -157,7 +158,7 @@ class WebsiteController extends Controller
         return view('departements', compact('categories'));
     }
 
-    
+
 
 
     public function search(Request $request)
@@ -218,6 +219,27 @@ class WebsiteController extends Controller
         $entreprises = Entreprise::with('services')->find($id);
         $services = $entreprises->services()->paginate(8);
         return view('service_entreprises', compact('categories', 'entreprises', 'services'));
+    }
+
+    public function sendMessage(Request $request)
+    {
+        // Valide les données du formulaire
+        $request->validate([
+            'nom' => 'required',
+            'email' => 'required|email',
+            'message' => 'required',
+        ]);
+
+
+        // Envoie l'email
+        //Mail::to('atchinaymard10@gmail.com')->send(new ContactMail($request->all()));
+
+        Mail::to('atchinaymard10@gmail.com')
+    ->send(new Contact($request->except('_token')));
+
+        // Redirige avec un message de succès
+        return redirect()->back()->with('success', 'Votre message a été envoyé avec succès!');
+        return redirect()->back()->with('error', 'Votre message a été envoyé avec succès!');
     }
 
 }

@@ -21,11 +21,30 @@
     #header.style-absolute #main-nav #menu-primary-menu>li.current-item>a{
       color: var(--color-jaune) !important ;
     }
+    .blog-style1:hover p{
+        color: var(--color-jaune) !important;
+    }
 </style>
 
 
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    <section class=" stc1 mt-5">
+{{-- <section class="breadcumb-section mt40 mt-5">
+    <div class="cta-about-v1 mx-auto maxw1700 pt120 pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5">
+            <div class="position-relative">
+              <h2 class="text-white">TROUVEZ UN SERVICE</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> --}}
+
+
+    <section class=" stc1 mt-2">
         <div class="tf-container">
         <div class="job-search-form inner-form-map st1">
             <form method="get" action="{{route('services.search')}}">
@@ -56,12 +75,21 @@
             <div class="row mt-5">
                 @forelse ($services as $service )
                     <div class="col-lg-3 mt-3 mb-3 m-auto">
-                        <div class="card w-100">
-                            <img src="{{$service->image}}" class="card-img-top zoomRotateImage img-fluid w-100" alt="..." style="height: 200px !important">
+                        
+                        {{-- <div class="card blog-style1 w-100 ">
+                            <img src="{{$service->image}}" class=" w-100" alt="..." style="height: 200px !important">
                             <div class="card-body p-2 mb-3">
                               <p class="card-text"><a href="{{ route('services_entreprises', $service) }}">{{$service->libelle}}</a></p>
                             </div>
-                          </div>
+                          </div> --}}
+
+                          <div class="blog-style1">
+                            <div class="blog-img"><img class="w-100" style="height:250px" src="{{$service->image}}" alt=""></div>
+                            <div class="blog-content">
+                                <p class="text mb-0"><a href="{{ route('services_entreprises', $service) }}">{{$service->libelle}}</a></p>
+                            </div>
+                        </div>
+
                     </div>
 
                     @empty

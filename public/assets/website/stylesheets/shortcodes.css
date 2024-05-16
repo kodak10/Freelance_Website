@@ -56,8 +56,8 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
   width: 1440px;
   max-width: 100%;
 }
@@ -4831,6 +4831,9 @@
   padding: 11px 31px;
 }
 
+.job-search-form .card:hover img{
+  transform: scale(1.1) rotate(-1deg);
+}
 .wrap-sidebar-full .widget-filter.no-scroll {
   height: unset;
   overflow-y: unset;
@@ -8153,7 +8156,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .job-category-box:hover p,
 .job-category-box:hover .btn-category-job,
 .job-category-box {
-  color: #ffffff;
+  color: #ffffff !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -8172,7 +8175,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .job-category-box h1 a:hover {
-  color: #14a077;
+  color: #ffffff !important;
 }
 
 .job-category-box p {

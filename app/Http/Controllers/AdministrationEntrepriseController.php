@@ -41,7 +41,7 @@ class AdministrationEntrepriseController extends Controller
             'nationalite' => ['required', 'string', 'max:255'],
             'telephone' => ['required', 'string', 'max:255'],
             //'password' => ['required', 'min:6', 'confirmed'],
-            'regime' => ['required', 'string', 'max:255', 'unique:entreprises'],
+            'regime' => ['required', 'string', 'max:255',],
             'localisation' => ['required'],
         ];
 
@@ -54,7 +54,6 @@ class AdministrationEntrepriseController extends Controller
             // 'password.confirmed' => 'Les deux champs de mot de passe ne correspondent pas.',
             // 'password.min' => 'Le mot de passe doit contenir au moins 6 caractères.',
             'email.unique' => 'L\'adresse email est déjà utilisée par un autre utilisateur.',
-            'regime.unique' => 'Le régime est déjà utilisée par un autre utilisateur.',
             'telephone.required' => 'Le champ telephone est requis.',
         ];
 

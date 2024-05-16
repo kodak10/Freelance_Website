@@ -542,7 +542,7 @@ input[type="color"],
   background-color: #fff;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  height: 80px;
+  height: 100px;
 }
 
 /* header-landing page */
@@ -558,7 +558,7 @@ input[type="color"],
   position: relative;
   z-index: 999;
   background: transparent;
-  margin-bottom: -82px;
+  margin-bottom: -100px;
 }
 
 .sticky-area-wrap {
@@ -880,7 +880,7 @@ input[type="color"],
 .sticky-area-wrap .header-ct-center {
   flex-grow: 1;
   justify-content: center;
-  /*width: 100%;*/
+  width: 100%;
   display: flex;
   align-items: center;
   padding-left: 178px;

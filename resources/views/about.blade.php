@@ -61,7 +61,7 @@
             <div class="col-xl-5">
               <div class="position-relative">
                 <h2 class="text-white">A propos</h2>
-                <span><a class="text-white" href="/">Elbaragroup -></a>A Propos</span>
+                <span style="color: var(--color-jaune) !important;"><a class="text-white" href="/" >Elbaragroup -></a>A Propos</span>
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 col-xl-6">
             <div class="about-img mb30-sm wow fadeInRight" data-wow-delay="300ms">
-              <img class="w100" src="{{asset('assets/images/about/about-1.jpg')}}" alt="">
+              <img class="w100" src="{{asset('assets/website/images/about/about-7.jpg')}}" alt="">
             </div>
           </div>
           <div class="col-md-6 col-xl-5 offset-xl-1">
@@ -237,7 +237,7 @@
 
 
     <!-- Funfact -->
-    <section class="pb0 pt60">
+    <section class="pb0 pt60 mb-5">
       <div class="container maxw1600 bdrb1 pb60">
         <div class="row justify-content-center wow fadeInUp" data-wow-delay="300ms">
           <div class="col-6 col-md-3">
@@ -277,7 +277,7 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="timer">+ 16</div></li>
+                  <li><div class="counter">+ <span data-count="16">0</span></div></li>
                   <li><span>M</span></li>
                 </ul>
                 <p class="text mb-0">Projets terminés</p>
@@ -287,6 +287,9 @@
         </div>
       </div>
     </section>
+    
+
+    
 
     <!-- CTA Banner -->
     {{-- <section class="p-0">
@@ -700,7 +703,7 @@
                         <p class="description">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/team/ea-3.png')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -747,7 +750,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/team/ea-3.png')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -794,7 +797,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/team/ea-3.png')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -841,7 +844,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/team/ea-3.png')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>

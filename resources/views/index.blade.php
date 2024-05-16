@@ -49,14 +49,21 @@
     #header.style-absolute #main-nav #menu-primary-menu>li.current-item>a{
       color: var(--color-jaune) !important ;
     }
-   
+
+    .features-job:hover .logo-company img {
+      transform: scale(1.1) rotate(-1deg);
+      transition: 0.3s all ease-in-out
+    }
+    .features-job:hover .box-content h3 a{
+      color: #f39c12 !important;
+    }
 </style>
 
 
     <section class="tf-slider sl3 over-flow-hidden " style="min-height: 70vh !important; ">
         <div class="tf-container ">
           <div class="row" style="margin: 5% auto;">
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-8 col-md-12" style="display: flex;justify-content: center;place-items: center;">
               <div class="content wow fadeInUp ">
                 <div class="heading">
                   <h3 class="text-white">Trouvez l'entreprise qui correspond à vos besoins.</h3>
@@ -189,7 +196,7 @@
 
                 @foreach ($services as $service)
                     <div class="col-lg-6 ">
-                        <div class="features-job " >
+                        <div class="features-job">
                             <div class="job-archive-header">
                               <div class="row">
                                 <div class="col-lg-4">
@@ -198,7 +205,7 @@
                                         alt="image" />
                                 </div>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 d-flex align-items-center">
                                   <div class="box-content">
 
                                     <h3>
@@ -533,7 +540,7 @@
                         <p class="description">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/team/ea-3.png')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -580,7 +587,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/team/ea-3.png')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -627,7 +634,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/team/ea-3.png')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
@@ -674,7 +681,7 @@
 
                         <div class="author-group">
                         <div class="avatar">
-                            <img src="{{asset('assets/website/images/review/testimonials.jpg')}}" alt="images">
+                            <img src="{{asset('assets/website/images/team/ea-3.png')}}" alt="images">
                         </div>
                         <div class="infor">
                             <h6>Pete Jones</h6>
