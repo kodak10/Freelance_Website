@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/shortcodes.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/style.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('assets/website/stylesheets/jquery.fancybox.min.css')}}">
-   
+
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/favicon.png">
@@ -112,7 +112,7 @@ a:hover{
             background-color: var(--color-jaune) !important;
             margin-right: 20px;
         }
-       
+
         .sticky-area-wrap .header-ct-right .button a{
         border-color: var(--color-jaune) !important;
         }
@@ -129,6 +129,9 @@ a:hover{
         }
         .btn_registration a{
             color: #000000 !important;
+        }
+        .btn_registration:hover a{
+            color: #ffffff !important;
         }
         .tf-iconbox .box-content p {
             text-transform: none;

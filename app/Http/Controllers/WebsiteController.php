@@ -12,7 +12,8 @@ use App\Models\ServiceEntreprise;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use App\Mail\ContactMail;
+
+use App\Models\Contact;
 
 class WebsiteController extends Controller
 {
@@ -223,23 +224,17 @@ class WebsiteController extends Controller
 
     public function sendMessage(Request $request)
     {
-        // Valide les données du formulaire
+
         $request->validate([
-            'nom' => 'required',
+            'name' => 'required',
             'email' => 'required|email',
-            'message' => 'required',
+            'message' => 'required'
         ]);
 
+        Contact::create($request->all());
 
-        // Envoie l'email
-        //Mail::to('atchinaymard10@gmail.com')->send(new ContactMail($request->all()));
-
-        Mail::to('atchinaymard10@gmail.com')
-    ->send(new Contact($request->except('_token')));
-
-        // Redirige avec un message de succès
-        return redirect()->back()->with('success', 'Votre message a été envoyé avec succès!');
-        return redirect()->back()->with('error', 'Votre message a été envoyé avec succès!');
+        return redirect('contact')
+            ->with(['success' => 'Thank you for contacting us. We will get in touch with you shortly.']);
     }
 
 }

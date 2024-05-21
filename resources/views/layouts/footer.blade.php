@@ -11,7 +11,7 @@
                     <div class="wd-social d-flex aln-center">
                         <span>Suivez nous sur:</span>
                         <ul class="list-social d-flex aln-center">
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://www.facebook.com/people/El-Bara-Africa-Group/61559848585849/"><i class="icon-facebook"></i></a></li>
                             <li><a href="#"><i class="icon-instagram1"></i></a></li>
                             {{-- <li><a href="#"><i class="icon-youtube"></i></a></li> --}}
                         </ul>
@@ -77,7 +77,7 @@
                 <div class="col-lg-2 col-md-4 col-6">
                     <div class="footer-cl-4">
                         <h6 class="ft-title">
-                            Actions clients 
+                            Actions clients
                         </h6>
                         <ul class="navigation-menu-footer">
                             <li> <a href="/user">Menu Général</a> </li>
@@ -86,7 +86,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -107,7 +107,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="bt-left">
                         <div class="copyright">©2024 Elbara Africa Group. Tous droits réservés.</div>
-                        
+
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">

@@ -5,8 +5,8 @@
   .header{
       margin-bottom: 2rem !important;
   }
-  
- 
+
+
   #header.style-absolute #main-nav #menu-primary-menu>li>a{
       color: #000000 !important;
     }
@@ -81,25 +81,28 @@
           <div class="contact-page-form default-box-shadow1 bdrs8 bdr1 p50 mb30-md bgc-white p-3">
             <h4 class="form-title mb25">Parlez nous de vous</h4>
             <p class="text mb30">Que vous ayez des questions ou que vous souhaitiez simplement dire bonjour, contactez-nous.</p>
-            <form action="{{ route('send_message') }}" method="post" class="form-style1">
+
+
+
+            <form method="POST" action="{{ route('send_message') }}"  class="form-style1">
               @csrf
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb20">
                     <label class="heading-color ff-heading fw500 mb10" for="">Nom</label>
-                    <input type="text" class="form-control" placeholder="Votre Nom" value="tzerfer">
+                    <input type="text" class="form-control" name="name" placeholder="Votre Nom" value="tzerfer">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb20">
                     <label class="heading-color ff-heading fw500 mb10" for="">Email</label>
-                    <input type="email" class="form-control" placeholder="Votre Email" value="tzerfer@gmail.com">
+                    <input type="email" class="form-control" name="email" placeholder="Votre Email" value="tzerfer@gmail.com">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="mb20">
                     <label class="heading-color ff-heading fw500 mb10" for="">Message</label>
-                    <textarea name="" id="" cols="30" rows="6" placeholder="Laissez nous votre message">reyrtyrt</textarea>
+                    <textarea name="message" id="" cols="30" rows="6" placeholder="Laissez nous votre message">reyrtyrt</textarea>
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -109,6 +112,8 @@
                 </div>
               </div>
             </form>
+
+
             @if(session('success'))
                 <div class="alert alert-success">
                     {{ session('success') }}
@@ -120,7 +125,7 @@
                 {{ session('error') }}
             </div>
             @endif
-            
+
           </div>
         </div>
       </div>
