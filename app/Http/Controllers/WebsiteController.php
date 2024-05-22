@@ -234,7 +234,7 @@ class WebsiteController extends Controller
         Contact::create($request->all());
 
         return redirect('contact')
-            ->with(['success' => 'Thank you for contacting us. We will get in touch with you shortly.']);
+            ->with(['success' => 'Merci de nous avoir contactés. Nous reviendrons vers vous sous peu.']);
     }
 
 }
