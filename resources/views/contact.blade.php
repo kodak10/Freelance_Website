@@ -90,19 +90,19 @@
                 <div class="col-md-6">
                   <div class="mb20">
                     <label class="heading-color ff-heading fw500 mb10" for="">Nom</label>
-                    <input type="text" class="form-control" name="name" placeholder="Votre Nom" value="tzerfer">
+                    <input type="text" class="form-control" name="name" placeholder="Votre Nom">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="mb20">
                     <label class="heading-color ff-heading fw500 mb10" for="">Email</label>
-                    <input type="email" class="form-control" name="email" placeholder="Votre Email" value="tzerfer@gmail.com">
+                    <input type="email" class="form-control" name="email" placeholder="Votre Email">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="mb20">
                     <label class="heading-color ff-heading fw500 mb10" for="">Message</label>
-                    <textarea name="message" id="" cols="30" rows="6" placeholder="Laissez nous votre message">reyrtyrt</textarea>
+                    <textarea name="message" id="" cols="30" rows="6" placeholder="Laissez nous votre message"></textarea>
                   </div>
                 </div>
                 <div class="col-md-12">
