@@ -6,6 +6,10 @@
         font-weight: 800;
         font-size: 16px;
     }
+    .header-customize-item img{
+        width:100% !important;
+        height: 100px !important;
+    }
    
 </style>
 <header id="header" class="header header-default style-absolute header-fixed">
