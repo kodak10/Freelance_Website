@@ -277,7 +277,7 @@
             <div class="funfact_one text-center">
               <div class="details">
                 <ul class="ps-0 mb-0 d-flex justify-content-center">
-                  <li><div class="counter">+ <span data-count="16">0</span></div></li>
+                  <li><div class="counter">+ <span data-count="16">2</span></div></li>
                   <li><span>M</span></li>
                 </ul>
                 <p class="text mb-0">Projets terminés</p>
