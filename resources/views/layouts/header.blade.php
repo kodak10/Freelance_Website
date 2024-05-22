@@ -48,7 +48,7 @@
                 <div class="header-customize-item account">
                     
                     @if (auth()->user()->hasRole('client'))
-                    <img src="{{ asset('assets/images/profil/' . Auth::user()->client->photo) }} " style="width: 100px !important; " alt="logo profil" />
+                    <img src="{{ asset('assets/images/profil/' . Auth::user()->client->photo) }} " style="max-width: 100px !important; height: 100% !important;" alt="logo profil" />
                         <div class="name">
                             {{Auth::user()->name}}<span class="icon-keyboard_arrow_down"></span>
                         </div>
@@ -75,7 +75,7 @@
                         </div>
 
                     @elseif(auth()->user()->hasRole('compagny'))
-                    <img src="{{ asset('assets/images/profil/' . Auth::user()->compagny->photo) }}" style="width: 100px !important; ;" alt="logo profil" />
+                    <img src="{{ asset('assets/images/profil/' . Auth::user()->compagny->photo) }}" style="max-width: 100px !important; height: 100% !important;" alt="logo profil" />
 
                         <div class="name">
                             {{Auth::user()->name}}<span class="icon-keyboard_arrow_down"></span>
@@ -108,7 +108,7 @@
                             {{-- <a href="/dashboard-entreprise"><span class="icon-dashboard"></span>Menu Général</a> --}}
                         </div>
                     @elseif(auth()->user()->hasRole('serviceClient'))
-                        <img src="{{ asset('assets/images/profil/' . Auth::user()->serviceClient->photo) }}" style="width: 100px !important;" alt="logo profil" />
+                        <img src="{{ asset('assets/images/profil/' . Auth::user()->serviceClient->photo) }}" style="max-width: 100px !important;height: 100% !important;" alt="logo profil" />
 
                         <div class="name">
                             {{Auth::user()->name}}<span class="icon-keyboard_arrow_down"></span>
