@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Contact;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\contactMail;
 
 class WebsiteController extends Controller
 {
@@ -225,13 +227,13 @@ class WebsiteController extends Controller
     public function sendMessage(Request $request)
     {
 
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'message' => 'required'
-        ]);
+        $contact = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message,
+        ];
 
-        Contact::create($request->all());
+        Mail::to('kodaklamagie@gmail.com')->send(new ContactMail($contact));
 
         return redirect('contact')
             ->with(['success' => 'Merci de nous avoir contactés. Nous reviendrons vers vous sous peu.']);

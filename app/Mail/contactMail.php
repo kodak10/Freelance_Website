@@ -36,7 +36,6 @@ class contactMail extends Mailable
      */
     public function content(): Content
     {
-
         return new Content(
             view: 'email.view',
         );
@@ -52,19 +51,19 @@ class contactMail extends Mailable
         return [];
     }
 
-    // public function build()
-    // {
-    //     return $this->subject('Contact US - '. $this->data->subject)
-    //                 ->view('email.view');
-    // }
-
     public function build()
     {
-        return $this->view('emails.contact')
-                    ->with([
-                        'name' => $this->contact->name,
-                        'email' => $this->contact->email,
-                        'messageContent' => $this->contact->message,
-                    ]);
+        return $this->subject('Contact US - ')
+                    ->view('email.view');
     }
+
+    // public function build()
+    // {
+    //     return $this->view('emails.contact')
+    //                 ->with([
+    //                     'name' => $this->contact->name,
+    //                     'email' => $this->contact->email,
+    //                     'messageContent' => $this->contact->message,
+    //                 ]);
+    // }
 }
