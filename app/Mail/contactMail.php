@@ -12,13 +12,13 @@ use Illuminate\Queue\SerializesModels;
 class contactMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $data;
+    public $contact;
     /**
      * Create a new message instance.
      */
-    public function __construct($data)
+    public function __construct($contact)
     {
-        $this->data = $data;
+        $this->contact = $contact;
     }
 
     /**
@@ -52,9 +52,19 @@ class contactMail extends Mailable
         return [];
     }
 
+    // public function build()
+    // {
+    //     return $this->subject('Contact US - '. $this->data->subject)
+    //                 ->view('email.view');
+    // }
+
     public function build()
     {
-        return $this->subject('Contact US - '. $this->data->subject)
-                    ->view('email.view');
+        return $this->view('emails.contact')
+                    ->with([
+                        'name' => $this->contact->name,
+                        'email' => $this->contact->email,
+                        'messageContent' => $this->contact->message,
+                    ]);
     }
 }
